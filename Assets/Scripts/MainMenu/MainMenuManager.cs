@@ -28,7 +28,7 @@ namespace MainMenu {
         }
 
         private void OnNewGame() {
-            SceneManager.LoadScene(DevSettings.Instance.appSettings.houseSceneName, LoadSceneMode.Single);
+            SceneManager.LoadScene(DevSet.I.appSettings.dormitorySceneName, LoadSceneMode.Single);
         }
         
         private void OnContinue(){_logger.LogWarning($"Option {"Continue" % Colorize.Red} is not yet implemented.");}
