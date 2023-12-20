@@ -4,7 +4,8 @@ using Utils.Singleton;
 
 namespace Settings {
     [RequireComponent(typeof(DoNotDestroy))]
-    public class DevSettings : Singleton<DevSettings> {
+    public class DevSet : Singleton<DevSet> {
         public AppSettingsDefinition appSettings;
+        public DefaultSaveDataDefinition defSaveData;
     }   
 }

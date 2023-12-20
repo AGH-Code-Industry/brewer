@@ -150,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 298334221}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0418527, y: -0.7886927, z: 0.06171166}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   appSettings: {fileID: 11400000, guid: 5ece69d01ee21114497c0047428a94e8, type: 2}
+  defSaveData: {fileID: 11400000, guid: d73b24d4929cc0444b2707916c677772, type: 2}
 --- !u!114 &298334224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,7 +427,7 @@ Transform:
   m_GameObject: {fileID: 1335787009}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 536.83026, y: 295.81308, z: -5.2905593}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

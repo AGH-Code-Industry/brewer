@@ -7,7 +7,8 @@ namespace Utils {
 
         public enum LoggerType {
             UTILS,
-            APPLICATION
+            APPLICATION,
+            DATA_PERSISTENCE
         }
         
         static Loggers() {
@@ -21,6 +22,12 @@ namespace Utils {
                 {
                     LoggerType.APPLICATION,
                     new CLogger(LoggerType.APPLICATION) {
+                        LogEnabled = true
+                    }
+                },
+                {
+                    LoggerType.DATA_PERSISTENCE,
+                    new CLogger(LoggerType.DATA_PERSISTENCE) {
                         LogEnabled = true
                     }
                 }
