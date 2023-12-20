@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - documentation/*
 
 jobs:
   # Build the documentation
