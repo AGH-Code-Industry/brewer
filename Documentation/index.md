@@ -47,5 +47,3 @@ Zaawansowany system craftingu browara, uzwględniający planowanie do przodu i o
 - **Monetyzacja** - brak
 
 ---
-
-# [--> Pełna Dokumentacja <--](/GDD/GDD.md)
