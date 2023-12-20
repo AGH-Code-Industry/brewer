@@ -1,0 +1,731 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "api/*": {
+        "baseUrl": "https://normanderwan.github.io/DocFxForUnity/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://normanderwan.github.io/DocFxForUnity/",
+    "changefreq": "weekly"
+  },
+  "source_base_path": "D:/a/brewer/brewer/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.StartupManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.StartupManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.CInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.CInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.Exceptions.NoMainCameraException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.Exceptions.NoMainCameraException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.Exceptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.InputActions.AlwaysEnabledActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.InputActions.AlwaysEnabledActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.InputActions.DormitoryActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.InputActions.DormitoryActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.InputActions.IAlwaysEnabledActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.InputActions.IAlwaysEnabledActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.InputActions.IDormitoryActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.InputActions.IDormitoryActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.InputActions.IPauseMenuActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.InputActions.IPauseMenuActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.InputActions.ITownActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.InputActions.ITownActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.InputActions.PauseMenuActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.InputActions.PauseMenuActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.InputActions.TownActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.InputActions.TownActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.InputActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.InputActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.DataPersistenceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.DataPersistenceManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.DormitoryData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.DormitoryData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.FileDataHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.FileDataHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.GameData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.GameData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.IDataPersistence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.IDataPersistence.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.OrderData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.OrderData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.TownData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.TownData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MainMenu.MainMenuManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MainMenu.MainMenuManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MainMenu.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MainMenu.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Settings.AppSettingsDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Settings.AppSettingsDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Settings.DefaultSaveDataDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Settings.DefaultSaveDataDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Settings.DevSet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Settings.DevSet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Attributes.ObjectIdentifierAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Attributes.ObjectIdentifierAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Attributes.ObjectIdentifierDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Attributes.ObjectIdentifierDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Attributes.ReadOnlyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Attributes.ReadOnlyAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Attributes.ReadOnlyDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Attributes.ReadOnlyDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Attributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.DoNotDestroy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.DoNotDestroy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Globals.PlaceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Globals.PlaceType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Globals.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Globals.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Loggers.LoggerType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Loggers.LoggerType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Loggers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Loggers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Singleton.Singleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Singleton.Singleton-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Singleton.SingletonOverrideException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Singleton.SingletonOverrideException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Singleton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Singleton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Statistics.StatOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Statistics.StatOperation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Statistics.Statistic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Statistics.Statistic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.Statistics.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.Statistics.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.UniqueScriptableObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.UniqueScriptableObject.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "gdd/fabula/fabula.md",
+      "output": {
+        ".html": {
+          "relative_path": "gdd/fabula/fabula.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "gdd/grafika/grafika.md",
+      "output": {
+        ".html": {
+          "relative_path": "gdd/grafika/grafika.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "gdd/interfejs/interfejs.md",
+      "output": {
+        ".html": {
+          "relative_path": "gdd/interfejs/interfejs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "gdd/marketing/marketing_monetyzacja.md",
+      "output": {
+        ".html": {
+          "relative_path": "gdd/marketing/marketing_monetyzacja.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "gdd/muzyka/muzyka.md",
+      "output": {
+        ".html": {
+          "relative_path": "gdd/muzyka/muzyka.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "gdd/opis_techniczny/opis_techniczny.md",
+      "output": {
+        ".html": {
+          "relative_path": "gdd/opis_techniczny/opis_techniczny.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "gdd/postacie_obiekty/postacie_obiekty.md",
+      "output": {
+        ".html": {
+          "relative_path": "gdd/postacie_obiekty/postacie_obiekty.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "gdd/poziomy/poziomy.md",
+      "output": {
+        ".html": {
+          "relative_path": "gdd/poziomy/poziomy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "gdd/rozgrywka/rozgrywka.md",
+      "output": {
+        ".html": {
+          "relative_path": "gdd/rozgrywka/rozgrywka.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "gdd/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "gdd/toc.html"
+        },
+        ".json": {
+          "relative_path": "gdd/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/manuals/cinput-manual.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/manuals/cinput-manual.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/tutorials-info/generating-docs.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/tutorials-info/generating-docs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/tutorials-info/workflow.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/tutorials-info/workflow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/gdd/szkice/UI/UI_craft_ekwipunek.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/gdd/szkice/UI/UI_craft_ekwipunek.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/gdd/szkice/UI/UI_craft_idle.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/gdd/szkice/UI/UI_craft_idle.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/gdd/szkice/UI/UI_craft_notatki.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/gdd/szkice/UI/UI_craft_notatki.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/gdd/szkice/UI/UI_gra.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/gdd/szkice/UI/UI_gra.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/tutorials-info/generating-docs/cat.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/tutorials-info/generating-docs/cat.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
