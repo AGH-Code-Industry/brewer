@@ -8,7 +8,7 @@ namespace Application {
     public class StartupManager : MonoBehaviour
     {
         private void Start() {
-            SceneManager.LoadScene(DevSettings.Instance.appSettings.firstSceneName, LoadSceneMode.Single);
+            SceneManager.LoadScene(DevSet.I.appSettings.firstSceneName, LoadSceneMode.Single);
         }
     }
 }
