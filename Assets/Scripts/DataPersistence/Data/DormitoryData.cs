@@ -1,4 +1,4 @@
-﻿namespace DataPersistence.Data {
+namespace DataPersistence.Data {
     [System.Serializable]
     public class DormitoryData {
         

@@ -15,6 +15,7 @@ namespace Settings {
         
         [Tooltip("Scene with player's 'house', where mixing and selling takes place.")]
         public string dormitorySceneName = "_placeholder";
+        
         [Tooltip("Scene where player gathers resources, farms etc.")]
         public string townSceneName = "_placeholder";
 
