@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameManager.unity
     guid: fb46a56fa665a68428073ac19ef6d278
+  - enabled: 1
+    path: Assets/Scenes/Crafting.unity
+    guid: 1488ec104668eb646800db6ecb82209f
   m_configObjects: {}
