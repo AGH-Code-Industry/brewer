@@ -16,11 +16,13 @@ namespace MainMenu {
         [SerializeField] private Button continueButton;
         [SerializeField] private Button optionsButton;
         [SerializeField] private Button quitButton;
+        [SerializeField] private Button craftingButton;
 
         private readonly CLogger _logger = Loggers.LoggersList[Loggers.LoggerType.APPLICATION];
 
         protected override void Awake() {
             base.Awake();
+            craftingButton.onClick.AddListener(OnCrafting);
             newGameButton.onClick.AddListener(OnNewGame);
             continueButton.onClick.AddListener(OnContinue);
             optionsButton.onClick.AddListener(OnOptions);
@@ -30,7 +32,11 @@ namespace MainMenu {
         private void OnNewGame() {
             SceneManager.LoadScene(DevSet.I.appSettings.dormitorySceneName, LoadSceneMode.Single);
         }
-        
+        private void OnCrafting()
+        {
+            SceneManager.LoadScene("Crafting");
+        }
+
         private void OnContinue(){_logger.LogWarning($"Option {"Continue" % Colorize.Red} is not yet implemented.");}
         private void OnOptions(){_logger.LogWarning($"Option {"Options" % Colorize.Red} is not yet implemented.");}
         private void OnQuit() { UnityEngine.Application.Quit(); }
