@@ -1,0 +1,9 @@
+- name: Tutorials & Info
+- name: Local Documentation
+  href: tutorials-info/generating-docs.md
+- name: Workflow
+  href: tutorials-info/workflow.md
+
+- name: Manuals
+- name: Custom Input
+  href: manuals/cinput-manual.md
