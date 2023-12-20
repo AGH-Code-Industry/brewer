@@ -6,11 +6,18 @@ namespace Settings {
         [Header("Scene names")]
         [Tooltip("Scene to load after loading game")]
         public string firstSceneName = "MainMenu";
+        
         [Tooltip("Main menu scene")]
         public string mainMenuSceneName = "MainMenu";
+        
         [Tooltip("Scene with player's 'house', where mixing and selling takes place.")]
         public string dormitorySceneName = "_placeholder";
+        
         [Tooltip("Scene where player gathers resources, farms etc.")]
         public string townSceneName = "_placeholder";
+
+        
+        [Header("Data Persistence")]
+        public string defaultSaveName;
     }   
 }
