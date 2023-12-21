@@ -8,17 +8,21 @@ using Items;
 using Settings;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using Utils;
 
 namespace Inventory {
     public class Inventory : Utils.Singleton.Singleton<Inventory>, IDataPersistence {
-        private Dictionary<ItemDefinition, ushort> _items = new Dictionary<ItemDefinition, ushort>();
-
+        /// <summary>
+        /// Fires always when content of inventory changes.
+        /// </summary>
+        public UnityEvent inventoryUpdated;
+        
+        private readonly Dictionary<ItemDefinition, ushort> _items = new Dictionary<ItemDefinition, ushort>();
         private readonly CLogger _logger = Loggers.LoggersList[Loggers.LoggerType.INVENTORY];
 
         protected override void Awake() {
             base.Awake();
-            LoadPersistentData(new GameData());
         }
 
         /// <summary>
@@ -44,6 +48,7 @@ namespace Inventory {
             else {
                 _items.Add(item, count);
             }
+            inventoryUpdated?.Invoke();
         }
 
         /// <summary>
@@ -71,11 +76,13 @@ namespace Inventory {
                 if (_items[item] <= 0) {
                     _items.Remove(item);
                 }
+                inventoryUpdated?.Invoke();
+                return true;
             }
             else {
                 _logger.LogWarning($"Cannot remove {count % Colorize.Cyan} items of type {item}. Item not found in inventory.");
+                return false;
             }
-            return false;
         }
 
         /// <summary>
@@ -95,8 +102,9 @@ namespace Inventory {
             
             var assets = Resources.LoadAll(DevSet.I.appSettings.itemsResPath);
             foreach (var item in gameData.inventoryData.Items) {
-                _items.Add((ItemDefinition)assets.First(asset => asset.name == item.Item1), item.Item2);
+                InsertItem((ItemDefinition)assets.First(asset => asset.name == item.Item1), item.Item2);
             }
+            inventoryUpdated?.Invoke();
         }
 
         public void SavePersistentData(ref GameData gameData) {

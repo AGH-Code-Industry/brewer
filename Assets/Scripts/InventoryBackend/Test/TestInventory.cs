@@ -9,12 +9,15 @@ namespace Inventory.Test {
     public class TestInventory : MonoBehaviour {
         public ItemDefinition item1;
         public ItemDefinition item2;
+        public bool testSave = true;
+        public bool testLoad = true;
         private void Start() {
-            // TestSaving();
-            // TestLoading();
+            TestSaving();
+            TestLoading();
         }
 
         void TestSaving() {
+            if (!testSave) return;
             GameData gameData = new GameData();
             Inventory.I.InsertItem(item1, 3);
             Inventory.I.InsertItem(item2, 5);
@@ -25,6 +28,7 @@ namespace Inventory.Test {
         }
 
         void TestLoading() {
+            if (!testLoad) return;
             GameData gameData = new GameData();
             gameData.inventoryData.Items.Add(("DummyItem", 3));
             gameData.inventoryData.Items.Add(("DummyBeer", 3));
