@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Inventory.Exceptions {
+namespace InventoryBackend.Exceptions {
     public class InvBadValueException : Exception {
         public InvBadValueException(){}
         public InvBadValueException(string message) : base(message) {}

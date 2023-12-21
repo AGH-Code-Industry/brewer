@@ -1,11 +1,9 @@
-﻿using System;
-using CoinPackage.Debugging;
+﻿using CoinPackage.Debugging;
 using DataPersistence.Data;
 using Items;
-using UnityEditor;
 using UnityEngine;
 
-namespace Inventory.Test {
+namespace InventoryBackend.Test {
     public class TestInventory : MonoBehaviour {
         public ItemDefinition item1;
         public ItemDefinition item2;

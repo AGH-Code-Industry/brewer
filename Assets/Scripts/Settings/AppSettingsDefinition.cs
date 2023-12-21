@@ -9,6 +9,9 @@ namespace Settings {
         
         [Tooltip("Main menu scene")]
         public string mainMenuSceneName = "MainMenu";
+
+        [Tooltip("Game manager scene name")]
+        public string gameManagerSceneName = "Game";
         
         [Tooltip("Scene with player's 'house', where mixing and selling takes place.")]
         public string dormitorySceneName = "_placeholder";

@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59070be403ff4283a4f72ef84f4e8879, type: 3}
   m_Name: DummyItem
   m_EditorClassIdentifier: 
-  itemName: Dummyitem
+  type: 0
+  itemName: Dummy Item
   description: Test Item
+  uiImage: {fileID: 21300000, guid: a6884a5a919b8fe47bfa8278b5804a5a, type: 3}

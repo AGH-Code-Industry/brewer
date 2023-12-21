@@ -8,17 +8,15 @@ using Utils;
 namespace DataPersistence {
     public class FileDataHandler {
         private readonly string _saveDirectory;
-        private readonly string _saveFileName;
 
         private readonly CLogger _logger = Loggers.LoggersList[Loggers.LoggerType.DATA_PERSISTENCE];
 
-        public FileDataHandler(string saveDirectory, string saveFileName) {
+        public FileDataHandler(string saveDirectory) {
             _saveDirectory = saveDirectory;
-            _saveFileName = saveFileName;
         }
 
-        public bool Save(GameData gameData) {
-            var filePath = Path.Combine(_saveDirectory, _saveFileName);
+        public bool Save(GameData gameData, string saveName) {
+            var filePath = Path.Combine(_saveDirectory, saveName);
             try {
                 Directory.CreateDirectory(_saveDirectory);
                 var data = JsonUtility.ToJson(gameData);
@@ -38,8 +36,8 @@ namespace DataPersistence {
             return true;
         }
 
-        public GameData Load() {
-            var filePath = Path.Combine(_saveDirectory, _saveFileName);
+        public GameData Load(string saveName) {
+            var filePath = Path.Combine(_saveDirectory, saveName);
 
             if (File.Exists(filePath)) {
                 try {

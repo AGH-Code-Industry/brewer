@@ -9,6 +9,7 @@ using Utils;
 using Utils.Singleton;
 
 namespace DataPersistence {
+    [RequireComponent(typeof(DoNotDestroy))]
     public class DataPersistenceManager : Singleton<DataPersistenceManager>
     {
         [NonSerialized]
@@ -18,7 +19,19 @@ namespace DataPersistence {
         private FileDataHandler _fileDataHandler;
         
         private void Start() {
-            _fileDataHandler = new FileDataHandler(UnityEngine.Application.dataPath, DevSet.I.appSettings.defaultSaveName);
+            _fileDataHandler = new FileDataHandler(UnityEngine.Application.dataPath);
+        }
+
+        public void CreateNewGame() {
+            GameData = new GameData();
+        }
+
+        public void LoadSave(string saveName) {
+            GameData = _fileDataHandler.Load(saveName);
+        }
+
+        public void SaveGame(string saveName) {
+            _fileDataHandler.Save(GameData, saveName);
         }
 
         private List<IDataPersistence> FindPersistentObjects() {

@@ -3,20 +3,19 @@ using System.Linq;
 using CoinPackage.Debugging;
 using DataPersistence;
 using DataPersistence.Data;
-using Inventory.Exceptions;
+using InventoryBackend.Exceptions;
 using Items;
 using Settings;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using Utils;
 
-namespace Inventory {
+namespace InventoryBackend {
     public class Inventory : Utils.Singleton.Singleton<Inventory>, IDataPersistence {
         /// <summary>
         /// Fires always when content of inventory changes.
         /// </summary>
-        public UnityEvent inventoryUpdated;
+        public UnityEvent inventoryUpdated = new UnityEvent();
         
         private readonly Dictionary<ItemDefinition, ushort> _items = new Dictionary<ItemDefinition, ushort>();
         private readonly CLogger _logger = Loggers.LoggersList[Loggers.LoggerType.INVENTORY];
