@@ -10,7 +10,7 @@ public class PlayerInteractions : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(LayerMask.GetMask("Interactable"));
+
     }
 
     void Update()

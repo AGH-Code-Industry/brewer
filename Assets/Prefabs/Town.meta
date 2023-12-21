@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< master
-guid: 4c62e5d16344f4646bd79b68be695a70
-=======
-guid: bdb5705e043ec3a40837202c52fe3eb1
->>>>>>> Highlight shader
+guid: 050e686d7af0cd14e8637c32cf92287c
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
