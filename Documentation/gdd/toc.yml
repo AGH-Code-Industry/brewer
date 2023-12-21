@@ -1,0 +1,19 @@
+- name: Game Design Document
+- name: Fabuła
+  href: fabula/fabula.md
+- name: Grafika
+  href: grafika/grafika.md
+- name: Interfejs użytkownika
+  href: interfejs/interfejs.md
+- name: Marketing i Monetyzacja
+  href: marketing/marketing_monetyzacja.md
+- name: Muzyka
+  href: muzyka/muzyka.md
+- name: Opis techniczny
+  href: opis_techniczny/opis_techniczny.md
+- name: Postacie i Obiekty
+  href: postacie_obiekty/postacie_obiekty.md
+- name: Poziomy
+  href: poziomy/poziomy.md
+- name: rozgrywka
+  href: rozgrywka/rozgrywka.md
