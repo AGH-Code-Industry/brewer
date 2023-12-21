@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< master
 guid: 01e32d1662e99b946a659e7c8cc7374b
+=======
+guid: 5908f590b68e0a743a75eddb1198617f
+>>>>>>> outline shader v.1
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
