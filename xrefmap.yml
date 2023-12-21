@@ -7,6 +7,12 @@ references:
   commentId: N:Application
   fullName: Application
   nameWithType: Application
+- uid: Application.GameManager
+  name: GameManager
+  href: api/Application.GameManager.html
+  commentId: T:Application.GameManager
+  fullName: Application.GameManager
+  nameWithType: GameManager
 - uid: Application.StartupManager
   name: StartupManager
   href: api/Application.StartupManager.html
@@ -1123,39 +1129,156 @@ references:
   commentId: N:DataPersistence
   fullName: DataPersistence
   nameWithType: DataPersistence
+- uid: DataPersistence.Data
+  name: DataPersistence.Data
+  href: api/DataPersistence.Data.html
+  commentId: N:DataPersistence.Data
+  fullName: DataPersistence.Data
+  nameWithType: DataPersistence.Data
+- uid: DataPersistence.Data.DormitoryData
+  name: DormitoryData
+  href: api/DataPersistence.Data.DormitoryData.html
+  commentId: T:DataPersistence.Data.DormitoryData
+  fullName: DataPersistence.Data.DormitoryData
+  nameWithType: DormitoryData
+- uid: DataPersistence.Data.GameData
+  name: GameData
+  href: api/DataPersistence.Data.GameData.html
+  commentId: T:DataPersistence.Data.GameData
+  fullName: DataPersistence.Data.GameData
+  nameWithType: GameData
+- uid: DataPersistence.Data.GameData.currentPlace
+  name: currentPlace
+  href: api/DataPersistence.Data.GameData.html#DataPersistence_Data_GameData_currentPlace
+  commentId: F:DataPersistence.Data.GameData.currentPlace
+  fullName: DataPersistence.Data.GameData.currentPlace
+  nameWithType: GameData.currentPlace
+- uid: DataPersistence.Data.GameData.dormData
+  name: dormData
+  href: api/DataPersistence.Data.GameData.html#DataPersistence_Data_GameData_dormData
+  commentId: F:DataPersistence.Data.GameData.dormData
+  fullName: DataPersistence.Data.GameData.dormData
+  nameWithType: GameData.dormData
+- uid: DataPersistence.Data.GameData.inventoryData
+  name: inventoryData
+  href: api/DataPersistence.Data.GameData.html#DataPersistence_Data_GameData_inventoryData
+  commentId: F:DataPersistence.Data.GameData.inventoryData
+  fullName: DataPersistence.Data.GameData.inventoryData
+  nameWithType: GameData.inventoryData
+- uid: DataPersistence.Data.GameData.isDefaultData
+  name: isDefaultData
+  href: api/DataPersistence.Data.GameData.html#DataPersistence_Data_GameData_isDefaultData
+  commentId: F:DataPersistence.Data.GameData.isDefaultData
+  fullName: DataPersistence.Data.GameData.isDefaultData
+  nameWithType: GameData.isDefaultData
+- uid: DataPersistence.Data.GameData.orderData
+  name: orderData
+  href: api/DataPersistence.Data.GameData.html#DataPersistence_Data_GameData_orderData
+  commentId: F:DataPersistence.Data.GameData.orderData
+  fullName: DataPersistence.Data.GameData.orderData
+  nameWithType: GameData.orderData
+- uid: DataPersistence.Data.GameData.townData
+  name: townData
+  href: api/DataPersistence.Data.GameData.html#DataPersistence_Data_GameData_townData
+  commentId: F:DataPersistence.Data.GameData.townData
+  fullName: DataPersistence.Data.GameData.townData
+  nameWithType: GameData.townData
+- uid: DataPersistence.Data.InventoryData
+  name: InventoryData
+  href: api/DataPersistence.Data.InventoryData.html
+  commentId: T:DataPersistence.Data.InventoryData
+  fullName: DataPersistence.Data.InventoryData
+  nameWithType: InventoryData
+- uid: DataPersistence.Data.InventoryData.Items
+  name: Items
+  href: api/DataPersistence.Data.InventoryData.html#DataPersistence_Data_InventoryData_Items
+  commentId: F:DataPersistence.Data.InventoryData.Items
+  fullName: DataPersistence.Data.InventoryData.Items
+  nameWithType: InventoryData.Items
+- uid: DataPersistence.Data.OrderData
+  name: OrderData
+  href: api/DataPersistence.Data.OrderData.html
+  commentId: T:DataPersistence.Data.OrderData
+  fullName: DataPersistence.Data.OrderData
+  nameWithType: OrderData
+- uid: DataPersistence.Data.TownData
+  name: TownData
+  href: api/DataPersistence.Data.TownData.html
+  commentId: T:DataPersistence.Data.TownData
+  fullName: DataPersistence.Data.TownData
+  nameWithType: TownData
 - uid: DataPersistence.DataPersistenceManager
   name: DataPersistenceManager
   href: api/DataPersistence.DataPersistenceManager.html
   commentId: T:DataPersistence.DataPersistenceManager
   fullName: DataPersistence.DataPersistenceManager
   nameWithType: DataPersistenceManager
+- uid: DataPersistence.DataPersistenceManager.CreateNewGame
+  name: CreateNewGame()
+  href: api/DataPersistence.DataPersistenceManager.html#DataPersistence_DataPersistenceManager_CreateNewGame
+  commentId: M:DataPersistence.DataPersistenceManager.CreateNewGame
+  fullName: DataPersistence.DataPersistenceManager.CreateNewGame()
+  nameWithType: DataPersistenceManager.CreateNewGame()
+- uid: DataPersistence.DataPersistenceManager.CreateNewGame*
+  name: CreateNewGame
+  href: api/DataPersistence.DataPersistenceManager.html#DataPersistence_DataPersistenceManager_CreateNewGame_
+  commentId: Overload:DataPersistence.DataPersistenceManager.CreateNewGame
+  isSpec: "True"
+  fullName: DataPersistence.DataPersistenceManager.CreateNewGame
+  nameWithType: DataPersistenceManager.CreateNewGame
 - uid: DataPersistence.DataPersistenceManager.GameData
   name: GameData
   href: api/DataPersistence.DataPersistenceManager.html#DataPersistence_DataPersistenceManager_GameData
   commentId: F:DataPersistence.DataPersistenceManager.GameData
   fullName: DataPersistence.DataPersistenceManager.GameData
   nameWithType: DataPersistenceManager.GameData
-- uid: DataPersistence.DormitoryData
-  name: DormitoryData
-  href: api/DataPersistence.DormitoryData.html
-  commentId: T:DataPersistence.DormitoryData
-  fullName: DataPersistence.DormitoryData
-  nameWithType: DormitoryData
+- uid: DataPersistence.DataPersistenceManager.LoadSave(System.String)
+  name: LoadSave(string)
+  href: api/DataPersistence.DataPersistenceManager.html#DataPersistence_DataPersistenceManager_LoadSave_System_String_
+  commentId: M:DataPersistence.DataPersistenceManager.LoadSave(System.String)
+  name.vb: LoadSave(String)
+  fullName: DataPersistence.DataPersistenceManager.LoadSave(string)
+  fullName.vb: DataPersistence.DataPersistenceManager.LoadSave(String)
+  nameWithType: DataPersistenceManager.LoadSave(string)
+  nameWithType.vb: DataPersistenceManager.LoadSave(String)
+- uid: DataPersistence.DataPersistenceManager.LoadSave*
+  name: LoadSave
+  href: api/DataPersistence.DataPersistenceManager.html#DataPersistence_DataPersistenceManager_LoadSave_
+  commentId: Overload:DataPersistence.DataPersistenceManager.LoadSave
+  isSpec: "True"
+  fullName: DataPersistence.DataPersistenceManager.LoadSave
+  nameWithType: DataPersistenceManager.LoadSave
+- uid: DataPersistence.DataPersistenceManager.SaveGame(System.String)
+  name: SaveGame(string)
+  href: api/DataPersistence.DataPersistenceManager.html#DataPersistence_DataPersistenceManager_SaveGame_System_String_
+  commentId: M:DataPersistence.DataPersistenceManager.SaveGame(System.String)
+  name.vb: SaveGame(String)
+  fullName: DataPersistence.DataPersistenceManager.SaveGame(string)
+  fullName.vb: DataPersistence.DataPersistenceManager.SaveGame(String)
+  nameWithType: DataPersistenceManager.SaveGame(string)
+  nameWithType.vb: DataPersistenceManager.SaveGame(String)
+- uid: DataPersistence.DataPersistenceManager.SaveGame*
+  name: SaveGame
+  href: api/DataPersistence.DataPersistenceManager.html#DataPersistence_DataPersistenceManager_SaveGame_
+  commentId: Overload:DataPersistence.DataPersistenceManager.SaveGame
+  isSpec: "True"
+  fullName: DataPersistence.DataPersistenceManager.SaveGame
+  nameWithType: DataPersistenceManager.SaveGame
 - uid: DataPersistence.FileDataHandler
   name: FileDataHandler
   href: api/DataPersistence.FileDataHandler.html
   commentId: T:DataPersistence.FileDataHandler
   fullName: DataPersistence.FileDataHandler
   nameWithType: FileDataHandler
-- uid: DataPersistence.FileDataHandler.#ctor(System.String,System.String)
-  name: FileDataHandler(string, string)
-  href: api/DataPersistence.FileDataHandler.html#DataPersistence_FileDataHandler__ctor_System_String_System_String_
-  commentId: M:DataPersistence.FileDataHandler.#ctor(System.String,System.String)
-  name.vb: New(String, String)
-  fullName: DataPersistence.FileDataHandler.FileDataHandler(string, string)
-  fullName.vb: DataPersistence.FileDataHandler.New(String, String)
-  nameWithType: FileDataHandler.FileDataHandler(string, string)
-  nameWithType.vb: FileDataHandler.New(String, String)
+- uid: DataPersistence.FileDataHandler.#ctor(System.String)
+  name: FileDataHandler(string)
+  href: api/DataPersistence.FileDataHandler.html#DataPersistence_FileDataHandler__ctor_System_String_
+  commentId: M:DataPersistence.FileDataHandler.#ctor(System.String)
+  name.vb: New(String)
+  fullName: DataPersistence.FileDataHandler.FileDataHandler(string)
+  fullName.vb: DataPersistence.FileDataHandler.New(String)
+  nameWithType: FileDataHandler.FileDataHandler(string)
+  nameWithType.vb: FileDataHandler.New(String)
 - uid: DataPersistence.FileDataHandler.#ctor*
   name: FileDataHandler
   href: api/DataPersistence.FileDataHandler.html#DataPersistence_FileDataHandler__ctor_
@@ -1166,12 +1289,15 @@ references:
   fullName.vb: DataPersistence.FileDataHandler.New
   nameWithType: FileDataHandler.FileDataHandler
   nameWithType.vb: FileDataHandler.New
-- uid: DataPersistence.FileDataHandler.Load
-  name: Load()
-  href: api/DataPersistence.FileDataHandler.html#DataPersistence_FileDataHandler_Load
-  commentId: M:DataPersistence.FileDataHandler.Load
-  fullName: DataPersistence.FileDataHandler.Load()
-  nameWithType: FileDataHandler.Load()
+- uid: DataPersistence.FileDataHandler.Load(System.String)
+  name: Load(string)
+  href: api/DataPersistence.FileDataHandler.html#DataPersistence_FileDataHandler_Load_System_String_
+  commentId: M:DataPersistence.FileDataHandler.Load(System.String)
+  name.vb: Load(String)
+  fullName: DataPersistence.FileDataHandler.Load(string)
+  fullName.vb: DataPersistence.FileDataHandler.Load(String)
+  nameWithType: FileDataHandler.Load(string)
+  nameWithType.vb: FileDataHandler.Load(String)
 - uid: DataPersistence.FileDataHandler.Load*
   name: Load
   href: api/DataPersistence.FileDataHandler.html#DataPersistence_FileDataHandler_Load_
@@ -1179,12 +1305,15 @@ references:
   isSpec: "True"
   fullName: DataPersistence.FileDataHandler.Load
   nameWithType: FileDataHandler.Load
-- uid: DataPersistence.FileDataHandler.Save(DataPersistence.GameData)
-  name: Save(GameData)
-  href: api/DataPersistence.FileDataHandler.html#DataPersistence_FileDataHandler_Save_DataPersistence_GameData_
-  commentId: M:DataPersistence.FileDataHandler.Save(DataPersistence.GameData)
-  fullName: DataPersistence.FileDataHandler.Save(DataPersistence.GameData)
-  nameWithType: FileDataHandler.Save(GameData)
+- uid: DataPersistence.FileDataHandler.Save(DataPersistence.Data.GameData,System.String)
+  name: Save(GameData, string)
+  href: api/DataPersistence.FileDataHandler.html#DataPersistence_FileDataHandler_Save_DataPersistence_Data_GameData_System_String_
+  commentId: M:DataPersistence.FileDataHandler.Save(DataPersistence.Data.GameData,System.String)
+  name.vb: Save(GameData, String)
+  fullName: DataPersistence.FileDataHandler.Save(DataPersistence.Data.GameData, string)
+  fullName.vb: DataPersistence.FileDataHandler.Save(DataPersistence.Data.GameData, String)
+  nameWithType: FileDataHandler.Save(GameData, string)
+  nameWithType.vb: FileDataHandler.Save(GameData, String)
 - uid: DataPersistence.FileDataHandler.Save*
   name: Save
   href: api/DataPersistence.FileDataHandler.html#DataPersistence_FileDataHandler_Save_
@@ -1192,47 +1321,17 @@ references:
   isSpec: "True"
   fullName: DataPersistence.FileDataHandler.Save
   nameWithType: FileDataHandler.Save
-- uid: DataPersistence.GameData
-  name: GameData
-  href: api/DataPersistence.GameData.html
-  commentId: T:DataPersistence.GameData
-  fullName: DataPersistence.GameData
-  nameWithType: GameData
-- uid: DataPersistence.GameData.currentPlace
-  name: currentPlace
-  href: api/DataPersistence.GameData.html#DataPersistence_GameData_currentPlace
-  commentId: F:DataPersistence.GameData.currentPlace
-  fullName: DataPersistence.GameData.currentPlace
-  nameWithType: GameData.currentPlace
-- uid: DataPersistence.GameData.dormData
-  name: dormData
-  href: api/DataPersistence.GameData.html#DataPersistence_GameData_dormData
-  commentId: F:DataPersistence.GameData.dormData
-  fullName: DataPersistence.GameData.dormData
-  nameWithType: GameData.dormData
-- uid: DataPersistence.GameData.orderData
-  name: orderData
-  href: api/DataPersistence.GameData.html#DataPersistence_GameData_orderData
-  commentId: F:DataPersistence.GameData.orderData
-  fullName: DataPersistence.GameData.orderData
-  nameWithType: GameData.orderData
-- uid: DataPersistence.GameData.townData
-  name: townData
-  href: api/DataPersistence.GameData.html#DataPersistence_GameData_townData
-  commentId: F:DataPersistence.GameData.townData
-  fullName: DataPersistence.GameData.townData
-  nameWithType: GameData.townData
 - uid: DataPersistence.IDataPersistence
   name: IDataPersistence
   href: api/DataPersistence.IDataPersistence.html
   commentId: T:DataPersistence.IDataPersistence
   fullName: DataPersistence.IDataPersistence
   nameWithType: IDataPersistence
-- uid: DataPersistence.IDataPersistence.LoadPersistentData(DataPersistence.GameData)
+- uid: DataPersistence.IDataPersistence.LoadPersistentData(DataPersistence.Data.GameData)
   name: LoadPersistentData(GameData)
-  href: api/DataPersistence.IDataPersistence.html#DataPersistence_IDataPersistence_LoadPersistentData_DataPersistence_GameData_
-  commentId: M:DataPersistence.IDataPersistence.LoadPersistentData(DataPersistence.GameData)
-  fullName: DataPersistence.IDataPersistence.LoadPersistentData(DataPersistence.GameData)
+  href: api/DataPersistence.IDataPersistence.html#DataPersistence_IDataPersistence_LoadPersistentData_DataPersistence_Data_GameData_
+  commentId: M:DataPersistence.IDataPersistence.LoadPersistentData(DataPersistence.Data.GameData)
+  fullName: DataPersistence.IDataPersistence.LoadPersistentData(DataPersistence.Data.GameData)
   nameWithType: IDataPersistence.LoadPersistentData(GameData)
 - uid: DataPersistence.IDataPersistence.LoadPersistentData*
   name: LoadPersistentData
@@ -1241,13 +1340,13 @@ references:
   isSpec: "True"
   fullName: DataPersistence.IDataPersistence.LoadPersistentData
   nameWithType: IDataPersistence.LoadPersistentData
-- uid: DataPersistence.IDataPersistence.SavePersistentData(DataPersistence.GameData@)
+- uid: DataPersistence.IDataPersistence.SavePersistentData(DataPersistence.Data.GameData@)
   name: SavePersistentData(ref GameData)
-  href: api/DataPersistence.IDataPersistence.html#DataPersistence_IDataPersistence_SavePersistentData_DataPersistence_GameData__
-  commentId: M:DataPersistence.IDataPersistence.SavePersistentData(DataPersistence.GameData@)
+  href: api/DataPersistence.IDataPersistence.html#DataPersistence_IDataPersistence_SavePersistentData_DataPersistence_Data_GameData__
+  commentId: M:DataPersistence.IDataPersistence.SavePersistentData(DataPersistence.Data.GameData@)
   name.vb: SavePersistentData(GameData)
-  fullName: DataPersistence.IDataPersistence.SavePersistentData(ref DataPersistence.GameData)
-  fullName.vb: DataPersistence.IDataPersistence.SavePersistentData(DataPersistence.GameData)
+  fullName: DataPersistence.IDataPersistence.SavePersistentData(ref DataPersistence.Data.GameData)
+  fullName.vb: DataPersistence.IDataPersistence.SavePersistentData(DataPersistence.Data.GameData)
   nameWithType: IDataPersistence.SavePersistentData(ref GameData)
   nameWithType.vb: IDataPersistence.SavePersistentData(GameData)
 - uid: DataPersistence.IDataPersistence.SavePersistentData*
@@ -1257,18 +1356,307 @@ references:
   isSpec: "True"
   fullName: DataPersistence.IDataPersistence.SavePersistentData
   nameWithType: IDataPersistence.SavePersistentData
-- uid: DataPersistence.OrderData
-  name: OrderData
-  href: api/DataPersistence.OrderData.html
-  commentId: T:DataPersistence.OrderData
-  fullName: DataPersistence.OrderData
-  nameWithType: OrderData
-- uid: DataPersistence.TownData
-  name: TownData
-  href: api/DataPersistence.TownData.html
-  commentId: T:DataPersistence.TownData
-  fullName: DataPersistence.TownData
-  nameWithType: TownData
+- uid: InventoryBackend
+  name: InventoryBackend
+  href: api/InventoryBackend.html
+  commentId: N:InventoryBackend
+  fullName: InventoryBackend
+  nameWithType: InventoryBackend
+- uid: InventoryBackend.Exceptions
+  name: InventoryBackend.Exceptions
+  href: api/InventoryBackend.Exceptions.html
+  commentId: N:InventoryBackend.Exceptions
+  fullName: InventoryBackend.Exceptions
+  nameWithType: InventoryBackend.Exceptions
+- uid: InventoryBackend.Exceptions.InvBadValueException
+  name: InvBadValueException
+  href: api/InventoryBackend.Exceptions.InvBadValueException.html
+  commentId: T:InventoryBackend.Exceptions.InvBadValueException
+  fullName: InventoryBackend.Exceptions.InvBadValueException
+  nameWithType: InvBadValueException
+- uid: InventoryBackend.Exceptions.InvBadValueException.#ctor
+  name: InvBadValueException()
+  href: api/InventoryBackend.Exceptions.InvBadValueException.html#InventoryBackend_Exceptions_InvBadValueException__ctor
+  commentId: M:InventoryBackend.Exceptions.InvBadValueException.#ctor
+  name.vb: New()
+  fullName: InventoryBackend.Exceptions.InvBadValueException.InvBadValueException()
+  fullName.vb: InventoryBackend.Exceptions.InvBadValueException.New()
+  nameWithType: InvBadValueException.InvBadValueException()
+  nameWithType.vb: InvBadValueException.New()
+- uid: InventoryBackend.Exceptions.InvBadValueException.#ctor(System.String)
+  name: InvBadValueException(string)
+  href: api/InventoryBackend.Exceptions.InvBadValueException.html#InventoryBackend_Exceptions_InvBadValueException__ctor_System_String_
+  commentId: M:InventoryBackend.Exceptions.InvBadValueException.#ctor(System.String)
+  name.vb: New(String)
+  fullName: InventoryBackend.Exceptions.InvBadValueException.InvBadValueException(string)
+  fullName.vb: InventoryBackend.Exceptions.InvBadValueException.New(String)
+  nameWithType: InvBadValueException.InvBadValueException(string)
+  nameWithType.vb: InvBadValueException.New(String)
+- uid: InventoryBackend.Exceptions.InvBadValueException.#ctor(System.String,System.Exception)
+  name: InvBadValueException(string, Exception)
+  href: api/InventoryBackend.Exceptions.InvBadValueException.html#InventoryBackend_Exceptions_InvBadValueException__ctor_System_String_System_Exception_
+  commentId: M:InventoryBackend.Exceptions.InvBadValueException.#ctor(System.String,System.Exception)
+  name.vb: New(String, Exception)
+  fullName: InventoryBackend.Exceptions.InvBadValueException.InvBadValueException(string, System.Exception)
+  fullName.vb: InventoryBackend.Exceptions.InvBadValueException.New(String, System.Exception)
+  nameWithType: InvBadValueException.InvBadValueException(string, Exception)
+  nameWithType.vb: InvBadValueException.New(String, Exception)
+- uid: InventoryBackend.Exceptions.InvBadValueException.#ctor*
+  name: InvBadValueException
+  href: api/InventoryBackend.Exceptions.InvBadValueException.html#InventoryBackend_Exceptions_InvBadValueException__ctor_
+  commentId: Overload:InventoryBackend.Exceptions.InvBadValueException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: InventoryBackend.Exceptions.InvBadValueException.InvBadValueException
+  fullName.vb: InventoryBackend.Exceptions.InvBadValueException.New
+  nameWithType: InvBadValueException.InvBadValueException
+  nameWithType.vb: InvBadValueException.New
+- uid: InventoryBackend.Inventory
+  name: Inventory
+  href: api/InventoryBackend.Inventory.html
+  commentId: T:InventoryBackend.Inventory
+  fullName: InventoryBackend.Inventory
+  nameWithType: Inventory
+- uid: InventoryBackend.Inventory.Awake
+  name: Awake()
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_Awake
+  commentId: M:InventoryBackend.Inventory.Awake
+  fullName: InventoryBackend.Inventory.Awake()
+  nameWithType: Inventory.Awake()
+- uid: InventoryBackend.Inventory.Awake*
+  name: Awake
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_Awake_
+  commentId: Overload:InventoryBackend.Inventory.Awake
+  isSpec: "True"
+  fullName: InventoryBackend.Inventory.Awake
+  nameWithType: Inventory.Awake
+- uid: InventoryBackend.Inventory.GetAllItems
+  name: GetAllItems()
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_GetAllItems
+  commentId: M:InventoryBackend.Inventory.GetAllItems
+  fullName: InventoryBackend.Inventory.GetAllItems()
+  nameWithType: Inventory.GetAllItems()
+- uid: InventoryBackend.Inventory.GetAllItems*
+  name: GetAllItems
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_GetAllItems_
+  commentId: Overload:InventoryBackend.Inventory.GetAllItems
+  isSpec: "True"
+  fullName: InventoryBackend.Inventory.GetAllItems
+  nameWithType: Inventory.GetAllItems
+- uid: InventoryBackend.Inventory.GetItemCount(Items.ItemDefinition)
+  name: GetItemCount(ItemDefinition)
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_GetItemCount_Items_ItemDefinition_
+  commentId: M:InventoryBackend.Inventory.GetItemCount(Items.ItemDefinition)
+  fullName: InventoryBackend.Inventory.GetItemCount(Items.ItemDefinition)
+  nameWithType: Inventory.GetItemCount(ItemDefinition)
+- uid: InventoryBackend.Inventory.GetItemCount*
+  name: GetItemCount
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_GetItemCount_
+  commentId: Overload:InventoryBackend.Inventory.GetItemCount
+  isSpec: "True"
+  fullName: InventoryBackend.Inventory.GetItemCount
+  nameWithType: Inventory.GetItemCount
+- uid: InventoryBackend.Inventory.InsertItem(Items.ItemDefinition,System.UInt16)
+  name: InsertItem(ItemDefinition, ushort)
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_InsertItem_Items_ItemDefinition_System_UInt16_
+  commentId: M:InventoryBackend.Inventory.InsertItem(Items.ItemDefinition,System.UInt16)
+  name.vb: InsertItem(ItemDefinition, UShort)
+  fullName: InventoryBackend.Inventory.InsertItem(Items.ItemDefinition, ushort)
+  fullName.vb: InventoryBackend.Inventory.InsertItem(Items.ItemDefinition, UShort)
+  nameWithType: Inventory.InsertItem(ItemDefinition, ushort)
+  nameWithType.vb: Inventory.InsertItem(ItemDefinition, UShort)
+- uid: InventoryBackend.Inventory.InsertItem*
+  name: InsertItem
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_InsertItem_
+  commentId: Overload:InventoryBackend.Inventory.InsertItem
+  isSpec: "True"
+  fullName: InventoryBackend.Inventory.InsertItem
+  nameWithType: Inventory.InsertItem
+- uid: InventoryBackend.Inventory.LoadPersistentData(DataPersistence.Data.GameData)
+  name: LoadPersistentData(GameData)
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_LoadPersistentData_DataPersistence_Data_GameData_
+  commentId: M:InventoryBackend.Inventory.LoadPersistentData(DataPersistence.Data.GameData)
+  fullName: InventoryBackend.Inventory.LoadPersistentData(DataPersistence.Data.GameData)
+  nameWithType: Inventory.LoadPersistentData(GameData)
+- uid: InventoryBackend.Inventory.LoadPersistentData*
+  name: LoadPersistentData
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_LoadPersistentData_
+  commentId: Overload:InventoryBackend.Inventory.LoadPersistentData
+  isSpec: "True"
+  fullName: InventoryBackend.Inventory.LoadPersistentData
+  nameWithType: Inventory.LoadPersistentData
+- uid: InventoryBackend.Inventory.RemoveItem(Items.ItemDefinition,System.UInt16)
+  name: RemoveItem(ItemDefinition, ushort)
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_RemoveItem_Items_ItemDefinition_System_UInt16_
+  commentId: M:InventoryBackend.Inventory.RemoveItem(Items.ItemDefinition,System.UInt16)
+  name.vb: RemoveItem(ItemDefinition, UShort)
+  fullName: InventoryBackend.Inventory.RemoveItem(Items.ItemDefinition, ushort)
+  fullName.vb: InventoryBackend.Inventory.RemoveItem(Items.ItemDefinition, UShort)
+  nameWithType: Inventory.RemoveItem(ItemDefinition, ushort)
+  nameWithType.vb: Inventory.RemoveItem(ItemDefinition, UShort)
+- uid: InventoryBackend.Inventory.RemoveItem*
+  name: RemoveItem
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_RemoveItem_
+  commentId: Overload:InventoryBackend.Inventory.RemoveItem
+  isSpec: "True"
+  fullName: InventoryBackend.Inventory.RemoveItem
+  nameWithType: Inventory.RemoveItem
+- uid: InventoryBackend.Inventory.SavePersistentData(DataPersistence.Data.GameData@)
+  name: SavePersistentData(ref GameData)
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_SavePersistentData_DataPersistence_Data_GameData__
+  commentId: M:InventoryBackend.Inventory.SavePersistentData(DataPersistence.Data.GameData@)
+  name.vb: SavePersistentData(GameData)
+  fullName: InventoryBackend.Inventory.SavePersistentData(ref DataPersistence.Data.GameData)
+  fullName.vb: InventoryBackend.Inventory.SavePersistentData(DataPersistence.Data.GameData)
+  nameWithType: Inventory.SavePersistentData(ref GameData)
+  nameWithType.vb: Inventory.SavePersistentData(GameData)
+- uid: InventoryBackend.Inventory.SavePersistentData*
+  name: SavePersistentData
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_SavePersistentData_
+  commentId: Overload:InventoryBackend.Inventory.SavePersistentData
+  isSpec: "True"
+  fullName: InventoryBackend.Inventory.SavePersistentData
+  nameWithType: Inventory.SavePersistentData
+- uid: InventoryBackend.Inventory.inventoryUpdated
+  name: inventoryUpdated
+  href: api/InventoryBackend.Inventory.html#InventoryBackend_Inventory_inventoryUpdated
+  commentId: F:InventoryBackend.Inventory.inventoryUpdated
+  fullName: InventoryBackend.Inventory.inventoryUpdated
+  nameWithType: Inventory.inventoryUpdated
+- uid: InventoryBackend.Test
+  name: InventoryBackend.Test
+  href: api/InventoryBackend.Test.html
+  commentId: N:InventoryBackend.Test
+  fullName: InventoryBackend.Test
+  nameWithType: InventoryBackend.Test
+- uid: InventoryBackend.Test.TestInventory
+  name: TestInventory
+  href: api/InventoryBackend.Test.TestInventory.html
+  commentId: T:InventoryBackend.Test.TestInventory
+  fullName: InventoryBackend.Test.TestInventory
+  nameWithType: TestInventory
+- uid: InventoryBackend.Test.TestInventory.item1
+  name: item1
+  href: api/InventoryBackend.Test.TestInventory.html#InventoryBackend_Test_TestInventory_item1
+  commentId: F:InventoryBackend.Test.TestInventory.item1
+  fullName: InventoryBackend.Test.TestInventory.item1
+  nameWithType: TestInventory.item1
+- uid: InventoryBackend.Test.TestInventory.item2
+  name: item2
+  href: api/InventoryBackend.Test.TestInventory.html#InventoryBackend_Test_TestInventory_item2
+  commentId: F:InventoryBackend.Test.TestInventory.item2
+  fullName: InventoryBackend.Test.TestInventory.item2
+  nameWithType: TestInventory.item2
+- uid: InventoryBackend.Test.TestInventory.testLoad
+  name: testLoad
+  href: api/InventoryBackend.Test.TestInventory.html#InventoryBackend_Test_TestInventory_testLoad
+  commentId: F:InventoryBackend.Test.TestInventory.testLoad
+  fullName: InventoryBackend.Test.TestInventory.testLoad
+  nameWithType: TestInventory.testLoad
+- uid: InventoryBackend.Test.TestInventory.testSave
+  name: testSave
+  href: api/InventoryBackend.Test.TestInventory.html#InventoryBackend_Test_TestInventory_testSave
+  commentId: F:InventoryBackend.Test.TestInventory.testSave
+  fullName: InventoryBackend.Test.TestInventory.testSave
+  nameWithType: TestInventory.testSave
+- uid: InventoryUI
+  name: InventoryUI
+  href: api/InventoryUI.html
+  commentId: N:InventoryUI
+  fullName: InventoryUI
+  nameWithType: InventoryUI
+- uid: InventoryUI.InventoryUI
+  name: InventoryUI
+  href: api/InventoryUI.InventoryUI.html
+  commentId: T:InventoryUI.InventoryUI
+  fullName: InventoryUI.InventoryUI
+  nameWithType: InventoryUI
+- uid: InventoryUI.InventoryUI.OnInventoryUpdated
+  name: OnInventoryUpdated()
+  href: api/InventoryUI.InventoryUI.html#InventoryUI_InventoryUI_OnInventoryUpdated
+  commentId: M:InventoryUI.InventoryUI.OnInventoryUpdated
+  fullName: InventoryUI.InventoryUI.OnInventoryUpdated()
+  nameWithType: InventoryUI.OnInventoryUpdated()
+- uid: InventoryUI.InventoryUI.OnInventoryUpdated*
+  name: OnInventoryUpdated
+  href: api/InventoryUI.InventoryUI.html#InventoryUI_InventoryUI_OnInventoryUpdated_
+  commentId: Overload:InventoryUI.InventoryUI.OnInventoryUpdated
+  isSpec: "True"
+  fullName: InventoryUI.InventoryUI.OnInventoryUpdated
+  nameWithType: InventoryUI.OnInventoryUpdated
+- uid: Items
+  name: Items
+  href: api/Items.html
+  commentId: N:Items
+  fullName: Items
+  nameWithType: Items
+- uid: Items.ItemDefinition
+  name: ItemDefinition
+  href: api/Items.ItemDefinition.html
+  commentId: T:Items.ItemDefinition
+  fullName: Items.ItemDefinition
+  nameWithType: ItemDefinition
+- uid: Items.ItemDefinition.ToString
+  name: ToString()
+  href: api/Items.ItemDefinition.html#Items_ItemDefinition_ToString
+  commentId: M:Items.ItemDefinition.ToString
+  fullName: Items.ItemDefinition.ToString()
+  nameWithType: ItemDefinition.ToString()
+- uid: Items.ItemDefinition.ToString*
+  name: ToString
+  href: api/Items.ItemDefinition.html#Items_ItemDefinition_ToString_
+  commentId: Overload:Items.ItemDefinition.ToString
+  isSpec: "True"
+  fullName: Items.ItemDefinition.ToString
+  nameWithType: ItemDefinition.ToString
+- uid: Items.ItemDefinition.description
+  name: description
+  href: api/Items.ItemDefinition.html#Items_ItemDefinition_description
+  commentId: F:Items.ItemDefinition.description
+  fullName: Items.ItemDefinition.description
+  nameWithType: ItemDefinition.description
+- uid: Items.ItemDefinition.itemName
+  name: itemName
+  href: api/Items.ItemDefinition.html#Items_ItemDefinition_itemName
+  commentId: F:Items.ItemDefinition.itemName
+  fullName: Items.ItemDefinition.itemName
+  nameWithType: ItemDefinition.itemName
+- uid: Items.ItemDefinition.prefab
+  name: prefab
+  href: api/Items.ItemDefinition.html#Items_ItemDefinition_prefab
+  commentId: F:Items.ItemDefinition.prefab
+  fullName: Items.ItemDefinition.prefab
+  nameWithType: ItemDefinition.prefab
+- uid: Items.ItemDefinition.type
+  name: type
+  href: api/Items.ItemDefinition.html#Items_ItemDefinition_type
+  commentId: F:Items.ItemDefinition.type
+  fullName: Items.ItemDefinition.type
+  nameWithType: ItemDefinition.type
+- uid: Items.ItemDefinition.uiImage
+  name: uiImage
+  href: api/Items.ItemDefinition.html#Items_ItemDefinition_uiImage
+  commentId: F:Items.ItemDefinition.uiImage
+  fullName: Items.ItemDefinition.uiImage
+  nameWithType: ItemDefinition.uiImage
+- uid: Items.ItemType
+  name: ItemType
+  href: api/Items.ItemType.html
+  commentId: T:Items.ItemType
+  fullName: Items.ItemType
+  nameWithType: ItemType
+- uid: Items.ItemType.Beer
+  name: Beer
+  href: api/Items.ItemType.html#Items_ItemType_Beer
+  commentId: F:Items.ItemType.Beer
+  fullName: Items.ItemType.Beer
+  nameWithType: ItemType.Beer
+- uid: Items.ItemType.Ingredient
+  name: Ingredient
+  href: api/Items.ItemType.html#Items_ItemType_Ingredient
+  commentId: F:Items.ItemType.Ingredient
+  fullName: Items.ItemType.Ingredient
+  nameWithType: ItemType.Ingredient
 - uid: MainMenu
   name: MainMenu
   href: api/MainMenu.html
@@ -1324,6 +1712,18 @@ references:
   commentId: F:Settings.AppSettingsDefinition.firstSceneName
   fullName: Settings.AppSettingsDefinition.firstSceneName
   nameWithType: AppSettingsDefinition.firstSceneName
+- uid: Settings.AppSettingsDefinition.gameManagerSceneName
+  name: gameManagerSceneName
+  href: api/Settings.AppSettingsDefinition.html#Settings_AppSettingsDefinition_gameManagerSceneName
+  commentId: F:Settings.AppSettingsDefinition.gameManagerSceneName
+  fullName: Settings.AppSettingsDefinition.gameManagerSceneName
+  nameWithType: AppSettingsDefinition.gameManagerSceneName
+- uid: Settings.AppSettingsDefinition.itemsResPath
+  name: itemsResPath
+  href: api/Settings.AppSettingsDefinition.html#Settings_AppSettingsDefinition_itemsResPath
+  commentId: F:Settings.AppSettingsDefinition.itemsResPath
+  fullName: Settings.AppSettingsDefinition.itemsResPath
+  nameWithType: AppSettingsDefinition.itemsResPath
 - uid: Settings.AppSettingsDefinition.mainMenuSceneName
   name: mainMenuSceneName
   href: api/Settings.AppSettingsDefinition.html#Settings_AppSettingsDefinition_mainMenuSceneName
@@ -1508,6 +1908,12 @@ references:
   commentId: F:Utils.Loggers.LoggerType.DATA_PERSISTENCE
   fullName: Utils.Loggers.LoggerType.DATA_PERSISTENCE
   nameWithType: Loggers.LoggerType.DATA_PERSISTENCE
+- uid: Utils.Loggers.LoggerType.INVENTORY
+  name: INVENTORY
+  href: api/Utils.Loggers.LoggerType.html#Utils_Loggers_LoggerType_INVENTORY
+  commentId: F:Utils.Loggers.LoggerType.INVENTORY
+  fullName: Utils.Loggers.LoggerType.INVENTORY
+  nameWithType: Loggers.LoggerType.INVENTORY
 - uid: Utils.Loggers.LoggerType.UTILS
   name: UTILS
   href: api/Utils.Loggers.LoggerType.html#Utils_Loggers_LoggerType_UTILS

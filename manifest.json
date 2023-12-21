@@ -22,6 +22,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Application.GameManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Application.GameManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Application.StartupManager.yml",
       "output": {
         ".html": {
@@ -172,20 +182,70 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DataPersistence.DataPersistenceManager.yml",
+      "source_relative_path": "api/DataPersistence.Data.DormitoryData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DataPersistence.DataPersistenceManager.html"
+          "relative_path": "api/DataPersistence.Data.DormitoryData.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DataPersistence.DormitoryData.yml",
+      "source_relative_path": "api/DataPersistence.Data.GameData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/DataPersistence.DormitoryData.html"
+          "relative_path": "api/DataPersistence.Data.GameData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.Data.InventoryData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.Data.InventoryData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.Data.OrderData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.Data.OrderData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.Data.TownData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.Data.TownData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.DataPersistenceManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.DataPersistenceManager.html"
         }
       },
       "version": ""
@@ -202,16 +262,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DataPersistence.GameData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DataPersistence.GameData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/DataPersistence.IDataPersistence.yml",
       "output": {
         ".html": {
@@ -222,30 +272,120 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/DataPersistence.OrderData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DataPersistence.OrderData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/DataPersistence.TownData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/DataPersistence.TownData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/DataPersistence.yml",
       "output": {
         ".html": {
           "relative_path": "api/DataPersistence.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InventoryBackend.Exceptions.InvBadValueException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InventoryBackend.Exceptions.InvBadValueException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InventoryBackend.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InventoryBackend.Exceptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InventoryBackend.Inventory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InventoryBackend.Inventory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InventoryBackend.Test.TestInventory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InventoryBackend.Test.TestInventory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InventoryBackend.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InventoryBackend.Test.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InventoryBackend.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InventoryBackend.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InventoryUI.InventoryUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InventoryUI.InventoryUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/InventoryUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/InventoryUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Items.ItemDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Items.ItemDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Items.ItemType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Items.ItemType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Items.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Items.html"
         }
       },
       "version": ""
