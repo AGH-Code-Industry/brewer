@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using CoinPackage.Debugging;
+using DataPersistence;
 using Settings;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -28,10 +29,14 @@ namespace MainMenu {
         }
 
         private void OnNewGame() {
-            SceneManager.LoadScene(DevSet.I.appSettings.dormitorySceneName, LoadSceneMode.Single);
+            DataPersistenceManager.I.CreateNewGame();
+            SceneManager.LoadScene(DevSet.I.appSettings.gameManagerSceneName, LoadSceneMode.Single);
         }
-        
-        private void OnContinue(){_logger.LogWarning($"Option {"Continue" % Colorize.Red} is not yet implemented.");}
+
+        private void OnContinue() {
+            DataPersistenceManager.I.LoadSave(DevSet.I.appSettings.defaultSaveName);
+            SceneManager.LoadScene(DevSet.I.appSettings.gameManagerSceneName, LoadSceneMode.Single);
+        }
         private void OnOptions(){_logger.LogWarning($"Option {"Options" % Colorize.Red} is not yet implemented.");}
         private void OnQuit() { UnityEngine.Application.Quit(); }
     }

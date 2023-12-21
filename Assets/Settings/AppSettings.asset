@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstSceneName: MainMenu
   mainMenuSceneName: MainMenu
-  houseSceneName: _placeholder
-  worldSceneName: _placeholder
+  gameManagerSceneName: GameManager
+  dormitorySceneName: _placeholder
+  townSceneName: _placeholder
+  itemsResPath: Items
+  defaultSaveName: dupaa
