@@ -8,7 +8,7 @@ using UnityEditor.SceneManagement;
 public static class DefaultSceneLoader
 {
     static DefaultSceneLoader(){
-        SceneAsset entryScene = AssetDatabase.LoadAssetAtPath<SceneAsset>("Assets/Scenes/Town.unity");
+        SceneAsset entryScene = AssetDatabase.LoadAssetAtPath<SceneAsset>("Assets/Scenes/Entry.unity");
         if (entryScene != null)
             EditorSceneManager.playModeStartScene = entryScene;
         else
