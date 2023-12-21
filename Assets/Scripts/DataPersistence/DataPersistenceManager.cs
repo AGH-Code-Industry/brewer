@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using CoinPackage.Debugging;
+using DataPersistence.Data;
 using Settings;
 using UnityEngine;
 using Utils;

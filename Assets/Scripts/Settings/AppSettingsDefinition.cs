@@ -16,6 +16,10 @@ namespace Settings {
         [Tooltip("Scene where player gathers resources, farms etc.")]
         public string townSceneName = "_placeholder";
 
+
+        [Header("Resource paths")]
+        public string itemsResPath = "Items";
+
         
         [Header("Data Persistence")]
         public string defaultSaveName;
