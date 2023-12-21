@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class TrashCan : MonoBehaviour, Interactable
 {
+    public Material material;
+
+    void Start()
+    {
+        material = GetComponent<SpriteRenderer>().material;
+    }
+
     public void OnCanBeInteractedWithBegin()
     {
-        Debug.Log("begin");
+        material.SetFloat("_Opacity", 1.0f);
     }
 
     public void OnCanBeInteractedWithEnd()
     {
-        Debug.Log("end");
+        material.SetFloat("_Opacity", 0.0f);
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         
