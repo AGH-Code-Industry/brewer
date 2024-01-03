@@ -2,18 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using CustomInput;
+using Settings;
 
 public class PlayerMovementComponent : MonoBehaviour {
-    public float movementSpeed;
-    private Rigidbody2D rigidBody;
+    private Rigidbody2D _rigidBody;
 
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody2D>();
+        _rigidBody = GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate() {
         var direction = CInput.TownNavigationAxis.normalized;
-        rigidBody.velocity = direction * movementSpeed;
+        _rigidBody.velocity = direction * DevSet.I.townSettings.movementSpeed;
     }
 }

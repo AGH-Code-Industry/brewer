@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface Interactable
 {
-    void OnCanBeInteractedWithBegin();
-    void OnCanBeInteractedWithEnd();
+    void EnteredInteractionRange();
+    void LeftInteractionRange();
 }

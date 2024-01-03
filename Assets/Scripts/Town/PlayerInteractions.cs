@@ -1,3 +1,4 @@
+using Settings;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -5,19 +6,13 @@ using UnityEngine;
 
 public class PlayerInteractions : MonoBehaviour
 {
-    private float interactionRadius = 3.0f;
-    HashSet<Interactable> oldInteractibles = new HashSet<Interactable>();
-
-    void Start()
-    {
-
-    }
+    HashSet<Interactable> oldInteractables = new HashSet<Interactable>();
 
     void Update()
     {
         List<Collider2D> result = new List<Collider2D>();
         Physics2D.OverlapCircle(transform.position,
-            interactionRadius,
+            DevSet.I.townSettings.interactionRadius,
             new ContactFilter2D()
             {
                 layerMask = LayerMask.GetMask("Interactable"),
@@ -28,22 +23,22 @@ public class PlayerInteractions : MonoBehaviour
 
         var newInteractables = new HashSet<Interactable>(result.Select(x => x.GetComponent<Interactable>()));
 
-        foreach (var interactible in newInteractables)
+        foreach (var interactable in newInteractables)
         {
-            if (!oldInteractibles.Contains(interactible))
+            if (!oldInteractables.Contains(interactable))
             {
-                interactible.OnCanBeInteractedWithBegin();
+                interactable.EnteredInteractionRange();
             }
         }
 
-        foreach (var interactible in oldInteractibles)
+        foreach (var interactable in oldInteractables)
         {
-            if (!newInteractables.Contains(interactible))
+            if (!newInteractables.Contains(interactable))
             {
-                interactible.OnCanBeInteractedWithEnd();
+                interactable.LeftInteractionRange();
             }
         }
 
-        oldInteractibles = newInteractables;
+        oldInteractables = newInteractables;
     }
 }

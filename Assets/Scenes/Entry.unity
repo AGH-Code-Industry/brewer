@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   appSettings: {fileID: 11400000, guid: 5ece69d01ee21114497c0047428a94e8, type: 2}
+  townSettings: {fileID: 11400000, guid: 67aa6ae8125a5ab45867efd850c8c340, type: 2}
   defSaveData: {fileID: 11400000, guid: d73b24d4929cc0444b2707916c677772, type: 2}
 --- !u!114 &298334224
 MonoBehaviour:

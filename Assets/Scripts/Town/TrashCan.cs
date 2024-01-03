@@ -4,25 +4,20 @@ using UnityEngine;
 
 public class TrashCan : MonoBehaviour, Interactable
 {
-    public Material material;
+    Material material;
 
     void Start()
     {
         material = GetComponent<SpriteRenderer>().material;
     }
 
-    public void OnCanBeInteractedWithBegin()
+    public void EnteredInteractionRange()
     {
         material.SetFloat("_Opacity", 1.0f);
     }
 
-    public void OnCanBeInteractedWithEnd()
+    public void LeftInteractionRange()
     {
         material.SetFloat("_Opacity", 0.0f);
-    }
-
-    void Update()
-    {
-        
     }
 }
