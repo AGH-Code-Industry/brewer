@@ -16,6 +16,6 @@ MonoBehaviour:
   mainMenuSceneName: MainMenu
   gameManagerSceneName: GameManager
   dormitorySceneName: _placeholder
-  townSceneName: _placeholder
+  townSceneName: Town
   itemsResPath: Items
   defaultSaveName: dupaa
