@@ -9,9 +9,10 @@ using Settings;
 using UnityEngine;
 using UnityEngine.Events;
 using Utils;
+using Utils.Singleton;
 
 namespace InventoryBackend {
-    public class Inventory : Utils.Singleton.Singleton<Inventory>, IDataPersistence {
+    public class Inventory : Singleton<Inventory>, IDataPersistence {
         /// <summary>
         /// Fires always when content of inventory changes.
         /// </summary>
@@ -19,10 +20,6 @@ namespace InventoryBackend {
         
         private readonly Dictionary<ItemDefinition, ushort> _items = new Dictionary<ItemDefinition, ushort>();
         private readonly CLogger _logger = Loggers.LoggersList[Loggers.LoggerType.INVENTORY];
-
-        protected override void Awake() {
-            base.Awake();
-        }
 
         /// <summary>
         /// Get all items stored in inventory.
