@@ -142,7 +142,7 @@
   "api/InventoryBackend.Inventory.html": {
     "href": "api/InventoryBackend.Inventory.html",
     "title": "Class Inventory | Czasoport Documentation",
-    "keywords": "Class Inventory Namespace InventoryBackend public class Inventory : Singleton<Inventory>, IDataPersistence Inheritance object Singleton<Inventory> Inventory Implements IDataPersistence Inherited Members Singleton<Inventory>.I Fields inventoryUpdated Fires always when content of inventory changes. public UnityEvent inventoryUpdated Field Value UnityEvent Methods Awake() protected override void Awake() GetAllItems() Get all items stored in inventory. public Dictionary<ItemDefinition, ushort> GetAllItems() Returns Dictionary<ItemDefinition, ushort> GetItemCount(ItemDefinition) How many of specific item does player has. public ushort GetItemCount(ItemDefinition item) Parameters item ItemDefinition Item to check. Returns ushort Number of items of this type in inventory. InsertItem(ItemDefinition, ushort) Inserts new item into inventory or updates count of this item in the inventory. public void InsertItem(ItemDefinition item, ushort count) Parameters item ItemDefinition What item to put into the inventory. count ushort How many items to put into the inventory. LoadPersistentData(GameData) public void LoadPersistentData(GameData gameData) Parameters gameData GameData RemoveItem(ItemDefinition, ushort) Remove specific count of items from the inventory. Count cannot be less than stored amount of items. When number of items after the operation drops to 0, item will be removed. public bool RemoveItem(ItemDefinition item, ushort count) Parameters item ItemDefinition What item to remove. count ushort How many items to remove. Returns bool True if operation was successful and items were removed, false if number of items requested to remove was greater than number of stored items or in case of any other failure. Exceptions InvBadValueException SavePersistentData(ref GameData) public void SavePersistentData(ref GameData gameData) Parameters gameData GameData"
+    "keywords": "Class Inventory Namespace InventoryBackend public class Inventory : Singleton<Inventory>, IDataPersistence Inheritance object Singleton<Inventory> Inventory Implements IDataPersistence Inherited Members Singleton<Inventory>.I Singleton<Inventory>.Awake() Fields inventoryUpdated Fires always when content of inventory changes. public UnityEvent inventoryUpdated Field Value UnityEvent Methods GetAllItems() Get all items stored in inventory. public Dictionary<ItemDefinition, ushort> GetAllItems() Returns Dictionary<ItemDefinition, ushort> GetItemCount(ItemDefinition) How many of specific item does player has. public ushort GetItemCount(ItemDefinition item) Parameters item ItemDefinition Item to check. Returns ushort Number of items of this type in inventory. InsertItem(ItemDefinition, ushort) Inserts new item into inventory or updates count of this item in the inventory. public void InsertItem(ItemDefinition item, ushort count) Parameters item ItemDefinition What item to put into the inventory. count ushort How many items to put into the inventory. LoadPersistentData(GameData) public void LoadPersistentData(GameData gameData) Parameters gameData GameData RemoveItem(ItemDefinition, ushort) Remove specific count of items from the inventory. Count cannot be less than stored amount of items. When number of items after the operation drops to 0, item will be removed. public bool RemoveItem(ItemDefinition item, ushort count) Parameters item ItemDefinition What item to remove. count ushort How many items to remove. Returns bool True if operation was successful and items were removed, false if number of items requested to remove was greater than number of stored items or in case of any other failure. Exceptions InvBadValueException SavePersistentData(ref GameData) public void SavePersistentData(ref GameData gameData) Parameters gameData GameData"
   },
   "api/InventoryBackend.Test.TestInventory.html": {
     "href": "api/InventoryBackend.Test.TestInventory.html",
@@ -207,12 +207,52 @@
   "api/Settings.DevSet.html": {
     "href": "api/Settings.DevSet.html",
     "title": "Class DevSet | Czasoport Documentation",
-    "keywords": "Class DevSet Namespace Settings public class DevSet : Singleton<DevSet> Inheritance object Singleton<DevSet> DevSet Inherited Members Singleton<DevSet>.I Singleton<DevSet>.Awake() Fields appSettings public AppSettingsDefinition appSettings Field Value AppSettingsDefinition defSaveData public DefaultSaveDataDefinition defSaveData Field Value DefaultSaveDataDefinition"
+    "keywords": "Class DevSet Namespace Settings public class DevSet : Singleton<DevSet> Inheritance object Singleton<DevSet> DevSet Inherited Members Singleton<DevSet>.I Singleton<DevSet>.Awake() Fields appSettings public AppSettingsDefinition appSettings Field Value AppSettingsDefinition defSaveData public DefaultSaveDataDefinition defSaveData Field Value DefaultSaveDataDefinition townSettings public TownSettingsDefinition townSettings Field Value TownSettingsDefinition"
+  },
+  "api/Settings.TownSettingsDefinition.html": {
+    "href": "api/Settings.TownSettingsDefinition.html",
+    "title": "Class TownSettingsDefinition | Czasoport Documentation",
+    "keywords": "Class TownSettingsDefinition Namespace Settings public class TownSettingsDefinition : ScriptableObject Inheritance object TownSettingsDefinition Fields interactionRadius public float interactionRadius Field Value float movementSpeed public float movementSpeed Field Value float"
   },
   "api/Settings.html": {
     "href": "api/Settings.html",
     "title": "Namespace Settings | Czasoport Documentation",
-    "keywords": "Namespace Settings Classes AppSettingsDefinition DefaultSaveDataDefinition Settings for entire application that defines variables for startup, core processes and shutdown DevSet"
+    "keywords": "Namespace Settings Classes AppSettingsDefinition DefaultSaveDataDefinition Settings for entire application that defines variables for startup, core processes and shutdown DevSet TownSettingsDefinition"
+  },
+  "api/Town.CameraFollowPlayerComponent.html": {
+    "href": "api/Town.CameraFollowPlayerComponent.html",
+    "title": "Class CameraFollowPlayerComponent | Czasoport Documentation",
+    "keywords": "Class CameraFollowPlayerComponent Namespace Town public class CameraFollowPlayerComponent : MonoBehaviour Inheritance object CameraFollowPlayerComponent Fields player public Transform player Field Value Transform"
+  },
+  "api/Town.IInteractable.html": {
+    "href": "api/Town.IInteractable.html",
+    "title": "Interface IInteractable | Czasoport Documentation",
+    "keywords": "Interface IInteractable Namespace Town public interface IInteractable Methods EnteredInteractionRange() void EnteredInteractionRange() LeftInteractionRange() void LeftInteractionRange()"
+  },
+  "api/Town.PlayerInteractions.html": {
+    "href": "api/Town.PlayerInteractions.html",
+    "title": "Class PlayerInteractions | Czasoport Documentation",
+    "keywords": "Class PlayerInteractions Namespace Town public class PlayerInteractions : MonoBehaviour Inheritance object PlayerInteractions"
+  },
+  "api/Town.PlayerMovementComponent.html": {
+    "href": "api/Town.PlayerMovementComponent.html",
+    "title": "Class PlayerMovementComponent | Czasoport Documentation",
+    "keywords": "Class PlayerMovementComponent Namespace Town public class PlayerMovementComponent : MonoBehaviour Inheritance object PlayerMovementComponent"
+  },
+  "api/Town.Town.TrashCan.html": {
+    "href": "api/Town.Town.TrashCan.html",
+    "title": "Class TrashCan | Czasoport Documentation",
+    "keywords": "Class TrashCan Namespace Town.Town public class TrashCan : MonoBehaviour, IInteractable Inheritance object TrashCan Implements IInteractable Methods EnteredInteractionRange() public void EnteredInteractionRange() LeftInteractionRange() public void LeftInteractionRange()"
+  },
+  "api/Town.Town.html": {
+    "href": "api/Town.Town.html",
+    "title": "Namespace Town.Town | Czasoport Documentation",
+    "keywords": "Namespace Town.Town Classes TrashCan"
+  },
+  "api/Town.html": {
+    "href": "api/Town.html",
+    "title": "Namespace Town | Czasoport Documentation",
+    "keywords": "Namespace Town Classes CameraFollowPlayerComponent PlayerInteractions PlayerMovementComponent Interfaces IInteractable"
   },
   "api/Utils.Attributes.ObjectIdentifierAttribute.html": {
     "href": "api/Utils.Attributes.ObjectIdentifierAttribute.html",

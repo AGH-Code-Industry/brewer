@@ -442,10 +442,90 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Settings.TownSettingsDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Settings.TownSettingsDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Settings.yml",
       "output": {
         ".html": {
           "relative_path": "api/Settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Town.CameraFollowPlayerComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Town.CameraFollowPlayerComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Town.IInteractable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Town.IInteractable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Town.PlayerInteractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Town.PlayerInteractions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Town.PlayerMovementComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Town.PlayerMovementComponent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Town.Town.TrashCan.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Town.Town.TrashCan.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Town.Town.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Town.Town.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Town.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Town.html"
         }
       },
       "version": ""
