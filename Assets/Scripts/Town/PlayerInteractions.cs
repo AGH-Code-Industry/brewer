@@ -1,44 +1,46 @@
 using Settings;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Town;
 using UnityEngine;
 
-public class PlayerInteractions : MonoBehaviour
-{
-    HashSet<Interactable> oldInteractables = new HashSet<Interactable>();
-
-    void Update()
+namespace Town {
+    public class PlayerInteractions : MonoBehaviour
     {
-        List<Collider2D> result = new List<Collider2D>();
-        Physics2D.OverlapCircle(transform.position,
-            DevSet.I.townSettings.interactionRadius,
-            new ContactFilter2D()
-            {
-                layerMask = LayerMask.GetMask("Interactable"),
-                useLayerMask = true,
-                useTriggers = true
-            },
-            result);
+        private HashSet<IInteractable> _oldInteractables = new HashSet<IInteractable>();
 
-        var newInteractables = new HashSet<Interactable>(result.Select(x => x.GetComponent<Interactable>()));
-
-        foreach (var interactable in newInteractables)
+        void Update()
         {
-            if (!oldInteractables.Contains(interactable))
-            {
-                interactable.EnteredInteractionRange();
-            }
-        }
+            List<Collider2D> result = new List<Collider2D>();
+            Physics2D.OverlapCircle(transform.position,
+                DevSet.I.townSettings.interactionRadius,
+                new ContactFilter2D()
+                {
+                    layerMask = LayerMask.GetMask("Interactable"),
+                    useLayerMask = true,
+                    useTriggers = true
+                },
+                result);
 
-        foreach (var interactable in oldInteractables)
-        {
-            if (!newInteractables.Contains(interactable))
-            {
-                interactable.LeftInteractionRange();
-            }
-        }
+            var newInteractables = new HashSet<IInteractable>(result.Select(x => x.GetComponent<IInteractable>()));
 
-        oldInteractables = newInteractables;
+            foreach (var interactable in newInteractables)
+            {
+                if (!_oldInteractables.Contains(interactable))
+                {
+                    interactable.EnteredInteractionRange();
+                }
+            }
+
+            foreach (var interactable in _oldInteractables)
+            {
+                if (!newInteractables.Contains(interactable))
+                {
+                    interactable.LeftInteractionRange();
+                }
+            }
+
+            _oldInteractables = newInteractables;
+        }
     }
 }

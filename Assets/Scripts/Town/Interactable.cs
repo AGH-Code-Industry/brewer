@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface Interactable
-{
-    void EnteredInteractionRange();
-    void LeftInteractionRange();
+namespace Town {
+    public interface IInteractable
+    {
+        void EnteredInteractionRange();
+        void LeftInteractionRange();
+    }
 }

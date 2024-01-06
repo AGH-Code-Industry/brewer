@@ -4,16 +4,18 @@ using UnityEngine;
 using CustomInput;
 using Settings;
 
-public class PlayerMovementComponent : MonoBehaviour {
-    private Rigidbody2D _rigidBody;
+namespace Town {
+    public class PlayerMovementComponent : MonoBehaviour {
+        private Rigidbody2D _rigidBody;
 
-    void Start()
-    {
-        _rigidBody = GetComponent<Rigidbody2D>();
-    }
+        void Start()
+        {
+            _rigidBody = GetComponent<Rigidbody2D>();
+        }
 
-    private void FixedUpdate() {
-        var direction = CInput.TownNavigationAxis.normalized;
-        _rigidBody.velocity = direction * DevSet.I.townSettings.movementSpeed;
+        private void FixedUpdate() {
+            var direction = CInput.TownNavigationAxis.normalized;
+            _rigidBody.velocity = direction * DevSet.I.townSettings.movementSpeed;
+        }
     }
 }
