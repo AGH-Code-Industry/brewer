@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccb00166b2971e4f80b716b1587a3a4, type: 3}
   m_Name: DefaultSaveData
   m_EditorClassIdentifier: 
-  currentPlace: 0
+  currentPlace: 1

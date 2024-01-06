@@ -1,4 +1,4 @@
-﻿using DataPersistence.Data;
+using DataPersistence.Data;
 
 namespace DataPersistence {
     public interface IDataPersistence {

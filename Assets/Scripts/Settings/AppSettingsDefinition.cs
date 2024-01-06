@@ -17,13 +17,11 @@ namespace Settings {
         public string dormitorySceneName = "_placeholder";
         
         [Tooltip("Scene where player gathers resources, farms etc.")]
-        public string townSceneName = "_placeholder";
-
+        public string townSceneName = "Town";
 
         [Header("Resource paths")]
         public string itemsResPath = "Items";
 
-        
         [Header("Data Persistence")]
         public string defaultSaveName;
     }   
