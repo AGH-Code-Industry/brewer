@@ -22,6 +22,11 @@ namespace Town {
             {
                 _material.SetFloat("_Opacity", 0.0f);
             }
+
+            public void Interact()
+            {
+                Debug.Log("interacted");
+            }
         }
     }
 }

@@ -114,6 +114,15 @@ namespace CustomInput
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Interact"",
+                    ""type"": ""Button"",
+                    ""id"": ""f07ef0c3-5c5d-4aaf-a4b0-0d3e74fc9e03"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -180,6 +189,17 @@ namespace CustomInput
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Run"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e8d99cde-f82d-4e49-9bd5-199f0f960006"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -253,6 +273,7 @@ namespace CustomInput
             m_Town = asset.FindActionMap("Town", throwIfNotFound: true);
             m_Town_Navigation = m_Town.FindAction("Navigation", throwIfNotFound: true);
             m_Town_Run = m_Town.FindAction("Run", throwIfNotFound: true);
+            m_Town_Interact = m_Town.FindAction("Interact", throwIfNotFound: true);
             // PauseMenu
             m_PauseMenu = asset.FindActionMap("PauseMenu", throwIfNotFound: true);
             m_PauseMenu_Newaction = m_PauseMenu.FindAction("New action", throwIfNotFound: true);
@@ -384,12 +405,14 @@ namespace CustomInput
         private List<ITownActions> m_TownActionsCallbackInterfaces = new List<ITownActions>();
         private readonly InputAction m_Town_Navigation;
         private readonly InputAction m_Town_Run;
+        private readonly InputAction m_Town_Interact;
         public struct TownActions
         {
             private @InputActions m_Wrapper;
             public TownActions(@InputActions wrapper) { m_Wrapper = wrapper; }
             public InputAction @Navigation => m_Wrapper.m_Town_Navigation;
             public InputAction @Run => m_Wrapper.m_Town_Run;
+            public InputAction @Interact => m_Wrapper.m_Town_Interact;
             public InputActionMap Get() { return m_Wrapper.m_Town; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -405,6 +428,9 @@ namespace CustomInput
                 @Run.started += instance.OnRun;
                 @Run.performed += instance.OnRun;
                 @Run.canceled += instance.OnRun;
+                @Interact.started += instance.OnInteract;
+                @Interact.performed += instance.OnInteract;
+                @Interact.canceled += instance.OnInteract;
             }
 
             private void UnregisterCallbacks(ITownActions instance)
@@ -415,6 +441,9 @@ namespace CustomInput
                 @Run.started -= instance.OnRun;
                 @Run.performed -= instance.OnRun;
                 @Run.canceled -= instance.OnRun;
+                @Interact.started -= instance.OnInteract;
+                @Interact.performed -= instance.OnInteract;
+                @Interact.canceled -= instance.OnInteract;
             }
 
             public void RemoveCallbacks(ITownActions instance)
@@ -534,6 +563,7 @@ namespace CustomInput
         {
             void OnNavigation(InputAction.CallbackContext context);
             void OnRun(InputAction.CallbackContext context);
+            void OnInteract(InputAction.CallbackContext context);
         }
         public interface IPauseMenuActions
         {

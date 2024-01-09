@@ -7,5 +7,6 @@ namespace Town {
     {
         void EnteredInteractionRange();
         void LeftInteractionRange();
+        void Interact();
     }
 }

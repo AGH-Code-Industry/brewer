@@ -1,17 +1,19 @@
+using CustomInput;
 using Settings;
 using System.Collections.Generic;
 using System.Linq;
 using Town;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Town {
     public class PlayerInteractions : MonoBehaviour
     {
-        private HashSet<IInteractable> _oldInteractables = new HashSet<IInteractable>();
+        private Collider2D _currentInteractable = null;
 
         void Update()
         {
-            List<Collider2D> result = new List<Collider2D>();
+            List<Collider2D> newInteractables = new List<Collider2D>();
             Physics2D.OverlapCircle(transform.position,
                 DevSet.I.townSettings.interactionRadius,
                 new ContactFilter2D()
@@ -20,27 +22,48 @@ namespace Town {
                     useLayerMask = true,
                     useTriggers = true
                 },
-                result);
+                newInteractables);
 
-            var newInteractables = new HashSet<IInteractable>(result.Select(x => x.GetComponent<IInteractable>()));
+            float closestInteractibleDistance = float.PositiveInfinity;
+            Collider2D closestInteractable = null;
 
             foreach (var interactable in newInteractables)
             {
-                if (!_oldInteractables.Contains(interactable))
+                // Maybe later change so you can choose which collider is used.
+                var playerInteractionCollider = GetComponent<Collider2D>();
+                var distance = Physics2D.Distance(playerInteractionCollider, interactable).distance;
+                if (distance < closestInteractibleDistance)
                 {
-                    interactable.EnteredInteractionRange();
+                    closestInteractable = interactable;
+                    closestInteractibleDistance = distance;
                 }
             }
 
-            foreach (var interactable in _oldInteractables)
+            if (closestInteractable != null)
             {
-                if (!newInteractables.Contains(interactable))
+                if (_currentInteractable == null)
                 {
-                    interactable.LeftInteractionRange();
+                    closestInteractable.GetComponent<IInteractable>().EnteredInteractionRange();
+                    _currentInteractable = closestInteractable;
                 }
+                else if (_currentInteractable != closestInteractable)
+                {
+                    _currentInteractable.GetComponent<IInteractable>().LeftInteractionRange();
+                    closestInteractable.GetComponent<IInteractable>().EnteredInteractionRange();
+                    _currentInteractable = closestInteractable;
+                }
+            } 
+            else if (_currentInteractable != null)
+            {
+                _currentInteractable.GetComponent<IInteractable>().LeftInteractionRange();
+                _currentInteractable = null;
             }
 
-            _oldInteractables = newInteractables;
+            
+            if (_currentInteractable != null && CInput.InputActions.Town.Interact.triggered)
+            {
+                _currentInteractable.GetComponent<IInteractable>().Interact();
+            }
         }
     }
 }
