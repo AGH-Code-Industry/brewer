@@ -8,7 +8,6 @@ namespace Town {
     public class PlayerInteractions : MonoBehaviour
     {
         private HashSet<IInteractable> _oldInteractables = new HashSet<IInteractable>();
-
         void Update()
         {
             List<Collider2D> result = new List<Collider2D>();
