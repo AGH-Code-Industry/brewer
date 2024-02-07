@@ -4,6 +4,7 @@ using System.Linq;
 using TMPro;
 using UnityEditor.Rendering.Universal;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.UIElements;
 
 public class NotificationSystem : MonoBehaviour
@@ -15,114 +16,124 @@ public class NotificationSystem : MonoBehaviour
 
     class Notification
     {
-        public float secondsToDisplayFor;
-        public GameObject notificationObject;
+        public float displaySecondsLeft;
+        public float fadeSecondsLeft;
+        public GameObject gameObject;
         public bool positionSet;
     }
 
-    Queue<Notification> notificationObjects = new Queue<Notification>();
-
-    private void Start()
-    {
-    }
+    LinkedList<Notification> displayedNotifications = new LinkedList<Notification>();
 
     void AddNotification(string message)
     {
         notificationQueue.Enqueue(message);
     }
 
-    float notificationDisplaySeconds = 4.0f;
-    float notificationFadeSeconds = 0.5f;
-    int maxNotificationsToDisplayAtOnce = 4;
+    const float displaySeconds = 4.0f;
+    const float fadeSeconds = 0.5f;
+    const int maxNotificationsToDisplayAtOnce = 4;
+    const float appearingSpeed = 500.0f;
+
+    int testMessagesSent = 0;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.T)) 
-        { 
-            AddNotification("Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+        {
+            testMessagesSent++;
+            AddNotification(testMessagesSent.ToString() + ". Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
         }
 
-        // Reverse to set positions from the top.
-        RectTransform notificationAbove = null;
-        foreach (var notification in notificationObjects.Reverse())
+        RectTransform notificationBefore = null;
+        foreach (var notification in displayedNotifications.Reverse())
         {
-            if (!notification.positionSet)
+            var transform = notification.gameObject.GetComponent<RectTransform>();
+
+            if (notification.positionSet)
             {
-                notification.positionSet = true;
+                notificationBefore = transform;
+                continue;
+            }
 
-                var notificationRenderer = notification.notificationObject.GetComponent<CanvasGroup>();
-                var notificationTransform = notification.notificationObject.GetComponent<RectTransform>();
-                notificationRenderer.alpha = 1.0f;
+            notification.positionSet = true;
 
-                var position = notificationTransform.anchoredPosition;
-                bool isTopmostNotification = notificationAbove == null;
-                if (isTopmostNotification)
-                {
-                    position.y = -notificationTransform.rect.height;
-                } 
-                else
-                {
-                    position.y = notificationAbove.position.y - notificationTransform.rect.height;
-                }
-                //position = Vector2.zero;
-                notificationTransform.anchoredPosition = position;
-                notificationAbove = notificationTransform;
+            var renderer = notification.gameObject.GetComponent<CanvasGroup>();
+            renderer.alpha = 1.0f;
+
+            var position = transform.anchoredPosition;
+            bool isOldestNotification = notificationBefore == null;
+            if (isOldestNotification)
+            {
+                position.y = -transform.rect.height;
+            }
+            else
+            {
+                position.y = notificationBefore.position.y - transform.rect.height;
+            }
+
+            transform.anchoredPosition = position;
+            notificationBefore = transform;
+        }
+
+        bool moveObjects = false;
+        float distanceToMoveUpBy = Time.deltaTime * appearingSpeed;
+        if (displayedNotifications.Count > 0)
+        {
+            var newestNotificationPosition = displayedNotifications.First().gameObject.GetComponent<RectTransform>().anchoredPosition;
+            var isNotFullyVisible = newestNotificationPosition.y < 0.0f;
+            if (isNotFullyVisible)
+            {
+                distanceToMoveUpBy = Mathf.Min(distanceToMoveUpBy, -newestNotificationPosition.y);
+                moveObjects = true;
             }
         }
 
-        bool moveObjectsUp = false;
-        float distanceToMoveUpBy = Time.deltaTime * 500.0f;
-        foreach (var notification in notificationObjects)
+        foreach (var notification in displayedNotifications)
         {
-            var transform = notification.notificationObject.GetComponent<RectTransform>();
-            if (transform.anchoredPosition.y < 0.0f)
+            notification.displaySecondsLeft -= Time.deltaTime;
+            if (moveObjects)
             {
-                distanceToMoveUpBy = Mathf.Min(distanceToMoveUpBy, -transform.anchoredPosition.y);
-                moveObjectsUp = true;
-                break;
-            }
-        }
-
-        foreach (var notification in notificationObjects)
-        {
-            notification.secondsToDisplayFor -= Time.deltaTime;
-            if (moveObjectsUp)
-            {
-                var transform = notification.notificationObject.GetComponent<RectTransform>();
+                var transform = notification.gameObject.GetComponent<RectTransform>();
                 var position = transform.anchoredPosition;
                 position.y += distanceToMoveUpBy;
                 transform.anchoredPosition = position;
             }
         }
 
-        Notification topNotification;
-        if (notificationObjects.TryPeek(out topNotification))
+        if (displayedNotifications.Count > 0)
         {
-            if (topNotification.secondsToDisplayFor < notificationFadeSeconds)
+            var oldestNotification = displayedNotifications.Last();
+            var topNotificationPosition = oldestNotification.gameObject.GetComponent<RectTransform>().anchoredPosition;
+            if (oldestNotification.displaySecondsLeft <= 0)
             {
-                var notificationRenderer = topNotification.notificationObject.GetComponent<CanvasGroup>();
-                notificationRenderer.alpha = topNotification.secondsToDisplayFor / notificationFadeSeconds;
-            }
+                var isFullyVisible = topNotificationPosition.y >= 0.0f;
+                if (isFullyVisible)
+                {
+                    oldestNotification.fadeSecondsLeft -= Time.deltaTime;
+                }
 
-            if (topNotification.secondsToDisplayFor <= 0.0f)
-            {
-                Destroy(topNotification.notificationObject);
-                notificationObjects.Dequeue();
+                var notificationRenderer = oldestNotification.gameObject.GetComponent<CanvasGroup>();
+                notificationRenderer.alpha = oldestNotification.fadeSecondsLeft / fadeSeconds;
+                if (oldestNotification.fadeSecondsLeft <= 0.0f)
+                {
+                    Destroy(oldestNotification.gameObject);
+                    displayedNotifications.RemoveLast();
+                }
             }
         }
 
         string message;
-        if (notificationObjects.Count < maxNotificationsToDisplayAtOnce && notificationQueue.TryDequeue(out message))
+        if (displayedNotifications.Count < maxNotificationsToDisplayAtOnce && notificationQueue.TryDequeue(out message))
         {
             var notification = Instantiate(notificationPrefab, notificationContainer.transform);
             var textComponent = notification.transform.Find("Message").GetComponent<TextMeshProUGUI>();
             textComponent.text = message;
-            notificationObjects.Enqueue(new Notification
-            {
-                notificationObject = notification,
-                secondsToDisplayFor = notificationDisplaySeconds,
+            displayedNotifications.AddFirst(new Notification {
+                gameObject = notification,
+                displaySecondsLeft = displaySeconds,
+                fadeSecondsLeft = fadeSeconds,
                 // Cannot set position on this frame, because the size isn't computed yet.
-                positionSet = false
+                positionSet = false,
             });
             var notificationRenderer = notification.GetComponent<CanvasGroup>();
             notificationRenderer.alpha = 0.0f;
