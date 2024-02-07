@@ -5,60 +5,56 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class objectData : MonoBehaviour
+public class barrelData : MonoBehaviour
 {
-    public string name = "";
-    public string description = "";
     public bool isPicked = false;
+    public string pos;
     
     private bool isHover = false;
     private Vector2 mousePos;
     private Vector2 placeHolderPos;
     private Vector2 startPos;
-    private Collider2D hovBarrel;
+    
+    public List<string> content;
 
     public void OnMouseDown()
     {
         isPicked = true;
-        gameObject.layer = LayerMask.NameToLayer("Ignore Collisions");
+        startPos = transform.position;
     }
     public void OnMouseDrag()
     {
         mousePos = new Vector2(Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()).x,Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue()).y);
         transform.GetComponent<Rigidbody2D>().MovePosition(mousePos);
-
     }
     public void OnMouseUp()
     {
-        if (!isHover)
+        isPicked = false;
+        if (isHover)
         {
-            Vector2 screenPoint = transform.position;
-            transform.GetComponent<Rigidbody2D>().velocity = (mousePos-screenPoint)*20;
-            isPicked = false;
-            gameObject.layer = LayerMask.NameToLayer("Default");
+            transform.position = placeHolderPos;
         }
         else
         {
-            hovBarrel.GetComponent<barrelData>().content.Add(name);
-            Destroy(gameObject);
+            transform.position = startPos;
         }
-        
     }
 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Barrel" && other.GetComponent<barrelData>().pos == "Using")
+        if (other.tag == "Placeholder")
         {
             isHover = true;
-            hovBarrel = other;
+            placeHolderPos = other.GetComponent<Transform>().position;
+            pos = other.GetComponent<placeholder>().type.ToString();
         }
     }
     public void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Barrel")
+        if (other.tag == "Placeholder")
         {
             isHover = false;
-            hovBarrel = null;
+            pos = null;
         }
     }
     
