@@ -240,6 +240,34 @@ namespace CustomInput
                     ""isPartOfComposite"": false
                 }
             ]
+        },
+        {
+            ""name"": ""Testing"",
+            ""id"": ""7856266c-9e70-4d38-979a-f3a15f4f1ac0"",
+            ""actions"": [
+                {
+                    ""name"": ""SaveGame"",
+                    ""type"": ""Button"",
+                    ""id"": ""6bc4cb80-1f00-41d8-b4f6-62a6e2e35591"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""0cd9eaa8-cf7d-4e57-8da3-d967945b5b5d"",
+                    ""path"": ""<Keyboard>/f5"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""SaveGame"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
         }
     ],
     ""controlSchemes"": []
@@ -259,6 +287,9 @@ namespace CustomInput
             // AlwaysEnabled
             m_AlwaysEnabled = asset.FindActionMap("AlwaysEnabled", throwIfNotFound: true);
             m_AlwaysEnabled_Newaction = m_AlwaysEnabled.FindAction("New action", throwIfNotFound: true);
+            // Testing
+            m_Testing = asset.FindActionMap("Testing", throwIfNotFound: true);
+            m_Testing_SaveGame = m_Testing.FindAction("SaveGame", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -524,6 +555,52 @@ namespace CustomInput
             }
         }
         public AlwaysEnabledActions @AlwaysEnabled => new AlwaysEnabledActions(this);
+
+        // Testing
+        private readonly InputActionMap m_Testing;
+        private List<ITestingActions> m_TestingActionsCallbackInterfaces = new List<ITestingActions>();
+        private readonly InputAction m_Testing_SaveGame;
+        public struct TestingActions
+        {
+            private @InputActions m_Wrapper;
+            public TestingActions(@InputActions wrapper) { m_Wrapper = wrapper; }
+            public InputAction @SaveGame => m_Wrapper.m_Testing_SaveGame;
+            public InputActionMap Get() { return m_Wrapper.m_Testing; }
+            public void Enable() { Get().Enable(); }
+            public void Disable() { Get().Disable(); }
+            public bool enabled => Get().enabled;
+            public static implicit operator InputActionMap(TestingActions set) { return set.Get(); }
+            public void AddCallbacks(ITestingActions instance)
+            {
+                if (instance == null || m_Wrapper.m_TestingActionsCallbackInterfaces.Contains(instance)) return;
+                m_Wrapper.m_TestingActionsCallbackInterfaces.Add(instance);
+                @SaveGame.started += instance.OnSaveGame;
+                @SaveGame.performed += instance.OnSaveGame;
+                @SaveGame.canceled += instance.OnSaveGame;
+            }
+
+            private void UnregisterCallbacks(ITestingActions instance)
+            {
+                @SaveGame.started -= instance.OnSaveGame;
+                @SaveGame.performed -= instance.OnSaveGame;
+                @SaveGame.canceled -= instance.OnSaveGame;
+            }
+
+            public void RemoveCallbacks(ITestingActions instance)
+            {
+                if (m_Wrapper.m_TestingActionsCallbackInterfaces.Remove(instance))
+                    UnregisterCallbacks(instance);
+            }
+
+            public void SetCallbacks(ITestingActions instance)
+            {
+                foreach (var item in m_Wrapper.m_TestingActionsCallbackInterfaces)
+                    UnregisterCallbacks(item);
+                m_Wrapper.m_TestingActionsCallbackInterfaces.Clear();
+                AddCallbacks(instance);
+            }
+        }
+        public TestingActions @Testing => new TestingActions(this);
         public interface IDormitoryActions
         {
             void OnPrimaryMouseClicked(InputAction.CallbackContext context);
@@ -542,6 +619,10 @@ namespace CustomInput
         public interface IAlwaysEnabledActions
         {
             void OnNewaction(InputAction.CallbackContext context);
+        }
+        public interface ITestingActions
+        {
+            void OnSaveGame(InputAction.CallbackContext context);
         }
     }
 }

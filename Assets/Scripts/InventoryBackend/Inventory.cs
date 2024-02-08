@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using CoinPackage.Debugging;
 using DataPersistence;
 using DataPersistence.Data;
+using DataPersistence.HelperStructures;
 using InventoryBackend.Exceptions;
 using Items;
 using Settings;
@@ -20,6 +22,10 @@ namespace InventoryBackend {
         
         private readonly Dictionary<ItemDefinition, ushort> _items = new Dictionary<ItemDefinition, ushort>();
         private readonly CLogger _logger = Loggers.LoggersList[Loggers.LoggerType.INVENTORY];
+
+        private void Awake() {
+            LoadPersistentData(DataPersistenceManager.I.gameData);
+        }
 
         /// <summary>
         /// Get all items stored in inventory.
@@ -96,18 +102,28 @@ namespace InventoryBackend {
         public void LoadPersistentData(GameData gameData) {
             if (gameData.inventoryData.items.Count == 0) return;
             
+            _items.Clear();
             var assets = Resources.LoadAll(DevSet.I.appSettings.itemsResPath);
+            var items = 0;
+            var count = 0;
             foreach (var item in gameData.inventoryData.items) {
-                InsertItem((ItemDefinition)assets.First(asset => asset.name == item.Item1), item.Item2);
+                var asset = (ItemDefinition)assets.First(asset => asset.name == item.assetName);
+                InsertItem(asset, item.quantity);
+                items++;
+                count += item.quantity;
             }
+            _logger.Log($"Loaded {items % Colorize.Cyan} from the save, total count: {count % Colorize.Magenta}.");
             inventoryUpdated?.Invoke();
         }
 
         public void SavePersistentData(ref GameData gameData) {
-            List<(string, ushort)> itemsToSave = new List<(string, ushort)>();
+            List<InventoryEntry> itemsToSave = new List<InventoryEntry>();
+            var count = 0;
             foreach (var (key, value) in _items) {
-                itemsToSave.Add((key.name, value));
+                itemsToSave.Add(new InventoryEntry(key.name, value));
+                count += value;
             }
+            _logger.Log($"Saved {itemsToSave.Count % Colorize.Cyan} to the save, total count: {count % Colorize.Magenta}.");
             gameData.inventoryData.items = itemsToSave;
         }
     }

@@ -1,13 +1,12 @@
-﻿using Items;
-
-namespace DataPersistence.HelperStructures {
+﻿namespace DataPersistence.HelperStructures {
     [System.Serializable]
     public class InventoryEntry {
-        public ItemDefinition item;
+        public string assetName;
         public ushort quantity;
-
-        public (string, ushort) ToTuple() {
-            return (item.name, quantity);
+        
+        public InventoryEntry(string assetName, ushort quantity) {
+            this.assetName = assetName;
+            this.quantity = quantity;
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Settings {
         public PlaceType currentPlace;
         
         [Header("InventoryData")]
-        public InventoryEntries startingItems;
+        public DefaultInventoryEntries startingItems;
         
     }
 }
