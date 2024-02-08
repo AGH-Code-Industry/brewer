@@ -1,14 +1,19 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using DataPersistence.HelperStructures;
+using UnityEngine;
 using Utils.Globals;
 
 namespace Settings {
     /// <summary>
-    /// Settings for entire application that defines variables for startup, core processes and shutdown
+    /// Default values for when the new game is created.
     /// </summary>
     [CreateAssetMenu(fileName = "DefaultSaveData", menuName = "Settings/DefaultSaveData")]
     public class DefaultSaveDataDefinition : ScriptableObject {
         [Header("GameData")] 
         public PlaceType currentPlace;
+        
+        [Header("InventoryData")]
+        public InventoryEntries startingItems;
         
     }
 }

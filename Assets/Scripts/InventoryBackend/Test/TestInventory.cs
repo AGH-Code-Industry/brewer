@@ -28,7 +28,7 @@ namespace InventoryBackend.Test {
             _inventory.InsertItem(item1, 3);
             _inventory.InsertItem(item2, 5);
             _inventory.SavePersistentData(ref gameData);
-            foreach (var item in gameData.inventoryData.Items) {
+            foreach (var item in gameData.inventoryData.items) {
                 CDebug.Log(item);
             }
         }
@@ -36,8 +36,8 @@ namespace InventoryBackend.Test {
         void TestLoading() {
             if (!testLoad) return;
             GameData gameData = new GameData();
-            gameData.inventoryData.Items.Add(("DummyItem", 3));
-            gameData.inventoryData.Items.Add(("DummyBeer", 3));
+            gameData.inventoryData.items.Add(("DummyItem", 3));
+            gameData.inventoryData.items.Add(("DummyBeer", 3));
             _inventory.LoadPersistentData(gameData);
             foreach (var (item, count) in _inventory.GetAllItems()) {
                 CDebug.Log($"Item: {item}, Count {count}");

@@ -94,10 +94,10 @@ namespace InventoryBackend {
         }
 
         public void LoadPersistentData(GameData gameData) {
-            if (gameData.inventoryData.Items.Count == 0) return;
+            if (gameData.inventoryData.items.Count == 0) return;
             
             var assets = Resources.LoadAll(DevSet.I.appSettings.itemsResPath);
-            foreach (var item in gameData.inventoryData.Items) {
+            foreach (var item in gameData.inventoryData.items) {
                 InsertItem((ItemDefinition)assets.First(asset => asset.name == item.Item1), item.Item2);
             }
             inventoryUpdated?.Invoke();
@@ -108,7 +108,7 @@ namespace InventoryBackend {
             foreach (var (key, value) in _items) {
                 itemsToSave.Add((key.name, value));
             }
-            gameData.inventoryData.Items = itemsToSave;
+            gameData.inventoryData.items = itemsToSave;
         }
     }
 }
