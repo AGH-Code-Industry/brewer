@@ -12,7 +12,7 @@ using Utils;
 using Utils.Singleton;
 
 namespace InventoryBackend {
-    public class Inventory : Singleton<Inventory>, IDataPersistence {
+    public class Inventory : MonoBehaviour, IDataPersistence {
         /// <summary>
         /// Fires always when content of inventory changes.
         /// </summary>
@@ -36,7 +36,7 @@ namespace InventoryBackend {
         /// <param name="count">How many items to put into the inventory.</param>
         public void InsertItem(ItemDefinition item, ushort count) {
             if (count <= 0) {
-                throw new InvBadValueException("Cannot insert less than 1 item. Use RemoveItem instead.");
+                throw new InvBadValueException("Cannot insert less than 1 item.");
             }
             if (_items.TryGetValue(item, out var value)) {
                 _items[item] += count;

@@ -8,7 +8,7 @@ using Utils.Globals;
 using Utils.Singleton;
 
 namespace Application {
-    public class GameManager : Singleton<GameManager>
+    public class GameManager : MonoBehaviour
     {
         void Start()
         {

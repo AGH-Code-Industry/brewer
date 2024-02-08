@@ -11,7 +11,7 @@ using Utils;
 using Utils.Singleton;
 
 namespace MainMenu {
-    public class MainMenuManager : Singleton<MainMenuManager> {
+    public class MainMenuManager : MonoBehaviour {
         [Header("Buttons")] 
         [SerializeField] private Button newGameButton;
         [SerializeField] private Button continueButton;
@@ -20,8 +20,7 @@ namespace MainMenu {
 
         private readonly CLogger _logger = Loggers.LoggersList[Loggers.LoggerType.APPLICATION];
 
-        protected override void Awake() {
-            base.Awake();
+        private void Awake() {
             newGameButton.onClick.AddListener(OnNewGame);
             continueButton.onClick.AddListener(OnContinue);
             optionsButton.onClick.AddListener(OnOptions);
