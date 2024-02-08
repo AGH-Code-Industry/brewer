@@ -14,7 +14,7 @@ namespace Items {
         public Sprite uiImage;
 
         public override string ToString() {
-            return $"[Item: {itemName % Colorize.Cyan}, {type % Colorize.Green}]" % Colorize.Magenta;
+            return $"[Item ({type % Colorize.Green}): {itemName % Colorize.Cyan}]" % Colorize.Magenta;
         }
     }   
 }
