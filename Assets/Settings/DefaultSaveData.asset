@@ -13,3 +13,7 @@ MonoBehaviour:
   m_Name: DefaultSaveData
   m_EditorClassIdentifier: 
   currentPlace: 1
+  startingItems:
+    startingItems:
+    - item: {fileID: 11400000, guid: c31ae2f19602d3f40b12d4d6b3be76b8, type: 2}
+      quantity: 4

@@ -4,7 +4,7 @@ using Utils.Globals;
 namespace DataPersistence.Data {
     [System.Serializable]
     public class GameData {
-        public bool isDefaultData = true;
+        public bool isNewSave = true;
         public PlaceType currentPlace = DevSet.I.defSaveData.currentPlace;
         public DormitoryData dormData = new DormitoryData();
         public TownData townData = new TownData();

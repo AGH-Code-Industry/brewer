@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
+using DataPersistence.HelperStructures;
+using Settings;
 
 namespace DataPersistence.Data {
     [System.Serializable]
     public class InventoryData {
-        public List<(string, ushort)> Items = new List<(string, ushort)>();
+        public List<InventoryEntry> items = DevSet.I.defSaveData.startingItems.GetEntries();
     }
 }
