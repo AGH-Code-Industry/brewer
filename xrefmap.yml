@@ -691,6 +691,25 @@ references:
   isSpec: "True"
   fullName: CustomInput.InputActions.IPauseMenuActions.OnNewaction
   nameWithType: InputActions.IPauseMenuActions.OnNewaction
+- uid: CustomInput.InputActions.ITestingActions
+  name: InputActions.ITestingActions
+  href: api/CustomInput.InputActions.ITestingActions.html
+  commentId: T:CustomInput.InputActions.ITestingActions
+  fullName: CustomInput.InputActions.ITestingActions
+  nameWithType: InputActions.ITestingActions
+- uid: CustomInput.InputActions.ITestingActions.OnSaveGame(InputAction.CallbackContext)
+  name: OnSaveGame(CallbackContext)
+  href: api/CustomInput.InputActions.ITestingActions.html#CustomInput_InputActions_ITestingActions_OnSaveGame_InputAction_CallbackContext_
+  commentId: M:CustomInput.InputActions.ITestingActions.OnSaveGame(InputAction.CallbackContext)
+  fullName: CustomInput.InputActions.ITestingActions.OnSaveGame(InputAction.CallbackContext)
+  nameWithType: InputActions.ITestingActions.OnSaveGame(InputAction.CallbackContext)
+- uid: CustomInput.InputActions.ITestingActions.OnSaveGame*
+  name: OnSaveGame
+  href: api/CustomInput.InputActions.ITestingActions.html#CustomInput_InputActions_ITestingActions_OnSaveGame_
+  commentId: Overload:CustomInput.InputActions.ITestingActions.OnSaveGame
+  isSpec: "True"
+  fullName: CustomInput.InputActions.ITestingActions.OnSaveGame
+  nameWithType: InputActions.ITestingActions.OnSaveGame
 - uid: CustomInput.InputActions.ITownActions
   name: InputActions.ITownActions
   href: api/CustomInput.InputActions.ITownActions.html
@@ -884,6 +903,167 @@ references:
   fullName.vb: CustomInput.InputActions.PauseMenuActions.CType
   nameWithType: InputActions.PauseMenuActions.implicit operator
   nameWithType.vb: InputActions.PauseMenuActions.CType
+- uid: CustomInput.InputActions.Testing
+  name: Testing
+  href: api/CustomInput.InputActions.html#CustomInput_InputActions_Testing
+  commentId: P:CustomInput.InputActions.Testing
+  fullName: CustomInput.InputActions.Testing
+  nameWithType: InputActions.Testing
+- uid: CustomInput.InputActions.Testing*
+  name: Testing
+  href: api/CustomInput.InputActions.html#CustomInput_InputActions_Testing_
+  commentId: Overload:CustomInput.InputActions.Testing
+  isSpec: "True"
+  fullName: CustomInput.InputActions.Testing
+  nameWithType: InputActions.Testing
+- uid: CustomInput.InputActions.TestingActions
+  name: InputActions.TestingActions
+  href: api/CustomInput.InputActions.TestingActions.html
+  commentId: T:CustomInput.InputActions.TestingActions
+  fullName: CustomInput.InputActions.TestingActions
+  nameWithType: InputActions.TestingActions
+- uid: CustomInput.InputActions.TestingActions.#ctor(CustomInput.InputActions)
+  name: TestingActions(InputActions)
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions__ctor_CustomInput_InputActions_
+  commentId: M:CustomInput.InputActions.TestingActions.#ctor(CustomInput.InputActions)
+  name.vb: New(InputActions)
+  fullName: CustomInput.InputActions.TestingActions.TestingActions(CustomInput.InputActions)
+  fullName.vb: CustomInput.InputActions.TestingActions.New(CustomInput.InputActions)
+  nameWithType: InputActions.TestingActions.TestingActions(InputActions)
+  nameWithType.vb: InputActions.TestingActions.New(InputActions)
+- uid: CustomInput.InputActions.TestingActions.#ctor*
+  name: TestingActions
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions__ctor_
+  commentId: Overload:CustomInput.InputActions.TestingActions.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: CustomInput.InputActions.TestingActions.TestingActions
+  fullName.vb: CustomInput.InputActions.TestingActions.New
+  nameWithType: InputActions.TestingActions.TestingActions
+  nameWithType.vb: InputActions.TestingActions.New
+- uid: CustomInput.InputActions.TestingActions.AddCallbacks(CustomInput.InputActions.ITestingActions)
+  name: AddCallbacks(ITestingActions)
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_AddCallbacks_CustomInput_InputActions_ITestingActions_
+  commentId: M:CustomInput.InputActions.TestingActions.AddCallbacks(CustomInput.InputActions.ITestingActions)
+  fullName: CustomInput.InputActions.TestingActions.AddCallbacks(CustomInput.InputActions.ITestingActions)
+  nameWithType: InputActions.TestingActions.AddCallbacks(InputActions.ITestingActions)
+- uid: CustomInput.InputActions.TestingActions.AddCallbacks*
+  name: AddCallbacks
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_AddCallbacks_
+  commentId: Overload:CustomInput.InputActions.TestingActions.AddCallbacks
+  isSpec: "True"
+  fullName: CustomInput.InputActions.TestingActions.AddCallbacks
+  nameWithType: InputActions.TestingActions.AddCallbacks
+- uid: CustomInput.InputActions.TestingActions.Disable
+  name: Disable()
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_Disable
+  commentId: M:CustomInput.InputActions.TestingActions.Disable
+  fullName: CustomInput.InputActions.TestingActions.Disable()
+  nameWithType: InputActions.TestingActions.Disable()
+- uid: CustomInput.InputActions.TestingActions.Disable*
+  name: Disable
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_Disable_
+  commentId: Overload:CustomInput.InputActions.TestingActions.Disable
+  isSpec: "True"
+  fullName: CustomInput.InputActions.TestingActions.Disable
+  nameWithType: InputActions.TestingActions.Disable
+- uid: CustomInput.InputActions.TestingActions.Enable
+  name: Enable()
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_Enable
+  commentId: M:CustomInput.InputActions.TestingActions.Enable
+  fullName: CustomInput.InputActions.TestingActions.Enable()
+  nameWithType: InputActions.TestingActions.Enable()
+- uid: CustomInput.InputActions.TestingActions.Enable*
+  name: Enable
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_Enable_
+  commentId: Overload:CustomInput.InputActions.TestingActions.Enable
+  isSpec: "True"
+  fullName: CustomInput.InputActions.TestingActions.Enable
+  nameWithType: InputActions.TestingActions.Enable
+- uid: CustomInput.InputActions.TestingActions.Get
+  name: Get()
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_Get
+  commentId: M:CustomInput.InputActions.TestingActions.Get
+  fullName: CustomInput.InputActions.TestingActions.Get()
+  nameWithType: InputActions.TestingActions.Get()
+- uid: CustomInput.InputActions.TestingActions.Get*
+  name: Get
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_Get_
+  commentId: Overload:CustomInput.InputActions.TestingActions.Get
+  isSpec: "True"
+  fullName: CustomInput.InputActions.TestingActions.Get
+  nameWithType: InputActions.TestingActions.Get
+- uid: CustomInput.InputActions.TestingActions.RemoveCallbacks(CustomInput.InputActions.ITestingActions)
+  name: RemoveCallbacks(ITestingActions)
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_RemoveCallbacks_CustomInput_InputActions_ITestingActions_
+  commentId: M:CustomInput.InputActions.TestingActions.RemoveCallbacks(CustomInput.InputActions.ITestingActions)
+  fullName: CustomInput.InputActions.TestingActions.RemoveCallbacks(CustomInput.InputActions.ITestingActions)
+  nameWithType: InputActions.TestingActions.RemoveCallbacks(InputActions.ITestingActions)
+- uid: CustomInput.InputActions.TestingActions.RemoveCallbacks*
+  name: RemoveCallbacks
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_RemoveCallbacks_
+  commentId: Overload:CustomInput.InputActions.TestingActions.RemoveCallbacks
+  isSpec: "True"
+  fullName: CustomInput.InputActions.TestingActions.RemoveCallbacks
+  nameWithType: InputActions.TestingActions.RemoveCallbacks
+- uid: CustomInput.InputActions.TestingActions.SaveGame
+  name: SaveGame
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_SaveGame
+  commentId: P:CustomInput.InputActions.TestingActions.SaveGame
+  fullName: CustomInput.InputActions.TestingActions.SaveGame
+  nameWithType: InputActions.TestingActions.SaveGame
+- uid: CustomInput.InputActions.TestingActions.SaveGame*
+  name: SaveGame
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_SaveGame_
+  commentId: Overload:CustomInput.InputActions.TestingActions.SaveGame
+  isSpec: "True"
+  fullName: CustomInput.InputActions.TestingActions.SaveGame
+  nameWithType: InputActions.TestingActions.SaveGame
+- uid: CustomInput.InputActions.TestingActions.SetCallbacks(CustomInput.InputActions.ITestingActions)
+  name: SetCallbacks(ITestingActions)
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_SetCallbacks_CustomInput_InputActions_ITestingActions_
+  commentId: M:CustomInput.InputActions.TestingActions.SetCallbacks(CustomInput.InputActions.ITestingActions)
+  fullName: CustomInput.InputActions.TestingActions.SetCallbacks(CustomInput.InputActions.ITestingActions)
+  nameWithType: InputActions.TestingActions.SetCallbacks(InputActions.ITestingActions)
+- uid: CustomInput.InputActions.TestingActions.SetCallbacks*
+  name: SetCallbacks
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_SetCallbacks_
+  commentId: Overload:CustomInput.InputActions.TestingActions.SetCallbacks
+  isSpec: "True"
+  fullName: CustomInput.InputActions.TestingActions.SetCallbacks
+  nameWithType: InputActions.TestingActions.SetCallbacks
+- uid: CustomInput.InputActions.TestingActions.enabled
+  name: enabled
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_enabled
+  commentId: P:CustomInput.InputActions.TestingActions.enabled
+  fullName: CustomInput.InputActions.TestingActions.enabled
+  nameWithType: InputActions.TestingActions.enabled
+- uid: CustomInput.InputActions.TestingActions.enabled*
+  name: enabled
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_enabled_
+  commentId: Overload:CustomInput.InputActions.TestingActions.enabled
+  isSpec: "True"
+  fullName: CustomInput.InputActions.TestingActions.enabled
+  nameWithType: InputActions.TestingActions.enabled
+- uid: CustomInput.InputActions.TestingActions.op_Implicit(CustomInput.InputActions.TestingActions)~InputActionMap
+  name: implicit operator InputActionMap(TestingActions)
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_op_Implicit_CustomInput_InputActions_TestingActions__InputActionMap
+  commentId: M:CustomInput.InputActions.TestingActions.op_Implicit(CustomInput.InputActions.TestingActions)~InputActionMap
+  name.vb: CType(TestingActions)
+  fullName: CustomInput.InputActions.TestingActions.implicit operator InputActionMap(CustomInput.InputActions.TestingActions)
+  fullName.vb: CustomInput.InputActions.TestingActions.CType(CustomInput.InputActions.TestingActions)
+  nameWithType: InputActions.TestingActions.implicit operator InputActionMap(InputActions.TestingActions)
+  nameWithType.vb: InputActions.TestingActions.CType(InputActions.TestingActions)
+- uid: CustomInput.InputActions.TestingActions.op_Implicit*
+  name: implicit operator
+  href: api/CustomInput.InputActions.TestingActions.html#CustomInput_InputActions_TestingActions_op_Implicit_
+  commentId: Overload:CustomInput.InputActions.TestingActions.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: CustomInput.InputActions.TestingActions.implicit operator
+  fullName.vb: CustomInput.InputActions.TestingActions.CType
+  nameWithType: InputActions.TestingActions.implicit operator
+  nameWithType.vb: InputActions.TestingActions.CType
 - uid: CustomInput.InputActions.Town
   name: Town
   href: api/CustomInput.InputActions.html#CustomInput_InputActions_Town
@@ -1165,12 +1345,12 @@ references:
   commentId: F:DataPersistence.Data.GameData.inventoryData
   fullName: DataPersistence.Data.GameData.inventoryData
   nameWithType: GameData.inventoryData
-- uid: DataPersistence.Data.GameData.isDefaultData
-  name: isDefaultData
-  href: api/DataPersistence.Data.GameData.html#DataPersistence_Data_GameData_isDefaultData
-  commentId: F:DataPersistence.Data.GameData.isDefaultData
-  fullName: DataPersistence.Data.GameData.isDefaultData
-  nameWithType: GameData.isDefaultData
+- uid: DataPersistence.Data.GameData.isNewSave
+  name: isNewSave
+  href: api/DataPersistence.Data.GameData.html#DataPersistence_Data_GameData_isNewSave
+  commentId: F:DataPersistence.Data.GameData.isNewSave
+  fullName: DataPersistence.Data.GameData.isNewSave
+  nameWithType: GameData.isNewSave
 - uid: DataPersistence.Data.GameData.orderData
   name: orderData
   href: api/DataPersistence.Data.GameData.html#DataPersistence_Data_GameData_orderData
@@ -1189,12 +1369,12 @@ references:
   commentId: T:DataPersistence.Data.InventoryData
   fullName: DataPersistence.Data.InventoryData
   nameWithType: InventoryData
-- uid: DataPersistence.Data.InventoryData.Items
-  name: Items
-  href: api/DataPersistence.Data.InventoryData.html#DataPersistence_Data_InventoryData_Items
-  commentId: F:DataPersistence.Data.InventoryData.Items
-  fullName: DataPersistence.Data.InventoryData.Items
-  nameWithType: InventoryData.Items
+- uid: DataPersistence.Data.InventoryData.items
+  name: items
+  href: api/DataPersistence.Data.InventoryData.html#DataPersistence_Data_InventoryData_items
+  commentId: F:DataPersistence.Data.InventoryData.items
+  fullName: DataPersistence.Data.InventoryData.items
+  nameWithType: InventoryData.items
 - uid: DataPersistence.Data.OrderData
   name: OrderData
   href: api/DataPersistence.Data.OrderData.html
@@ -1226,12 +1406,6 @@ references:
   isSpec: "True"
   fullName: DataPersistence.DataPersistenceManager.CreateNewGame
   nameWithType: DataPersistenceManager.CreateNewGame
-- uid: DataPersistence.DataPersistenceManager.GameData
-  name: GameData
-  href: api/DataPersistence.DataPersistenceManager.html#DataPersistence_DataPersistenceManager_GameData
-  commentId: F:DataPersistence.DataPersistenceManager.GameData
-  fullName: DataPersistence.DataPersistenceManager.GameData
-  nameWithType: DataPersistenceManager.GameData
 - uid: DataPersistence.DataPersistenceManager.LoadSave(System.String)
   name: LoadSave(string)
   href: api/DataPersistence.DataPersistenceManager.html#DataPersistence_DataPersistenceManager_LoadSave_System_String_
@@ -1264,6 +1438,12 @@ references:
   isSpec: "True"
   fullName: DataPersistence.DataPersistenceManager.SaveGame
   nameWithType: DataPersistenceManager.SaveGame
+- uid: DataPersistence.DataPersistenceManager.gameData
+  name: gameData
+  href: api/DataPersistence.DataPersistenceManager.html#DataPersistence_DataPersistenceManager_gameData
+  commentId: F:DataPersistence.DataPersistenceManager.gameData
+  fullName: DataPersistence.DataPersistenceManager.gameData
+  nameWithType: DataPersistenceManager.gameData
 - uid: DataPersistence.FileDataHandler
   name: FileDataHandler
   href: api/DataPersistence.FileDataHandler.html
@@ -1321,6 +1501,105 @@ references:
   isSpec: "True"
   fullName: DataPersistence.FileDataHandler.Save
   nameWithType: FileDataHandler.Save
+- uid: DataPersistence.HelperStructures
+  name: DataPersistence.HelperStructures
+  href: api/DataPersistence.HelperStructures.html
+  commentId: N:DataPersistence.HelperStructures
+  fullName: DataPersistence.HelperStructures
+  nameWithType: DataPersistence.HelperStructures
+- uid: DataPersistence.HelperStructures.DefaultInventoryEntries
+  name: DefaultInventoryEntries
+  href: api/DataPersistence.HelperStructures.DefaultInventoryEntries.html
+  commentId: T:DataPersistence.HelperStructures.DefaultInventoryEntries
+  fullName: DataPersistence.HelperStructures.DefaultInventoryEntries
+  nameWithType: DefaultInventoryEntries
+- uid: DataPersistence.HelperStructures.DefaultInventoryEntries.GetEntries
+  name: GetEntries()
+  href: api/DataPersistence.HelperStructures.DefaultInventoryEntries.html#DataPersistence_HelperStructures_DefaultInventoryEntries_GetEntries
+  commentId: M:DataPersistence.HelperStructures.DefaultInventoryEntries.GetEntries
+  fullName: DataPersistence.HelperStructures.DefaultInventoryEntries.GetEntries()
+  nameWithType: DefaultInventoryEntries.GetEntries()
+- uid: DataPersistence.HelperStructures.DefaultInventoryEntries.GetEntries*
+  name: GetEntries
+  href: api/DataPersistence.HelperStructures.DefaultInventoryEntries.html#DataPersistence_HelperStructures_DefaultInventoryEntries_GetEntries_
+  commentId: Overload:DataPersistence.HelperStructures.DefaultInventoryEntries.GetEntries
+  isSpec: "True"
+  fullName: DataPersistence.HelperStructures.DefaultInventoryEntries.GetEntries
+  nameWithType: DefaultInventoryEntries.GetEntries
+- uid: DataPersistence.HelperStructures.DefaultInventoryEntries.startingItems
+  name: startingItems
+  href: api/DataPersistence.HelperStructures.DefaultInventoryEntries.html#DataPersistence_HelperStructures_DefaultInventoryEntries_startingItems
+  commentId: F:DataPersistence.HelperStructures.DefaultInventoryEntries.startingItems
+  fullName: DataPersistence.HelperStructures.DefaultInventoryEntries.startingItems
+  nameWithType: DefaultInventoryEntries.startingItems
+- uid: DataPersistence.HelperStructures.DefaultInventoryEntry
+  name: DefaultInventoryEntry
+  href: api/DataPersistence.HelperStructures.DefaultInventoryEntry.html
+  commentId: T:DataPersistence.HelperStructures.DefaultInventoryEntry
+  fullName: DataPersistence.HelperStructures.DefaultInventoryEntry
+  nameWithType: DefaultInventoryEntry
+- uid: DataPersistence.HelperStructures.DefaultInventoryEntry.ToTuple
+  name: ToTuple()
+  href: api/DataPersistence.HelperStructures.DefaultInventoryEntry.html#DataPersistence_HelperStructures_DefaultInventoryEntry_ToTuple
+  commentId: M:DataPersistence.HelperStructures.DefaultInventoryEntry.ToTuple
+  fullName: DataPersistence.HelperStructures.DefaultInventoryEntry.ToTuple()
+  nameWithType: DefaultInventoryEntry.ToTuple()
+- uid: DataPersistence.HelperStructures.DefaultInventoryEntry.ToTuple*
+  name: ToTuple
+  href: api/DataPersistence.HelperStructures.DefaultInventoryEntry.html#DataPersistence_HelperStructures_DefaultInventoryEntry_ToTuple_
+  commentId: Overload:DataPersistence.HelperStructures.DefaultInventoryEntry.ToTuple
+  isSpec: "True"
+  fullName: DataPersistence.HelperStructures.DefaultInventoryEntry.ToTuple
+  nameWithType: DefaultInventoryEntry.ToTuple
+- uid: DataPersistence.HelperStructures.DefaultInventoryEntry.item
+  name: item
+  href: api/DataPersistence.HelperStructures.DefaultInventoryEntry.html#DataPersistence_HelperStructures_DefaultInventoryEntry_item
+  commentId: F:DataPersistence.HelperStructures.DefaultInventoryEntry.item
+  fullName: DataPersistence.HelperStructures.DefaultInventoryEntry.item
+  nameWithType: DefaultInventoryEntry.item
+- uid: DataPersistence.HelperStructures.DefaultInventoryEntry.quantity
+  name: quantity
+  href: api/DataPersistence.HelperStructures.DefaultInventoryEntry.html#DataPersistence_HelperStructures_DefaultInventoryEntry_quantity
+  commentId: F:DataPersistence.HelperStructures.DefaultInventoryEntry.quantity
+  fullName: DataPersistence.HelperStructures.DefaultInventoryEntry.quantity
+  nameWithType: DefaultInventoryEntry.quantity
+- uid: DataPersistence.HelperStructures.InventoryEntry
+  name: InventoryEntry
+  href: api/DataPersistence.HelperStructures.InventoryEntry.html
+  commentId: T:DataPersistence.HelperStructures.InventoryEntry
+  fullName: DataPersistence.HelperStructures.InventoryEntry
+  nameWithType: InventoryEntry
+- uid: DataPersistence.HelperStructures.InventoryEntry.#ctor(System.String,System.UInt16)
+  name: InventoryEntry(string, ushort)
+  href: api/DataPersistence.HelperStructures.InventoryEntry.html#DataPersistence_HelperStructures_InventoryEntry__ctor_System_String_System_UInt16_
+  commentId: M:DataPersistence.HelperStructures.InventoryEntry.#ctor(System.String,System.UInt16)
+  name.vb: New(String, UShort)
+  fullName: DataPersistence.HelperStructures.InventoryEntry.InventoryEntry(string, ushort)
+  fullName.vb: DataPersistence.HelperStructures.InventoryEntry.New(String, UShort)
+  nameWithType: InventoryEntry.InventoryEntry(string, ushort)
+  nameWithType.vb: InventoryEntry.New(String, UShort)
+- uid: DataPersistence.HelperStructures.InventoryEntry.#ctor*
+  name: InventoryEntry
+  href: api/DataPersistence.HelperStructures.InventoryEntry.html#DataPersistence_HelperStructures_InventoryEntry__ctor_
+  commentId: Overload:DataPersistence.HelperStructures.InventoryEntry.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DataPersistence.HelperStructures.InventoryEntry.InventoryEntry
+  fullName.vb: DataPersistence.HelperStructures.InventoryEntry.New
+  nameWithType: InventoryEntry.InventoryEntry
+  nameWithType.vb: InventoryEntry.New
+- uid: DataPersistence.HelperStructures.InventoryEntry.assetName
+  name: assetName
+  href: api/DataPersistence.HelperStructures.InventoryEntry.html#DataPersistence_HelperStructures_InventoryEntry_assetName
+  commentId: F:DataPersistence.HelperStructures.InventoryEntry.assetName
+  fullName: DataPersistence.HelperStructures.InventoryEntry.assetName
+  nameWithType: InventoryEntry.assetName
+- uid: DataPersistence.HelperStructures.InventoryEntry.quantity
+  name: quantity
+  href: api/DataPersistence.HelperStructures.InventoryEntry.html#DataPersistence_HelperStructures_InventoryEntry_quantity
+  commentId: F:DataPersistence.HelperStructures.InventoryEntry.quantity
+  fullName: DataPersistence.HelperStructures.InventoryEntry.quantity
+  nameWithType: InventoryEntry.quantity
 - uid: DataPersistence.IDataPersistence
   name: IDataPersistence
   href: api/DataPersistence.IDataPersistence.html
@@ -1522,6 +1801,19 @@ references:
   commentId: T:InventoryBackend.Test.TestInventory
   fullName: InventoryBackend.Test.TestInventory
   nameWithType: TestInventory
+- uid: InventoryBackend.Test.TestInventory.Awake
+  name: Awake()
+  href: api/InventoryBackend.Test.TestInventory.html#InventoryBackend_Test_TestInventory_Awake
+  commentId: M:InventoryBackend.Test.TestInventory.Awake
+  fullName: InventoryBackend.Test.TestInventory.Awake()
+  nameWithType: TestInventory.Awake()
+- uid: InventoryBackend.Test.TestInventory.Awake*
+  name: Awake
+  href: api/InventoryBackend.Test.TestInventory.html#InventoryBackend_Test_TestInventory_Awake_
+  commentId: Overload:InventoryBackend.Test.TestInventory.Awake
+  isSpec: "True"
+  fullName: InventoryBackend.Test.TestInventory.Awake
+  nameWithType: TestInventory.Awake
 - uid: InventoryBackend.Test.TestInventory.item1
   name: item1
   href: api/InventoryBackend.Test.TestInventory.html#InventoryBackend_Test_TestInventory_item1
@@ -1644,6 +1936,12 @@ references:
   commentId: F:Items.ItemType.Ingredient
   fullName: Items.ItemType.Ingredient
   nameWithType: ItemType.Ingredient
+- uid: Items.ItemType.Supply
+  name: Supply
+  href: api/Items.ItemType.html#Items_ItemType_Supply
+  commentId: F:Items.ItemType.Supply
+  fullName: Items.ItemType.Supply
+  nameWithType: ItemType.Supply
 - uid: MainMenu
   name: MainMenu
   href: api/MainMenu.html
@@ -1656,19 +1954,6 @@ references:
   commentId: T:MainMenu.MainMenuManager
   fullName: MainMenu.MainMenuManager
   nameWithType: MainMenuManager
-- uid: MainMenu.MainMenuManager.Awake
-  name: Awake()
-  href: api/MainMenu.MainMenuManager.html#MainMenu_MainMenuManager_Awake
-  commentId: M:MainMenu.MainMenuManager.Awake
-  fullName: MainMenu.MainMenuManager.Awake()
-  nameWithType: MainMenuManager.Awake()
-- uid: MainMenu.MainMenuManager.Awake*
-  name: Awake
-  href: api/MainMenu.MainMenuManager.html#MainMenu_MainMenuManager_Awake_
-  commentId: Overload:MainMenu.MainMenuManager.Awake
-  isSpec: "True"
-  fullName: MainMenu.MainMenuManager.Awake
-  nameWithType: MainMenuManager.Awake
 - uid: Settings
   name: Settings
   href: api/Settings.html
@@ -1735,6 +2020,12 @@ references:
   commentId: F:Settings.DefaultSaveDataDefinition.currentPlace
   fullName: Settings.DefaultSaveDataDefinition.currentPlace
   nameWithType: DefaultSaveDataDefinition.currentPlace
+- uid: Settings.DefaultSaveDataDefinition.startingItems
+  name: startingItems
+  href: api/Settings.DefaultSaveDataDefinition.html#Settings_DefaultSaveDataDefinition_startingItems
+  commentId: F:Settings.DefaultSaveDataDefinition.startingItems
+  fullName: Settings.DefaultSaveDataDefinition.startingItems
+  nameWithType: DefaultSaveDataDefinition.startingItems
 - uid: Settings.DevSet
   name: DevSet
   href: api/Settings.DevSet.html

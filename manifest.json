@@ -132,6 +132,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.InputActions.ITestingActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.InputActions.ITestingActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/CustomInput.InputActions.ITownActions.yml",
       "output": {
         ".html": {
@@ -146,6 +156,16 @@
       "output": {
         ".html": {
           "relative_path": "api/CustomInput.InputActions.PauseMenuActions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CustomInput.InputActions.TestingActions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CustomInput.InputActions.TestingActions.html"
         }
       },
       "version": ""
@@ -256,6 +276,46 @@
       "output": {
         ".html": {
           "relative_path": "api/DataPersistence.FileDataHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.HelperStructures.DefaultInventoryEntries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.HelperStructures.DefaultInventoryEntries.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.HelperStructures.DefaultInventoryEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.HelperStructures.DefaultInventoryEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.HelperStructures.InventoryEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.HelperStructures.InventoryEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.HelperStructures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.HelperStructures.html"
         }
       },
       "version": ""

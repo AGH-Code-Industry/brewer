@@ -2,7 +2,7 @@
   "api/Application.GameManager.html": {
     "href": "api/Application.GameManager.html",
     "title": "Class GameManager | Czasoport Documentation",
-    "keywords": "Class GameManager Namespace Application public class GameManager : Singleton<GameManager> Inheritance object Singleton<GameManager> GameManager Inherited Members Singleton<GameManager>.I Singleton<GameManager>.Awake()"
+    "keywords": "Class GameManager Namespace Application public class GameManager : MonoBehaviour Inheritance object GameManager"
   },
   "api/Application.StartupManager.html": {
     "href": "api/Application.StartupManager.html",
@@ -54,6 +54,11 @@
     "title": "Interface InputActions.IPauseMenuActions | Czasoport Documentation",
     "keywords": "Interface InputActions.IPauseMenuActions Namespace CustomInput public interface InputActions.IPauseMenuActions Methods OnNewaction(CallbackContext) void OnNewaction(InputAction.CallbackContext context) Parameters context CallbackContext"
   },
+  "api/CustomInput.InputActions.ITestingActions.html": {
+    "href": "api/CustomInput.InputActions.ITestingActions.html",
+    "title": "Interface InputActions.ITestingActions | Czasoport Documentation",
+    "keywords": "Interface InputActions.ITestingActions Namespace CustomInput public interface InputActions.ITestingActions Methods OnSaveGame(CallbackContext) void OnSaveGame(InputAction.CallbackContext context) Parameters context CallbackContext"
+  },
   "api/CustomInput.InputActions.ITownActions.html": {
     "href": "api/CustomInput.InputActions.ITownActions.html",
     "title": "Interface InputActions.ITownActions | Czasoport Documentation",
@@ -64,6 +69,11 @@
     "title": "Struct InputActions.PauseMenuActions | Czasoport Documentation",
     "keywords": "Struct InputActions.PauseMenuActions Namespace CustomInput public struct InputActions.PauseMenuActions Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors PauseMenuActions(InputActions) public PauseMenuActions(InputActions wrapper) Parameters wrapper InputActions Properties Newaction public InputAction Newaction { get; } Property Value InputAction enabled public bool enabled { get; } Property Value bool Methods AddCallbacks(IPauseMenuActions) public void AddCallbacks(InputActions.IPauseMenuActions instance) Parameters instance InputActions.IPauseMenuActions Disable() public void Disable() Enable() public void Enable() Get() public InputActionMap Get() Returns InputActionMap RemoveCallbacks(IPauseMenuActions) public void RemoveCallbacks(InputActions.IPauseMenuActions instance) Parameters instance InputActions.IPauseMenuActions SetCallbacks(IPauseMenuActions) public void SetCallbacks(InputActions.IPauseMenuActions instance) Parameters instance InputActions.IPauseMenuActions Operators implicit operator InputActionMap(PauseMenuActions) public static implicit operator InputActionMap(InputActions.PauseMenuActions set) Parameters set InputActions.PauseMenuActions Returns InputActionMap"
   },
+  "api/CustomInput.InputActions.TestingActions.html": {
+    "href": "api/CustomInput.InputActions.TestingActions.html",
+    "title": "Struct InputActions.TestingActions | Czasoport Documentation",
+    "keywords": "Struct InputActions.TestingActions Namespace CustomInput public struct InputActions.TestingActions Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors TestingActions(InputActions) public TestingActions(InputActions wrapper) Parameters wrapper InputActions Properties SaveGame public InputAction SaveGame { get; } Property Value InputAction enabled public bool enabled { get; } Property Value bool Methods AddCallbacks(ITestingActions) public void AddCallbacks(InputActions.ITestingActions instance) Parameters instance InputActions.ITestingActions Disable() public void Disable() Enable() public void Enable() Get() public InputActionMap Get() Returns InputActionMap RemoveCallbacks(ITestingActions) public void RemoveCallbacks(InputActions.ITestingActions instance) Parameters instance InputActions.ITestingActions SetCallbacks(ITestingActions) public void SetCallbacks(InputActions.ITestingActions instance) Parameters instance InputActions.ITestingActions Operators implicit operator InputActionMap(TestingActions) public static implicit operator InputActionMap(InputActions.TestingActions set) Parameters set InputActions.TestingActions Returns InputActionMap"
+  },
   "api/CustomInput.InputActions.TownActions.html": {
     "href": "api/CustomInput.InputActions.TownActions.html",
     "title": "Struct InputActions.TownActions | Czasoport Documentation",
@@ -72,12 +82,12 @@
   "api/CustomInput.InputActions.html": {
     "href": "api/CustomInput.InputActions.html",
     "title": "Class InputActions | Czasoport Documentation",
-    "keywords": "Class InputActions Namespace CustomInput public class InputActions : IInputActionCollection2, IDisposable Inheritance object InputActions Implements IDisposable Constructors InputActions() public InputActions() Properties AlwaysEnabled public InputActions.AlwaysEnabledActions AlwaysEnabled { get; } Property Value InputActions.AlwaysEnabledActions Dormitory public InputActions.DormitoryActions Dormitory { get; } Property Value InputActions.DormitoryActions PauseMenu public InputActions.PauseMenuActions PauseMenu { get; } Property Value InputActions.PauseMenuActions Town public InputActions.TownActions Town { get; } Property Value InputActions.TownActions asset public InputActionAsset asset { get; } Property Value InputActionAsset bindingMask public InputBinding? bindingMask { get; set; } Property Value InputBinding? bindings public IEnumerable<InputBinding> bindings { get; } Property Value IEnumerable<InputBinding> controlSchemes public ReadOnlyArray<InputControlScheme> controlSchemes { get; } Property Value ReadOnlyArray<InputControlScheme> devices public ReadOnlyArray<InputDevice>? devices { get; set; } Property Value ReadOnlyArray<InputDevice>? Methods Contains(InputAction) public bool Contains(InputAction action) Parameters action InputAction Returns bool Disable() public void Disable() Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. public void Dispose() Enable() public void Enable() FindAction(string, bool) public InputAction FindAction(string actionNameOrId, bool throwIfNotFound = false) Parameters actionNameOrId string throwIfNotFound bool Returns InputAction FindBinding(InputBinding, out InputAction) public int FindBinding(InputBinding bindingMask, out InputAction action) Parameters bindingMask InputBinding action InputAction Returns int GetEnumerator() public IEnumerator<InputAction> GetEnumerator() Returns IEnumerator<InputAction>"
+    "keywords": "Class InputActions Namespace CustomInput public class InputActions : IInputActionCollection2, IDisposable Inheritance object InputActions Implements IDisposable Constructors InputActions() public InputActions() Properties AlwaysEnabled public InputActions.AlwaysEnabledActions AlwaysEnabled { get; } Property Value InputActions.AlwaysEnabledActions Dormitory public InputActions.DormitoryActions Dormitory { get; } Property Value InputActions.DormitoryActions PauseMenu public InputActions.PauseMenuActions PauseMenu { get; } Property Value InputActions.PauseMenuActions Testing public InputActions.TestingActions Testing { get; } Property Value InputActions.TestingActions Town public InputActions.TownActions Town { get; } Property Value InputActions.TownActions asset public InputActionAsset asset { get; } Property Value InputActionAsset bindingMask public InputBinding? bindingMask { get; set; } Property Value InputBinding? bindings public IEnumerable<InputBinding> bindings { get; } Property Value IEnumerable<InputBinding> controlSchemes public ReadOnlyArray<InputControlScheme> controlSchemes { get; } Property Value ReadOnlyArray<InputControlScheme> devices public ReadOnlyArray<InputDevice>? devices { get; set; } Property Value ReadOnlyArray<InputDevice>? Methods Contains(InputAction) public bool Contains(InputAction action) Parameters action InputAction Returns bool Disable() public void Disable() Dispose() Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources. public void Dispose() Enable() public void Enable() FindAction(string, bool) public InputAction FindAction(string actionNameOrId, bool throwIfNotFound = false) Parameters actionNameOrId string throwIfNotFound bool Returns InputAction FindBinding(InputBinding, out InputAction) public int FindBinding(InputBinding bindingMask, out InputAction action) Parameters bindingMask InputBinding action InputAction Returns int GetEnumerator() public IEnumerator<InputAction> GetEnumerator() Returns IEnumerator<InputAction>"
   },
   "api/CustomInput.html": {
     "href": "api/CustomInput.html",
     "title": "Namespace CustomInput | Czasoport Documentation",
-    "keywords": "Namespace CustomInput Classes CInput Wrapper for automatically generated InputActions. Provides easier access to reading values from input, takes care of processing for common input values. Incorporates locking mechanism if added in the project. InputActions Structs InputActions.AlwaysEnabledActions InputActions.DormitoryActions InputActions.PauseMenuActions InputActions.TownActions Interfaces InputActions.IAlwaysEnabledActions InputActions.IDormitoryActions InputActions.IPauseMenuActions InputActions.ITownActions"
+    "keywords": "Namespace CustomInput Classes CInput Wrapper for automatically generated InputActions. Provides easier access to reading values from input, takes care of processing for common input values. Incorporates locking mechanism if added in the project. InputActions Structs InputActions.AlwaysEnabledActions InputActions.DormitoryActions InputActions.PauseMenuActions InputActions.TestingActions InputActions.TownActions Interfaces InputActions.IAlwaysEnabledActions InputActions.IDormitoryActions InputActions.IPauseMenuActions InputActions.ITestingActions InputActions.ITownActions"
   },
   "api/DataPersistence.Data.DormitoryData.html": {
     "href": "api/DataPersistence.Data.DormitoryData.html",
@@ -87,12 +97,12 @@
   "api/DataPersistence.Data.GameData.html": {
     "href": "api/DataPersistence.Data.GameData.html",
     "title": "Class GameData | Czasoport Documentation",
-    "keywords": "Class GameData Namespace DataPersistence.Data [Serializable] public class GameData Inheritance object GameData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields currentPlace public PlaceType currentPlace Field Value PlaceType dormData public DormitoryData dormData Field Value DormitoryData inventoryData public InventoryData inventoryData Field Value InventoryData isDefaultData public bool isDefaultData Field Value bool orderData public OrderData orderData Field Value OrderData townData public TownData townData Field Value TownData"
+    "keywords": "Class GameData Namespace DataPersistence.Data [Serializable] public class GameData Inheritance object GameData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields currentPlace public PlaceType currentPlace Field Value PlaceType dormData public DormitoryData dormData Field Value DormitoryData inventoryData public InventoryData inventoryData Field Value InventoryData isNewSave public bool isNewSave Field Value bool orderData public OrderData orderData Field Value OrderData townData public TownData townData Field Value TownData"
   },
   "api/DataPersistence.Data.InventoryData.html": {
     "href": "api/DataPersistence.Data.InventoryData.html",
     "title": "Class InventoryData | Czasoport Documentation",
-    "keywords": "Class InventoryData Namespace DataPersistence.Data [Serializable] public class InventoryData Inheritance object InventoryData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields Items public List<(string, ushort)> Items Field Value List<(string, ushort)>"
+    "keywords": "Class InventoryData Namespace DataPersistence.Data [Serializable] public class InventoryData Inheritance object InventoryData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields items public List<InventoryEntry> items Field Value List<InventoryEntry>"
   },
   "api/DataPersistence.Data.OrderData.html": {
     "href": "api/DataPersistence.Data.OrderData.html",
@@ -112,12 +122,32 @@
   "api/DataPersistence.DataPersistenceManager.html": {
     "href": "api/DataPersistence.DataPersistenceManager.html",
     "title": "Class DataPersistenceManager | Czasoport Documentation",
-    "keywords": "Class DataPersistenceManager Namespace DataPersistence public class DataPersistenceManager : Singleton<DataPersistenceManager> Inheritance object Singleton<DataPersistenceManager> DataPersistenceManager Inherited Members Singleton<DataPersistenceManager>.I Singleton<DataPersistenceManager>.Awake() Fields GameData [NonSerialized] public GameData GameData Field Value GameData Methods CreateNewGame() public void CreateNewGame() LoadSave(string) public void LoadSave(string saveName) Parameters saveName string SaveGame(string) public void SaveGame(string saveName) Parameters saveName string"
+    "keywords": "Class DataPersistenceManager Namespace DataPersistence public class DataPersistenceManager : Singleton<DataPersistenceManager> Inheritance object Singleton<DataPersistenceManager> DataPersistenceManager Inherited Members Singleton<DataPersistenceManager>.I Singleton<DataPersistenceManager>.Awake() Fields gameData [NonSerialized] public GameData gameData Field Value GameData Methods CreateNewGame() public void CreateNewGame() LoadSave(string) public void LoadSave(string saveName) Parameters saveName string SaveGame(string) public void SaveGame(string saveName) Parameters saveName string"
   },
   "api/DataPersistence.FileDataHandler.html": {
     "href": "api/DataPersistence.FileDataHandler.html",
     "title": "Class FileDataHandler | Czasoport Documentation",
     "keywords": "Class FileDataHandler Namespace DataPersistence public class FileDataHandler Inheritance object FileDataHandler Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors FileDataHandler(string) public FileDataHandler(string saveDirectory) Parameters saveDirectory string Methods Load(string) public GameData Load(string saveName) Parameters saveName string Returns GameData Save(GameData, string) public bool Save(GameData gameData, string saveName) Parameters gameData GameData saveName string Returns bool"
+  },
+  "api/DataPersistence.HelperStructures.DefaultInventoryEntries.html": {
+    "href": "api/DataPersistence.HelperStructures.DefaultInventoryEntries.html",
+    "title": "Class DefaultInventoryEntries | Czasoport Documentation",
+    "keywords": "Class DefaultInventoryEntries Namespace DataPersistence.HelperStructures [Serializable] public class DefaultInventoryEntries Inheritance object DefaultInventoryEntries Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields startingItems public DefaultInventoryEntry[] startingItems Field Value DefaultInventoryEntry[] Methods GetEntries() public List<InventoryEntry> GetEntries() Returns List<InventoryEntry>"
+  },
+  "api/DataPersistence.HelperStructures.DefaultInventoryEntry.html": {
+    "href": "api/DataPersistence.HelperStructures.DefaultInventoryEntry.html",
+    "title": "Class DefaultInventoryEntry | Czasoport Documentation",
+    "keywords": "Class DefaultInventoryEntry Namespace DataPersistence.HelperStructures [Serializable] public class DefaultInventoryEntry Inheritance object DefaultInventoryEntry Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields item public ItemDefinition item Field Value ItemDefinition quantity public ushort quantity Field Value ushort Methods ToTuple() public (string, ushort) ToTuple() Returns (string, ushort)"
+  },
+  "api/DataPersistence.HelperStructures.InventoryEntry.html": {
+    "href": "api/DataPersistence.HelperStructures.InventoryEntry.html",
+    "title": "Class InventoryEntry | Czasoport Documentation",
+    "keywords": "Class InventoryEntry Namespace DataPersistence.HelperStructures [Serializable] public class InventoryEntry Inheritance object InventoryEntry Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors InventoryEntry(string, ushort) public InventoryEntry(string assetName, ushort quantity) Parameters assetName string quantity ushort Fields assetName public string assetName Field Value string quantity public ushort quantity Field Value ushort"
+  },
+  "api/DataPersistence.HelperStructures.html": {
+    "href": "api/DataPersistence.HelperStructures.html",
+    "title": "Namespace DataPersistence.HelperStructures | Czasoport Documentation",
+    "keywords": "Namespace DataPersistence.HelperStructures Classes DefaultInventoryEntries DefaultInventoryEntry InventoryEntry"
   },
   "api/DataPersistence.IDataPersistence.html": {
     "href": "api/DataPersistence.IDataPersistence.html",
@@ -142,12 +172,12 @@
   "api/InventoryBackend.Inventory.html": {
     "href": "api/InventoryBackend.Inventory.html",
     "title": "Class Inventory | Czasoport Documentation",
-    "keywords": "Class Inventory Namespace InventoryBackend public class Inventory : Singleton<Inventory>, IDataPersistence Inheritance object Singleton<Inventory> Inventory Implements IDataPersistence Inherited Members Singleton<Inventory>.I Singleton<Inventory>.Awake() Fields inventoryUpdated Fires always when content of inventory changes. public UnityEvent inventoryUpdated Field Value UnityEvent Methods GetAllItems() Get all items stored in inventory. public Dictionary<ItemDefinition, ushort> GetAllItems() Returns Dictionary<ItemDefinition, ushort> GetItemCount(ItemDefinition) How many of specific item does player has. public ushort GetItemCount(ItemDefinition item) Parameters item ItemDefinition Item to check. Returns ushort Number of items of this type in inventory. InsertItem(ItemDefinition, ushort) Inserts new item into inventory or updates count of this item in the inventory. public void InsertItem(ItemDefinition item, ushort count) Parameters item ItemDefinition What item to put into the inventory. count ushort How many items to put into the inventory. LoadPersistentData(GameData) public void LoadPersistentData(GameData gameData) Parameters gameData GameData RemoveItem(ItemDefinition, ushort) Remove specific count of items from the inventory. Count cannot be less than stored amount of items. When number of items after the operation drops to 0, item will be removed. public bool RemoveItem(ItemDefinition item, ushort count) Parameters item ItemDefinition What item to remove. count ushort How many items to remove. Returns bool True if operation was successful and items were removed, false if number of items requested to remove was greater than number of stored items or in case of any other failure. Exceptions InvBadValueException SavePersistentData(ref GameData) public void SavePersistentData(ref GameData gameData) Parameters gameData GameData"
+    "keywords": "Class Inventory Namespace InventoryBackend public class Inventory : MonoBehaviour, IDataPersistence Inheritance object Inventory Implements IDataPersistence Fields inventoryUpdated Fires always when content of inventory changes. public UnityEvent inventoryUpdated Field Value UnityEvent Methods GetAllItems() Get all items stored in inventory. public Dictionary<ItemDefinition, ushort> GetAllItems() Returns Dictionary<ItemDefinition, ushort> GetItemCount(ItemDefinition) How many of specific item does player has. public ushort GetItemCount(ItemDefinition item) Parameters item ItemDefinition Item to check. Returns ushort Number of items of this type in inventory. InsertItem(ItemDefinition, ushort) Inserts new item into inventory or updates count of this item in the inventory. public void InsertItem(ItemDefinition item, ushort count) Parameters item ItemDefinition What item to put into the inventory. count ushort How many items to put into the inventory. LoadPersistentData(GameData) public void LoadPersistentData(GameData gameData) Parameters gameData GameData RemoveItem(ItemDefinition, ushort) Remove specific count of items from the inventory. Count cannot be less than stored amount of items. When number of items after the operation drops to 0, item will be removed. public bool RemoveItem(ItemDefinition item, ushort count) Parameters item ItemDefinition What item to remove. count ushort How many items to remove. Returns bool True if operation was successful and items were removed, false if number of items requested to remove was greater than number of stored items or in case of any other failure. Exceptions InvBadValueException SavePersistentData(ref GameData) public void SavePersistentData(ref GameData gameData) Parameters gameData GameData"
   },
   "api/InventoryBackend.Test.TestInventory.html": {
     "href": "api/InventoryBackend.Test.TestInventory.html",
     "title": "Class TestInventory | Czasoport Documentation",
-    "keywords": "Class TestInventory Namespace InventoryBackend.Test public class TestInventory : MonoBehaviour Inheritance object TestInventory Fields item1 public ItemDefinition item1 Field Value ItemDefinition item2 public ItemDefinition item2 Field Value ItemDefinition testLoad public bool testLoad Field Value bool testSave public bool testSave Field Value bool"
+    "keywords": "Class TestInventory Namespace InventoryBackend.Test public class TestInventory : MonoBehaviour Inheritance object TestInventory Fields item1 public ItemDefinition item1 Field Value ItemDefinition item2 public ItemDefinition item2 Field Value ItemDefinition testLoad public bool testLoad Field Value bool testSave public bool testSave Field Value bool Methods Awake() public void Awake()"
   },
   "api/InventoryBackend.Test.html": {
     "href": "api/InventoryBackend.Test.html",
@@ -177,7 +207,7 @@
   "api/Items.ItemType.html": {
     "href": "api/Items.ItemType.html",
     "title": "Enum ItemType | Czasoport Documentation",
-    "keywords": "Enum ItemType Namespace Items public enum ItemType Fields Beer = 0 Ingredient = 1"
+    "keywords": "Enum ItemType Namespace Items public enum ItemType Fields Beer = 0 Ingredient = 1 Supply = 2"
   },
   "api/Items.html": {
     "href": "api/Items.html",
@@ -187,7 +217,7 @@
   "api/MainMenu.MainMenuManager.html": {
     "href": "api/MainMenu.MainMenuManager.html",
     "title": "Class MainMenuManager | Czasoport Documentation",
-    "keywords": "Class MainMenuManager Namespace MainMenu public class MainMenuManager : Singleton<MainMenuManager> Inheritance object Singleton<MainMenuManager> MainMenuManager Inherited Members Singleton<MainMenuManager>.I Methods Awake() protected override void Awake()"
+    "keywords": "Class MainMenuManager Namespace MainMenu public class MainMenuManager : MonoBehaviour Inheritance object MainMenuManager"
   },
   "api/MainMenu.html": {
     "href": "api/MainMenu.html",
@@ -202,7 +232,7 @@
   "api/Settings.DefaultSaveDataDefinition.html": {
     "href": "api/Settings.DefaultSaveDataDefinition.html",
     "title": "Class DefaultSaveDataDefinition | Czasoport Documentation",
-    "keywords": "Class DefaultSaveDataDefinition Namespace Settings Settings for entire application that defines variables for startup, core processes and shutdown public class DefaultSaveDataDefinition : ScriptableObject Inheritance object DefaultSaveDataDefinition Fields currentPlace public PlaceType currentPlace Field Value PlaceType"
+    "keywords": "Class DefaultSaveDataDefinition Namespace Settings Default values for when the new game is created. public class DefaultSaveDataDefinition : ScriptableObject Inheritance object DefaultSaveDataDefinition Fields currentPlace public PlaceType currentPlace Field Value PlaceType startingItems public DefaultInventoryEntries startingItems Field Value DefaultInventoryEntries"
   },
   "api/Settings.DevSet.html": {
     "href": "api/Settings.DevSet.html",
@@ -217,7 +247,7 @@
   "api/Settings.html": {
     "href": "api/Settings.html",
     "title": "Namespace Settings | Czasoport Documentation",
-    "keywords": "Namespace Settings Classes AppSettingsDefinition DefaultSaveDataDefinition Settings for entire application that defines variables for startup, core processes and shutdown DevSet TownSettingsDefinition"
+    "keywords": "Namespace Settings Classes AppSettingsDefinition DefaultSaveDataDefinition Default values for when the new game is created. DevSet TownSettingsDefinition"
   },
   "api/Town.CameraFollowPlayerComponent.html": {
     "href": "api/Town.CameraFollowPlayerComponent.html",
@@ -307,7 +337,7 @@
   "api/Utils.Singleton.Singleton-1.html": {
     "href": "api/Utils.Singleton.Singleton-1.html",
     "title": "Class Singleton<T> | Czasoport Documentation",
-    "keywords": "Class Singleton<T> Namespace Utils.Singleton public class Singleton<T> : MonoBehaviour where T : MonoBehaviour Type Parameters T Inheritance object Singleton<T> Derived GameManager DataPersistenceManager Inventory MainMenuManager DevSet Properties I public static T I { get; } Property Value T Methods Awake() protected virtual void Awake()"
+    "keywords": "Class Singleton<T> Namespace Utils.Singleton public class Singleton<T> : MonoBehaviour where T : MonoBehaviour Type Parameters T Inheritance object Singleton<T> Derived DataPersistenceManager DevSet Properties I public static T I { get; } Property Value T Methods Awake() protected virtual void Awake()"
   },
   "api/Utils.Singleton.SingletonOverrideException.html": {
     "href": "api/Utils.Singleton.SingletonOverrideException.html",
