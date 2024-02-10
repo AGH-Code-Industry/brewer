@@ -42,7 +42,9 @@ namespace Dorm.Movables {
         }
 
         private void OnMouseUp() {
-            if(!_isDraggedAbovePlaceholder || placeholders[_currentPlaceholderIndex] == _detectedPlaceholder) {
+            if(!_isDraggedAbovePlaceholder
+               || placeholders[_currentPlaceholderIndex] == _detectedPlaceholder
+               || !IsPlaceholderFree(_detectedPlaceholder.GetComponent<Placeholder>())){
                 StartCoroutine(LerpToPosition(CInput.DormMouseWorldPosition, _startPos));
                 return;
             }
@@ -66,9 +68,15 @@ namespace Dorm.Movables {
         }
         
         private void SetPlaceholder(Placeholder placeholder) {
+            placeholders[_currentPlaceholderIndex].GetComponent<Placeholder>().RemoveTool();
+            placeholder.SetTool(gameObject);
             _currentPlaceholderIndex = (ushort) Array.IndexOf(placeholders, placeholder.gameObject);
             StartCoroutine(LerpToPosition(transform.position, CalculatePlacementPosition(placeholder)));
             onPlaceholderChanged.Invoke(placeholder);
+        }
+        
+        private bool IsPlaceholderFree(Placeholder placeholder) {
+            return placeholder.IsFree();
         }
         
         private Vector2 CalculatePlacementPosition(Placeholder placeholder) {
