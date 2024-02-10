@@ -17,6 +17,7 @@ namespace MainMenu {
         [SerializeField] private Button continueButton;
         [SerializeField] private Button optionsButton;
         [SerializeField] private Button quitButton;
+        [SerializeField] private Button craftingButton;
 
         private readonly CLogger _logger = Loggers.LoggersList[Loggers.LoggerType.APPLICATION];
 
@@ -25,6 +26,7 @@ namespace MainMenu {
             continueButton.onClick.AddListener(OnContinue);
             optionsButton.onClick.AddListener(OnOptions);
             quitButton.onClick.AddListener(OnQuit);
+            craftingButton.onClick.AddListener(OnCrafting);
         }
 
         private void OnNewGame() {
@@ -35,6 +37,10 @@ namespace MainMenu {
         private void OnContinue() {
             DataPersistenceManager.I.LoadSave(DevSet.I.appSettings.defaultSaveName);
             SceneManager.LoadScene(DevSet.I.appSettings.gameManagerSceneName, LoadSceneMode.Single);
+        }
+        private void OnCrafting()
+        {
+            SceneManager.LoadScene("Crafting");
         }
         private void OnOptions(){_logger.LogWarning($"Option {"Options" % Colorize.Red} is not yet implemented.");}
         private void OnQuit() { UnityEngine.Application.Quit(); }
