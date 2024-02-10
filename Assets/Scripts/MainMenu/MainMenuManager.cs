@@ -26,6 +26,7 @@ namespace MainMenu {
             continueButton.onClick.AddListener(OnContinue);
             optionsButton.onClick.AddListener(OnOptions);
             quitButton.onClick.AddListener(OnQuit);
+            craftingButton.onClick.AddListener(OnCrafting);
         }
 
         private void OnNewGame() {

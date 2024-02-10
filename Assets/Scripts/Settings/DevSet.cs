@@ -7,6 +7,7 @@ namespace Settings {
     public class DevSet : Singleton<DevSet> {
         public AppSettingsDefinition appSettings;
         public TownSettingsDefinition townSettings;
+        public DormSettingsDefinition dormSettings;
         public DefaultSaveDataDefinition defSaveData;
     }   
 }

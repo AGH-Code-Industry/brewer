@@ -14,7 +14,9 @@ TagManager:
   - Items
   - Water
   - UI
-  - Interactable
+  - DragInteractable
+  - IgnoreCollisions
+  - Boundaries
   - 
   - 
   - 
@@ -38,8 +40,6 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - Ignore Collisions
   m_SortingLayers:
   - name: Default
     uniqueID: 0
