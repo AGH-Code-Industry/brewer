@@ -9,8 +9,6 @@ using UnityEngine.Events;
 
 namespace Dorm.Movables {
     public class Draggable : MonoBehaviour {
-
-        public UnityEvent<Placeholder> onPlaceholderChanged;
         
         private const string DefaultLayer = "Default";
         private const string IgnoreCollisionsLayer = "IgnoreCollisions";
