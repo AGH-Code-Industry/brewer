@@ -159,6 +159,46 @@
     "title": "Namespace DataPersistence | Czasoport Documentation",
     "keywords": "Namespace DataPersistence Classes DataPersistenceManager FileDataHandler Interfaces IDataPersistence"
   },
+  "api/Dorm.Movables.ConstrainedDraggable.html": {
+    "href": "api/Dorm.Movables.ConstrainedDraggable.html",
+    "title": "Class ConstrainedDraggable | Czasoport Documentation",
+    "keywords": "Class ConstrainedDraggable Namespace Dorm.Movables public class ConstrainedDraggable : MonoBehaviour Inheritance object ConstrainedDraggable Fields onPlaceholderChanged public UnityEvent<Placeholder> onPlaceholderChanged Field Value UnityEvent<Placeholder> Methods OnTriggerEnter2D(Collider2D) public void OnTriggerEnter2D(Collider2D other) Parameters other Collider2D OnTriggerExit2D(Collider2D) public void OnTriggerExit2D(Collider2D other) Parameters other Collider2D"
+  },
+  "api/Dorm.Movables.Draggable.html": {
+    "href": "api/Dorm.Movables.Draggable.html",
+    "title": "Class Draggable | Czasoport Documentation",
+    "keywords": "Class Draggable Namespace Dorm.Movables public class Draggable : MonoBehaviour Inheritance object Draggable Methods OnTriggerEnter2D(Collider2D) public void OnTriggerEnter2D(Collider2D other) Parameters other Collider2D OnTriggerExit2D(Collider2D) public void OnTriggerExit2D(Collider2D other) Parameters other Collider2D"
+  },
+  "api/Dorm.Movables.IDragInteractable.html": {
+    "href": "api/Dorm.Movables.IDragInteractable.html",
+    "title": "Interface IDragInteractable | Czasoport Documentation",
+    "keywords": "Interface IDragInteractable Namespace Dorm.Movables public interface IDragInteractable Methods DragInteraction(GameObject) Fired when object has been let go over a object that has this interface. bool DragInteraction(GameObject sourceObject) Parameters sourceObject GameObject Returns bool Whether object should be destroyed. EnteredPossibleDragInteraction(GameObject) void EnteredPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject LeftPossibleDragInteraction(GameObject) void LeftPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject"
+  },
+  "api/Dorm.Movables.Placeholder.PlaceholderType.html": {
+    "href": "api/Dorm.Movables.Placeholder.PlaceholderType.html",
+    "title": "Enum Placeholder.PlaceholderType | Czasoport Documentation",
+    "keywords": "Enum Placeholder.PlaceholderType Namespace Dorm.Movables public enum Placeholder.PlaceholderType Fields NotUsable = 1 Usable = 0"
+  },
+  "api/Dorm.Movables.Placeholder.html": {
+    "href": "api/Dorm.Movables.Placeholder.html",
+    "title": "Class Placeholder | Czasoport Documentation",
+    "keywords": "Class Placeholder Namespace Dorm.Movables public class Placeholder : MonoBehaviour Inheritance object Placeholder Fields type public Placeholder.PlaceholderType type Field Value Placeholder.PlaceholderType"
+  },
+  "api/Dorm.Movables.Tests.CorrectInteractionsTest.html": {
+    "href": "api/Dorm.Movables.Tests.CorrectInteractionsTest.html",
+    "title": "Class CorrectInteractionsTest | Czasoport Documentation",
+    "keywords": "Class CorrectInteractionsTest Namespace Dorm.Movables.Tests public class CorrectInteractionsTest : MonoBehaviour, IDragInteractable Inheritance object CorrectInteractionsTest Implements IDragInteractable Methods DragInteraction(GameObject) Fired when object has been let go over a object that has this interface. public bool DragInteraction(GameObject sourceObject) Parameters sourceObject GameObject Returns bool Whether object should be destroyed. EnteredPossibleDragInteraction(GameObject) public void EnteredPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject LeftPossibleDragInteraction(GameObject) public void LeftPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject"
+  },
+  "api/Dorm.Movables.Tests.html": {
+    "href": "api/Dorm.Movables.Tests.html",
+    "title": "Namespace Dorm.Movables.Tests | Czasoport Documentation",
+    "keywords": "Namespace Dorm.Movables.Tests Classes CorrectInteractionsTest"
+  },
+  "api/Dorm.Movables.html": {
+    "href": "api/Dorm.Movables.html",
+    "title": "Namespace Dorm.Movables | Czasoport Documentation",
+    "keywords": "Namespace Dorm.Movables Classes ConstrainedDraggable Draggable Placeholder Interfaces IDragInteractable Enums Placeholder.PlaceholderType"
+  },
   "api/InventoryBackend.Exceptions.InvBadValueException.html": {
     "href": "api/InventoryBackend.Exceptions.InvBadValueException.html",
     "title": "Class InvBadValueException | Czasoport Documentation",
@@ -237,7 +277,12 @@
   "api/Settings.DevSet.html": {
     "href": "api/Settings.DevSet.html",
     "title": "Class DevSet | Czasoport Documentation",
-    "keywords": "Class DevSet Namespace Settings public class DevSet : Singleton<DevSet> Inheritance object Singleton<DevSet> DevSet Inherited Members Singleton<DevSet>.I Singleton<DevSet>.Awake() Fields appSettings public AppSettingsDefinition appSettings Field Value AppSettingsDefinition defSaveData public DefaultSaveDataDefinition defSaveData Field Value DefaultSaveDataDefinition townSettings public TownSettingsDefinition townSettings Field Value TownSettingsDefinition"
+    "keywords": "Class DevSet Namespace Settings public class DevSet : Singleton<DevSet> Inheritance object Singleton<DevSet> DevSet Inherited Members Singleton<DevSet>.I Singleton<DevSet>.Awake() Fields appSettings public AppSettingsDefinition appSettings Field Value AppSettingsDefinition defSaveData public DefaultSaveDataDefinition defSaveData Field Value DefaultSaveDataDefinition dormSettings public DormSettingsDefinition dormSettings Field Value DormSettingsDefinition townSettings public TownSettingsDefinition townSettings Field Value TownSettingsDefinition"
+  },
+  "api/Settings.DormSettingsDefinition.html": {
+    "href": "api/Settings.DormSettingsDefinition.html",
+    "title": "Class DormSettingsDefinition | Czasoport Documentation",
+    "keywords": "Class DormSettingsDefinition Namespace Settings public class DormSettingsDefinition : ScriptableObject Inheritance object DormSettingsDefinition Fields draggableMouseFollowSpeed public float draggableMouseFollowSpeed Field Value float draggablesMoveSpeed public float draggablesMoveSpeed Field Value float"
   },
   "api/Settings.TownSettingsDefinition.html": {
     "href": "api/Settings.TownSettingsDefinition.html",
@@ -247,7 +292,7 @@
   "api/Settings.html": {
     "href": "api/Settings.html",
     "title": "Namespace Settings | Czasoport Documentation",
-    "keywords": "Namespace Settings Classes AppSettingsDefinition DefaultSaveDataDefinition Default values for when the new game is created. DevSet TownSettingsDefinition"
+    "keywords": "Namespace Settings Classes AppSettingsDefinition DefaultSaveDataDefinition Default values for when the new game is created. DevSet DormSettingsDefinition TownSettingsDefinition"
   },
   "api/Town.CameraFollowPlayerComponent.html": {
     "href": "api/Town.CameraFollowPlayerComponent.html",

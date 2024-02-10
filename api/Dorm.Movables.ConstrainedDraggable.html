@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class DevSet | Czasoport Documentation </title>
+      <title>Class ConstrainedDraggable | Czasoport Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class DevSet | Czasoport Documentation ">
+      <meta name="title" content="Class ConstrainedDraggable | Czasoport Documentation ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/AGH-Code-Industry/brewer/new/master/apiSpec/new?filename=Settings_DevSet.md&amp;value=---%0Auid%3A%20Settings.DevSet%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/AGH-Code-Industry/brewer/new/master/apiSpec/new?filename=Dorm_Movables_ConstrainedDraggable.md&amp;value=---%0Auid%3A%20Dorm.Movables.ConstrainedDraggable%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,16 +84,16 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Settings.DevSet">
+        <article data-uid="Dorm.Movables.ConstrainedDraggable">
 
 
 
-  <h1 id="Settings_DevSet" data-uid="Settings.DevSet" class="text-break">
-Class DevSet  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Settings/DevSet.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Dorm_Movables_ConstrainedDraggable" data-uid="Dorm.Movables.ConstrainedDraggable" class="text-break">
+Class ConstrainedDraggable  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/ConstrainedDraggable.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Settings.html">Settings</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Dorm.html">Dorm</a>.<a class="xref" href="Dorm.Movables.html">Movables</a></dd></dl>
   
   </div>
 
@@ -101,7 +101,7 @@ Class DevSet  <a class="header-action link-secondary" title="View source" href="
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DevSet : Singleton&lt;DevSet&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public class ConstrainedDraggable : MonoBehaviour</code></pre>
   </div>
 
 
@@ -111,23 +111,12 @@ Class DevSet  <a class="header-action link-secondary" title="View source" href="
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="Utils.Singleton.Singleton-1.html">Singleton</a>&lt;<a class="xref" href="Settings.DevSet.html">DevSet</a>&gt;</div>
-      <div><span class="xref">DevSet</span></div>
+      <div><span class="xref">ConstrainedDraggable</span></div>
     </dd>
   </dl>
 
 
 
-  <dl class="typelist inheritedMembers">
-    <dt>Inherited Members</dt>
-    <dd>
-    <div>
-      <a class="xref" href="Utils.Singleton.Singleton-1.html#Utils_Singleton_Singleton_1_I">Singleton&lt;DevSet&gt;.I</a>
-    </div>
-    <div>
-      <a class="xref" href="Utils.Singleton.Singleton-1.html#Utils_Singleton_Singleton_1_Awake">Singleton&lt;DevSet&gt;.Awake()</a>
-    </div>
-  </dd></dl>
 
 
 
@@ -139,16 +128,16 @@ Class DevSet  <a class="header-action link-secondary" title="View source" href="
 
 
 
-  <h3 id="Settings_DevSet_appSettings" data-uid="Settings.DevSet.appSettings">
-  appSettings
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Settings/DevSet.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Dorm_Movables_ConstrainedDraggable_onPlaceholderChanged" data-uid="Dorm.Movables.ConstrainedDraggable.onPlaceholderChanged">
+  onPlaceholderChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/ConstrainedDraggable.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppSettingsDefinition appSettings</code></pre>
+    <pre><code class="lang-csharp hljs">public UnityEvent&lt;Placeholder&gt; onPlaceholderChanged</code></pre>
   </div>
 
 
@@ -156,7 +145,39 @@ Class DevSet  <a class="header-action link-secondary" title="View source" href="
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Settings.AppSettingsDefinition.html">AppSettingsDefinition</a></dt>
+    <dt><span class="xref">UnityEvent</span>&lt;<a class="xref" href="Dorm.Movables.Placeholder.html">Placeholder</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Dorm_Movables_ConstrainedDraggable_OnTriggerEnter2D_" data-uid="Dorm.Movables.ConstrainedDraggable.OnTriggerEnter2D*"></a>
+
+  <h3 id="Dorm_Movables_ConstrainedDraggable_OnTriggerEnter2D_Collider2D_" data-uid="Dorm.Movables.ConstrainedDraggable.OnTriggerEnter2D(Collider2D)">
+  OnTriggerEnter2D(Collider2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/ConstrainedDraggable.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnTriggerEnter2D(Collider2D other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <span class="xref">Collider2D</span></dt>
     <dd></dd>
   </dl>
 
@@ -169,86 +190,30 @@ Class DevSet  <a class="header-action link-secondary" title="View source" href="
 
 
 
-  <h3 id="Settings_DevSet_defSaveData" data-uid="Settings.DevSet.defSaveData">
-  defSaveData
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Settings/DevSet.cs/#L11"><i class="bi bi-code-slash"></i></a>
+
+
+  <a id="Dorm_Movables_ConstrainedDraggable_OnTriggerExit2D_" data-uid="Dorm.Movables.ConstrainedDraggable.OnTriggerExit2D*"></a>
+
+  <h3 id="Dorm_Movables_ConstrainedDraggable_OnTriggerExit2D_Collider2D_" data-uid="Dorm.Movables.ConstrainedDraggable.OnTriggerExit2D(Collider2D)">
+  OnTriggerExit2D(Collider2D)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/ConstrainedDraggable.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DefaultSaveDataDefinition defSaveData</code></pre>
+    <pre><code class="lang-csharp hljs">public void OnTriggerExit2D(Collider2D other)</code></pre>
   </div>
 
-
-
-
-  <h4 class="section">Field Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Settings.DefaultSaveDataDefinition.html">DefaultSaveDataDefinition</a></dt>
+    <dt><code>other</code> <span class="xref">Collider2D</span></dt>
     <dd></dd>
   </dl>
 
 
 
-
-
-
-
-
-
-
-  <h3 id="Settings_DevSet_dormSettings" data-uid="Settings.DevSet.dormSettings">
-  dormSettings
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Settings/DevSet.cs/#L10"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public DormSettingsDefinition dormSettings</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Settings.DormSettingsDefinition.html">DormSettingsDefinition</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Settings_DevSet_townSettings" data-uid="Settings.DevSet.townSettings">
-  townSettings
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Settings/DevSet.cs/#L9"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TownSettingsDefinition townSettings</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Settings.TownSettingsDefinition.html">TownSettingsDefinition</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -262,7 +227,7 @@ Class DevSet  <a class="header-action link-secondary" title="View source" href="
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Settings/DevSet.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/ConstrainedDraggable.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

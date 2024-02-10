@@ -342,6 +342,86 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Movables.ConstrainedDraggable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Movables.ConstrainedDraggable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Movables.Draggable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Movables.Draggable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Movables.IDragInteractable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Movables.IDragInteractable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Movables.Placeholder.PlaceholderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Movables.Placeholder.PlaceholderType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Movables.Placeholder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Movables.Placeholder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Movables.Tests.CorrectInteractionsTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Movables.Tests.CorrectInteractionsTest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Movables.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Movables.Tests.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Movables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Movables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/InventoryBackend.Exceptions.InvBadValueException.yml",
       "output": {
         ".html": {
@@ -496,6 +576,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Settings.DevSet.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Settings.DormSettingsDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Settings.DormSettingsDefinition.html"
         }
       },
       "version": ""
