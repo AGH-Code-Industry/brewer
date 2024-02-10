@@ -6,7 +6,7 @@ using Items;
 using UnityEngine;
 
 namespace Dorm.Tools {
-    public class Barrel : MonoBehaviour, IDragInteractable {
+    public class Barrel : Tool, IDragInteractable {
         public Dictionary<ItemDefinition, int> ingredients = new Dictionary<ItemDefinition, int>();
 
         public void EnteredPossibleDragInteraction(GameObject sourceObject) {
