@@ -33,7 +33,7 @@ namespace Dorm.Movables {
 
         private void OnMouseUp() {
             if (_currentInteractable == null) {
-                gameObject.layer = LayerMask.NameToLayer(DefaultLayer);
+                FreeMovement();
                 return;
             }
 
@@ -41,7 +41,7 @@ namespace Dorm.Movables {
                 Destroy(gameObject);
             }
             else {
-                gameObject.layer = LayerMask.NameToLayer(DefaultLayer);
+                FreeMovement();
             }
         }
 
@@ -64,6 +64,13 @@ namespace Dorm.Movables {
                 _currentInteractable.LeftPossibleDragInteraction(gameObject);
                 _currentInteractable = null;
             }
+        }
+
+        private void FreeMovement() {
+            gameObject.layer = LayerMask.NameToLayer(DefaultLayer);
+            _rigid.velocity = 
+                ((Vector3)CInput.DormMouseWorldPosition - transform.position)
+                * DevSet.I.dormSettings.draggableThrowForce;
         }
     }
 }
