@@ -342,6 +342,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Items.Item.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Items.Item.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Items.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Items.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Dorm.Movables.ConstrainedDraggable.yml",
       "output": {
         ".html": {
@@ -372,20 +392,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Dorm.Movables.Placeholder.PlaceholderType.yml",
+      "source_relative_path": "api/Dorm.Movables.Placeholder.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Dorm.Movables.Placeholder.PlaceholderType.html"
+          "relative_path": "api/Dorm.Movables.Placeholder.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Dorm.Movables.Placeholder.yml",
+      "source_relative_path": "api/Dorm.Movables.PlaceholderType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Dorm.Movables.Placeholder.html"
+          "relative_path": "api/Dorm.Movables.PlaceholderType.html"
         }
       },
       "version": ""
@@ -416,6 +436,36 @@
       "output": {
         ".html": {
           "relative_path": "api/Dorm.Movables.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Tools.Barrel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Tools.Barrel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Tools.Tool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Tools.Tool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Tools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Tools.html"
         }
       },
       "version": ""

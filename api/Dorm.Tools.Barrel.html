@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class Placeholder | Czasoport Documentation </title>
+      <title>Class Barrel | Czasoport Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class Placeholder | Czasoport Documentation ">
+      <meta name="title" content="Class Barrel | Czasoport Documentation ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/AGH-Code-Industry/brewer/new/master/apiSpec/new?filename=Dorm_Movables_Placeholder.md&amp;value=---%0Auid%3A%20Dorm.Movables.Placeholder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/AGH-Code-Industry/brewer/new/master/apiSpec/new?filename=Dorm_Tools_Barrel.md&amp;value=---%0Auid%3A%20Dorm.Tools.Barrel%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,16 +84,16 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Dorm.Movables.Placeholder">
+        <article data-uid="Dorm.Tools.Barrel">
 
 
 
-  <h1 id="Dorm_Movables_Placeholder" data-uid="Dorm.Movables.Placeholder" class="text-break">
-Class Placeholder  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Placeholder.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Dorm_Tools_Barrel" data-uid="Dorm.Tools.Barrel" class="text-break">
+Class Barrel  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Dorm.html">Dorm</a>.<a class="xref" href="Dorm.Movables.html">Movables</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Dorm.html">Dorm</a>.<a class="xref" href="Dorm.Tools.html">Tools</a></dd></dl>
   
   </div>
 
@@ -101,7 +101,7 @@ Class Placeholder  <a class="header-action link-secondary" title="View source" h
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Placeholder : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class Barrel : Tool, IDragInteractable</code></pre>
   </div>
 
 
@@ -111,12 +111,26 @@ Class Placeholder  <a class="header-action link-secondary" title="View source" h
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">Placeholder</span></div>
+      <div><a class="xref" href="Dorm.Tools.Tool.html">Tool</a></div>
+      <div><span class="xref">Barrel</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Dorm.Movables.IDragInteractable.html">IDragInteractable</a></div>
     </dd>
   </dl>
 
 
-
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Dorm.Tools.Tool.html#Dorm_Tools_Tool_Awake">Tool.Awake()</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -128,16 +142,16 @@ Class Placeholder  <a class="header-action link-secondary" title="View source" h
 
 
 
-  <h3 id="Dorm_Movables_Placeholder_tool" data-uid="Dorm.Movables.Placeholder.tool">
-  tool
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Placeholder.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Dorm_Tools_Barrel_ingredients" data-uid="Dorm.Tools.Barrel.ingredients">
+  ingredients
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GameObject tool</code></pre>
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;ItemDefinition, int&gt; ingredients</code></pre>
   </div>
 
 
@@ -145,37 +159,7 @@ Class Placeholder  <a class="header-action link-secondary" title="View source" h
 
   <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">GameObject</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-  <h3 id="Dorm_Movables_Placeholder_type" data-uid="Dorm.Movables.Placeholder.type">
-  type
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Placeholder.cs/#L9"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PlaceholderType type</code></pre>
-  </div>
-
-
-
-
-  <h4 class="section">Field Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Dorm.Movables.PlaceholderType.html">PlaceholderType</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="Items.ItemDefinition.html">ItemDefinition</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -191,24 +175,61 @@ Class Placeholder  <a class="header-action link-secondary" title="View source" h
 </h2>
 
 
-  <a id="Dorm_Movables_Placeholder_IsFree_" data-uid="Dorm.Movables.Placeholder.IsFree*"></a>
+  <a id="Dorm_Tools_Barrel_DragInteraction_" data-uid="Dorm.Tools.Barrel.DragInteraction*"></a>
 
-  <h3 id="Dorm_Movables_Placeholder_IsFree" data-uid="Dorm.Movables.Placeholder.IsFree">
-  IsFree()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Placeholder.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Dorm_Tools_Barrel_DragInteraction_GameObject_" data-uid="Dorm.Tools.Barrel.DragInteraction(GameObject)">
+  DragInteraction(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fired when object has been let go over a object that has this interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DragInteraction(GameObject sourceObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceObject</code> <span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether object should be destroyed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dorm_Tools_Barrel_EnteredPossibleDragInteraction_" data-uid="Dorm.Tools.Barrel.EnteredPossibleDragInteraction*"></a>
+
+  <h3 id="Dorm_Tools_Barrel_EnteredPossibleDragInteraction_GameObject_" data-uid="Dorm.Tools.Barrel.EnteredPossibleDragInteraction(GameObject)">
+  EnteredPossibleDragInteraction(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsFree()</code></pre>
+    <pre><code class="lang-csharp hljs">public void EnteredPossibleDragInteraction(GameObject sourceObject)</code></pre>
   </div>
 
-
-  <h4 class="section">Returns</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><code>sourceObject</code> <span class="xref">GameObject</span></dt>
     <dd></dd>
   </dl>
 
@@ -222,49 +243,24 @@ Class Placeholder  <a class="header-action link-secondary" title="View source" h
 
 
 
-  <a id="Dorm_Movables_Placeholder_RemoveTool_" data-uid="Dorm.Movables.Placeholder.RemoveTool*"></a>
 
-  <h3 id="Dorm_Movables_Placeholder_RemoveTool" data-uid="Dorm.Movables.Placeholder.RemoveTool">
-  RemoveTool()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Placeholder.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a id="Dorm_Tools_Barrel_LeftPossibleDragInteraction_" data-uid="Dorm.Tools.Barrel.LeftPossibleDragInteraction*"></a>
+
+  <h3 id="Dorm_Tools_Barrel_LeftPossibleDragInteraction_GameObject_" data-uid="Dorm.Tools.Barrel.LeftPossibleDragInteraction(GameObject)">
+  LeftPossibleDragInteraction(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RemoveTool()</code></pre>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <a id="Dorm_Movables_Placeholder_SetTool_" data-uid="Dorm.Movables.Placeholder.SetTool*"></a>
-
-  <h3 id="Dorm_Movables_Placeholder_SetTool_GameObject_" data-uid="Dorm.Movables.Placeholder.SetTool(GameObject)">
-  SetTool(GameObject)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Placeholder.cs/#L16"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetTool(GameObject toolToSet)</code></pre>
+    <pre><code class="lang-csharp hljs">public void LeftPossibleDragInteraction(GameObject sourceObject)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>toolToSet</code> <span class="xref">GameObject</span></dt>
+    <dt><code>sourceObject</code> <span class="xref">GameObject</span></dt>
     <dd></dd>
   </dl>
 
@@ -283,7 +279,7 @@ Class Placeholder  <a class="header-action link-secondary" title="View source" h
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Placeholder.cs/#L8" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L9" class="edit-link">Edit this page</a>
         </div>
 
 

@@ -1635,6 +1635,24 @@ references:
   isSpec: "True"
   fullName: DataPersistence.IDataPersistence.SavePersistentData
   nameWithType: IDataPersistence.SavePersistentData
+- uid: Dorm.Items
+  name: Dorm.Items
+  href: api/Dorm.Items.html
+  commentId: N:Dorm.Items
+  fullName: Dorm.Items
+  nameWithType: Dorm.Items
+- uid: Dorm.Items.Item
+  name: Item
+  href: api/Dorm.Items.Item.html
+  commentId: T:Dorm.Items.Item
+  fullName: Dorm.Items.Item
+  nameWithType: Item
+- uid: Dorm.Items.Item.ItemDefinition
+  name: ItemDefinition
+  href: api/Dorm.Items.Item.html#Dorm_Items_Item_ItemDefinition
+  commentId: F:Dorm.Items.Item.ItemDefinition
+  fullName: Dorm.Items.Item.ItemDefinition
+  nameWithType: Item.ItemDefinition
 - uid: Dorm.Movables
   name: Dorm.Movables
   href: api/Dorm.Movables.html
@@ -1762,30 +1780,75 @@ references:
   commentId: T:Dorm.Movables.Placeholder
   fullName: Dorm.Movables.Placeholder
   nameWithType: Placeholder
-- uid: Dorm.Movables.Placeholder.PlaceholderType
-  name: Placeholder.PlaceholderType
-  href: api/Dorm.Movables.Placeholder.PlaceholderType.html
-  commentId: T:Dorm.Movables.Placeholder.PlaceholderType
-  fullName: Dorm.Movables.Placeholder.PlaceholderType
-  nameWithType: Placeholder.PlaceholderType
-- uid: Dorm.Movables.Placeholder.PlaceholderType.NotUsable
-  name: NotUsable
-  href: api/Dorm.Movables.Placeholder.PlaceholderType.html#Dorm_Movables_Placeholder_PlaceholderType_NotUsable
-  commentId: F:Dorm.Movables.Placeholder.PlaceholderType.NotUsable
-  fullName: Dorm.Movables.Placeholder.PlaceholderType.NotUsable
-  nameWithType: Placeholder.PlaceholderType.NotUsable
-- uid: Dorm.Movables.Placeholder.PlaceholderType.Usable
-  name: Usable
-  href: api/Dorm.Movables.Placeholder.PlaceholderType.html#Dorm_Movables_Placeholder_PlaceholderType_Usable
-  commentId: F:Dorm.Movables.Placeholder.PlaceholderType.Usable
-  fullName: Dorm.Movables.Placeholder.PlaceholderType.Usable
-  nameWithType: Placeholder.PlaceholderType.Usable
+- uid: Dorm.Movables.Placeholder.IsFree
+  name: IsFree()
+  href: api/Dorm.Movables.Placeholder.html#Dorm_Movables_Placeholder_IsFree
+  commentId: M:Dorm.Movables.Placeholder.IsFree
+  fullName: Dorm.Movables.Placeholder.IsFree()
+  nameWithType: Placeholder.IsFree()
+- uid: Dorm.Movables.Placeholder.IsFree*
+  name: IsFree
+  href: api/Dorm.Movables.Placeholder.html#Dorm_Movables_Placeholder_IsFree_
+  commentId: Overload:Dorm.Movables.Placeholder.IsFree
+  isSpec: "True"
+  fullName: Dorm.Movables.Placeholder.IsFree
+  nameWithType: Placeholder.IsFree
+- uid: Dorm.Movables.Placeholder.RemoveTool
+  name: RemoveTool()
+  href: api/Dorm.Movables.Placeholder.html#Dorm_Movables_Placeholder_RemoveTool
+  commentId: M:Dorm.Movables.Placeholder.RemoveTool
+  fullName: Dorm.Movables.Placeholder.RemoveTool()
+  nameWithType: Placeholder.RemoveTool()
+- uid: Dorm.Movables.Placeholder.RemoveTool*
+  name: RemoveTool
+  href: api/Dorm.Movables.Placeholder.html#Dorm_Movables_Placeholder_RemoveTool_
+  commentId: Overload:Dorm.Movables.Placeholder.RemoveTool
+  isSpec: "True"
+  fullName: Dorm.Movables.Placeholder.RemoveTool
+  nameWithType: Placeholder.RemoveTool
+- uid: Dorm.Movables.Placeholder.SetTool(GameObject)
+  name: SetTool(GameObject)
+  href: api/Dorm.Movables.Placeholder.html#Dorm_Movables_Placeholder_SetTool_GameObject_
+  commentId: M:Dorm.Movables.Placeholder.SetTool(GameObject)
+  fullName: Dorm.Movables.Placeholder.SetTool(GameObject)
+  nameWithType: Placeholder.SetTool(GameObject)
+- uid: Dorm.Movables.Placeholder.SetTool*
+  name: SetTool
+  href: api/Dorm.Movables.Placeholder.html#Dorm_Movables_Placeholder_SetTool_
+  commentId: Overload:Dorm.Movables.Placeholder.SetTool
+  isSpec: "True"
+  fullName: Dorm.Movables.Placeholder.SetTool
+  nameWithType: Placeholder.SetTool
+- uid: Dorm.Movables.Placeholder.tool
+  name: tool
+  href: api/Dorm.Movables.Placeholder.html#Dorm_Movables_Placeholder_tool
+  commentId: F:Dorm.Movables.Placeholder.tool
+  fullName: Dorm.Movables.Placeholder.tool
+  nameWithType: Placeholder.tool
 - uid: Dorm.Movables.Placeholder.type
   name: type
   href: api/Dorm.Movables.Placeholder.html#Dorm_Movables_Placeholder_type
   commentId: F:Dorm.Movables.Placeholder.type
   fullName: Dorm.Movables.Placeholder.type
   nameWithType: Placeholder.type
+- uid: Dorm.Movables.PlaceholderType
+  name: PlaceholderType
+  href: api/Dorm.Movables.PlaceholderType.html
+  commentId: T:Dorm.Movables.PlaceholderType
+  fullName: Dorm.Movables.PlaceholderType
+  nameWithType: PlaceholderType
+- uid: Dorm.Movables.PlaceholderType.NotUsable
+  name: NotUsable
+  href: api/Dorm.Movables.PlaceholderType.html#Dorm_Movables_PlaceholderType_NotUsable
+  commentId: F:Dorm.Movables.PlaceholderType.NotUsable
+  fullName: Dorm.Movables.PlaceholderType.NotUsable
+  nameWithType: PlaceholderType.NotUsable
+- uid: Dorm.Movables.PlaceholderType.Usable
+  name: Usable
+  href: api/Dorm.Movables.PlaceholderType.html#Dorm_Movables_PlaceholderType_Usable
+  commentId: F:Dorm.Movables.PlaceholderType.Usable
+  fullName: Dorm.Movables.PlaceholderType.Usable
+  nameWithType: PlaceholderType.Usable
 - uid: Dorm.Movables.Tests
   name: Dorm.Movables.Tests
   href: api/Dorm.Movables.Tests.html
@@ -1837,6 +1900,82 @@ references:
   isSpec: "True"
   fullName: Dorm.Movables.Tests.CorrectInteractionsTest.LeftPossibleDragInteraction
   nameWithType: CorrectInteractionsTest.LeftPossibleDragInteraction
+- uid: Dorm.Tools
+  name: Dorm.Tools
+  href: api/Dorm.Tools.html
+  commentId: N:Dorm.Tools
+  fullName: Dorm.Tools
+  nameWithType: Dorm.Tools
+- uid: Dorm.Tools.Barrel
+  name: Barrel
+  href: api/Dorm.Tools.Barrel.html
+  commentId: T:Dorm.Tools.Barrel
+  fullName: Dorm.Tools.Barrel
+  nameWithType: Barrel
+- uid: Dorm.Tools.Barrel.DragInteraction(GameObject)
+  name: DragInteraction(GameObject)
+  href: api/Dorm.Tools.Barrel.html#Dorm_Tools_Barrel_DragInteraction_GameObject_
+  commentId: M:Dorm.Tools.Barrel.DragInteraction(GameObject)
+  fullName: Dorm.Tools.Barrel.DragInteraction(GameObject)
+  nameWithType: Barrel.DragInteraction(GameObject)
+- uid: Dorm.Tools.Barrel.DragInteraction*
+  name: DragInteraction
+  href: api/Dorm.Tools.Barrel.html#Dorm_Tools_Barrel_DragInteraction_
+  commentId: Overload:Dorm.Tools.Barrel.DragInteraction
+  isSpec: "True"
+  fullName: Dorm.Tools.Barrel.DragInteraction
+  nameWithType: Barrel.DragInteraction
+- uid: Dorm.Tools.Barrel.EnteredPossibleDragInteraction(GameObject)
+  name: EnteredPossibleDragInteraction(GameObject)
+  href: api/Dorm.Tools.Barrel.html#Dorm_Tools_Barrel_EnteredPossibleDragInteraction_GameObject_
+  commentId: M:Dorm.Tools.Barrel.EnteredPossibleDragInteraction(GameObject)
+  fullName: Dorm.Tools.Barrel.EnteredPossibleDragInteraction(GameObject)
+  nameWithType: Barrel.EnteredPossibleDragInteraction(GameObject)
+- uid: Dorm.Tools.Barrel.EnteredPossibleDragInteraction*
+  name: EnteredPossibleDragInteraction
+  href: api/Dorm.Tools.Barrel.html#Dorm_Tools_Barrel_EnteredPossibleDragInteraction_
+  commentId: Overload:Dorm.Tools.Barrel.EnteredPossibleDragInteraction
+  isSpec: "True"
+  fullName: Dorm.Tools.Barrel.EnteredPossibleDragInteraction
+  nameWithType: Barrel.EnteredPossibleDragInteraction
+- uid: Dorm.Tools.Barrel.LeftPossibleDragInteraction(GameObject)
+  name: LeftPossibleDragInteraction(GameObject)
+  href: api/Dorm.Tools.Barrel.html#Dorm_Tools_Barrel_LeftPossibleDragInteraction_GameObject_
+  commentId: M:Dorm.Tools.Barrel.LeftPossibleDragInteraction(GameObject)
+  fullName: Dorm.Tools.Barrel.LeftPossibleDragInteraction(GameObject)
+  nameWithType: Barrel.LeftPossibleDragInteraction(GameObject)
+- uid: Dorm.Tools.Barrel.LeftPossibleDragInteraction*
+  name: LeftPossibleDragInteraction
+  href: api/Dorm.Tools.Barrel.html#Dorm_Tools_Barrel_LeftPossibleDragInteraction_
+  commentId: Overload:Dorm.Tools.Barrel.LeftPossibleDragInteraction
+  isSpec: "True"
+  fullName: Dorm.Tools.Barrel.LeftPossibleDragInteraction
+  nameWithType: Barrel.LeftPossibleDragInteraction
+- uid: Dorm.Tools.Barrel.ingredients
+  name: ingredients
+  href: api/Dorm.Tools.Barrel.html#Dorm_Tools_Barrel_ingredients
+  commentId: F:Dorm.Tools.Barrel.ingredients
+  fullName: Dorm.Tools.Barrel.ingredients
+  nameWithType: Barrel.ingredients
+- uid: Dorm.Tools.Tool
+  name: Tool
+  href: api/Dorm.Tools.Tool.html
+  commentId: T:Dorm.Tools.Tool
+  fullName: Dorm.Tools.Tool
+  nameWithType: Tool
+- uid: Dorm.Tools.Tool.Awake
+  name: Awake()
+  href: api/Dorm.Tools.Tool.html#Dorm_Tools_Tool_Awake
+  commentId: M:Dorm.Tools.Tool.Awake
+  fullName: Dorm.Tools.Tool.Awake()
+  nameWithType: Tool.Awake()
+- uid: Dorm.Tools.Tool.Awake*
+  name: Awake
+  href: api/Dorm.Tools.Tool.html#Dorm_Tools_Tool_Awake_
+  commentId: Overload:Dorm.Tools.Tool.Awake
+  isSpec: "True"
+  fullName: Dorm.Tools.Tool.Awake
+  nameWithType: Tool.Awake
 - uid: InventoryBackend
   name: InventoryBackend
   href: api/InventoryBackend.html
@@ -2270,6 +2409,12 @@ references:
   commentId: F:Settings.DormSettingsDefinition.draggableMouseFollowSpeed
   fullName: Settings.DormSettingsDefinition.draggableMouseFollowSpeed
   nameWithType: DormSettingsDefinition.draggableMouseFollowSpeed
+- uid: Settings.DormSettingsDefinition.draggableThrowForce
+  name: draggableThrowForce
+  href: api/Settings.DormSettingsDefinition.html#Settings_DormSettingsDefinition_draggableThrowForce
+  commentId: F:Settings.DormSettingsDefinition.draggableThrowForce
+  fullName: Settings.DormSettingsDefinition.draggableThrowForce
+  nameWithType: DormSettingsDefinition.draggableThrowForce
 - uid: Settings.DormSettingsDefinition.draggablesMoveSpeed
   name: draggablesMoveSpeed
   href: api/Settings.DormSettingsDefinition.html#Settings_DormSettingsDefinition_draggablesMoveSpeed
