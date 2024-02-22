@@ -1610,7 +1610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3ae0c07120c0fe469f71dc5d5b8b1ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  townAnimations: {fileID: 1251673609}
+  animator: {fileID: 1251673609}
 --- !u!4 &2100049206
 Transform:
   m_ObjectHideFlags: 0
