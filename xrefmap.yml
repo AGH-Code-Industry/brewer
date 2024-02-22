@@ -2495,12 +2495,12 @@ references:
   commentId: T:Town.PlayerInteractions
   fullName: Town.PlayerInteractions
   nameWithType: PlayerInteractions
-- uid: Town.PlayerMovementComponent
-  name: PlayerMovementComponent
-  href: api/Town.PlayerMovementComponent.html
-  commentId: T:Town.PlayerMovementComponent
-  fullName: Town.PlayerMovementComponent
-  nameWithType: PlayerMovementComponent
+- uid: Town.PlayerMovement
+  name: PlayerMovement
+  href: api/Town.PlayerMovement.html
+  commentId: T:Town.PlayerMovement
+  fullName: Town.PlayerMovement
+  nameWithType: PlayerMovement
 - uid: Town.Town
   name: Town.Town
   href: api/Town.Town.html

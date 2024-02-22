@@ -334,10 +334,10 @@
     "title": "Class PlayerInteractions | Czasoport Documentation",
     "keywords": "Class PlayerInteractions Namespace Town public class PlayerInteractions : MonoBehaviour Inheritance object PlayerInteractions"
   },
-  "api/Town.PlayerMovementComponent.html": {
-    "href": "api/Town.PlayerMovementComponent.html",
-    "title": "Class PlayerMovementComponent | Czasoport Documentation",
-    "keywords": "Class PlayerMovementComponent Namespace Town public class PlayerMovementComponent : MonoBehaviour Inheritance object PlayerMovementComponent"
+  "api/Town.PlayerMovement.html": {
+    "href": "api/Town.PlayerMovement.html",
+    "title": "Class PlayerMovement | Czasoport Documentation",
+    "keywords": "Class PlayerMovement Namespace Town public class PlayerMovement : MonoBehaviour Inheritance object PlayerMovement"
   },
   "api/Town.Town.TrashCan.html": {
     "href": "api/Town.Town.TrashCan.html",
@@ -352,7 +352,7 @@
   "api/Town.html": {
     "href": "api/Town.html",
     "title": "Namespace Town | Czasoport Documentation",
-    "keywords": "Namespace Town Classes CameraFollowPlayerComponent PlayerInteractions PlayerMovementComponent Interfaces IInteractable"
+    "keywords": "Namespace Town Classes CameraFollowPlayerComponent PlayerInteractions PlayerMovement Interfaces IInteractable"
   },
   "api/Utils.Attributes.ObjectIdentifierAttribute.html": {
     "href": "api/Utils.Attributes.ObjectIdentifierAttribute.html",
