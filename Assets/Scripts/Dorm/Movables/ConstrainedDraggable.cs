@@ -6,6 +6,7 @@ using Settings;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 namespace Dorm.Movables {
     public class ConstrainedDraggable : MonoBehaviour {
@@ -19,6 +20,7 @@ namespace Dorm.Movables {
         private Vector2 _startPos;
         private Rigidbody2D _rigid;
         private bool _isLerping = false;
+        private bool _isPicked = false;
 
         private void Awake() {
             _rigid = GetComponent<Rigidbody2D>();
@@ -26,15 +28,23 @@ namespace Dorm.Movables {
         }
 
         private void OnMouseDown() {
-            if (_isLerping) {
-                StopAllCoroutines();
-                _isLerping = false;
-                transform.position = CInput.DormMouseWorldPosition;
+            if (EventSystem.current.IsPointerOverGameObject()) {
+                _isPicked = false;
             }
-            _startPos = CalculatePlacementPosition(placeholders[_currentPlaceholderIndex].GetComponent<Placeholder>());
+            else {
+                _isPicked = true;
+                if (_isLerping) {
+                        StopAllCoroutines();
+                        _isLerping = false;
+                        transform.position = CInput.DormMouseWorldPosition;
+                }
+                _startPos = CalculatePlacementPosition(placeholders[_currentPlaceholderIndex].GetComponent<Placeholder>());
+            }
+            
         }
 
         private void OnMouseDrag() {
+            if (!_isPicked) return;
             _rigid.MovePosition(Vector2.Lerp(
                 transform.position, 
                 CInput.DormMouseWorldPosition, 
@@ -42,6 +52,7 @@ namespace Dorm.Movables {
         }
 
         private void OnMouseUp() {
+            if (!_isPicked) return;
             if(!_isDraggedAbovePlaceholder
                || placeholders[_currentPlaceholderIndex] == _detectedPlaceholder
                || !IsPlaceholderFree(_detectedPlaceholder.GetComponent<Placeholder>())){

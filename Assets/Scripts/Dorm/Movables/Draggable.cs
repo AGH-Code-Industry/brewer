@@ -6,6 +6,7 @@ using Settings;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 namespace Dorm.Movables {
     public class Draggable : MonoBehaviour {
@@ -15,16 +16,24 @@ namespace Dorm.Movables {
         
         private Rigidbody2D _rigid;
         private IDragInteractable _currentInteractable;
+        private bool _isPicked = false;
 
         private void Awake() {
             _rigid = GetComponent<Rigidbody2D>();
         }
 
         private void OnMouseDown() {
-            gameObject.layer = LayerMask.NameToLayer(IgnoreCollisionsLayer);
+            if (EventSystem.current.IsPointerOverGameObject()) {
+                _isPicked = false;
+            }
+            else {
+                _isPicked = true;
+                gameObject.layer = LayerMask.NameToLayer(IgnoreCollisionsLayer);
+            }
         }
 
         private void OnMouseDrag() {
+            if (!_isPicked) return;
             _rigid.MovePosition(Vector2.Lerp(
                 transform.position, 
                 CInput.DormMouseWorldPosition, 
@@ -32,6 +41,7 @@ namespace Dorm.Movables {
         }
 
         private void OnMouseUp() {
+            if (!_isPicked) return;
             if (_currentInteractable == null) {
                 FreeMovement();
                 return;
