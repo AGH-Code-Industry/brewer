@@ -11,7 +11,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Items
+  - DormItems
   - Water
   - UI
   - DragInteractable
@@ -53,9 +53,12 @@ TagManager:
   - name: Player
     uniqueID: 1290350639
     locked: 0
-  - name: UI
+  - name: WorldUI
     uniqueID: 3064764917
     locked: 0
   - name: DormItems
     uniqueID: 303882575
+    locked: 0
+  - name: UI
+    uniqueID: 3829377517
     locked: 0

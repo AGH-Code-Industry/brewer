@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59070be403ff4283a4f72ef84f4e8879, type: 3}
-  m_Name: Barley Malt
+  m_Script: {fileID: 11500000, guid: ef09ff5047094acfa05e47752e2fa2f6, type: 3}
+  m_Name: BarleyMalt
   m_EditorClassIdentifier: 
   type: 1
   itemName: Barley Malt
   description: Basic ingredient
-  prefab: {fileID: 0}
-  uiImage: {fileID: 21300000, guid: aeb3abb4c2106bb42b5317b0c9b3ee06, type: 3}
+  prefab: {fileID: 2605352289593416484, guid: a3bf034e2439fce44b477219f52d4596, type: 3}
+  uiImage: {fileID: -870869149, guid: 8b39e7cbfd1e87f48a412ba228e37d28, type: 3}

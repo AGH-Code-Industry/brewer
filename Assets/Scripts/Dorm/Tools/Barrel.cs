@@ -6,9 +6,21 @@ using Items;
 using UnityEngine;
 
 namespace Dorm.Tools {
+    [RequireComponent(typeof(ConstrainedDraggable))]
     public class Barrel : Tool, IDragInteractable {
-        public Dictionary<ItemDefinition, int> ingredients = new Dictionary<ItemDefinition, int>();
+        private Dictionary<ItemDefinition, int> _ingredients = new Dictionary<ItemDefinition, int>();
 
+        private bool _canBeUsed;
+
+        protected override void Awake() {
+            base.Awake();
+            GetComponent<ConstrainedDraggable>().onPlaceholderChanged.AddListener(OnPlaceholderChanged);
+        }
+        
+        private void OnPlaceholderChanged(Placeholder placeholder) {
+            _canBeUsed = placeholder.type == PlaceholderType.Usable;
+        }
+        
         public void EnteredPossibleDragInteraction(GameObject sourceObject) {
             return;
         }
@@ -18,12 +30,14 @@ namespace Dorm.Tools {
         }
 
         public bool DragInteraction(GameObject sourceObject) {
+            if(!_canBeUsed) {
+                return false;
+            }
             var item = sourceObject.GetComponent<Item>();
             if (item != null) {
-                ingredients.Add(item.ItemDefinition, 1);
+                _ingredients.Add(item.itemDefinition, 1);
                 return true;
             }
-
             return false;
         }
     }

@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ccb00166b2971e4f80b716b1587a3a4, type: 3}
   m_Name: DefaultSaveData
   m_EditorClassIdentifier: 
-  currentPlace: 1
+  currentPlace: 0
   startingItems:
     startingItems:
-    - item: {fileID: 11400000, guid: c31ae2f19602d3f40b12d4d6b3be76b8, type: 2}
+    - item: {fileID: 11400000, guid: fdf725f07b21cdc4dafe7e92b917a0c6, type: 2}
       quantity: 4
+    - item: {fileID: 11400000, guid: c83532e4f5a6f8542a5e08e69dfb0a80, type: 2}
+      quantity: 2
+    - item: {fileID: 11400000, guid: c0f6b84fe41e2254f967ef68f27e9fbc, type: 2}
+      quantity: 15

@@ -6,22 +6,29 @@ using Settings;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 namespace Dorm.Movables {
-    public class Draggable : MonoBehaviour {
+    public class Draggable : MonoBehaviour, IPointerDownHandler {
+        public static ushort layerCount = 0;
         
-        private const string DefaultLayer = "Default";
-        private const string IgnoreCollisionsLayer = "IgnoreCollisions";
+        private int _ignoreCollisionsLayer;
+        private int _startingLayer;
         
         private Rigidbody2D _rigid;
         private IDragInteractable _currentInteractable;
+        private SpriteRenderer _spriteRenderer;
 
         private void Awake() {
             _rigid = GetComponent<Rigidbody2D>();
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+            _startingLayer = gameObject.layer;
+            _ignoreCollisionsLayer = LayerMask.NameToLayer("IgnoreCollisions");
         }
 
         private void OnMouseDown() {
-            gameObject.layer = LayerMask.NameToLayer(IgnoreCollisionsLayer);
+            gameObject.layer = _ignoreCollisionsLayer;
+            _spriteRenderer.sortingOrder = layerCount++;
         }
 
         private void OnMouseDrag() {
@@ -43,6 +50,24 @@ namespace Dorm.Movables {
             else {
                 FreeMovement();
             }
+        }
+
+        public void InitializeInitialFollow() {
+            StartCoroutine(InitialMouseDrag());
+        }
+        
+        IEnumerator InitialMouseDrag() {
+            CDebug.Log("Initial mouse drag");
+            OnMouseDown();
+            while (CInput.InputActions.Dormitory.PrimaryMouseClicked.ReadValue<float>() > 0f) {
+                yield return new WaitForEndOfFrame();
+                OnMouseDrag();
+            }
+            OnMouseUp();
+        }
+        
+        public void OnPointerDown(PointerEventData eventData) {
+            CDebug.Log("Please work.");
         }
 
         public void OnTriggerEnter2D(Collider2D other) {
@@ -67,7 +92,7 @@ namespace Dorm.Movables {
         }
 
         private void FreeMovement() {
-            gameObject.layer = LayerMask.NameToLayer(DefaultLayer);
+            gameObject.layer = _startingLayer;
             _rigid.velocity = 
                 ((Vector3)CInput.DormMouseWorldPosition - transform.position)
                 * DevSet.I.dormSettings.draggableThrowForce;

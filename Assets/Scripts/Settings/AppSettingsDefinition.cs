@@ -21,6 +21,7 @@ namespace Settings {
 
         [Header("Resource paths")]
         public string itemsResPath = "Items";
+        public string recipesResPath = "Recipes";
 
         [Header("Data Persistence")]
         public string defaultSaveName;

@@ -11,7 +11,7 @@ namespace Dorm.Movables {
     public class ConstrainedDraggable : MonoBehaviour {
         [SerializeField] private GameObject[] placeholders;
         
-        public UnityEvent<Placeholder> onPlaceholderChanged;
+        [NonSerialized] public UnityEvent<Placeholder> onPlaceholderChanged = new();
         
         private ushort _currentPlaceholderIndex;
         private bool _isDraggedAbovePlaceholder;
