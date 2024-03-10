@@ -1,15 +1,23 @@
 using Settings;
 using System.Collections.Generic;
 using System.Linq;
+using Dialogues;
 using Town;
 using UnityEngine;
 
 namespace Town {
-    public class PlayerInteractions : MonoBehaviour
-    {
+    public class PlayerInteractions : MonoBehaviour {
+        public TextAsset dialogue;
+        
         private HashSet<IInteractable> _oldInteractables = new HashSet<IInteractable>();
         void Update()
         {
+            // TODO: REMOVE
+            if (Input.GetKeyDown(KeyCode.R)) {
+                DialogueManager.I.StartDialogue(dialogue);
+            }
+            // END TODO
+            
             List<Collider2D> result = new List<Collider2D>();
             Physics2D.OverlapCircle(transform.position,
                 DevSet.I.townSettings.interactionRadius,

@@ -46,9 +46,11 @@ namespace InventoryBackend {
             }
             if (_items.TryGetValue(item, out var value)) {
                 _items[item] += count;
+                _logger.Log($"Item count changed: {item}, added: {count % Colorize.Cyan}, new count: {_items[item] % Colorize.Cyan}");
             }
             else {
                 _items.Add(item, count);
+                _logger.Log($"New item added: {item % Colorize.Cyan}, count: {count % Colorize.Cyan}");
             }
             inventoryUpdated?.Invoke();
         }
@@ -75,6 +77,7 @@ namespace InventoryBackend {
                     return false;
                 }
                 _items[item] -= count;
+                _logger.Log($"Item count changed: {item}, removed: {count % Colorize.Cyan}, new count: {_items[item] % Colorize.Cyan}");
                 if (_items[item] <= 0) {
                     _items.Remove(item);
                 }

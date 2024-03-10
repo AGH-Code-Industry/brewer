@@ -9,7 +9,9 @@ namespace Utils {
             UTILS,
             APPLICATION,
             DATA_PERSISTENCE,
-            INVENTORY
+            INVENTORY,
+            DIALOGUES,
+            RECIPES
         }
         
         static Loggers() {
@@ -35,6 +37,18 @@ namespace Utils {
                 {
                     LoggerType.INVENTORY,
                     new CLogger(LoggerType.INVENTORY) {
+                        LogEnabled = true
+                    }
+                },
+                {
+                    LoggerType.DIALOGUES,
+                    new CLogger(LoggerType.DIALOGUES) {
+                        LogEnabled = true
+                    }
+                },
+                {
+                    LoggerType.RECIPES,
+                    new CLogger(LoggerType.RECIPES) {
                         LogEnabled = true
                     }
                 }
