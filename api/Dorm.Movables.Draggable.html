@@ -89,7 +89,7 @@
 
 
   <h1 id="Dorm_Movables_Draggable" data-uid="Dorm.Movables.Draggable" class="text-break">
-Class Draggable  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Draggable.cs/#L11"><i class="bi bi-code-slash"></i></a>
+Class Draggable  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Draggable.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,7 +101,7 @@ Class Draggable  <a class="header-action link-secondary" title="View source" hre
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Draggable : MonoBehaviour</code></pre>
+    <pre><code class="lang-csharp hljs">public class Draggable : MonoBehaviour, IPointerDownHandler</code></pre>
   </div>
 
 
@@ -113,6 +113,46 @@ Class Draggable  <a class="header-action link-secondary" title="View source" hre
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><span class="xref">Draggable</span></div>
     </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IPointerDownHandler</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Dorm_Movables_Draggable_layerCount" data-uid="Dorm.Movables.Draggable.layerCount">
+  layerCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Draggable.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ushort layerCount</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -127,11 +167,68 @@ Class Draggable  <a class="header-action link-secondary" title="View source" hre
 </h2>
 
 
+  <a id="Dorm_Movables_Draggable_InitializeInitialFollow_" data-uid="Dorm.Movables.Draggable.InitializeInitialFollow*"></a>
+
+  <h3 id="Dorm_Movables_Draggable_InitializeInitialFollow" data-uid="Dorm.Movables.Draggable.InitializeInitialFollow">
+  InitializeInitialFollow()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Draggable.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeInitialFollow()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dorm_Movables_Draggable_OnPointerDown_" data-uid="Dorm.Movables.Draggable.OnPointerDown*"></a>
+
+  <h3 id="Dorm_Movables_Draggable_OnPointerDown_PointerEventData_" data-uid="Dorm.Movables.Draggable.OnPointerDown(PointerEventData)">
+  OnPointerDown(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Draggable.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPointerDown(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <span class="xref">PointerEventData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="Dorm_Movables_Draggable_OnTriggerEnter2D_" data-uid="Dorm.Movables.Draggable.OnTriggerEnter2D*"></a>
 
   <h3 id="Dorm_Movables_Draggable_OnTriggerEnter2D_Collider2D_" data-uid="Dorm.Movables.Draggable.OnTriggerEnter2D(Collider2D)">
   OnTriggerEnter2D(Collider2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Draggable.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Draggable.cs/#L73"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -162,7 +259,7 @@ Class Draggable  <a class="header-action link-secondary" title="View source" hre
 
   <h3 id="Dorm_Movables_Draggable_OnTriggerExit2D_Collider2D_" data-uid="Dorm.Movables.Draggable.OnTriggerExit2D(Collider2D)">
   OnTriggerExit2D(Collider2D)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Draggable.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Draggable.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -193,7 +290,7 @@ Class Draggable  <a class="header-action link-secondary" title="View source" hre
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Draggable.cs/#L11" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Movables/Draggable.cs/#L12" class="edit-link">Edit this page</a>
         </div>
 
 
