@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc60077b0f942a686203e56e443d26a, type: 3}
   m_Name: DummyRecipe
   m_EditorClassIdentifier: 
-  recipeHash: 649E26DDF8D65EA4F978B7E11EB796A9
+  recipeHash: 026727B2272AC76B7C413023FCADF6F8
   neededIngredients:
-  - {fileID: 11400000, guid: c31ae2f19602d3f40b12d4d6b3be76b8, type: 2}
+  - {fileID: 11400000, guid: fdf725f07b21cdc4dafe7e92b917a0c6, type: 2}
   result: {fileID: 11400000, guid: d3640753728640d4b93004716cf0c71c, type: 2}
