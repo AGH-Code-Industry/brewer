@@ -2,1831 +2,1831 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Application.GameManager.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Application.StartupManager.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Application.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.CInput.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.Exceptions.NoMainCameraException.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.Exceptions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.InputActions.AlwaysEnabledActions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.InputActions.DormitoryActions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.InputActions.IAlwaysEnabledActions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.InputActions.IDormitoryActions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.InputActions.IPauseMenuActions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.InputActions.ITestingActions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.InputActions.ITownActions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.InputActions.PauseMenuActions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.InputActions.TestingActions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.InputActions.TownActions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.InputActions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/CustomInput.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.Data.DormitoryData.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.Data.GameData.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.Data.InventoryData.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.Data.OrderData.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.Data.TownData.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.Data.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.DataPersistenceManager.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.FileDataHandler.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.HelperStructures.DefaultInventoryEntries.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.HelperStructures.DefaultInventoryEntry.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.HelperStructures.InventoryEntry.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.HelperStructures.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.IDataPersistence.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/DataPersistence.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dialogues.ChoiceProcessing.ChoiceButton.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dialogues.ChoiceProcessing.ChoiceContext.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dialogues.ChoiceProcessing.ChoicesTagProcessor.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dialogues.ChoiceProcessing.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dialogues.ChoicesProcessor.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dialogues.DialogueManager.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dialogues.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dorm.Items.Item.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dorm.Items.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dorm.Movables.ConstrainedDraggable.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dorm.Movables.Draggable.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dorm.Movables.IDragInteractable.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dorm.Movables.Placeholder.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dorm.Movables.PlaceholderType.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dorm.Movables.Tests.CorrectInteractionsTest.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dorm.Movables.Tests.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dorm.Movables.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dorm.Tools.Barrel.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dorm.Tools.Tool.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Dorm.Tools.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.UnityInkFileHandler.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Global.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.CharacterRange.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.CharacterSet.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.CommandLineInput.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.CommentEliminator.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Compiler.CommandLineInputResult.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Compiler.DebugSourceRange.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Compiler.Options.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Compiler.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.DefaultFileHandler.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.ErrorHandler.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.ErrorType.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.IFileHandler.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.IPlugin.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.InkParser.CustomFlags.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.InkParser.FlowDecl.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.InkParser.InfixOperator.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.InkParser.NameWithMetadata.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.InkParser.StatementLevel.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.InkParser.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.InkStringConversionExtensions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.AuthorWarning.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.BinaryExpression.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Choice.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Conditional.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.ConditionalSingleBranch.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.ConstantDeclaration.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.ContentList.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Divert.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.DivertTarget.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Expression.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.ExternalDeclaration.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.FlowBase.Argument.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.FlowBase.VariableResolveResult.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.FlowBase.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.FlowLevel.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.FunctionCall.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Gather.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Glue.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.INamedContent.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.IWeavePoint.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Identifier.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.IncDecExpression.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.IncludedFile.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Knot.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.LegacyTag.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.List.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.ListDefinition.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.ListElementDefinition.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.MultipleConditionExpression.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Number.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Object.FindQueryFunc-1.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Object.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Path.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Return.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Sequence.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.SequenceType.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Stitch.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Story.SymbolType.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Story.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.StringExpression.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Tag.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Text.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.TunnelOnwards.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.UnaryExpression.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.VariableAssignment.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.VariableReference.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Weave.BadTerminationHandler.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Weave.GatherPointToResolve.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Weave.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.Wrap-1.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Parsed.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.PluginManager.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.BoolValue.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.CallStack.Element.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.CallStack.Thread.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.CallStack.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Choice.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.ChoicePoint.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Container.CountFlags.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Container.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.ControlCommand.CommandType.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.ControlCommand.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.DebugMetadata.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Divert.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.DivertTargetValue.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.FloatValue.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Flow.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Glue.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.INamedContent.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.InkList.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.InkListItem.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.IntValue.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Json.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.ListDefinition.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.ListDefinitionsOrigin.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.ListValue.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.NativeFunctionCall.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Object.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Path.Component.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Path.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Pointer.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.ProfileNode.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Profiler.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.PushPopType.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.SearchResult.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.SimpleJson.Writer.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.SimpleJson.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.StatePatch.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Story.ExternalFunction.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Story.VariableObserver.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Story.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.StoryException.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.StoryState.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.StringExt.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.StringValue.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Tag.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Value-1.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Value.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.ValueType.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.VariableAssignment.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.VariablePointerValue.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.VariableReference.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.VariablesState.VariableChanged.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.VariablesState.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.Void.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Runtime.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.Stats.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.StringParser.ErrorHandler.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.StringParser.ParseRule.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.StringParser.ParseSuccessStruct.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.StringParser.SpecificParseRule-1.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.StringParser.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.StringParserState.Element.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.StringParserState.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.ColoredBackgroundGUIStyle.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.Debugging.InkHistoryContentItem.ContentType.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.Debugging.InkHistoryContentItem.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.Debugging.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.DefaultAssetEditor.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.DefaultAssetInspector.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkBrowserIcons.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkCompiler.CompilationStackItemState.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkCompiler.OnCompleteInkCompliationStackEvent.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkCompiler.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkCompilerLog.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkEditorUtils.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkFile.InkIncludeParser.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkFile.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkInspector.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkLibrary.AssetSaver.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkLibrary.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerHistoryItem.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.AutoScrollSmoothingMode.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.BaseStoryPanelState.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.ContextMenuDelegate.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.DisplayOptions.VisibilityOptions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.DisplayOptions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.FunctionPanelState.FunctionParams.FunctionInput.FunctionInputType.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.FunctionPanelState.FunctionParams.FunctionInput.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.FunctionPanelState.FunctionParams.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.FunctionPanelState.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.InkPlayerParams.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.InkPlayerWindowState.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.NamedContentPanelState.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.ObservedVariablesPanelState.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.PlayerOptions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.StoryPanelState.AutoScrollMode.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.StoryPanelState.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.VariablesPanelState.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPlayerWindow.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkPostProcessor.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkSettings.AssetSaver.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkSettings.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkSettingsEditor.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.InkUnityIntegrationStartupWindow.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.ObservedVariable.ObservedVariableState.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.ObservedVariable.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.UndoHistory-1.OnChangeHistoryIndexEvent.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.UndoHistory-1.OnChangeUndoHistoryEvent.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.UndoHistory-1.OnRedoEvent.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.UndoHistory-1.OnUndoEvent.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.UndoHistory-1.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.UnityIntegration.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Ink.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/InventoryBackend.Exceptions.InvBadValueException.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/InventoryBackend.Exceptions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/InventoryBackend.Inventory.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/InventoryBackend.Test.TestInventory.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/InventoryBackend.Test.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/InventoryBackend.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/InventoryUI.InventoryItemButton.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/InventoryUI.InventoryUI.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/InventoryUI.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Items.IngredientDefinition.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Items.ItemDefinition.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Items.ItemType.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Items.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/MainMenu.MainMenuManager.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/MainMenu.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Recipes.RecipeChecker.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Recipes.RecipeDefinition.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Recipes.RecipeDefinitionEditor.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Recipes.RecipeHash.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Recipes.Tests.RecipeTest.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Recipes.Tests.RecipeUnitTest.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Recipes.Tests.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Recipes.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Settings.AppSettingsDefinition.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Settings.DefaultSaveDataDefinition.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Settings.DevSet.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Settings.DormSettingsDefinition.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Settings.TownSettingsDefinition.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Settings.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Town.CameraFollowPlayerComponent.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Town.IInteractable.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Town.PlayerInteractions.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Town.PlayerMovement.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Town.Town.TrashCan.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Town.Town.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Town.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Attributes.ObjectIdentifierAttribute.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Attributes.ObjectIdentifierDrawer.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Attributes.ReadOnlyAttribute.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Attributes.ReadOnlyDrawer.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Attributes.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.DoNotDestroy.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Globals.PlaceType.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Globals.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Loggers.LoggerType.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Loggers.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Singleton.Singleton-1.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Singleton.SingletonOverrideException.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Singleton.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Statistics.StatOperation.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Statistics.Statistic.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.Statistics.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.UniqueScriptableObject.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/api/Utils.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/gdd/fabula/fabula.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/gdd/grafika/grafika.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/gdd/interfejs/interfejs.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/gdd/marketing/marketing_monetyzacja.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/gdd/muzyka/muzyka.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/gdd/opis_techniczny/opis_techniczny.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/gdd/postacie_obiekty/postacie_obiekty.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/gdd/poziomy/poziomy.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/gdd/rozgrywka/rozgrywka.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/index.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/manual/manuals/cinput-manual.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/manual/tutorials-info/generating-docs.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://normanderwan.github.io/DocFxForUnity/manual/tutorials-info/workflow.html</loc>
-    <lastmod>2024-03-10T08:20:17+00:00</lastmod>
+    <lastmod>2024-03-10T11:42:56+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
