@@ -4,6 +4,7 @@ using Dorm.Items;
 using Dorm.Movables;
 using Items;
 using UnityEngine;
+using Utils;
 
 namespace Dorm.Tools {
     [RequireComponent(typeof(ConstrainedDraggable))]
@@ -12,6 +13,7 @@ namespace Dorm.Tools {
 
         private bool _canBeUsed;
 
+        private static readonly CLogger Logger = Loggers.LoggersList[Loggers.LoggerType.TOOLS];
         protected override void Awake() {
             base.Awake();
             GetComponent<ConstrainedDraggable>().onPlaceholderChanged.AddListener(OnPlaceholderChanged);
@@ -22,11 +24,11 @@ namespace Dorm.Tools {
         }
         
         public void EnteredPossibleDragInteraction(GameObject sourceObject) {
-            return;
+            Logger.Log($"{sourceObject.name} entered possible drag interaction with {toolDefinition}");
         }
 
         public void LeftPossibleDragInteraction(GameObject sourceObject) {
-            return;
+            Logger.Log($"{sourceObject.name} left possible drag interaction with {toolDefinition}");
         }
 
         public bool DragInteraction(GameObject sourceObject) {

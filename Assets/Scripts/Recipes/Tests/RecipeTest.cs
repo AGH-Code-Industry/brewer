@@ -11,7 +11,7 @@ namespace Recipes.Tests {
         private void Start() {
             if(!runTests) return;
             foreach (var test in tests) {
-                if (RecipeChecker.FindRecipe(test.neededIngredients, out var result)) {
+                if (RecipeChecker.FindRecipe(test.tool, test.neededIngredients, out var result)) {
                     Assert.AreEqual(test.expectedResult, result);
                     CDebug.Log($"Found recipe: expected {test.expectedResult}, got {result}");
                     continue;
