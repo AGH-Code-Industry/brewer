@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Dorm_Tools_Barrel" data-uid="Dorm.Tools.Barrel" class="text-break">
-Class Barrel  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L9"><i class="bi bi-code-slash"></i></a>
+Class Barrel  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -124,6 +124,13 @@ Class Barrel  <a class="header-action link-secondary" title="View source" href="
   </dl>
 
 
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Dorm.Tools.Tool.html#Dorm_Tools_Tool_toolDefinition">Tool.toolDefinition</a>
+    </div>
+  </dd></dl>
 
 
 
@@ -138,7 +145,7 @@ Class Barrel  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Dorm_Tools_Barrel_Awake" data-uid="Dorm.Tools.Barrel.Awake">
   Awake()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -164,7 +171,7 @@ Class Barrel  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Dorm_Tools_Barrel_DragInteraction_GameObject_" data-uid="Dorm.Tools.Barrel.DragInteraction(GameObject)">
   DragInteraction(GameObject)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Fired when object has been let go over a object that has this interface.</p>
@@ -202,7 +209,7 @@ Class Barrel  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Dorm_Tools_Barrel_EnteredPossibleDragInteraction_GameObject_" data-uid="Dorm.Tools.Barrel.EnteredPossibleDragInteraction(GameObject)">
   EnteredPossibleDragInteraction(GameObject)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L26"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -233,7 +240,7 @@ Class Barrel  <a class="header-action link-secondary" title="View source" href="
 
   <h3 id="Dorm_Tools_Barrel_LeftPossibleDragInteraction_GameObject_" data-uid="Dorm.Tools.Barrel.LeftPossibleDragInteraction(GameObject)">
   LeftPossibleDragInteraction(GameObject)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L30"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -264,7 +271,7 @@ Class Barrel  <a class="header-action link-secondary" title="View source" href="
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L9" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dorm/Tools/Barrel.cs/#L10" class="edit-link">Edit this page</a>
         </div>
 
 

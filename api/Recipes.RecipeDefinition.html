@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Recipes_RecipeDefinition" data-uid="Recipes.RecipeDefinition" class="text-break">
-Class RecipeDefinition  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class RecipeDefinition  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -130,7 +130,7 @@ Class RecipeDefinition  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Recipes_RecipeDefinition_neededIngredients" data-uid="Recipes.RecipeDefinition.neededIngredients">
   neededIngredients
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -160,7 +160,7 @@ Class RecipeDefinition  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Recipes_RecipeDefinition_recipeHash" data-uid="Recipes.RecipeDefinition.recipeHash">
   recipeHash
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -190,7 +190,7 @@ Class RecipeDefinition  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Recipes_RecipeDefinition_result" data-uid="Recipes.RecipeDefinition.result">
   result
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -217,6 +217,66 @@ Class RecipeDefinition  <a class="header-action link-secondary" title="View sour
 
 
 
+
+  <h3 id="Recipes_RecipeDefinition_timeToCraft" data-uid="Recipes.RecipeDefinition.timeToCraft">
+  timeToCraft
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float timeToCraft</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="Recipes_RecipeDefinition_tool" data-uid="Recipes.RecipeDefinition.tool">
+  tool
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tools tool</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Dorm.Tools.Tools.html">Tools</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -225,7 +285,7 @@ Class RecipeDefinition  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Recipes_RecipeDefinition_CalculateRecipeHash" data-uid="Recipes.RecipeDefinition.CalculateRecipeHash">
   CalculateRecipeHash()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L19"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -251,7 +311,7 @@ Class RecipeDefinition  <a class="header-action link-secondary" title="View sour
 
   <h3 id="Recipes_RecipeDefinition_ToString" data-uid="Recipes.RecipeDefinition.ToString">
   ToString()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L23"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -282,7 +342,7 @@ Class RecipeDefinition  <a class="header-action link-secondary" title="View sour
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeDefinition.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

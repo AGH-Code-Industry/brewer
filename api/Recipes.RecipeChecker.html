@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -89,7 +89,7 @@
 
 
   <h1 id="Recipes_RecipeChecker" data-uid="Recipes.RecipeChecker" class="text-break">
-Class RecipeChecker  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeChecker.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class RecipeChecker  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeChecker.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -154,20 +154,22 @@ Class RecipeChecker  <a class="header-action link-secondary" title="View source"
 
   <a id="Recipes_RecipeChecker_FindRecipe_" data-uid="Recipes.RecipeChecker.FindRecipe*"></a>
 
-  <h3 id="Recipes_RecipeChecker_FindRecipe_Items_ItemDefinition___Recipes_RecipeDefinition__" data-uid="Recipes.RecipeChecker.FindRecipe(Items.ItemDefinition[],Recipes.RecipeDefinition@)">
-  FindRecipe(ItemDefinition[], out RecipeDefinition)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeChecker.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Recipes_RecipeChecker_FindRecipe_Dorm_Tools_Tools_Items_ItemDefinition___Recipes_RecipeDefinition__" data-uid="Recipes.RecipeChecker.FindRecipe(Dorm.Tools.Tools,Items.ItemDefinition[],Recipes.RecipeDefinition@)">
+  FindRecipe(Tools, ItemDefinition[], out RecipeDefinition)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeChecker.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool FindRecipe(ItemDefinition[] ingredients, out RecipeDefinition recipe)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool FindRecipe(Tools tool, ItemDefinition[] ingredients, out RecipeDefinition recipe)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
+    <dt><code>tool</code> <a class="xref" href="Dorm.Tools.Tools.html">Tools</a></dt>
+    <dd></dd>
     <dt><code>ingredients</code> <a class="xref" href="Items.ItemDefinition.html">ItemDefinition</a>[]</dt>
     <dd></dd>
     <dt><code>recipe</code> <a class="xref" href="Recipes.RecipeDefinition.html">RecipeDefinition</a></dt>
@@ -194,7 +196,7 @@ Class RecipeChecker  <a class="header-action link-secondary" title="View source"
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeChecker.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Recipes/RecipeChecker.cs/#L11" class="edit-link">Edit this page</a>
         </div>
 
 

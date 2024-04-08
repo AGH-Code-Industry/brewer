@@ -2205,6 +2205,56 @@ references:
   commentId: N:Dorm.Tools
   fullName: Dorm.Tools
   nameWithType: Dorm.Tools
+- uid: Dorm.Tools.Animations
+  name: Dorm.Tools.Animations
+  href: api/Dorm.Tools.Animations.html
+  commentId: N:Dorm.Tools.Animations
+  fullName: Dorm.Tools.Animations
+  nameWithType: Dorm.Tools.Animations
+- uid: Dorm.Tools.Animations.SimpleToolAnimation
+  name: SimpleToolAnimation
+  href: api/Dorm.Tools.Animations.SimpleToolAnimation.html
+  commentId: T:Dorm.Tools.Animations.SimpleToolAnimation
+  fullName: Dorm.Tools.Animations.SimpleToolAnimation
+  nameWithType: SimpleToolAnimation
+- uid: Dorm.Tools.Animations.SimpleToolAnimation.StartAnimation
+  name: StartAnimation()
+  href: api/Dorm.Tools.Animations.SimpleToolAnimation.html#Dorm_Tools_Animations_SimpleToolAnimation_StartAnimation
+  commentId: M:Dorm.Tools.Animations.SimpleToolAnimation.StartAnimation
+  fullName: Dorm.Tools.Animations.SimpleToolAnimation.StartAnimation()
+  nameWithType: SimpleToolAnimation.StartAnimation()
+- uid: Dorm.Tools.Animations.SimpleToolAnimation.StartAnimation*
+  name: StartAnimation
+  href: api/Dorm.Tools.Animations.SimpleToolAnimation.html#Dorm_Tools_Animations_SimpleToolAnimation_StartAnimation_
+  commentId: Overload:Dorm.Tools.Animations.SimpleToolAnimation.StartAnimation
+  isSpec: "True"
+  fullName: Dorm.Tools.Animations.SimpleToolAnimation.StartAnimation
+  nameWithType: SimpleToolAnimation.StartAnimation
+- uid: Dorm.Tools.Animations.SimpleToolAnimation.StopAnimation
+  name: StopAnimation()
+  href: api/Dorm.Tools.Animations.SimpleToolAnimation.html#Dorm_Tools_Animations_SimpleToolAnimation_StopAnimation
+  commentId: M:Dorm.Tools.Animations.SimpleToolAnimation.StopAnimation
+  fullName: Dorm.Tools.Animations.SimpleToolAnimation.StopAnimation()
+  nameWithType: SimpleToolAnimation.StopAnimation()
+- uid: Dorm.Tools.Animations.SimpleToolAnimation.StopAnimation*
+  name: StopAnimation
+  href: api/Dorm.Tools.Animations.SimpleToolAnimation.html#Dorm_Tools_Animations_SimpleToolAnimation_StopAnimation_
+  commentId: Overload:Dorm.Tools.Animations.SimpleToolAnimation.StopAnimation
+  isSpec: "True"
+  fullName: Dorm.Tools.Animations.SimpleToolAnimation.StopAnimation
+  nameWithType: SimpleToolAnimation.StopAnimation
+- uid: Dorm.Tools.Animations.SimpleToolAnimation.animationScaleMinMax
+  name: animationScaleMinMax
+  href: api/Dorm.Tools.Animations.SimpleToolAnimation.html#Dorm_Tools_Animations_SimpleToolAnimation_animationScaleMinMax
+  commentId: F:Dorm.Tools.Animations.SimpleToolAnimation.animationScaleMinMax
+  fullName: Dorm.Tools.Animations.SimpleToolAnimation.animationScaleMinMax
+  nameWithType: SimpleToolAnimation.animationScaleMinMax
+- uid: Dorm.Tools.Animations.SimpleToolAnimation.animationSpeed
+  name: animationSpeed
+  href: api/Dorm.Tools.Animations.SimpleToolAnimation.html#Dorm_Tools_Animations_SimpleToolAnimation_animationSpeed
+  commentId: F:Dorm.Tools.Animations.SimpleToolAnimation.animationSpeed
+  fullName: Dorm.Tools.Animations.SimpleToolAnimation.animationSpeed
+  nameWithType: SimpleToolAnimation.animationSpeed
 - uid: Dorm.Tools.Barrel
   name: Barrel
   href: api/Dorm.Tools.Barrel.html
@@ -2263,6 +2313,76 @@ references:
   isSpec: "True"
   fullName: Dorm.Tools.Barrel.LeftPossibleDragInteraction
   nameWithType: Barrel.LeftPossibleDragInteraction
+- uid: Dorm.Tools.Toaster
+  name: Toaster
+  href: api/Dorm.Tools.Toaster.html
+  commentId: T:Dorm.Tools.Toaster
+  fullName: Dorm.Tools.Toaster
+  nameWithType: Toaster
+- uid: Dorm.Tools.Toaster.Awake
+  name: Awake()
+  href: api/Dorm.Tools.Toaster.html#Dorm_Tools_Toaster_Awake
+  commentId: M:Dorm.Tools.Toaster.Awake
+  fullName: Dorm.Tools.Toaster.Awake()
+  nameWithType: Toaster.Awake()
+- uid: Dorm.Tools.Toaster.Awake*
+  name: Awake
+  href: api/Dorm.Tools.Toaster.html#Dorm_Tools_Toaster_Awake_
+  commentId: Overload:Dorm.Tools.Toaster.Awake
+  isSpec: "True"
+  fullName: Dorm.Tools.Toaster.Awake
+  nameWithType: Toaster.Awake
+- uid: Dorm.Tools.Toaster.DragInteraction(GameObject)
+  name: DragInteraction(GameObject)
+  href: api/Dorm.Tools.Toaster.html#Dorm_Tools_Toaster_DragInteraction_GameObject_
+  commentId: M:Dorm.Tools.Toaster.DragInteraction(GameObject)
+  fullName: Dorm.Tools.Toaster.DragInteraction(GameObject)
+  nameWithType: Toaster.DragInteraction(GameObject)
+- uid: Dorm.Tools.Toaster.DragInteraction*
+  name: DragInteraction
+  href: api/Dorm.Tools.Toaster.html#Dorm_Tools_Toaster_DragInteraction_
+  commentId: Overload:Dorm.Tools.Toaster.DragInteraction
+  isSpec: "True"
+  fullName: Dorm.Tools.Toaster.DragInteraction
+  nameWithType: Toaster.DragInteraction
+- uid: Dorm.Tools.Toaster.EnteredPossibleDragInteraction(GameObject)
+  name: EnteredPossibleDragInteraction(GameObject)
+  href: api/Dorm.Tools.Toaster.html#Dorm_Tools_Toaster_EnteredPossibleDragInteraction_GameObject_
+  commentId: M:Dorm.Tools.Toaster.EnteredPossibleDragInteraction(GameObject)
+  fullName: Dorm.Tools.Toaster.EnteredPossibleDragInteraction(GameObject)
+  nameWithType: Toaster.EnteredPossibleDragInteraction(GameObject)
+- uid: Dorm.Tools.Toaster.EnteredPossibleDragInteraction*
+  name: EnteredPossibleDragInteraction
+  href: api/Dorm.Tools.Toaster.html#Dorm_Tools_Toaster_EnteredPossibleDragInteraction_
+  commentId: Overload:Dorm.Tools.Toaster.EnteredPossibleDragInteraction
+  isSpec: "True"
+  fullName: Dorm.Tools.Toaster.EnteredPossibleDragInteraction
+  nameWithType: Toaster.EnteredPossibleDragInteraction
+- uid: Dorm.Tools.Toaster.LeftPossibleDragInteraction(GameObject)
+  name: LeftPossibleDragInteraction(GameObject)
+  href: api/Dorm.Tools.Toaster.html#Dorm_Tools_Toaster_LeftPossibleDragInteraction_GameObject_
+  commentId: M:Dorm.Tools.Toaster.LeftPossibleDragInteraction(GameObject)
+  fullName: Dorm.Tools.Toaster.LeftPossibleDragInteraction(GameObject)
+  nameWithType: Toaster.LeftPossibleDragInteraction(GameObject)
+- uid: Dorm.Tools.Toaster.LeftPossibleDragInteraction*
+  name: LeftPossibleDragInteraction
+  href: api/Dorm.Tools.Toaster.html#Dorm_Tools_Toaster_LeftPossibleDragInteraction_
+  commentId: Overload:Dorm.Tools.Toaster.LeftPossibleDragInteraction
+  isSpec: "True"
+  fullName: Dorm.Tools.Toaster.LeftPossibleDragInteraction
+  nameWithType: Toaster.LeftPossibleDragInteraction
+- uid: Dorm.Tools.Toaster.resultParent
+  name: resultParent
+  href: api/Dorm.Tools.Toaster.html#Dorm_Tools_Toaster_resultParent
+  commentId: F:Dorm.Tools.Toaster.resultParent
+  fullName: Dorm.Tools.Toaster.resultParent
+  nameWithType: Toaster.resultParent
+- uid: Dorm.Tools.Toaster.resultSpawnPoint
+  name: resultSpawnPoint
+  href: api/Dorm.Tools.Toaster.html#Dorm_Tools_Toaster_resultSpawnPoint
+  commentId: F:Dorm.Tools.Toaster.resultSpawnPoint
+  fullName: Dorm.Tools.Toaster.resultSpawnPoint
+  nameWithType: Toaster.resultSpawnPoint
 - uid: Dorm.Tools.Tool
   name: Tool
   href: api/Dorm.Tools.Tool.html
@@ -2282,6 +2402,73 @@ references:
   isSpec: "True"
   fullName: Dorm.Tools.Tool.Awake
   nameWithType: Tool.Awake
+- uid: Dorm.Tools.Tool.toolDefinition
+  name: toolDefinition
+  href: api/Dorm.Tools.Tool.html#Dorm_Tools_Tool_toolDefinition
+  commentId: F:Dorm.Tools.Tool.toolDefinition
+  fullName: Dorm.Tools.Tool.toolDefinition
+  nameWithType: Tool.toolDefinition
+- uid: Dorm.Tools.ToolDefinition
+  name: ToolDefinition
+  href: api/Dorm.Tools.ToolDefinition.html
+  commentId: T:Dorm.Tools.ToolDefinition
+  fullName: Dorm.Tools.ToolDefinition
+  nameWithType: ToolDefinition
+- uid: Dorm.Tools.ToolDefinition.ToString
+  name: ToString()
+  href: api/Dorm.Tools.ToolDefinition.html#Dorm_Tools_ToolDefinition_ToString
+  commentId: M:Dorm.Tools.ToolDefinition.ToString
+  fullName: Dorm.Tools.ToolDefinition.ToString()
+  nameWithType: ToolDefinition.ToString()
+- uid: Dorm.Tools.ToolDefinition.ToString*
+  name: ToString
+  href: api/Dorm.Tools.ToolDefinition.html#Dorm_Tools_ToolDefinition_ToString_
+  commentId: Overload:Dorm.Tools.ToolDefinition.ToString
+  isSpec: "True"
+  fullName: Dorm.Tools.ToolDefinition.ToString
+  nameWithType: ToolDefinition.ToString
+- uid: Dorm.Tools.ToolDefinition.toolDescription
+  name: toolDescription
+  href: api/Dorm.Tools.ToolDefinition.html#Dorm_Tools_ToolDefinition_toolDescription
+  commentId: F:Dorm.Tools.ToolDefinition.toolDescription
+  fullName: Dorm.Tools.ToolDefinition.toolDescription
+  nameWithType: ToolDefinition.toolDescription
+- uid: Dorm.Tools.ToolDefinition.toolName
+  name: toolName
+  href: api/Dorm.Tools.ToolDefinition.html#Dorm_Tools_ToolDefinition_toolName
+  commentId: F:Dorm.Tools.ToolDefinition.toolName
+  fullName: Dorm.Tools.ToolDefinition.toolName
+  nameWithType: ToolDefinition.toolName
+- uid: Dorm.Tools.ToolDefinition.toolType
+  name: toolType
+  href: api/Dorm.Tools.ToolDefinition.html#Dorm_Tools_ToolDefinition_toolType
+  commentId: F:Dorm.Tools.ToolDefinition.toolType
+  fullName: Dorm.Tools.ToolDefinition.toolType
+  nameWithType: ToolDefinition.toolType
+- uid: Dorm.Tools.Tools
+  name: Tools
+  href: api/Dorm.Tools.Tools.html
+  commentId: T:Dorm.Tools.Tools
+  fullName: Dorm.Tools.Tools
+  nameWithType: Tools
+- uid: Dorm.Tools.Tools.Barrel
+  name: Barrel
+  href: api/Dorm.Tools.Tools.html#Dorm_Tools_Tools_Barrel
+  commentId: F:Dorm.Tools.Tools.Barrel
+  fullName: Dorm.Tools.Tools.Barrel
+  nameWithType: Tools.Barrel
+- uid: Dorm.Tools.Tools.None
+  name: None
+  href: api/Dorm.Tools.Tools.html#Dorm_Tools_Tools_None
+  commentId: F:Dorm.Tools.Tools.None
+  fullName: Dorm.Tools.Tools.None
+  nameWithType: Tools.None
+- uid: Dorm.Tools.Tools.Toaster
+  name: Toaster
+  href: api/Dorm.Tools.Tools.html#Dorm_Tools_Tools_Toaster
+  commentId: F:Dorm.Tools.Tools.Toaster
+  fullName: Dorm.Tools.Tools.Toaster
+  nameWithType: Tools.Toaster
 - uid: Global
   name: ''
   href: api/Global.html
@@ -22726,15 +22913,15 @@ references:
   commentId: T:Recipes.RecipeChecker
   fullName: Recipes.RecipeChecker
   nameWithType: RecipeChecker
-- uid: Recipes.RecipeChecker.FindRecipe(Items.ItemDefinition[],Recipes.RecipeDefinition@)
-  name: FindRecipe(ItemDefinition[], out RecipeDefinition)
-  href: api/Recipes.RecipeChecker.html#Recipes_RecipeChecker_FindRecipe_Items_ItemDefinition___Recipes_RecipeDefinition__
-  commentId: M:Recipes.RecipeChecker.FindRecipe(Items.ItemDefinition[],Recipes.RecipeDefinition@)
-  name.vb: FindRecipe(ItemDefinition(), RecipeDefinition)
-  fullName: Recipes.RecipeChecker.FindRecipe(Items.ItemDefinition[], out Recipes.RecipeDefinition)
-  fullName.vb: Recipes.RecipeChecker.FindRecipe(Items.ItemDefinition(), Recipes.RecipeDefinition)
-  nameWithType: RecipeChecker.FindRecipe(ItemDefinition[], out RecipeDefinition)
-  nameWithType.vb: RecipeChecker.FindRecipe(ItemDefinition(), RecipeDefinition)
+- uid: Recipes.RecipeChecker.FindRecipe(Dorm.Tools.Tools,Items.ItemDefinition[],Recipes.RecipeDefinition@)
+  name: FindRecipe(Tools, ItemDefinition[], out RecipeDefinition)
+  href: api/Recipes.RecipeChecker.html#Recipes_RecipeChecker_FindRecipe_Dorm_Tools_Tools_Items_ItemDefinition___Recipes_RecipeDefinition__
+  commentId: M:Recipes.RecipeChecker.FindRecipe(Dorm.Tools.Tools,Items.ItemDefinition[],Recipes.RecipeDefinition@)
+  name.vb: FindRecipe(Tools, ItemDefinition(), RecipeDefinition)
+  fullName: Recipes.RecipeChecker.FindRecipe(Dorm.Tools.Tools, Items.ItemDefinition[], out Recipes.RecipeDefinition)
+  fullName.vb: Recipes.RecipeChecker.FindRecipe(Dorm.Tools.Tools, Items.ItemDefinition(), Recipes.RecipeDefinition)
+  nameWithType: RecipeChecker.FindRecipe(Tools, ItemDefinition[], out RecipeDefinition)
+  nameWithType.vb: RecipeChecker.FindRecipe(Tools, ItemDefinition(), RecipeDefinition)
 - uid: Recipes.RecipeChecker.FindRecipe*
   name: FindRecipe
   href: api/Recipes.RecipeChecker.html#Recipes_RecipeChecker_FindRecipe_
@@ -22792,6 +22979,18 @@ references:
   commentId: F:Recipes.RecipeDefinition.result
   fullName: Recipes.RecipeDefinition.result
   nameWithType: RecipeDefinition.result
+- uid: Recipes.RecipeDefinition.timeToCraft
+  name: timeToCraft
+  href: api/Recipes.RecipeDefinition.html#Recipes_RecipeDefinition_timeToCraft
+  commentId: F:Recipes.RecipeDefinition.timeToCraft
+  fullName: Recipes.RecipeDefinition.timeToCraft
+  nameWithType: RecipeDefinition.timeToCraft
+- uid: Recipes.RecipeDefinition.tool
+  name: tool
+  href: api/Recipes.RecipeDefinition.html#Recipes_RecipeDefinition_tool
+  commentId: F:Recipes.RecipeDefinition.tool
+  fullName: Recipes.RecipeDefinition.tool
+  nameWithType: RecipeDefinition.tool
 - uid: Recipes.RecipeDefinitionEditor
   name: RecipeDefinitionEditor
   href: api/Recipes.RecipeDefinitionEditor.html
@@ -22817,15 +23016,15 @@ references:
   commentId: T:Recipes.RecipeHash
   fullName: Recipes.RecipeHash
   nameWithType: RecipeHash
-- uid: Recipes.RecipeHash.CalculateRecipeHash(Items.ItemDefinition[])
-  name: CalculateRecipeHash(ItemDefinition[])
-  href: api/Recipes.RecipeHash.html#Recipes_RecipeHash_CalculateRecipeHash_Items_ItemDefinition___
-  commentId: M:Recipes.RecipeHash.CalculateRecipeHash(Items.ItemDefinition[])
-  name.vb: CalculateRecipeHash(ItemDefinition())
-  fullName: Recipes.RecipeHash.CalculateRecipeHash(Items.ItemDefinition[])
-  fullName.vb: Recipes.RecipeHash.CalculateRecipeHash(Items.ItemDefinition())
-  nameWithType: RecipeHash.CalculateRecipeHash(ItemDefinition[])
-  nameWithType.vb: RecipeHash.CalculateRecipeHash(ItemDefinition())
+- uid: Recipes.RecipeHash.CalculateRecipeHash(Dorm.Tools.Tools,Items.ItemDefinition[])
+  name: CalculateRecipeHash(Tools, ItemDefinition[])
+  href: api/Recipes.RecipeHash.html#Recipes_RecipeHash_CalculateRecipeHash_Dorm_Tools_Tools_Items_ItemDefinition___
+  commentId: M:Recipes.RecipeHash.CalculateRecipeHash(Dorm.Tools.Tools,Items.ItemDefinition[])
+  name.vb: CalculateRecipeHash(Tools, ItemDefinition())
+  fullName: Recipes.RecipeHash.CalculateRecipeHash(Dorm.Tools.Tools, Items.ItemDefinition[])
+  fullName.vb: Recipes.RecipeHash.CalculateRecipeHash(Dorm.Tools.Tools, Items.ItemDefinition())
+  nameWithType: RecipeHash.CalculateRecipeHash(Tools, ItemDefinition[])
+  nameWithType.vb: RecipeHash.CalculateRecipeHash(Tools, ItemDefinition())
 - uid: Recipes.RecipeHash.CalculateRecipeHash*
   name: CalculateRecipeHash
   href: api/Recipes.RecipeHash.html#Recipes_RecipeHash_CalculateRecipeHash_
@@ -22869,6 +23068,12 @@ references:
   commentId: F:Recipes.Tests.RecipeUnitTest.shouldBeFound
   fullName: Recipes.Tests.RecipeUnitTest.shouldBeFound
   nameWithType: RecipeUnitTest.shouldBeFound
+- uid: Recipes.Tests.RecipeUnitTest.tool
+  name: tool
+  href: api/Recipes.Tests.RecipeUnitTest.html#Recipes_Tests_RecipeUnitTest_tool
+  commentId: F:Recipes.Tests.RecipeUnitTest.tool
+  fullName: Recipes.Tests.RecipeUnitTest.tool
+  nameWithType: RecipeUnitTest.tool
 - uid: Settings
   name: Settings
   href: api/Settings.html
@@ -23285,6 +23490,12 @@ references:
   commentId: F:Utils.Loggers.LoggerType.RECIPES
   fullName: Utils.Loggers.LoggerType.RECIPES
   nameWithType: Loggers.LoggerType.RECIPES
+- uid: Utils.Loggers.LoggerType.TOOLS
+  name: TOOLS
+  href: api/Utils.Loggers.LoggerType.html#Utils_Loggers_LoggerType_TOOLS
+  commentId: F:Utils.Loggers.LoggerType.TOOLS
+  fullName: Utils.Loggers.LoggerType.TOOLS
+  nameWithType: Loggers.LoggerType.TOOLS
 - uid: Utils.Loggers.LoggerType.UTILS
   name: UTILS
   href: api/Utils.Loggers.LoggerType.html#Utils_Loggers_LoggerType_UTILS

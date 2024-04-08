@@ -29,15 +29,15 @@
       <meta name="loc:changeTheme" content="Change theme">
       <meta name="loc:copy" content="Copy">
       <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
   </head>
-
-  <script type="module" src="./../public/docfx.min.js"></script>
-
-  <script>
-    const theme = localStorage.getItem('theme') || 'auto'
-    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
-  </script>
-
 
   <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
     <header class="bg-body border-bottom">
@@ -125,6 +125,8 @@ Enum Loggers.LoggerType  <a class="header-action link-secondary" title="View sou
     <dt id="Utils_Loggers_LoggerType_INVENTORY"><code>INVENTORY = 3</code></dt>
     <dd></dd>
     <dt id="Utils_Loggers_LoggerType_RECIPES"><code>RECIPES = 5</code></dt>
+    <dd></dd>
+    <dt id="Utils_Loggers_LoggerType_TOOLS"><code>TOOLS = 6</code></dt>
     <dd></dd>
     <dt id="Utils_Loggers_LoggerType_UTILS"><code>UTILS = 0</code></dt>
     <dd></dd>

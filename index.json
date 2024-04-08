@@ -244,20 +244,45 @@
     "title": "Namespace Dorm.Movables | Czasoport Documentation",
     "keywords": "Namespace Dorm.Movables Classes ConstrainedDraggable Draggable Placeholder Interfaces IDragInteractable Enums PlaceholderType"
   },
+  "api/Dorm.Tools.Animations.SimpleToolAnimation.html": {
+    "href": "api/Dorm.Tools.Animations.SimpleToolAnimation.html",
+    "title": "Class SimpleToolAnimation | Czasoport Documentation",
+    "keywords": "Class SimpleToolAnimation Namespace Dorm.Tools.Animations public class SimpleToolAnimation : MonoBehaviour Inheritance object SimpleToolAnimation Fields animationScaleMinMax public Vector2 animationScaleMinMax Field Value Vector2 animationSpeed public float animationSpeed Field Value float Methods StartAnimation() public void StartAnimation() StopAnimation() public void StopAnimation()"
+  },
+  "api/Dorm.Tools.Animations.html": {
+    "href": "api/Dorm.Tools.Animations.html",
+    "title": "Namespace Dorm.Tools.Animations | Czasoport Documentation",
+    "keywords": "Namespace Dorm.Tools.Animations Classes SimpleToolAnimation"
+  },
   "api/Dorm.Tools.Barrel.html": {
     "href": "api/Dorm.Tools.Barrel.html",
     "title": "Class Barrel | Czasoport Documentation",
-    "keywords": "Class Barrel Namespace Dorm.Tools public class Barrel : Tool, IDragInteractable Inheritance object Tool Barrel Implements IDragInteractable Methods Awake() protected override void Awake() DragInteraction(GameObject) Fired when object has been let go over a object that has this interface. public bool DragInteraction(GameObject sourceObject) Parameters sourceObject GameObject Returns bool Whether object should be destroyed. EnteredPossibleDragInteraction(GameObject) public void EnteredPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject LeftPossibleDragInteraction(GameObject) public void LeftPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject"
+    "keywords": "Class Barrel Namespace Dorm.Tools public class Barrel : Tool, IDragInteractable Inheritance object Tool Barrel Implements IDragInteractable Inherited Members Tool.toolDefinition Methods Awake() protected override void Awake() DragInteraction(GameObject) Fired when object has been let go over a object that has this interface. public bool DragInteraction(GameObject sourceObject) Parameters sourceObject GameObject Returns bool Whether object should be destroyed. EnteredPossibleDragInteraction(GameObject) public void EnteredPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject LeftPossibleDragInteraction(GameObject) public void LeftPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject"
+  },
+  "api/Dorm.Tools.Toaster.html": {
+    "href": "api/Dorm.Tools.Toaster.html",
+    "title": "Class Toaster | Czasoport Documentation",
+    "keywords": "Class Toaster Namespace Dorm.Tools public class Toaster : Tool, IDragInteractable Inheritance object Tool Toaster Implements IDragInteractable Inherited Members Tool.toolDefinition Fields resultParent public Transform resultParent Field Value Transform resultSpawnPoint public Transform resultSpawnPoint Field Value Transform Methods Awake() protected override void Awake() DragInteraction(GameObject) Fired when object has been let go over a object that has this interface. public bool DragInteraction(GameObject sourceObject) Parameters sourceObject GameObject Returns bool Whether object should be destroyed. EnteredPossibleDragInteraction(GameObject) public void EnteredPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject LeftPossibleDragInteraction(GameObject) public void LeftPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject"
   },
   "api/Dorm.Tools.Tool.html": {
     "href": "api/Dorm.Tools.Tool.html",
     "title": "Class Tool | Czasoport Documentation",
-    "keywords": "Class Tool Namespace Dorm.Tools public class Tool : MonoBehaviour Inheritance object Tool Derived Barrel Methods Awake() protected virtual void Awake()"
+    "keywords": "Class Tool Namespace Dorm.Tools public class Tool : MonoBehaviour Inheritance object Tool Derived Barrel Toaster Fields toolDefinition public ToolDefinition toolDefinition Field Value ToolDefinition Methods Awake() protected virtual void Awake()"
+  },
+  "api/Dorm.Tools.ToolDefinition.html": {
+    "href": "api/Dorm.Tools.ToolDefinition.html",
+    "title": "Class ToolDefinition | Czasoport Documentation",
+    "keywords": "Class ToolDefinition Namespace Dorm.Tools public class ToolDefinition : ScriptableObject Inheritance object ToolDefinition Fields toolDescription public string toolDescription Field Value string toolName public string toolName Field Value string toolType public Tools toolType Field Value Tools Methods ToString() public override string ToString() Returns string"
+  },
+  "api/Dorm.Tools.Tools.html": {
+    "href": "api/Dorm.Tools.Tools.html",
+    "title": "Enum Tools | Czasoport Documentation",
+    "keywords": "Enum Tools Namespace Dorm.Tools public enum Tools Fields Barrel = 1 None = 0 Toaster = 2"
   },
   "api/Dorm.Tools.html": {
     "href": "api/Dorm.Tools.html",
     "title": "Namespace Dorm.Tools | Czasoport Documentation",
-    "keywords": "Namespace Dorm.Tools Classes Barrel Tool"
+    "keywords": "Namespace Dorm.Tools Classes Barrel Toaster Tool ToolDefinition Enums Tools"
   },
   "api/Global.UnityInkFileHandler.html": {
     "href": "api/Global.UnityInkFileHandler.html",
@@ -1267,12 +1292,12 @@
   "api/Recipes.RecipeChecker.html": {
     "href": "api/Recipes.RecipeChecker.html",
     "title": "Class RecipeChecker | Czasoport Documentation",
-    "keywords": "Class RecipeChecker Namespace Recipes public static class RecipeChecker Inheritance object RecipeChecker Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods FindRecipe(ItemDefinition[], out RecipeDefinition) public static bool FindRecipe(ItemDefinition[] ingredients, out RecipeDefinition recipe) Parameters ingredients ItemDefinition[] recipe RecipeDefinition Returns bool"
+    "keywords": "Class RecipeChecker Namespace Recipes public static class RecipeChecker Inheritance object RecipeChecker Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods FindRecipe(Tools, ItemDefinition[], out RecipeDefinition) public static bool FindRecipe(Tools tool, ItemDefinition[] ingredients, out RecipeDefinition recipe) Parameters tool Tools ingredients ItemDefinition[] recipe RecipeDefinition Returns bool"
   },
   "api/Recipes.RecipeDefinition.html": {
     "href": "api/Recipes.RecipeDefinition.html",
     "title": "Class RecipeDefinition | Czasoport Documentation",
-    "keywords": "Class RecipeDefinition Namespace Recipes public class RecipeDefinition : ScriptableObject Inheritance object RecipeDefinition Fields neededIngredients public ItemDefinition[] neededIngredients Field Value ItemDefinition[] recipeHash public string recipeHash Field Value string result public ItemDefinition result Field Value ItemDefinition Methods CalculateRecipeHash() public void CalculateRecipeHash() ToString() public override string ToString() Returns string"
+    "keywords": "Class RecipeDefinition Namespace Recipes public class RecipeDefinition : ScriptableObject Inheritance object RecipeDefinition Fields neededIngredients public ItemDefinition[] neededIngredients Field Value ItemDefinition[] recipeHash public string recipeHash Field Value string result public ItemDefinition result Field Value ItemDefinition timeToCraft public float timeToCraft Field Value float tool public Tools tool Field Value Tools Methods CalculateRecipeHash() public void CalculateRecipeHash() ToString() public override string ToString() Returns string"
   },
   "api/Recipes.RecipeDefinitionEditor.html": {
     "href": "api/Recipes.RecipeDefinitionEditor.html",
@@ -1282,7 +1307,7 @@
   "api/Recipes.RecipeHash.html": {
     "href": "api/Recipes.RecipeHash.html",
     "title": "Class RecipeHash | Czasoport Documentation",
-    "keywords": "Class RecipeHash Namespace Recipes public static class RecipeHash Inheritance object RecipeHash Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CalculateRecipeHash(ItemDefinition[]) public static string CalculateRecipeHash(ItemDefinition[] neededIngredients) Parameters neededIngredients ItemDefinition[] Returns string"
+    "keywords": "Class RecipeHash Namespace Recipes public static class RecipeHash Inheritance object RecipeHash Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CalculateRecipeHash(Tools, ItemDefinition[]) public static string CalculateRecipeHash(Tools tool, ItemDefinition[] neededIngredients) Parameters tool Tools neededIngredients ItemDefinition[] Returns string"
   },
   "api/Recipes.Tests.RecipeTest.html": {
     "href": "api/Recipes.Tests.RecipeTest.html",
@@ -1292,7 +1317,7 @@
   "api/Recipes.Tests.RecipeUnitTest.html": {
     "href": "api/Recipes.Tests.RecipeUnitTest.html",
     "title": "Class RecipeUnitTest | Czasoport Documentation",
-    "keywords": "Class RecipeUnitTest Namespace Recipes.Tests [Serializable] public class RecipeUnitTest Inheritance object RecipeUnitTest Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields expectedResult public RecipeDefinition expectedResult Field Value RecipeDefinition neededIngredients public ItemDefinition[] neededIngredients Field Value ItemDefinition[] shouldBeFound public bool shouldBeFound Field Value bool"
+    "keywords": "Class RecipeUnitTest Namespace Recipes.Tests [Serializable] public class RecipeUnitTest Inheritance object RecipeUnitTest Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields expectedResult public RecipeDefinition expectedResult Field Value RecipeDefinition neededIngredients public ItemDefinition[] neededIngredients Field Value ItemDefinition[] shouldBeFound public bool shouldBeFound Field Value bool tool public Tools tool Field Value Tools"
   },
   "api/Recipes.Tests.html": {
     "href": "api/Recipes.Tests.html",
@@ -1412,7 +1437,7 @@
   "api/Utils.Loggers.LoggerType.html": {
     "href": "api/Utils.Loggers.LoggerType.html",
     "title": "Enum Loggers.LoggerType | Czasoport Documentation",
-    "keywords": "Enum Loggers.LoggerType Namespace Utils public enum Loggers.LoggerType Fields APPLICATION = 1 DATA_PERSISTENCE = 2 DIALOGUES = 4 INVENTORY = 3 RECIPES = 5 UTILS = 0"
+    "keywords": "Enum Loggers.LoggerType Namespace Utils public enum Loggers.LoggerType Fields APPLICATION = 1 DATA_PERSISTENCE = 2 DIALOGUES = 4 INVENTORY = 3 RECIPES = 5 TOOLS = 6 UTILS = 0"
   },
   "api/Utils.Loggers.html": {
     "href": "api/Utils.Loggers.html",

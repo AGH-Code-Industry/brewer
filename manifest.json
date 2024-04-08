@@ -512,6 +512,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Tools.Animations.SimpleToolAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Tools.Animations.SimpleToolAnimation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Tools.Animations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Tools.Animations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Dorm.Tools.Barrel.yml",
       "output": {
         ".html": {
@@ -522,10 +542,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Tools.Toaster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Tools.Toaster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Dorm.Tools.Tool.yml",
       "output": {
         ".html": {
           "relative_path": "api/Dorm.Tools.Tool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Tools.ToolDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Tools.ToolDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Tools.Tools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Tools.Tools.html"
         }
       },
       "version": ""
