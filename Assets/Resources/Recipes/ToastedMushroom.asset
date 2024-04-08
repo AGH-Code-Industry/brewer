@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ddc60077b0f942a686203e56e443d26a, type: 3}
-  m_Name: DummyRecipe
+  m_Name: ToastedMushroom
   m_EditorClassIdentifier: 
-  recipeHash: 7D7821ACD2A809BB300849C14BF8ECDB
-  tool: 1
-  timeToCraft: 1
+  recipeHash: 
+  tool: 2
+  timeToCraft: 3
   neededIngredients:
-  - {fileID: 11400000, guid: fdf725f07b21cdc4dafe7e92b917a0c6, type: 2}
-  result: {fileID: 11400000, guid: d3640753728640d4b93004716cf0c71c, type: 2}
+  - {fileID: 11400000, guid: c0f6b84fe41e2254f967ef68f27e9fbc, type: 2}
+  result: {fileID: 11400000, guid: c83532e4f5a6f8542a5e08e69dfb0a80, type: 2}

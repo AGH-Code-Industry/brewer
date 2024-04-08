@@ -11,7 +11,8 @@ namespace Utils {
             DATA_PERSISTENCE,
             INVENTORY,
             DIALOGUES,
-            RECIPES
+            RECIPES,
+            TOOLS
         }
         
         static Loggers() {
@@ -49,6 +50,12 @@ namespace Utils {
                 {
                     LoggerType.RECIPES,
                     new CLogger(LoggerType.RECIPES) {
+                        LogEnabled = true
+                    }
+                },
+                {
+                    LoggerType.TOOLS,
+                    new CLogger(LoggerType.TOOLS) {
                         LogEnabled = true
                     }
                 }

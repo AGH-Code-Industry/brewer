@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Security.Cryptography;
 using System.Text;
+using Dorm.Tools;
 using Items;
+using Unity.VisualScripting;
 
 namespace Recipes {
     public static class RecipeHash {
-        public static string CalculateRecipeHash(ItemDefinition[] neededIngredients) {
+        public static string CalculateRecipeHash(Tools tool, ItemDefinition[] neededIngredients) {
             using (var md5 = MD5.Create()) {
                 void AddStringToHash(ICryptoTransform cryptoTransform, string textToHash)
                 {
@@ -13,6 +15,7 @@ namespace Recipes {
                     cryptoTransform.TransformBlock(inputBuffer, 0, inputBuffer.Length, inputBuffer, 0);
                 }
                 
+                AddStringToHash(md5, tool.ToString());
                 foreach (var ingredient in neededIngredients) {
                     AddStringToHash(md5, ingredient.name);
                 }
