@@ -20,10 +20,10 @@ namespace Town {
 
         void Awake()
         {
-            CInput.InputActions.Town.Interact.performed += Interaction;
+            CInput.InputActions.Town.Interact.performed += InteractionCallback;
         }
 
-        void Interaction(InputAction.CallbackContext ctx)
+        void InteractionCallback(InputAction.CallbackContext ctx)
         {
             if (_currentInteractable != null)
             {
@@ -33,10 +33,10 @@ namespace Town {
 
         void Update()
         {
-            UpdateCurentInteractable();
+            UpdateCurrentInteractable();
         }
 
-        void UpdateCurentInteractable()
+        void UpdateCurrentInteractable()
         {
             List<Collider2D> newInteractables = new List<Collider2D>();
             Physics2D.OverlapCircle(transform.position,
