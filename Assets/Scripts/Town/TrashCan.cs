@@ -1,3 +1,4 @@
+using CoinPackage.Debugging;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,7 +26,7 @@ namespace Town {
 
             public void Interact()
             {
-                Debug.Log("interacted");
+                CDebug.Log("interacted");
             }
         }
     }

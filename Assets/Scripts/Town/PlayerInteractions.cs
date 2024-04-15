@@ -5,13 +5,38 @@ using System.Linq;
 using Town;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Town {
     public class PlayerInteractions : MonoBehaviour
     {
-        private Collider2D _currentInteractable = null;
+        private IInteractable _currentInteractable = null;
+        private Collider2D _playerInteractionCollider = null;
+
+        void Start()
+        {
+            _playerInteractionCollider = GetComponent<Collider2D>();
+        }
+
+        void Awake()
+        {
+            CInput.InputActions.Town.Interact.performed += Interaction;
+        }
+
+        void Interaction(InputAction.CallbackContext ctx)
+        {
+            if (_currentInteractable != null)
+            {
+                _currentInteractable.Interact();   
+            }
+        }
 
         void Update()
+        {
+            UpdateCurentInteractable();
+        }
+
+        void UpdateCurentInteractable()
         {
             List<Collider2D> newInteractables = new List<Collider2D>();
             Physics2D.OverlapCircle(transform.position,
@@ -25,16 +50,15 @@ namespace Town {
                 newInteractables);
 
             float closestInteractibleDistance = float.PositiveInfinity;
-            Collider2D closestInteractable = null;
+            IInteractable closestInteractable = null;
 
             foreach (var interactable in newInteractables)
             {
-                // Maybe later change so you can choose which collider is used.
-                var playerInteractionCollider = GetComponent<Collider2D>();
-                var distance = Physics2D.Distance(playerInteractionCollider, interactable).distance;
+                // Using Physics2D.Distance instead of the distance between 'transform.position's, because it calculates the minimum distance between the colliders. This makes the distance independent of the position of the collider relative to transform.position.
+                var distance = Physics2D.Distance(_playerInteractionCollider, interactable).distance;
                 if (distance < closestInteractibleDistance)
                 {
-                    closestInteractable = interactable;
+                    closestInteractable = interactable.GetComponent<IInteractable>();
                     closestInteractibleDistance = distance;
                 }
             }
@@ -43,26 +67,20 @@ namespace Town {
             {
                 if (_currentInteractable == null)
                 {
-                    closestInteractable.GetComponent<IInteractable>().EnteredInteractionRange();
+                    closestInteractable.EnteredInteractionRange();
                     _currentInteractable = closestInteractable;
                 }
                 else if (_currentInteractable != closestInteractable)
                 {
-                    _currentInteractable.GetComponent<IInteractable>().LeftInteractionRange();
-                    closestInteractable.GetComponent<IInteractable>().EnteredInteractionRange();
+                    _currentInteractable.LeftInteractionRange();
+                    closestInteractable.EnteredInteractionRange();
                     _currentInteractable = closestInteractable;
                 }
-            } 
+            }
             else if (_currentInteractable != null)
             {
-                _currentInteractable.GetComponent<IInteractable>().LeftInteractionRange();
+                _currentInteractable.LeftInteractionRange();
                 _currentInteractable = null;
-            }
-
-            
-            if (_currentInteractable != null && CInput.InputActions.Town.Interact.triggered)
-            {
-                _currentInteractable.GetComponent<IInteractable>().Interact();
             }
         }
     }
