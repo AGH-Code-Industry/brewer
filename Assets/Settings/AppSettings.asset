@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e86ef661267726a469f32080b147d2cb, type: 3}
   m_Name: AppSettings
   m_EditorClassIdentifier: 
-  firstSceneName: Town
+  firstSceneName: MainMenu
   mainMenuSceneName: MainMenu
   gameManagerSceneName: GameManager
   dormitorySceneName: Crafting
-  townSceneName: Town
+  townSceneName: Town_new
   itemsResPath: Items
   recipesResPath: Recipes
   defaultSaveName: dupaa
