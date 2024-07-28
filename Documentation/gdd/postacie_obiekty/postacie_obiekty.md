@@ -6,29 +6,46 @@
 ## Postacie występujące w Grze
 (Ostateczny wygląd zależny od grafików, jednak stylizowany na życie studenckie)
 
-- ### Protagonista - Imię do ustalenia
+- ### Gracz - Maciek
 	- #### Jaka jest jego rola
     Gracz i główny bohater opowieści.
 	- #### Historia Postaci
-    Biedny student alkoholik, jeszcze nie wie co to studia, ale fajnie brzmi i rodzice kazali więc no...
+    Student, zawala studia co go przytłacza. Po wewnętrznych dylematach postanawia stworzyć piwo, które ma mu pomóc zdać sesję. Sukces trunku zmotywował go w dalszych działaniach (sprzedaż i trzymanie rynku w garści).
 	- #### Płeć i wiek
-    Mężczyna, 18 lat
+    Mężczyna, X lat
     - #### Ubiór
-    Standardowy student - bluza lub koszula w kratę. Dziurawe skarpety, jeśli efekt ten będzie możliwy w pixelarcie.
-- ### Współlokator - Imię do ustalenia
+    Standardowy student - bluza, dziurawe skarpety.
+- ### Przyjaciel - Imię do ustalenia
 	- #### Jaka jest jego rola
-    Najlepszy przyjaciel Protagonisty, pomoc w trudnych chwilach, decyduje się na współudział w projekcie PIWO.
+    Najlepszy przyjaciel Protagonisty, pomoc w trudnych chwilach, marketingu i sprzedaży trunku.
 	- #### Historia Postaci
-    Podobnie jak Protagonista, po tygodniu studiów zastanawia się co on najlepszego zrobił decydując się na uczelnię wyższą - mógł przewracać kotlety w Maku, jednak jego rodzice nie byli zachwyceni tym pomysłem.
+    Student, podobnie jak protagonista zawala studia. Gdy okazało się, że piwo działa postanawia pomóc protagoniście w sprzedaży, zdobywaniu surowców.
 	- #### Płeć i wiek
-    Mężczyna, 18 lat
+    Mężczyna, X lat
     - #### Ubiór
     Podobnie jak Protagonista
+- ### Sklepikarz - Andrew
+	
+  - #### Jaka jest jego rola
+	
+    Gracz ma możliwość wyboru ścieżki, współpracy lub samodzielnej gry. Podczas współpracy pomaga on graczowi w sprzedaży piwa, w przeciwnym wypadku zabiera mu zamówienia i sabotuje grę.
+	
+  - #### Historia Postaci
+  
+    Sklepikarz na miasteczku, utrzymuje się ze sprzedaży piwa. Gdy protagonista zaczyna tworzyć piwo, odczuwa znaczny spadek liczby klientów, więc postanawia wyjść do niego z propozycją współpracy.
+  
+  - #### Płeć i wiek
+  
+    Mężczyna, X lat
+  
+    - #### Ubiór
+  
+      TBD
 - ### Reszta TBD
-	  
+	
 ---
 
 ## Przedmioty 
 
 - ### Piwo "138"
-  Klasyczek pośród klasyczków, pierwszy trunek wyprodukowany samodzielnie przez Protagonistę. Podobno zaspokaja cały głód, daje chwilową euforię i +10 do szczęścia.
+  Klasyczek pośród klasyczków, pierwszy trunek wyprodukowany samodzielnie przez Protagonistę. Po wypiciu można zdać kolokwium bez żadnych przygotowań.

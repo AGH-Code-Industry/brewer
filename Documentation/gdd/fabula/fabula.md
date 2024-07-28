@@ -21,7 +21,7 @@ Student odnajduje zapiski z pamiętnika zaklinacza (z początku swego rodzaju tu
 ## Miejsca Akcji
  - akademik, pokój, kuchnia
  - uczelnia, sale wykładowe, laboratoria
- - kampus, sklepy, boiska, siłownie
+ - kampus, sklepy, boiska
 
 ---
 
