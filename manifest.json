@@ -3161,6 +3161,36 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "resources/gdd/art/Maciek/maciekIdleBack_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/gdd/art/Maciek/maciekIdleBack_1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/gdd/art/Maciek/maciekIdleFront_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/gdd/art/Maciek/maciekIdleFront_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/gdd/art/Maciek/maciekIdleSide_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/gdd/art/Maciek/maciekIdleSide_2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "resources/gdd/szkice/UI/UI_craft_ekwipunek.png",
       "output": {
         "resource": {
