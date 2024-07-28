@@ -17,7 +17,12 @@ public class DiaryHandler : MonoBehaviour {
     public Sprite diaryBase;
     public Sprite diaryNoRight;
     public Sprite diaryNoLeft;
-
+    public GameObject arrowLeft;
+    public GameObject arrowRight;
+    public Animator diaryAnim;
+    public Animator bgAnim;
+    public GameObject diaryTable;
+    
     public bool isDiaryOpen = false;
 
     private string[] separators = { "---\n", "---\r", "---\r\n" };
@@ -37,6 +42,8 @@ public class DiaryHandler : MonoBehaviour {
             lNb.text = pageNumber.ToString();
             rightPage.text = pages[pageNumber].Substring(1,pages[pageNumber].Length-1);
             rNb.text = (pageNumber+1).ToString();
+            arrowLeft.SetActive(true);
+            arrowRight.SetActive(true);
         }
         else if (pageNumber == 0){
             diarySprite.sprite = diaryNoLeft;
@@ -44,13 +51,28 @@ public class DiaryHandler : MonoBehaviour {
             lNb.text = "";
             rightPage.text = pages[pageNumber];
             rNb.text = (pageNumber+1).ToString();
+            arrowLeft.SetActive(false);
         }
         else if (pageNumber == pages.Length) {
             diarySprite.sprite = diaryNoRight;
             leftPage.text = pages[pageNumber-1].Substring(1,pages[pageNumber-1].Length-1);
             lNb.text = pageNumber.ToString();
+            arrowRight.SetActive(false);
             rightPage.text = "";
             rNb.text = "";
         }
+    }
+    
+    public void OnButtonUp() {
+        isDiaryOpen = true;
+        diaryTable.SetActive(false);
+        diaryAnim.SetBool("isOn", true);
+        bgAnim.SetBool("isOn", true);
+    }
+    public void OnButtonDown() {
+        isDiaryOpen = false;
+        diaryTable.SetActive(true);
+        diaryAnim.SetBool("isOn", false);
+        bgAnim.SetBool("isOn", false);
     }
 }
