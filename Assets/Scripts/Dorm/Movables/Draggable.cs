@@ -18,6 +18,14 @@ namespace Dorm.Movables {
         private Rigidbody2D _rigid;
         private IDragInteractable _currentInteractable;
         private SpriteRenderer _spriteRenderer;
+        private DiaryHandler diaryHandler;
+        private bool canBeUsed = true;
+        private void Start() {
+            diaryHandler = GameObject.FindWithTag("Diary").GetComponent<DiaryHandler>();
+        }
+        private void Update() {
+            canBeUsed = !diaryHandler.isDiaryOpen;
+        }
 
         private void Awake() {
             _rigid = GetComponent<Rigidbody2D>();
@@ -27,43 +35,51 @@ namespace Dorm.Movables {
         }
 
         private void OnMouseDown() {
-            gameObject.layer = _ignoreCollisionsLayer;
-            _spriteRenderer.sortingOrder = layerCount++;
+            if (canBeUsed) {
+                gameObject.layer = _ignoreCollisionsLayer;
+                _spriteRenderer.sortingOrder = layerCount++;
+            }
         }
 
         private void OnMouseDrag() {
-            _rigid.MovePosition(Vector2.Lerp(
-                transform.position, 
-                CInput.DormMouseWorldPosition, 
-                DevSet.I.dormSettings.draggableMouseFollowSpeed));
+            if (canBeUsed) {
+                _rigid.MovePosition(Vector2.Lerp(
+                    transform.position, 
+                    CInput.DormMouseWorldPosition, 
+                    DevSet.I.dormSettings.draggableMouseFollowSpeed));
+            }
         }
 
         private void OnMouseUp() {
-            if (_currentInteractable == null) {
-                FreeMovement();
-                return;
-            }
+            if (canBeUsed) {
+                if (_currentInteractable == null) {
+                    FreeMovement();
+                    return;
+                }
 
-            if (_currentInteractable.DragInteraction(gameObject)) {
-                Destroy(gameObject);
-            }
-            else {
-                FreeMovement();
+                if (_currentInteractable.DragInteraction(gameObject)) {
+                    Destroy(gameObject);
+                }
+                else {
+                    FreeMovement();
+                }
             }
         }
 
         public void InitializeInitialFollow() {
-            StartCoroutine(InitialMouseDrag());
+            if(canBeUsed) StartCoroutine(InitialMouseDrag());
         }
         
         IEnumerator InitialMouseDrag() {
-            CDebug.Log("Initial mouse drag");
-            OnMouseDown();
-            while (CInput.InputActions.Dormitory.PrimaryMouseClicked.ReadValue<float>() > 0f) {
-                yield return new WaitForEndOfFrame();
-                OnMouseDrag();
+            if(canBeUsed){
+                CDebug.Log("Initial mouse drag");
+                OnMouseDown();
+                while (CInput.InputActions.Dormitory.PrimaryMouseClicked.ReadValue<float>() > 0f) {
+                    yield return new WaitForEndOfFrame();
+                    OnMouseDrag();
+                }
+                OnMouseUp();
             }
-            OnMouseUp();
         }
         
         public void OnPointerDown(PointerEventData eventData) {
@@ -71,23 +87,27 @@ namespace Dorm.Movables {
         }
 
         public void OnTriggerEnter2D(Collider2D other) {
-            var interactable = other.GetComponent<IDragInteractable>();
-            if (interactable == null) {
-                return;
+            if (canBeUsed) {
+                var interactable = other.GetComponent<IDragInteractable>();
+                if (interactable == null) {
+                    return;
+                }
+                _currentInteractable?.LeftPossibleDragInteraction(gameObject);
+                _currentInteractable = interactable;
+                _currentInteractable.EnteredPossibleDragInteraction(gameObject);
             }
-            _currentInteractable?.LeftPossibleDragInteraction(gameObject);
-            _currentInteractable = interactable;
-            _currentInteractable.EnteredPossibleDragInteraction(gameObject);
         }
 
         public void OnTriggerExit2D(Collider2D other) {
-            var interactable = other.GetComponent<IDragInteractable>();
-            if (interactable == null) {
-                return;
-            }
-            if(interactable == _currentInteractable) {
-                _currentInteractable.LeftPossibleDragInteraction(gameObject);
-                _currentInteractable = null;
+            if (canBeUsed) {
+                var interactable = other.GetComponent<IDragInteractable>();
+                if (interactable == null) {
+                    return;
+                }
+                if(interactable == _currentInteractable) {
+                    _currentInteractable.LeftPossibleDragInteraction(gameObject);
+                    _currentInteractable = null;
+                }
             }
         }
 

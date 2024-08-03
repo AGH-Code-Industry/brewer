@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Crafting.unity
     guid: 1488ec104668eb646800db6ecb82209f
+  - enabled: 1
+    path: Assets/Scenes/Town_new.unity
+    guid: ad3483e96070b014f96d33523e585a30
   m_configObjects: {}

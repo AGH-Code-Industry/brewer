@@ -2,6 +2,7 @@
     public enum Tools {
         None,
         Barrel,
-        Toaster
+        Toaster,
+        Mortar
     }
 }
