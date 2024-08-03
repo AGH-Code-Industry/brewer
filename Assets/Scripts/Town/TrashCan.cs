@@ -1,3 +1,4 @@
+using CoinPackage.Debugging;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +22,11 @@ namespace Town {
             public void LeftInteractionRange()
             {
                 _material.SetFloat("_Opacity", 0.0f);
+            }
+
+            public void Interact()
+            {
+                CDebug.Log("interacted");
             }
         }
     }

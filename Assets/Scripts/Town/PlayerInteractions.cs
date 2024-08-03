@@ -1,24 +1,47 @@
+using CustomInput;
 using Settings;
 using System.Collections.Generic;
 using System.Linq;
 using Dialogues;
 using Town;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Town {
-    public class PlayerInteractions : MonoBehaviour {
+    public class PlayerInteractions : MonoBehaviour
+    {
+        private IInteractable _currentInteractable = null;
+        private Collider2D _playerInteractionCollider = null;
         public TextAsset dialogue;
-        
         private HashSet<IInteractable> _oldInteractables = new HashSet<IInteractable>();
+
+        void Start()
+        {
+            _playerInteractionCollider = GetComponent<Collider2D>();
+        }
+
+        void Awake()
+        {
+            CInput.InputActions.Town.Interact.performed += InteractionCallback;
+        }
+
+        void InteractionCallback(InputAction.CallbackContext ctx)
+        {
+            if (_currentInteractable != null)
+            {
+                _currentInteractable.Interact();   
+            }
+        }
+
         void Update()
         {
-            // TODO: REMOVE
-            if (Input.GetKeyDown(KeyCode.R)) {
-                DialogueManager.I.StartDialogue(dialogue);
-            }
-            // END TODO
-            
-            List<Collider2D> result = new List<Collider2D>();
+            UpdateCurrentInteractable();
+        }
+
+        void UpdateCurrentInteractable()
+        {
+            List<Collider2D> newInteractables = new List<Collider2D>();
             Physics2D.OverlapCircle(transform.position,
                 DevSet.I.townSettings.interactionRadius,
                 new ContactFilter2D()
@@ -27,27 +50,41 @@ namespace Town {
                     useLayerMask = true,
                     useTriggers = true
                 },
-                result);
+                newInteractables);
 
-            var newInteractables = new HashSet<IInteractable>(result.Select(x => x.GetComponent<IInteractable>()));
+            float closestInteractibleDistance = float.PositiveInfinity;
+            IInteractable closestInteractable = null;
 
             foreach (var interactable in newInteractables)
             {
-                if (!_oldInteractables.Contains(interactable))
+                // Using Physics2D.Distance instead of the distance between 'transform.position's, because it calculates the minimum distance between the colliders. This makes the distance independent of the position of the collider relative to transform.position.
+                var distance = Physics2D.Distance(_playerInteractionCollider, interactable).distance;
+                if (distance < closestInteractibleDistance)
                 {
-                    interactable.EnteredInteractionRange();
+                    closestInteractable = interactable.GetComponent<IInteractable>();
+                    closestInteractibleDistance = distance;
                 }
             }
 
-            foreach (var interactable in _oldInteractables)
+            if (closestInteractable != null)
             {
-                if (!newInteractables.Contains(interactable))
+                if (_currentInteractable == null)
                 {
-                    interactable.LeftInteractionRange();
+                    closestInteractable.EnteredInteractionRange();
+                    _currentInteractable = closestInteractable;
+                }
+                else if (_currentInteractable != closestInteractable)
+                {
+                    _currentInteractable.LeftInteractionRange();
+                    closestInteractable.EnteredInteractionRange();
+                    _currentInteractable = closestInteractable;
                 }
             }
-
-            _oldInteractables = newInteractables;
+            else if (_currentInteractable != null)
+            {
+                _currentInteractable.LeftInteractionRange();
+                _currentInteractable = null;
+            }
         }
     }
 }
