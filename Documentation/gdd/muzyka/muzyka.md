@@ -1,7 +1,7 @@
 # Muzyka
 
 ---
-Jak na grę RPG przystało, podchodząca pod 8-bit. Chciałbym osiągnąć efekt podobny do tego, jaki Toby Fox uzyskał w Undertale/Deltarune.
+Klasyczna RPG-owa. Chciałbym osiągnąć efekt podobny do tego, jaki Toby Fox uzyskał w Undertale/Deltarune.
 
 ## Muzyka podczas rozgrywki
 Muzyka odpowiednia do akcji. Spokojna podczas standardowej gry, casualowa/"epicka" podczas craftu, bardziej dynamiczna podczas ważniejszych wyborów.

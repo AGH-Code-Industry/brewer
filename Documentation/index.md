@@ -1,4 +1,4 @@
-# Nazwa Gry: **Projekt PIWO:od zera do brewer'a**
+# Nazwa Gry: **Brewer**
 
 ## Opis świata Gry
 

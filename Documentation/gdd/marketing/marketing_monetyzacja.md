@@ -1,6 +1,8 @@
 # Marketing i Monetyzacja
 
 ---
+## **NARAZIE TBD**
+
 ---
 
 ## Rodzaj Dystrybucji: Darmowa, Płatna
