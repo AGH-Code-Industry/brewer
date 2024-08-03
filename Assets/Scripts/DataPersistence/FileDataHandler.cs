@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using CoinPackage.Debugging;
 using DataPersistence.Data;
@@ -19,7 +20,7 @@ namespace DataPersistence {
             var filePath = Path.Combine(_saveDirectory, saveName);
             try {
                 Directory.CreateDirectory(_saveDirectory);
-                var data = JsonUtility.ToJson(gameData);
+                var data = JsonUtility.ToJson(gameData, true);
 
                 using (FileStream stream = new FileStream(filePath, FileMode.Create)) {
                     using (StreamWriter writer = new StreamWriter(stream)) {

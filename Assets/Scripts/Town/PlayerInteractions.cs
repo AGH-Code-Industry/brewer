@@ -2,6 +2,7 @@ using CustomInput;
 using Settings;
 using System.Collections.Generic;
 using System.Linq;
+using Dialogues;
 using Town;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -12,6 +13,8 @@ namespace Town {
     {
         private IInteractable _currentInteractable = null;
         private Collider2D _playerInteractionCollider = null;
+        public TextAsset dialogue;
+        private HashSet<IInteractable> _oldInteractables = new HashSet<IInteractable>();
 
         void Start()
         {

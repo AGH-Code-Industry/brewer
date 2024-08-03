@@ -1,8 +1,13 @@
 # Interfejs Użytkownika
 
 ---
-Podczas gry - minimalistyczny, casualowy interfejs (taski, data, minimalistyczne staty np. głodu, snu, promili we krwi)
-Podczas craftingu - bardziej zaawansowany interfejs, mimo wszystko nadal minimalistyczny (po bokach do wyciągnięcia ekwipunek, notatki zaklinacza)
+Podczas gry - minimalistyczny, casualowy interfejs
+Podczas craftingu - bardziej zaawansowany interfejs, ale wkomponowany w samą grę (szafa z przedmiotami)
+
+Elementem łączącym dwa tryby gry będzie telefon, na którym znajdują się wszystkie potrzebne rzeczy (zamówienia, taski, odkryte przepisy itp.)
+
+> [!NOTE]
+> Poniższe grafiki nie aktualne, do zmiany w następnym update.
 
 ## Rozgrywka
 - ### Szkic interfejsu gry
@@ -14,7 +19,6 @@ Podczas craftingu - bardziej zaawansowany interfejs, mimo wszystko nadal minimal
 - ### Jakie zdarzenia mają się wykonywać po naciśnięciu odpowiednich przycisków
   ...
   
-
 - ### Szkic interfejsu craftingu
     - #### IDLE
     ![...](~/resources/gdd/szkice/UI/UI_craft_idle.png)
@@ -30,12 +34,12 @@ Podczas craftingu - bardziej zaawansowany interfejs, mimo wszystko nadal minimal
 ## Menu
 
 - ### Szkic interfejsu
-  ...
+  TBD
 - ### Jakie zdarzenia mają się wykonywać po naciśnięciu odpowiednich przycisków
-  ...
+  TBD
 
 ---
 
 ## Sklep
 
-...
+TBD

@@ -3,17 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Pickable Object
+  - Placeholder
+  - Barrel
+  - Diary
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - DormItems
   - Water
   - UI
-  - Interactable
-  - 
-  - 
+  - DragInteractable
+  - IgnoreCollisions
+  - Boundaries
   - 
   - 
   - 
@@ -41,6 +45,24 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: UI
+  - name: Background
+    uniqueID: 3687670911
+    locked: 0
+  - name: Tiles
+    uniqueID: 4081034509
+    locked: 0
+  - name: Player
+    uniqueID: 1290350639
+    locked: 0
+  - name: Front Objects
+    uniqueID: 200290943
+    locked: 0
+  - name: WorldUI
     uniqueID: 3064764917
+    locked: 0
+  - name: DormItems
+    uniqueID: 303882575
+    locked: 0
+  - name: UI
+    uniqueID: 3829377517
     locked: 0

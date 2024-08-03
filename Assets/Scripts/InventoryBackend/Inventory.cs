@@ -1,8 +1,10 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using CoinPackage.Debugging;
 using DataPersistence;
 using DataPersistence.Data;
+using DataPersistence.HelperStructures;
 using InventoryBackend.Exceptions;
 using Items;
 using Settings;
@@ -12,7 +14,7 @@ using Utils;
 using Utils.Singleton;
 
 namespace InventoryBackend {
-    public class Inventory : Singleton<Inventory>, IDataPersistence {
+    public class Inventory : MonoBehaviour, IDataPersistence {
         /// <summary>
         /// Fires always when content of inventory changes.
         /// </summary>
@@ -20,6 +22,10 @@ namespace InventoryBackend {
         
         private readonly Dictionary<ItemDefinition, ushort> _items = new Dictionary<ItemDefinition, ushort>();
         private readonly CLogger _logger = Loggers.LoggersList[Loggers.LoggerType.INVENTORY];
+
+        private void Awake() {
+            LoadPersistentData(DataPersistenceManager.I.gameData);
+        }
 
         /// <summary>
         /// Get all items stored in inventory.
@@ -36,13 +42,15 @@ namespace InventoryBackend {
         /// <param name="count">How many items to put into the inventory.</param>
         public void InsertItem(ItemDefinition item, ushort count) {
             if (count <= 0) {
-                throw new InvBadValueException("Cannot insert less than 1 item. Use RemoveItem instead.");
+                throw new InvBadValueException("Cannot insert less than 1 item.");
             }
             if (_items.TryGetValue(item, out var value)) {
                 _items[item] += count;
+                _logger.Log($"Item count changed: {item}, added: {count % Colorize.Cyan}, new count: {_items[item] % Colorize.Cyan}");
             }
             else {
                 _items.Add(item, count);
+                _logger.Log($"New item added: {item % Colorize.Cyan}, count: {count % Colorize.Cyan}");
             }
             inventoryUpdated?.Invoke();
         }
@@ -69,6 +77,7 @@ namespace InventoryBackend {
                     return false;
                 }
                 _items[item] -= count;
+                _logger.Log($"Item count changed: {item}, removed: {count % Colorize.Cyan}, new count: {_items[item] % Colorize.Cyan}");
                 if (_items[item] <= 0) {
                     _items.Remove(item);
                 }
@@ -94,21 +103,31 @@ namespace InventoryBackend {
         }
 
         public void LoadPersistentData(GameData gameData) {
-            if (gameData.inventoryData.Items.Count == 0) return;
+            if (gameData.inventoryData.items.Count == 0) return;
             
+            _items.Clear();
             var assets = Resources.LoadAll(DevSet.I.appSettings.itemsResPath);
-            foreach (var item in gameData.inventoryData.Items) {
-                InsertItem((ItemDefinition)assets.First(asset => asset.name == item.Item1), item.Item2);
+            var items = 0;
+            var count = 0;
+            foreach (var item in gameData.inventoryData.items) {
+                var asset = (ItemDefinition)assets.First(asset => asset.name == item.assetName);
+                InsertItem(asset, item.quantity);
+                items++;
+                count += item.quantity;
             }
+            _logger.Log($"Loaded {items % Colorize.Cyan} from the save, total count: {count % Colorize.Magenta}.");
             inventoryUpdated?.Invoke();
         }
 
         public void SavePersistentData(ref GameData gameData) {
-            List<(string, ushort)> itemsToSave = new List<(string, ushort)>();
+            List<InventoryEntry> itemsToSave = new List<InventoryEntry>();
+            var count = 0;
             foreach (var (key, value) in _items) {
-                itemsToSave.Add((key.name, value));
+                itemsToSave.Add(new InventoryEntry(key.name, value));
+                count += value;
             }
-            gameData.inventoryData.Items = itemsToSave;
+            _logger.Log($"Saved {itemsToSave.Count % Colorize.Cyan} to the save, total count: {count % Colorize.Magenta}.");
+            gameData.inventoryData.items = itemsToSave;
         }
     }
 }

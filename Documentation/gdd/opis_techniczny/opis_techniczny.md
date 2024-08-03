@@ -19,7 +19,7 @@
 ---
 
 ## Programy Potrzebne do Pracy na grą
-`Unity`, `IDE`, `Photoshop`, `Ableton Live Trial`
+`Unity`, `IDE`, `Photoshop`, `Ableton`
 
 ---
 

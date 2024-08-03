@@ -8,12 +8,12 @@ using Utils.Globals;
 using Utils.Singleton;
 
 namespace Application {
-    public class GameManager : Singleton<GameManager>
+    public class GameManager : MonoBehaviour
     {
         void Start()
         {
             // Load scene based on save
-            switch (DataPersistenceManager.I.GameData.currentPlace) {
+            switch (DataPersistenceManager.I.gameData.currentPlace) {
                 case PlaceType.Dormitory:
                     SceneManager.LoadScene(DevSet.I.appSettings.dormitorySceneName, LoadSceneMode.Additive);
                     break;

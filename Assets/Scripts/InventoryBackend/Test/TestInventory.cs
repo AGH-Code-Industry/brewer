@@ -1,5 +1,8 @@
-﻿using CoinPackage.Debugging;
+﻿using System;
+using CoinPackage.Debugging;
+using DataPersistence;
 using DataPersistence.Data;
+using DataPersistence.HelperStructures;
 using Items;
 using UnityEngine;
 
@@ -9,6 +12,13 @@ namespace InventoryBackend.Test {
         public ItemDefinition item2;
         public bool testSave = true;
         public bool testLoad = true;
+        
+        private Inventory _inventory;
+
+        public void Awake() {
+            _inventory = FindFirstObjectByType<Inventory>();
+        }
+
         private void Start() {
             TestSaving();
             TestLoading();
@@ -16,22 +26,20 @@ namespace InventoryBackend.Test {
 
         void TestSaving() {
             if (!testSave) return;
-            GameData gameData = new GameData();
-            Inventory.I.InsertItem(item1, 3);
-            Inventory.I.InsertItem(item2, 5);
-            Inventory.I.SavePersistentData(ref gameData);
-            foreach (var item in gameData.inventoryData.Items) {
-                CDebug.Log(item);
-            }
+            _inventory.InsertItem(item1, 3);
+            _inventory.InsertItem(item2, 5);
+            // _inventory.SavePersistentData(ref DataPersistenceManager.I.GameData);
+            // foreach (var item in DataPersistenceManager.I.GameData.inventoryData.items) {
+            //     CDebug.Log(item);
+            // }
         }
 
         void TestLoading() {
             if (!testLoad) return;
-            GameData gameData = new GameData();
-            gameData.inventoryData.Items.Add(("DummyItem", 3));
-            gameData.inventoryData.Items.Add(("DummyBeer", 3));
-            Inventory.I.LoadPersistentData(gameData);
-            foreach (var (item, count) in Inventory.I.GetAllItems()) {
+            DataPersistenceManager.I.gameData.inventoryData.items.Add(new InventoryEntry("DummyItem", 3));
+            DataPersistenceManager.I.gameData.inventoryData.items.Add(new InventoryEntry("DummyBeer", 3));
+            _inventory.LoadPersistentData(DataPersistenceManager.I.gameData);
+            foreach (var (item, count) in _inventory.GetAllItems()) {
                 CDebug.Log($"Item: {item}, Count {count}");
             }
         }
