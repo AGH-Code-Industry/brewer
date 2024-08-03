@@ -542,6 +542,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Dorm.Tools.Mortar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dorm.Tools.Mortar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Dorm.Tools.Toaster.yml",
       "output": {
         ".html": {
@@ -586,6 +596,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Dorm.Tools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.DiaryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.DiaryHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.PhoneHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.PhoneHandler.html"
         }
       },
       "version": ""

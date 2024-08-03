@@ -259,6 +259,11 @@
     "title": "Class Barrel | Czasoport Documentation",
     "keywords": "Class Barrel Namespace Dorm.Tools public class Barrel : Tool, IDragInteractable Inheritance object Tool Barrel Implements IDragInteractable Inherited Members Tool.toolDefinition Methods Awake() protected override void Awake() DragInteraction(GameObject) Fired when object has been let go over a object that has this interface. public bool DragInteraction(GameObject sourceObject) Parameters sourceObject GameObject Returns bool Whether object should be destroyed. EnteredPossibleDragInteraction(GameObject) public void EnteredPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject LeftPossibleDragInteraction(GameObject) public void LeftPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject"
   },
+  "api/Dorm.Tools.Mortar.html": {
+    "href": "api/Dorm.Tools.Mortar.html",
+    "title": "Class Mortar | Czasoport Documentation",
+    "keywords": "Class Mortar Namespace Dorm.Tools public class Mortar : Tool, IDragInteractable Inheritance object Tool Mortar Implements IDragInteractable Inherited Members Tool.toolDefinition Fields mortarOff public GameObject mortarOff Field Value GameObject mortarOnBase public GameObject mortarOnBase Field Value GameObject mortarOnSpoon public GameObject mortarOnSpoon Field Value GameObject resultParent public Transform resultParent Field Value Transform resultSpawnPoint public Transform resultSpawnPoint Field Value Transform Methods Awake() protected override void Awake() DragInteraction(GameObject) Fired when object has been let go over a object that has this interface. public bool DragInteraction(GameObject sourceObject) Parameters sourceObject GameObject Returns bool Whether object should be destroyed. EnteredPossibleDragInteraction(GameObject) public void EnteredPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject LeftPossibleDragInteraction(GameObject) public void LeftPossibleDragInteraction(GameObject sourceObject) Parameters sourceObject GameObject"
+  },
   "api/Dorm.Tools.Toaster.html": {
     "href": "api/Dorm.Tools.Toaster.html",
     "title": "Class Toaster | Czasoport Documentation",
@@ -267,7 +272,7 @@
   "api/Dorm.Tools.Tool.html": {
     "href": "api/Dorm.Tools.Tool.html",
     "title": "Class Tool | Czasoport Documentation",
-    "keywords": "Class Tool Namespace Dorm.Tools public class Tool : MonoBehaviour Inheritance object Tool Derived Barrel Toaster Fields toolDefinition public ToolDefinition toolDefinition Field Value ToolDefinition Methods Awake() protected virtual void Awake()"
+    "keywords": "Class Tool Namespace Dorm.Tools public class Tool : MonoBehaviour Inheritance object Tool Derived Barrel Mortar Toaster Fields toolDefinition public ToolDefinition toolDefinition Field Value ToolDefinition Methods Awake() protected virtual void Awake()"
   },
   "api/Dorm.Tools.ToolDefinition.html": {
     "href": "api/Dorm.Tools.ToolDefinition.html",
@@ -277,12 +282,22 @@
   "api/Dorm.Tools.Tools.html": {
     "href": "api/Dorm.Tools.Tools.html",
     "title": "Enum Tools | Czasoport Documentation",
-    "keywords": "Enum Tools Namespace Dorm.Tools public enum Tools Fields Barrel = 1 None = 0 Toaster = 2"
+    "keywords": "Enum Tools Namespace Dorm.Tools public enum Tools Fields Barrel = 1 Mortar = 3 None = 0 Toaster = 2"
   },
   "api/Dorm.Tools.html": {
     "href": "api/Dorm.Tools.html",
     "title": "Namespace Dorm.Tools | Czasoport Documentation",
-    "keywords": "Namespace Dorm.Tools Classes Barrel Toaster Tool ToolDefinition Enums Tools"
+    "keywords": "Namespace Dorm.Tools Classes Barrel Mortar Toaster Tool ToolDefinition Enums Tools"
+  },
+  "api/Global.DiaryHandler.html": {
+    "href": "api/Global.DiaryHandler.html",
+    "title": "Class DiaryHandler | Czasoport Documentation",
+    "keywords": "Class DiaryHandler Namespace Global public class DiaryHandler : MonoBehaviour Inheritance object DiaryHandler Fields arrowLeft public GameObject arrowLeft Field Value GameObject arrowRight public GameObject arrowRight Field Value GameObject bgAnim public Animator bgAnim Field Value Animator diaryAnim public Animator diaryAnim Field Value Animator diaryBase public Sprite diaryBase Field Value Sprite diaryNoLeft public Sprite diaryNoLeft Field Value Sprite diaryNoRight public Sprite diaryNoRight Field Value Sprite diarySprite public SpriteRenderer diarySprite Field Value SpriteRenderer diaryTable public GameObject diaryTable Field Value GameObject file public TextAsset file Field Value TextAsset isDiaryOpen public bool isDiaryOpen Field Value bool lNb public TMP_Text lNb Field Value TMP_Text leftPage public TMP_Text leftPage Field Value TMP_Text pageNumber public int pageNumber Field Value int pages public string[] pages Field Value string[] rNb public TMP_Text rNb Field Value TMP_Text rightPage public TMP_Text rightPage Field Value TMP_Text Methods OnButtonDown() public void OnButtonDown() OnButtonUp() public void OnButtonUp() PageChange(int) public void PageChange(int dir) Parameters dir int"
+  },
+  "api/Global.PhoneHandler.html": {
+    "href": "api/Global.PhoneHandler.html",
+    "title": "Class PhoneHandler | Czasoport Documentation",
+    "keywords": "Class PhoneHandler Namespace Global public class PhoneHandler : MonoBehaviour Inheritance object PhoneHandler Fields phoneAnim public Animator phoneAnim Field Value Animator Methods OnButtonDown() public void OnButtonDown() OnButtonUp() public void OnButtonUp()"
   },
   "api/Global.UnityInkFileHandler.html": {
     "href": "api/Global.UnityInkFileHandler.html",
@@ -292,7 +307,7 @@
   "api/Global.html": {
     "href": "api/Global.html",
     "title": "Namespace | Czasoport Documentation",
-    "keywords": "Namespace Classes UnityInkFileHandler"
+    "keywords": "Namespace Classes DiaryHandler PhoneHandler UnityInkFileHandler"
   },
   "api/Ink.CharacterRange.html": {
     "href": "api/Ink.CharacterRange.html",
