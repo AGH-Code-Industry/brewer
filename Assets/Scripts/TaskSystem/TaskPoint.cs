@@ -33,8 +33,9 @@ public class TaskPoint : MonoBehaviour {
     }
 
     private void SelectPressed() {
+        
         if(!playerIsNear) return;
-
+        
         if (currTaskState == TaskState.CAN_START && startPoint) {
             EventsManager.instance.taskEvents.TaskStart(taskId);
         }

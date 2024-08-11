@@ -1,14 +1,11 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using CoinPackage.Debugging;
 using DataPersistence;
 using DataPersistence.Data;
+using Settings;
 using TaskSystem;
 using UnityEngine;
 using TMPro;
-using Unity.VisualScripting;
-using UnityEditor.PackageManager;
 
 public class TaskManager : MonoBehaviour, IDataPersistence {
     [Header("Content")]
@@ -19,7 +16,7 @@ public class TaskManager : MonoBehaviour, IDataPersistence {
     private Dictionary<string, Task> taskMap;
     private int currPlayerLevel;
     private void Awake() {
-        taskMap = CreateTaskMap();
+        LoadPersistentData(DataPersistenceManager.I.gameData);
     }
 
     private void OnEnable() {
@@ -71,24 +68,36 @@ public class TaskManager : MonoBehaviour, IDataPersistence {
         task.state = state;
         EventsManager.instance.taskEvents.TaskStateChange(task);
     }
-    
+
+    private void TaskButton(Task task, string todo) {
+        if (todo == "create") {
+            GameObject taskUI = Instantiate(taskPrefab, contentParent.transform);
+            taskUI.gameObject.name = task.info.id + "_button";
+            Transform taskName = taskUI.transform.GetChild(0);
+            taskName.GetComponent<TMP_Text>().text = task.info.displayName;
+            Transform taskDesc = taskUI.transform.GetChild(1);
+            taskDesc.GetComponent<TMP_Text>().text = task.GetFullStatus();
+        }
+        else if (todo == "update") {
+            GameObject taskUI = GameObject.Find(task.info.id + "_button");
+            Transform taskDesc = taskUI.transform.GetChild(1);
+            taskDesc.GetComponent<TMP_Text>().text = task.GetFullStatus();
+        }
+        else if (todo == "delete") {
+            GameObject taskUI = GameObject.Find(task.info.id + "_button");
+            Destroy(taskUI);
+        }
+    }
     private void StartTask(string id) {
         Task task = GetTaskById(id);
         task.InstantiateTaskStep(this.transform);
         ChangeTaskState(task.info.id, TaskState.IN_PROGRESS);
-        GameObject taskUI = Instantiate(taskPrefab, contentParent.transform);
-        taskUI.gameObject.name = task.info.id + "_button";
-        Transform taskName = taskUI.transform.GetChild(0);
-        taskName.GetComponent<TMP_Text>().text = task.info.displayName;
-        Transform taskDesc = taskUI.transform.GetChild(1);
-        taskDesc.GetComponent<TMP_Text>().text = task.GetFullStatus();
+        TaskButton(task, "create");
         CDebug.Log("Task start: " + id);
     }
     // ReSharper disable Unity.PerformanceAnalysis
     private void AdvanceTask(string id) {
         Task task = GetTaskById(id);
-        GameObject taskUI = GameObject.Find(task.info.id + "_button");
-        Transform taskDesc = taskUI.transform.GetChild(1);
         task.MoveToNextStep();
         
         if (task.StepExist()) {
@@ -103,13 +112,12 @@ public class TaskManager : MonoBehaviour, IDataPersistence {
             }
             
         }
-        taskDesc.GetComponent<TMP_Text>().text = task.GetFullStatus();
+        TaskButton(task, "update");
         CDebug.Log("Task advance: " + id);
     }
     private void FinishTask(string id) {
         Task task = GetTaskById(id);
-        GameObject taskUI = GameObject.Find(task.info.id + "_button");
-        Destroy(taskUI);
+        TaskButton(task, "delete");
         ClaimRewards(task);
         ChangeTaskState(task.info.id, TaskState.FINISHED);
         if (task.info.startNextTasks.Length > 0) {
@@ -127,6 +135,9 @@ public class TaskManager : MonoBehaviour, IDataPersistence {
     private void Start() {
         //broadcast the init state of all tasks at start 
         foreach (Task task in taskMap.Values) {
+            if (task.state == TaskState.IN_PROGRESS) {
+                task.InstantiateTaskStep(this.transform);
+            }
             EventsManager.instance.taskEvents.TaskStateChange(task);
         }
     }
@@ -159,44 +170,50 @@ public class TaskManager : MonoBehaviour, IDataPersistence {
     }
 
     private void OnApplicationQuit() {
-        foreach (Task task in taskMap.Values) {
-            TaskData taskData = task.GetTaskData();
-            string teststate = "state = " + taskData.state;
-            string testidx = "idx = " + taskData.taskStepIdx;
-            string teststeps = "";
-            foreach (TaskStepState stepState in taskData.taskStepStates) {
-                teststeps += "   step state = " + stepState.state;
-            }
-
-            CDebug.Log(teststate + " " + testidx + " " + teststeps);
-        }
+        DataPersistenceManager.I.SaveGame(DevSet.I.appSettings.defaultSaveName);
     }
     
     public void LoadPersistentData(GameData gameData) {
-        // if (gameData.inventoryData.items.Count == 0) return;
-        //     
-        // _items.Clear();
-        // var assets = Resources.LoadAll(DevSet.I.appSettings.itemsResPath);
-        // var items = 0;
-        // var count = 0;
-        // foreach (var item in gameData.inventoryData.items) {
-        //     var asset = (ItemDefinition)assets.First(asset => asset.name == item.assetName);
-        //     InsertItem(asset, item.quantity);
-        //     items++;
-        //     count += item.quantity;
-        // }
-        // _logger.Log($"Loaded {items % Colorize.Cyan} from the save, total count: {count % Colorize.Magenta}.");
-        // inventoryUpdated?.Invoke();
+        if (gameData.taskData.tasks.Count == 0) {
+            taskMap = CreateTaskMap();
+            return;
+        }
+        TaskDefinition[] allTasks = Resources.LoadAll<TaskDefinition>("Tasks");
+        Dictionary<string, Task> idToTaskMap = new Dictionary<string, Task>();
+        List<string> allId = new List<string>();
+        for (int i = 0; i < gameData.taskData.tasks.Count; i++) {
+            allId.Add(gameData.taskData.tasks[i].id);
+        }
+        var tasks = 0;
+        foreach (TaskDefinition taskInfo in allTasks) {
+            if (idToTaskMap.ContainsKey(taskInfo.id)) {
+                CDebug.LogWarning("Found duplicated id while initializing task map: " + taskInfo.id);
+            }
+            Task newTask = null;
+            
+            if(allId.Contains(taskInfo.id)) {
+                TaskEntry taskEntry = gameData.taskData.tasks[allId.IndexOf(taskInfo.id)];
+                newTask = new Task(taskInfo, taskEntry.state, taskEntry.taskStepIdx, taskEntry.taskStepStates);
+            }
+            else {
+                newTask = new Task(taskInfo);
+            }
+            idToTaskMap.Add(taskInfo.id, newTask);
+            if (newTask.state == TaskState.IN_PROGRESS) {
+                TaskButton(newTask, "create");
+            }
+            tasks++;
+        }
+        taskMap = idToTaskMap;
+        CDebug.Log($"Loaded {tasks % Colorize.Cyan} from the save.");
     }
 
     public void SavePersistentData(ref GameData gameData) {
-        // List<InventoryEntry> itemsToSave = new List<InventoryEntry>();
-        // var count = 0;
-        // foreach (var (key, value) in _items) {
-        //     itemsToSave.Add(new InventoryEntry(key.name, value));
-        //     count += value;
-        // }
-        // _logger.Log($"Saved {itemsToSave.Count % Colorize.Cyan} to the save, total count: {count % Colorize.Magenta}.");
-        // gameData.inventoryData.items = itemsToSave;
+        List<TaskEntry> tasksToSave = new List<TaskEntry>();
+        foreach (Task task in taskMap.Values) {
+            tasksToSave.Add(task.GetTaskData());
+        }
+        CDebug.Log($"Saved {tasksToSave.Count % Colorize.Cyan} tasks to the save.");
+        gameData.taskData.tasks = tasksToSave;
     }
 }

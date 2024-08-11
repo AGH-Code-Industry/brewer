@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TaskSystem;
 using TMPro;
 using UnityEngine;
 
@@ -26,9 +27,12 @@ public class TasksUI : MonoBehaviour {
 
     private void StartTaskUI(string id) {
         Task task = _taskManager.GetTaskById(id);
-        GameObject taskUI = Instantiate(taskPrefab, contentParent.transform).GetComponent<GameObject>();
-        TMP_Text taskName = taskUI.transform.GetChild(0).GetComponent<TMP_Text>();
-        taskName.text = task.info.displayName;
+        if (task.info.type == TaskType.maintask || task.info.type == TaskType.sidetask) {
+            GameObject taskUI = Instantiate(taskPrefab, contentParent.transform).GetComponent<GameObject>();
+            TMP_Text taskName = taskUI.transform.GetChild(0).GetComponent<TMP_Text>();
+            taskName.text = task.info.displayName;
+        }
+        
     }
     
     

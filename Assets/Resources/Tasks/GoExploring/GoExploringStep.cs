@@ -10,20 +10,26 @@ public class GoExploringStep : TaskStep {
     [SerializeField] private string nameOfPlace = "nazwamiejsca";
     private void Start() {
         string status = "Podejdź do: \"" + nameOfPlace + "\"";
-        UpdateState(status);
+        ChangeState("in_progress",status);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player")) {
             string status = "Odwiedzono \"" + nameOfPlace + "\"";
-            UpdateState(status);
+            ChangeState("finished", status);
             FinishTaskStep();
         }
     }
-    
-    
-    private void UpdateState(string status) {
-        string state = nameOfPlace;
-        ChangeState(state,status);
+
+    protected override void SetTaskStepState(string state) {
+        if (state == "finished") {
+            string status = "Odwiedzono \"" + nameOfPlace + "\"";
+            ChangeState("finished", status);
+            FinishTaskStep();
+        }
+        else {
+            string status = "Podejdź do: \"" + nameOfPlace + "\"";
+            ChangeState("in_progress",status);
+        }
     }
 }

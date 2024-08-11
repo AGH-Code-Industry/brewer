@@ -8,9 +8,12 @@ public abstract class TaskStep : MonoBehaviour {
     private string taskId;
     private int stepIdx;
 
-    public void InitTaskStep(string taskId, int stepIdx) {
+    public void InitTaskStep(string taskId, int stepIdx, string taskStepState) {
         this.taskId = taskId;
         this.stepIdx = stepIdx;
+        if (taskStepState != null && taskStepState != "") {
+            SetTaskStepState(taskStepState);
+        }
     }
     
     protected void FinishTaskStep() {
@@ -24,5 +27,6 @@ public abstract class TaskStep : MonoBehaviour {
     protected void ChangeState(string newState, string newStatus) {
         EventsManager.instance.taskEvents.TaskStepStateChange(taskId, stepIdx, new TaskStepState(newState, newStatus));
     }
-    
+
+    protected abstract void SetTaskStepState(string state);
 }

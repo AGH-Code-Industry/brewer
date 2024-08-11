@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using CoinPackage.Debugging;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EventsManager : MonoBehaviour
@@ -14,10 +15,13 @@ public class EventsManager : MonoBehaviour
 
     private void Awake() {
         if (instance is not null) {
-            CDebug.LogError("There are multiple Events Managers on the scene!");
+            CDebug.LogError("There are multiple Events Managers on the scene! Destroying the newest one.");
+            Destroy(this.gameObject);
+            return;
         }
 
         instance = this;
+        DontDestroyOnLoad(this.gameObject);
 
         taskEvents = new TaskEvents();
         inputEvents = new InputEvents();

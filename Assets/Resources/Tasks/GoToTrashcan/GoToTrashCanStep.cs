@@ -20,4 +20,8 @@ public class GoToTrashCanStep : TaskStep {
     private void UpdateState(string status) {
         ChangeState("",status);
     }
+
+    protected override void SetTaskStepState(string state) {
+        //no state needed
+    }
 }

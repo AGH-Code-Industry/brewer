@@ -5,6 +5,6 @@ using Settings;
 namespace DataPersistence.Data {
     [System.Serializable]
     public class TaskData {
-        //public List<TaskEntry> items = DevSet.I.defSaveData.startingItems.GetEntries();
+        public List<TaskEntry> tasks = new List<TaskEntry>();
     }
 }

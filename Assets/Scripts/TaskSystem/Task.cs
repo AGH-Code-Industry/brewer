@@ -20,6 +20,16 @@ public class Task {
         }
     }
 
+    public Task(TaskDefinition taskInfo, TaskState taskState, int currStepIdx, TaskStepState[] taskStepStates) {
+        this.info = taskInfo;
+        this.state = taskState;
+        this.currStepIdx = currStepIdx;
+        this.taskStepStates = taskStepStates;
+
+        if (this.taskStepStates.Length != this.info.taskStepPrefabs.Length) {
+            CDebug.LogWarning("Task Step Prefabs and Task Step States have different lengths. It's a sign that structure of TaskInfo has changed and persisted data is now out of sync. It's recommended to reset save data to avoid later issues! TaskId: " + this.info.id);
+        }
+    }
     public void MoveToNextStep() {
         currStepIdx++;
     }
@@ -33,7 +43,7 @@ public class Task {
         GameObject taskStepPrefab = GetStepPrefab();
         if (taskStepPrefab is not null) {
             TaskStep taskStep = Object.Instantiate<GameObject>(taskStepPrefab, parentTransform).GetComponent<TaskStep>();
-            taskStep.InitTaskStep(info.id, currStepIdx);
+            taskStep.InitTaskStep(info.id, currStepIdx, taskStepStates[currStepIdx].state);
         }
     }
 
@@ -58,8 +68,8 @@ public class Task {
             CDebug.LogWarning("Wanted to access task step data, but idx went out of range! TaskID: " + info.id + ", idx: " + stepIdx);
         }
     }
-    public TaskData GetTaskData() {
-        return new TaskData(state, currStepIdx, taskStepStates);
+    public TaskEntry GetTaskData() {
+        return new TaskEntry(info.id, state, currStepIdx, taskStepStates);
     }
 
     public string GetFullStatus() {
