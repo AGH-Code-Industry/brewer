@@ -10,5 +10,6 @@ namespace DataPersistence.Data {
         public TownData townData = new TownData();
         public OrderData orderData = new OrderData();
         public InventoryData inventoryData = new InventoryData();
+        public TaskData taskData = new TaskData();
     }
 }

@@ -12,11 +12,44 @@ namespace Town {
         
         private Rigidbody2D _rigidBody;
         private Vector2 _movement;
-
-        void Start() {
+        private bool movementDisabled = false;
+        
+        void Awake() {
             _rigidBody = GetComponent<Rigidbody2D>();
         }
-        
+        private void Start() 
+        {
+            EventsManager.instance.inputEvents.onMovePressed += MovePressed;
+            EventsManager.instance.playerEvents.onDisablePlayerMovement += DisablePlayerMovement;
+            EventsManager.instance.playerEvents.onEnablePlayerMovement += EnablePlayerMovement;
+        }
+
+        private void OnDestroy()
+        {
+            EventsManager.instance.inputEvents.onMovePressed -= MovePressed;
+            EventsManager.instance.playerEvents.onDisablePlayerMovement -= DisablePlayerMovement;
+            EventsManager.instance.playerEvents.onEnablePlayerMovement -= EnablePlayerMovement;
+        }
+
+        private void DisablePlayerMovement() 
+        {
+            movementDisabled = true;
+        }
+
+        private void EnablePlayerMovement() 
+        {
+            movementDisabled = false;
+        }
+
+        private void MovePressed() 
+        {
+            var direction = CInput.TownNavigationAxis.normalized;
+            _movement = direction * DevSet.I.townSettings.movementSpeed;
+            if (movementDisabled) 
+            {
+                _movement = Vector2.zero;
+            }
+        }
         private void Update() {
             var movement = CInput.TownNavigationAxis;
 
@@ -26,8 +59,8 @@ namespace Town {
         }
 
         private void FixedUpdate() {
-            var direction = CInput.TownNavigationAxis.normalized;
-            _rigidBody.velocity = direction * DevSet.I.townSettings.movementSpeed;
+            
+            _rigidBody.velocity = _movement;
         }
     }
 }

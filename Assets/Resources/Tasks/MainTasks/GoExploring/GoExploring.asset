@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23ccd6efa853b64b8d291638aaebf81, type: 3}
+  m_Name: GoExploring
+  m_EditorClassIdentifier: 
+  <id>k__BackingField: GoExploring
+  displayName: Zwiedzamy!
+  type: 0
+  levelRequirement: 0
+  requiredTasks: []
+  taskStepPrefabs:
+  - {fileID: 6461822775878734068, guid: 6e2ec5d2d58d3f24e9f907c2e21e608e, type: 3}
+  - {fileID: 82620433276059602, guid: 303470c1860fb5e4aa233451eda27a0d, type: 3}
+  - {fileID: 3015067690820056695, guid: 5fbfac5064963e14989a2f685f886075, type: 3}
+  autoFinish: 1
+  startNextTasks: []
+  moneyReward: 0
+  expReward: 0
