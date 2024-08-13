@@ -22,5 +22,6 @@ MonoBehaviour:
   autoFinish: 0
   startNextTasks:
   - {fileID: 11400000, guid: 7b8b276db1352a34d89613e674e0daad, type: 2}
+  - {fileID: 11400000, guid: 4bc95ac735bb16446b531eafd235fada, type: 2}
   moneyReward: 0
   expReward: 0

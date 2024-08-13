@@ -73,15 +73,11 @@ public class TaskManager : MonoBehaviour, IDataPersistence {
         if (todo == "create") {
             GameObject taskUI = Instantiate(taskPrefab, contentParent.transform);
             taskUI.gameObject.name = task.info.id + "_button";
-            Transform taskName = taskUI.transform.GetChild(0);
-            taskName.GetComponent<TMP_Text>().text = task.info.displayName;
-            Transform taskDesc = taskUI.transform.GetChild(1);
-            taskDesc.GetComponent<TMP_Text>().text = task.GetFullStatus();
+            taskUI.GetComponent<TaskUI>().SetTaskButton(task.info.displayName, task.GetFullStatus());
         }
         else if (todo == "update") {
             GameObject taskUI = GameObject.Find(task.info.id + "_button");
-            Transform taskDesc = taskUI.transform.GetChild(1);
-            taskDesc.GetComponent<TMP_Text>().text = task.GetFullStatus();
+            taskUI.GetComponent<TaskUI>().SetTaskButton(task.info.displayName, task.GetFullStatus());
         }
         else if (todo == "delete") {
             GameObject taskUI = GameObject.Find(task.info.id + "_button");
@@ -146,9 +142,7 @@ public class TaskManager : MonoBehaviour, IDataPersistence {
         Task task = GetTaskById(id);
         task.StoreTaskStepState(taskStepState,stepIdx);
         ChangeTaskState(id, task.state);
-        GameObject taskUI = GameObject.Find(task.info.id + "_button");
-        Transform taskDesc = taskUI.transform.GetChild(1);
-        taskDesc.GetComponent<TMP_Text>().text = task.GetFullStatus();
+        TaskButton(task, "update");
     }
     
     private Dictionary<string, Task> CreateTaskMap() {
