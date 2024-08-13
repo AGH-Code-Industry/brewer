@@ -242,6 +242,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.Data.TaskData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.Data.TaskData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DataPersistence.Data.TownData.yml",
       "output": {
         ".html": {
@@ -612,10 +622,200 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Global.EventsManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.EventsManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.GoExploringStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.GoExploringStep.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.GoToDorm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.GoToDorm.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.GoToTown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.GoToTown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.GoToTrashCanStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.GoToTrashCanStep.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.InputEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.InputEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.InputManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.InputManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Global.PhoneHandler.yml",
       "output": {
         ".html": {
           "relative_path": "api/Global.PhoneHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.PlayerEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.PlayerEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.PlayerManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.PlayerManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.Task.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.Task.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.TaskEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.TaskEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.TaskEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.TaskEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.TaskManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.TaskManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.TaskPoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.TaskPoint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.TaskState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.TaskState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.TaskStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.TaskStep.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.TaskStepState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.TaskStepState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.TaskUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.TaskUI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.TasksUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.TasksUI.html"
         }
       },
       "version": ""
@@ -2772,6 +2972,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/TaskSystem.TaskDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaskSystem.TaskDefinition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaskSystem.TaskType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaskSystem.TaskType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaskSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaskSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Town.CameraFollowPlayerComponent.yml",
       "output": {
         ".html": {
@@ -2812,20 +3042,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Town.Town.TrashCan.yml",
+      "source_relative_path": "api/Town.TrashCan.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Town.Town.TrashCan.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Town.Town.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Town.Town.html"
+          "relative_path": "api/Town.TrashCan.html"
         }
       },
       "version": ""
