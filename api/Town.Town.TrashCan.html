@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Enum TaskType | Czasoport Documentation </title>
+      <title>Class TrashCan | Czasoport Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Enum TaskType | Czasoport Documentation ">
+      <meta name="title" content="Class TrashCan | Czasoport Documentation ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/AGH-Code-Industry/brewer/new/master/apiSpec/new?filename=TaskSystem_TaskType.md&amp;value=---%0Auid%3A%20TaskSystem.TaskType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/AGH-Code-Industry/brewer/new/master/apiSpec/new?filename=Town_Town_TrashCan.md&amp;value=---%0Auid%3A%20Town.Town.TrashCan%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,17 +84,16 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="TaskSystem.TaskType">
+        <article data-uid="Town.Town.TrashCan">
 
 
 
-
-  <h1 id="TaskSystem_TaskType" data-uid="TaskSystem.TaskType" class="text-break">
-Enum TaskType  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/TaskSystem/TaskType.cs/#L2"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Town_Town_TrashCan" data-uid="Town.Town.TrashCan" class="text-break">
+Class TrashCan  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Town/TrashCan.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="TaskSystem.html">TaskSystem</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Town.html">Town</a>.<a class="xref" href="Town.Town.html">Town</a></dd></dl>
   
   </div>
 
@@ -102,7 +101,50 @@ Enum TaskType  <a class="header-action link-secondary" title="View source" href=
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public enum TaskType</code></pre>
+    <pre><code class="lang-csharp hljs">public class TrashCan : MonoBehaviour, IInteractable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">TrashCan</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Town.IInteractable.html">IInteractable</a></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Town_Town_TrashCan_EnteredInteractionRange_" data-uid="Town.Town.TrashCan.EnteredInteractionRange*"></a>
+
+  <h3 id="Town_Town_TrashCan_EnteredInteractionRange" data-uid="Town.Town.TrashCan.EnteredInteractionRange">
+  EnteredInteractionRange()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Town/TrashCan.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnteredInteractionRange()</code></pre>
   </div>
 
 
@@ -113,23 +155,41 @@ Enum TaskType  <a class="header-action link-secondary" title="View source" href=
 
 
 
-  <h2 id="fields">Fields
-</h2>
-  <dl class="parameters">
-    <dt id="TaskSystem_TaskType_beertask"><code>beertask = 1</code></dt>
-    <dd></dd>
-    <dt id="TaskSystem_TaskType_maintask"><code>maintask = 0</code></dt>
-    <dd></dd>
-    <dt id="TaskSystem_TaskType_sidetask"><code>sidetask = 2</code></dt>
-    <dd></dd>
-  </dl>
+
+
+
+
+  <a id="Town_Town_TrashCan_LeftInteractionRange_" data-uid="Town.Town.TrashCan.LeftInteractionRange*"></a>
+
+  <h3 id="Town_Town_TrashCan_LeftInteractionRange" data-uid="Town.Town.TrashCan.LeftInteractionRange">
+  LeftInteractionRange()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Town/TrashCan.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LeftInteractionRange()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/TaskSystem/TaskType.cs/#L2" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Town/TrashCan.cs/#L7" class="edit-link">Edit this page</a>
         </div>
 
 

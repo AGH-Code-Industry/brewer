@@ -62,7 +62,7 @@
   "api/CustomInput.InputActions.ITownActions.html": {
     "href": "api/CustomInput.InputActions.ITownActions.html",
     "title": "Interface InputActions.ITownActions | Czasoport Documentation",
-    "keywords": "Interface InputActions.ITownActions Namespace CustomInput public interface InputActions.ITownActions Methods OnNavigation(CallbackContext) void OnNavigation(InputAction.CallbackContext context) Parameters context CallbackContext OnRun(CallbackContext) void OnRun(InputAction.CallbackContext context) Parameters context CallbackContext OnSelect(CallbackContext) void OnSelect(InputAction.CallbackContext context) Parameters context CallbackContext"
+    "keywords": "Interface InputActions.ITownActions Namespace CustomInput public interface InputActions.ITownActions Methods OnNavigation(CallbackContext) void OnNavigation(InputAction.CallbackContext context) Parameters context CallbackContext OnRun(CallbackContext) void OnRun(InputAction.CallbackContext context) Parameters context CallbackContext"
   },
   "api/CustomInput.InputActions.PauseMenuActions.html": {
     "href": "api/CustomInput.InputActions.PauseMenuActions.html",
@@ -77,7 +77,7 @@
   "api/CustomInput.InputActions.TownActions.html": {
     "href": "api/CustomInput.InputActions.TownActions.html",
     "title": "Struct InputActions.TownActions | Czasoport Documentation",
-    "keywords": "Struct InputActions.TownActions Namespace CustomInput public struct InputActions.TownActions Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors TownActions(InputActions) public TownActions(InputActions wrapper) Parameters wrapper InputActions Properties Navigation public InputAction Navigation { get; } Property Value InputAction Run public InputAction Run { get; } Property Value InputAction Select public InputAction Select { get; } Property Value InputAction enabled public bool enabled { get; } Property Value bool Methods AddCallbacks(ITownActions) public void AddCallbacks(InputActions.ITownActions instance) Parameters instance InputActions.ITownActions Disable() public void Disable() Enable() public void Enable() Get() public InputActionMap Get() Returns InputActionMap RemoveCallbacks(ITownActions) public void RemoveCallbacks(InputActions.ITownActions instance) Parameters instance InputActions.ITownActions SetCallbacks(ITownActions) public void SetCallbacks(InputActions.ITownActions instance) Parameters instance InputActions.ITownActions Operators implicit operator InputActionMap(TownActions) public static implicit operator InputActionMap(InputActions.TownActions set) Parameters set InputActions.TownActions Returns InputActionMap"
+    "keywords": "Struct InputActions.TownActions Namespace CustomInput public struct InputActions.TownActions Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors TownActions(InputActions) public TownActions(InputActions wrapper) Parameters wrapper InputActions Properties Navigation public InputAction Navigation { get; } Property Value InputAction Run public InputAction Run { get; } Property Value InputAction enabled public bool enabled { get; } Property Value bool Methods AddCallbacks(ITownActions) public void AddCallbacks(InputActions.ITownActions instance) Parameters instance InputActions.ITownActions Disable() public void Disable() Enable() public void Enable() Get() public InputActionMap Get() Returns InputActionMap RemoveCallbacks(ITownActions) public void RemoveCallbacks(InputActions.ITownActions instance) Parameters instance InputActions.ITownActions SetCallbacks(ITownActions) public void SetCallbacks(InputActions.ITownActions instance) Parameters instance InputActions.ITownActions Operators implicit operator InputActionMap(TownActions) public static implicit operator InputActionMap(InputActions.TownActions set) Parameters set InputActions.TownActions Returns InputActionMap"
   },
   "api/CustomInput.InputActions.html": {
     "href": "api/CustomInput.InputActions.html",
@@ -97,7 +97,7 @@
   "api/DataPersistence.Data.GameData.html": {
     "href": "api/DataPersistence.Data.GameData.html",
     "title": "Class GameData | Czasoport Documentation",
-    "keywords": "Class GameData Namespace DataPersistence.Data [Serializable] public class GameData Inheritance object GameData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields currentPlace public PlaceType currentPlace Field Value PlaceType dormData public DormitoryData dormData Field Value DormitoryData inventoryData public InventoryData inventoryData Field Value InventoryData isNewSave public bool isNewSave Field Value bool orderData public OrderData orderData Field Value OrderData taskData public TaskData taskData Field Value TaskData townData public TownData townData Field Value TownData"
+    "keywords": "Class GameData Namespace DataPersistence.Data [Serializable] public class GameData Inheritance object GameData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields currentPlace public PlaceType currentPlace Field Value PlaceType dormData public DormitoryData dormData Field Value DormitoryData inventoryData public InventoryData inventoryData Field Value InventoryData isNewSave public bool isNewSave Field Value bool orderData public OrderData orderData Field Value OrderData townData public TownData townData Field Value TownData"
   },
   "api/DataPersistence.Data.InventoryData.html": {
     "href": "api/DataPersistence.Data.InventoryData.html",
@@ -109,11 +109,6 @@
     "title": "Class OrderData | Czasoport Documentation",
     "keywords": "Class OrderData Namespace DataPersistence.Data [Serializable] public class OrderData Inheritance object OrderData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString()"
   },
-  "api/DataPersistence.Data.TaskData.html": {
-    "href": "api/DataPersistence.Data.TaskData.html",
-    "title": "Class TaskData | Czasoport Documentation",
-    "keywords": "Class TaskData Namespace DataPersistence.Data [Serializable] public class TaskData Inheritance object TaskData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields tasks public List<TaskEntry> tasks Field Value List<TaskEntry>"
-  },
   "api/DataPersistence.Data.TownData.html": {
     "href": "api/DataPersistence.Data.TownData.html",
     "title": "Class TownData | Czasoport Documentation",
@@ -122,7 +117,7 @@
   "api/DataPersistence.Data.html": {
     "href": "api/DataPersistence.Data.html",
     "title": "Namespace DataPersistence.Data | Czasoport Documentation",
-    "keywords": "Namespace DataPersistence.Data Classes DormitoryData GameData InventoryData OrderData TaskData TownData"
+    "keywords": "Namespace DataPersistence.Data Classes DormitoryData GameData InventoryData OrderData TownData"
   },
   "api/DataPersistence.DataPersistenceManager.html": {
     "href": "api/DataPersistence.DataPersistenceManager.html",
@@ -299,105 +294,10 @@
     "title": "Class DiaryHandler | Czasoport Documentation",
     "keywords": "Class DiaryHandler Namespace Global public class DiaryHandler : MonoBehaviour Inheritance object DiaryHandler Fields arrowLeft public GameObject arrowLeft Field Value GameObject arrowRight public GameObject arrowRight Field Value GameObject bgAnim public Animator bgAnim Field Value Animator diaryAnim public Animator diaryAnim Field Value Animator diaryBase public Sprite diaryBase Field Value Sprite diaryNoLeft public Sprite diaryNoLeft Field Value Sprite diaryNoRight public Sprite diaryNoRight Field Value Sprite diarySprite public SpriteRenderer diarySprite Field Value SpriteRenderer diaryTable public GameObject diaryTable Field Value GameObject file public TextAsset file Field Value TextAsset isDiaryOpen public bool isDiaryOpen Field Value bool lNb public TMP_Text lNb Field Value TMP_Text leftPage public TMP_Text leftPage Field Value TMP_Text pageNumber public int pageNumber Field Value int pages public string[] pages Field Value string[] rNb public TMP_Text rNb Field Value TMP_Text rightPage public TMP_Text rightPage Field Value TMP_Text Methods OnButtonDown() public void OnButtonDown() OnButtonUp() public void OnButtonUp() PageChange(int) public void PageChange(int dir) Parameters dir int"
   },
-  "api/Global.EventsManager.html": {
-    "href": "api/Global.EventsManager.html",
-    "title": "Class EventsManager | Czasoport Documentation",
-    "keywords": "Class EventsManager Namespace Global public class EventsManager : MonoBehaviour Inheritance object EventsManager Fields inputEvents public InputEvents inputEvents Field Value InputEvents playerEvents public PlayerEvents playerEvents Field Value PlayerEvents taskEvents public TaskEvents taskEvents Field Value TaskEvents Properties instance public static EventsManager instance { get; } Property Value EventsManager"
-  },
-  "api/Global.GoExploringStep.html": {
-    "href": "api/Global.GoExploringStep.html",
-    "title": "Class GoExploringStep | Czasoport Documentation",
-    "keywords": "Class GoExploringStep Namespace Global public class GoExploringStep : TaskStep Inheritance object TaskStep GoExploringStep Inherited Members TaskStep.InitTaskStep(string, int, string) TaskStep.FinishTaskStep() TaskStep.ChangeState(string, string) Methods SetTaskStepState(string) protected override void SetTaskStepState(string state) Parameters state string"
-  },
-  "api/Global.GoToDorm.html": {
-    "href": "api/Global.GoToDorm.html",
-    "title": "Class GoToDorm | Czasoport Documentation",
-    "keywords": "Class GoToDorm Namespace Global public class GoToDorm : MonoBehaviour Inheritance object GoToDorm Methods SelectPressed() public void SelectPressed()"
-  },
-  "api/Global.GoToTown.html": {
-    "href": "api/Global.GoToTown.html",
-    "title": "Class GoToTown | Czasoport Documentation",
-    "keywords": "Class GoToTown Namespace Global public class GoToTown : MonoBehaviour Inheritance object GoToTown Methods OnPress() public void OnPress()"
-  },
-  "api/Global.GoToTrashCanStep.html": {
-    "href": "api/Global.GoToTrashCanStep.html",
-    "title": "Class GoToTrashCanStep | Czasoport Documentation",
-    "keywords": "Class GoToTrashCanStep Namespace Global public class GoToTrashCanStep : TaskStep Inheritance object TaskStep GoToTrashCanStep Inherited Members TaskStep.InitTaskStep(string, int, string) TaskStep.FinishTaskStep() TaskStep.ChangeState(string, string) Methods SetTaskStepState(string) protected override void SetTaskStepState(string state) Parameters state string"
-  },
-  "api/Global.InputEvents.html": {
-    "href": "api/Global.InputEvents.html",
-    "title": "Class InputEvents | Czasoport Documentation",
-    "keywords": "Class InputEvents Namespace Global public class InputEvents Inheritance object InputEvents Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods MovePressed() public void MovePressed() SelectPressed() public void SelectPressed() Events onMovePressed public event Action onMovePressed Event Type Action onSelectPressed public event Action onSelectPressed Event Type Action"
-  },
-  "api/Global.InputManager.html": {
-    "href": "api/Global.InputManager.html",
-    "title": "Class InputManager | Czasoport Documentation",
-    "keywords": "Class InputManager Namespace Global public class InputManager : MonoBehaviour Inheritance object InputManager Methods MovePressed(CallbackContext) public void MovePressed(InputAction.CallbackContext context) Parameters context CallbackContext SelectPressed(CallbackContext) public void SelectPressed(InputAction.CallbackContext context) Parameters context CallbackContext"
-  },
   "api/Global.PhoneHandler.html": {
     "href": "api/Global.PhoneHandler.html",
     "title": "Class PhoneHandler | Czasoport Documentation",
-    "keywords": "Class PhoneHandler Namespace Global public class PhoneHandler : MonoBehaviour Inheritance object PhoneHandler Fields appsAnim public Animator appsAnim Field Value Animator bg public Image bg Field Value Image bgAnim public Animator bgAnim Field Value Animator phoneAnim public Animator phoneAnim Field Value Animator tasksAnim public Animator tasksAnim Field Value Animator Methods OnAppsDown() public void OnAppsDown() OnAppsUp() public void OnAppsUp() OnButtonDown() public void OnButtonDown() OnButtonUp() public void OnButtonUp() OnTasksDown() public void OnTasksDown() OnTasksUp() public void OnTasksUp()"
-  },
-  "api/Global.PlayerEvents.html": {
-    "href": "api/Global.PlayerEvents.html",
-    "title": "Class PlayerEvents | Czasoport Documentation",
-    "keywords": "Class PlayerEvents Namespace Global public class PlayerEvents Inheritance object PlayerEvents Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods DisablePlayerMovement() public void DisablePlayerMovement() EnablePlayerMovement() public void EnablePlayerMovement() ExpAdd(int) public void ExpAdd(int exp) Parameters exp int MoneyAdd(int) public void MoneyAdd(int money) Parameters money int MoneyChange(int) public void MoneyChange(int money) Parameters money int PlayerExpChange(int) public void PlayerExpChange(int exp) Parameters exp int PlayerLevelChange(int) public void PlayerLevelChange(int level) Parameters level int Events onDisablePlayerMovement public event Action onDisablePlayerMovement Event Type Action onEnablePlayerMovement public event Action onEnablePlayerMovement Event Type Action onExpAdd public event Action<int> onExpAdd Event Type Action<int> onMoneyAdd public event Action<int> onMoneyAdd Event Type Action<int> onMoneyChange public event Action<int> onMoneyChange Event Type Action<int> onPlayerExpChange public event Action<int> onPlayerExpChange Event Type Action<int> onPlayerLevelChange public event Action<int> onPlayerLevelChange Event Type Action<int>"
-  },
-  "api/Global.PlayerManager.html": {
-    "href": "api/Global.PlayerManager.html",
-    "title": "Class PlayerManager | Czasoport Documentation",
-    "keywords": "Class PlayerManager Namespace Global public class PlayerManager : MonoBehaviour Inheritance object PlayerManager"
-  },
-  "api/Global.Task.html": {
-    "href": "api/Global.Task.html",
-    "title": "Class Task | Czasoport Documentation",
-    "keywords": "Class Task Namespace Global public class Task Inheritance object Task Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors Task(TaskDefinition) public Task(TaskDefinition taskInfo) Parameters taskInfo TaskDefinition Task(TaskDefinition, TaskState, int, TaskStepState[]) public Task(TaskDefinition taskInfo, TaskState taskState, int currStepIdx, TaskStepState[] taskStepStates) Parameters taskInfo TaskDefinition taskState TaskState currStepIdx int taskStepStates TaskStepState[] Fields info public TaskDefinition info Field Value TaskDefinition state public TaskState state Field Value TaskState Methods GetFullStatus() public string GetFullStatus() Returns string GetTaskData() public TaskEntry GetTaskData() Returns TaskEntry InstantiateTaskStep(Transform) public void InstantiateTaskStep(Transform parentTransform) Parameters parentTransform Transform MoveToNextStep() public void MoveToNextStep() StepExist() public bool StepExist() Returns bool StoreTaskStepState(TaskStepState, int) public void StoreTaskStepState(TaskStepState taskStepState, int stepIdx) Parameters taskStepState TaskStepState stepIdx int"
-  },
-  "api/Global.TaskEntry.html": {
-    "href": "api/Global.TaskEntry.html",
-    "title": "Class TaskEntry | Czasoport Documentation",
-    "keywords": "Class TaskEntry Namespace Global [Serializable] public class TaskEntry Inheritance object TaskEntry Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors TaskEntry(string, TaskState, int, TaskStepState[]) public TaskEntry(string id, TaskState state, int taskStepIdx, TaskStepState[] taskStepStates) Parameters id string state TaskState taskStepIdx int taskStepStates TaskStepState[] Fields id public string id Field Value string state public TaskState state Field Value TaskState taskStepIdx public int taskStepIdx Field Value int taskStepStates public TaskStepState[] taskStepStates Field Value TaskStepState[]"
-  },
-  "api/Global.TaskEvents.html": {
-    "href": "api/Global.TaskEvents.html",
-    "title": "Class TaskEvents | Czasoport Documentation",
-    "keywords": "Class TaskEvents Namespace Global public class TaskEvents Inheritance object TaskEvents Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods TaskAdvance(string) public void TaskAdvance(string id) Parameters id string TaskFinish(string) public void TaskFinish(string id) Parameters id string TaskStart(string) public void TaskStart(string id) Parameters id string TaskStateChange(Task) public void TaskStateChange(Task task) Parameters task Task TaskStepStateChange(string, int, TaskStepState) public void TaskStepStateChange(string id, int stepIdx, TaskStepState taskStepState) Parameters id string stepIdx int taskStepState TaskStepState Events onTaskAdvance public event Action<string> onTaskAdvance Event Type Action<string> onTaskFinish public event Action<string> onTaskFinish Event Type Action<string> onTaskStart public event Action<string> onTaskStart Event Type Action<string> onTaskStateChange public event Action<Task> onTaskStateChange Event Type Action<Task> onTaskStepStateChange public event Action<string, int, TaskStepState> onTaskStepStateChange Event Type Action<string, int, TaskStepState>"
-  },
-  "api/Global.TaskManager.html": {
-    "href": "api/Global.TaskManager.html",
-    "title": "Class TaskManager | Czasoport Documentation",
-    "keywords": "Class TaskManager Namespace Global public class TaskManager : MonoBehaviour, IDataPersistence Inheritance object TaskManager Implements IDataPersistence Methods GetTaskById(string) public Task GetTaskById(string id) Parameters id string Returns Task LoadPersistentData(GameData) public void LoadPersistentData(GameData gameData) Parameters gameData GameData SavePersistentData(ref GameData) public void SavePersistentData(ref GameData gameData) Parameters gameData GameData"
-  },
-  "api/Global.TaskPoint.html": {
-    "href": "api/Global.TaskPoint.html",
-    "title": "Class TaskPoint | Czasoport Documentation",
-    "keywords": "Class TaskPoint Namespace Global public class TaskPoint : MonoBehaviour Inheritance object TaskPoint"
-  },
-  "api/Global.TaskState.html": {
-    "href": "api/Global.TaskState.html",
-    "title": "Enum TaskState | Czasoport Documentation",
-    "keywords": "Enum TaskState Namespace Global public enum TaskState Fields CAN_FINISH = 3 CAN_START = 1 FINISHED = 4 IN_PROGRESS = 2 REQUIREMENTS_NOT_MET = 0"
-  },
-  "api/Global.TaskStep.html": {
-    "href": "api/Global.TaskStep.html",
-    "title": "Class TaskStep | Czasoport Documentation",
-    "keywords": "Class TaskStep Namespace Global public abstract class TaskStep : MonoBehaviour Inheritance object TaskStep Derived GoExploringStep GoToTrashCanStep Methods ChangeState(string, string) protected void ChangeState(string newState, string newStatus) Parameters newState string newStatus string FinishTaskStep() protected void FinishTaskStep() InitTaskStep(string, int, string) public void InitTaskStep(string taskId, int stepIdx, string taskStepState) Parameters taskId string stepIdx int taskStepState string SetTaskStepState(string) protected abstract void SetTaskStepState(string state) Parameters state string"
-  },
-  "api/Global.TaskStepState.html": {
-    "href": "api/Global.TaskStepState.html",
-    "title": "Class TaskStepState | Czasoport Documentation",
-    "keywords": "Class TaskStepState Namespace Global [Serializable] public class TaskStepState Inheritance object TaskStepState Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors TaskStepState() public TaskStepState() TaskStepState(string, string) public TaskStepState(string state, string status) Parameters state string status string Fields state public string state Field Value string status public string status Field Value string"
-  },
-  "api/Global.TaskUI.html": {
-    "href": "api/Global.TaskUI.html",
-    "title": "Class TaskUI | Czasoport Documentation",
-    "keywords": "Class TaskUI Namespace Global public class TaskUI : MonoBehaviour Inheritance object TaskUI Fields _desc public RectTransform _desc Field Value RectTransform _title public RectTransform _title Field Value RectTransform canvas public Canvas canvas Field Value Canvas desc public TMP_Text desc Field Value TMP_Text title public TMP_Text title Field Value TMP_Text Methods SetTaskButton(string, string) public void SetTaskButton(string name, string status) Parameters name string status string"
-  },
-  "api/Global.TasksUI.html": {
-    "href": "api/Global.TasksUI.html",
-    "title": "Class TasksUI | Czasoport Documentation",
-    "keywords": "Class TasksUI Namespace Global public class TasksUI : MonoBehaviour Inheritance object TasksUI"
+    "keywords": "Class PhoneHandler Namespace Global public class PhoneHandler : MonoBehaviour Inheritance object PhoneHandler Fields phoneAnim public Animator phoneAnim Field Value Animator Methods OnButtonDown() public void OnButtonDown() OnButtonUp() public void OnButtonUp()"
   },
   "api/Global.UnityInkFileHandler.html": {
     "href": "api/Global.UnityInkFileHandler.html",
@@ -407,7 +307,7 @@
   "api/Global.html": {
     "href": "api/Global.html",
     "title": "Namespace | Czasoport Documentation",
-    "keywords": "Namespace Classes DiaryHandler EventsManager GoExploringStep GoToDorm GoToTown GoToTrashCanStep InputEvents InputManager PhoneHandler PlayerEvents PlayerManager Task TaskEntry TaskEvents TaskManager TaskPoint TaskStep TaskStepState TaskUI TasksUI UnityInkFileHandler Enums TaskState"
+    "keywords": "Namespace Classes DiaryHandler PhoneHandler UnityInkFileHandler"
   },
   "api/Ink.CharacterRange.html": {
     "href": "api/Ink.CharacterRange.html",
@@ -1474,21 +1374,6 @@
     "title": "Namespace Settings | Czasoport Documentation",
     "keywords": "Namespace Settings Classes AppSettingsDefinition DefaultSaveDataDefinition Default values for when the new game is created. DevSet DormSettingsDefinition TownSettingsDefinition"
   },
-  "api/TaskSystem.TaskDefinition.html": {
-    "href": "api/TaskSystem.TaskDefinition.html",
-    "title": "Class TaskDefinition | Czasoport Documentation",
-    "keywords": "Class TaskDefinition Namespace TaskSystem public class TaskDefinition : ScriptableObject Inheritance object TaskDefinition Fields autoFinish public bool autoFinish Field Value bool displayName public string displayName Field Value string expReward public int expReward Field Value int levelRequirement public int levelRequirement Field Value int moneyReward public int moneyReward Field Value int requiredTasks public TaskDefinition[] requiredTasks Field Value TaskDefinition[] startNextTasks public TaskDefinition[] startNextTasks Field Value TaskDefinition[] taskStepPrefabs public GameObject[] taskStepPrefabs Field Value GameObject[] type public TaskType type Field Value TaskType Properties id public string id { get; } Property Value string"
-  },
-  "api/TaskSystem.TaskType.html": {
-    "href": "api/TaskSystem.TaskType.html",
-    "title": "Enum TaskType | Czasoport Documentation",
-    "keywords": "Enum TaskType Namespace TaskSystem public enum TaskType Fields beertask = 1 maintask = 0 sidetask = 2"
-  },
-  "api/TaskSystem.html": {
-    "href": "api/TaskSystem.html",
-    "title": "Namespace TaskSystem | Czasoport Documentation",
-    "keywords": "Namespace TaskSystem Classes TaskDefinition Enums TaskType"
-  },
   "api/Town.CameraFollowPlayerComponent.html": {
     "href": "api/Town.CameraFollowPlayerComponent.html",
     "title": "Class CameraFollowPlayerComponent | Czasoport Documentation",
@@ -1509,15 +1394,20 @@
     "title": "Class PlayerMovement | Czasoport Documentation",
     "keywords": "Class PlayerMovement Namespace Town public class PlayerMovement : MonoBehaviour Inheritance object PlayerMovement"
   },
-  "api/Town.TrashCan.html": {
-    "href": "api/Town.TrashCan.html",
+  "api/Town.Town.TrashCan.html": {
+    "href": "api/Town.Town.TrashCan.html",
     "title": "Class TrashCan | Czasoport Documentation",
-    "keywords": "Class TrashCan Namespace Town public class TrashCan : MonoBehaviour, IInteractable Inheritance object TrashCan Implements IInteractable Methods EnteredInteractionRange() public void EnteredInteractionRange() LeftInteractionRange() public void LeftInteractionRange()"
+    "keywords": "Class TrashCan Namespace Town.Town public class TrashCan : MonoBehaviour, IInteractable Inheritance object TrashCan Implements IInteractable Methods EnteredInteractionRange() public void EnteredInteractionRange() LeftInteractionRange() public void LeftInteractionRange()"
+  },
+  "api/Town.Town.html": {
+    "href": "api/Town.Town.html",
+    "title": "Namespace Town.Town | Czasoport Documentation",
+    "keywords": "Namespace Town.Town Classes TrashCan"
   },
   "api/Town.html": {
     "href": "api/Town.html",
     "title": "Namespace Town | Czasoport Documentation",
-    "keywords": "Namespace Town Classes CameraFollowPlayerComponent PlayerInteractions PlayerMovement TrashCan Interfaces IInteractable"
+    "keywords": "Namespace Town Classes CameraFollowPlayerComponent PlayerInteractions PlayerMovement Interfaces IInteractable"
   },
   "api/Utils.Attributes.ObjectIdentifierAttribute.html": {
     "href": "api/Utils.Attributes.ObjectIdentifierAttribute.html",
