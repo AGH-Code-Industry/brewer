@@ -12,11 +12,6 @@ namespace Town {
         private HashSet<IInteractable> _oldInteractables = new HashSet<IInteractable>();
         void Update()
         {
-            // TODO: REMOVE
-            if (Input.GetKeyDown(KeyCode.R)) {
-                DialogueManager.I.StartDialogue(dialogue);
-            }
-            // END TODO
             
             List<Collider2D> result = new List<Collider2D>();
             Physics2D.OverlapCircle(transform.position,

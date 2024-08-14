@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using CoinPackage.Debugging;
 using Ink.Runtime;
 using InventoryBackend;
@@ -10,15 +11,13 @@ using Utils;
 using Utils.Singleton;
 
 namespace Dialogues {
-    public class DialogueManager : Singleton<DialogueManager>
-    {
+    public class DialogueManager : Singleton<DialogueManager> {
+        [Header("Config")] 
+        [SerializeField] private float typingSpeed = 0.04f;
         [SerializeField] private GameObject dialoguePanel;
         [SerializeField] private GameObject choicesPanel;
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private GameObject choicePrefab;
-        
-        [SerializeField] private Button exitButton;
-        [SerializeField] private Button continueButton;
 
         [NonSerialized] public UnityEvent dialogueStarted;
         [NonSerialized] public UnityEvent dialogueEnded;
@@ -27,10 +26,14 @@ namespace Dialogues {
         
         private ChoicesProcessor _choicesProcessor;
         private Story _currentStory;
-        private bool _dialogueActive;
+        public bool _dialogueActive = false;
         private bool _hasAvailableChoices;
         private Action _functionToCallback;
         private Inventory _inventory;
+        private Coroutine displayLineCoroutine;
+        private bool canContinueToNextLine = false;
+        private bool canSkipLine = false;
+        private bool isRichText = false;
         
         protected override void Awake() {
             base.Awake();
@@ -40,12 +43,24 @@ namespace Dialogues {
             _inventory = FindObjectOfType<Inventory>();
             _choicesProcessor = new ChoicesProcessor(choicesPanel, choicePrefab, _inventory);
             
-            exitButton.onClick.AddListener(() => EndDialogue());
-            continueButton.onClick.AddListener(() => ContinueDialogue());
+            //exitButton.onClick.AddListener(() => EndDialogue());
         }
 
+        private void OnEnable() {
+            
+        }
+
+        private void OnDisable() {
+            
+        }
+
+        private void SelectPressed() {
+            if(canContinueToNextLine && _dialogueActive && !_hasAvailableChoices) ContinueDialogue();
+            else if (!canContinueToNextLine && _dialogueActive && !_hasAvailableChoices) canSkipLine = true;
+        }
         private void Start() {
             dialoguePanel.SetActive(false);
+            _dialogueActive = false;
             dialogueText.SetText("No dialogues playing. If you see this, you have a bug.");
         }
         
@@ -56,17 +71,19 @@ namespace Dialogues {
         /// <param name="storyFile">File from which to load the story. Must be a JSON file, generated from Ink file.</param>
         /// <param name="finishAction">This action will be called when dialogues ends</param>
         public bool StartDialogue(TextAsset storyFile, Action finishAction = null) {
+            EventsManager.instance.inputEvents.onSelectPressed += SelectPressed;
             if (_dialogueActive) {
                 _logger.LogWarning("DialogueManager is already playing another dialogue.");
                 return false;
             }
-
+            _dialogueActive = true;
             _functionToCallback = finishAction;
             _currentStory = new Story(storyFile.text);
-            _dialogueActive = true;
+            
             dialoguePanel.SetActive(true);
             dialogueStarted.Invoke();
             ContinueDialogue();
+            EventsManager.instance.playerEvents.DisablePlayerMovement();
             return true;
         }
         
@@ -82,6 +99,8 @@ namespace Dialogues {
             dialoguePanel.SetActive(false);
             dialogueEnded.Invoke();
             _functionToCallback?.Invoke();
+            EventsManager.instance.playerEvents.EnablePlayerMovement();
+            EventsManager.instance.inputEvents.onSelectPressed -= SelectPressed;
         }
         
         /// <summary>
@@ -93,14 +112,41 @@ namespace Dialogues {
                 EndDialogue();
                 return;
             }
-            _currentStory.Continue();
-            _hasAvailableChoices = _choicesProcessor.ProcessChoices(_currentStory);
             UpdateDialogueBox();
         }
 
+        private IEnumerator DisplayLine(string line) {
+            dialogueText.SetText(line);
+            _choicesProcessor.DestroyChoices();
+            _hasAvailableChoices = false;
+            dialogueText.maxVisibleCharacters = 0;
+            canContinueToNextLine = false;
+            foreach (char letter in line.ToCharArray()) {
+                if (canSkipLine) {
+                    dialogueText.maxVisibleCharacters = line.Length;
+                    break;
+                }
+
+                if (letter == '<' || isRichText) {
+                    isRichText = true;
+                    if (letter == '>') {
+                        isRichText = false;
+                    }
+                }
+                else {
+                    dialogueText.maxVisibleCharacters++;
+                    yield return new WaitForSeconds(typingSpeed);
+                }
+            }
+            _hasAvailableChoices = _choicesProcessor.ProcessChoices(_currentStory);
+            canContinueToNextLine = true;
+            canSkipLine = false;
+        }
         private void UpdateDialogueBox() {
-            dialogueText.SetText(_currentStory.currentText);
-            continueButton.gameObject.SetActive(!_hasAvailableChoices);
+            if (displayLineCoroutine is not null) {
+                StopCoroutine(displayLineCoroutine);
+            }
+            displayLineCoroutine = StartCoroutine(DisplayLine(_currentStory.Continue()));
         }
     }
 }

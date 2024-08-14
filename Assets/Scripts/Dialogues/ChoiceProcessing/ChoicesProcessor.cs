@@ -16,10 +16,13 @@ namespace Dialogues {
             _inventory = inventory;
         }
 
-        public bool ProcessChoices(Story story) {
+        public void DestroyChoices() {
             foreach (Transform child in _choicesPanel.transform) {
                 UnityEngine.Object.Destroy(child.gameObject);
             }
+        }
+        public bool ProcessChoices(Story story) {
+            DestroyChoices();
 
             if(story.currentChoices.Count < 1) {
                 return false;
