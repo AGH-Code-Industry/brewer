@@ -17,14 +17,14 @@ namespace Town {
         void Awake() {
             _rigidBody = GetComponent<Rigidbody2D>();
         }
-        private void Start() 
+        private void OnEnable() 
         {
             EventsManager.instance.inputEvents.onMovePressed += MovePressed;
             EventsManager.instance.playerEvents.onDisablePlayerMovement += DisablePlayerMovement;
             EventsManager.instance.playerEvents.onEnablePlayerMovement += EnablePlayerMovement;
         }
 
-        private void OnDestroy()
+        private void OnDisable()
         {
             EventsManager.instance.inputEvents.onMovePressed -= MovePressed;
             EventsManager.instance.playerEvents.onDisablePlayerMovement -= DisablePlayerMovement;
@@ -52,10 +52,12 @@ namespace Town {
         }
         private void Update() {
             var movement = CInput.TownNavigationAxis;
-
-            animator.SetFloat("Horizontal", movement.x);
-            animator.SetFloat("Vertical", movement.y);
-            animator.SetFloat("Speed", movement.sqrMagnitude);
+            if (!movementDisabled) {
+                animator.SetFloat("Horizontal", movement.x);
+                animator.SetFloat("Vertical", movement.y);
+                animator.SetFloat("Speed", movement.sqrMagnitude);
+            }
+            
         }
 
         private void FixedUpdate() {

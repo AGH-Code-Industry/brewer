@@ -1,5 +1,5 @@
 Gracz: Siema!
-Seba: Czego tu szukasz? Chcesz dostać w mordę?
+Seba: Czego tu szukasz? Chcesz dostać w <color=\#fc0303>mordę</color>?
  * [Nie] Gracz: Nie szukam problemów....
     Seba: To wypad!
     -> END
