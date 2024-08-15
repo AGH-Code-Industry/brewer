@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using CoinPackage.Debugging;
 using Ink.Runtime;
 using InventoryBackend;
@@ -34,6 +35,12 @@ namespace Dialogues {
         private bool canContinueToNextLine = false;
         private bool canSkipLine = false;
         private bool isRichText = false;
+        public Animator layoutAnimator;
+
+        private const string SPEAKER_TAG = "speaker";
+        private const string PORTRAIT_TAG = "portrait";
+        private const string LAYOUT_TAG = "layout";
+        
         
         protected override void Awake() {
             base.Awake();
@@ -59,6 +66,7 @@ namespace Dialogues {
             else if (!canContinueToNextLine && _dialogueActive && !_hasAvailableChoices) canSkipLine = true;
         }
         private void Start() {
+            //layoutAnimator = dialoguePanel.GetComponent<Animator>();
             dialoguePanel.SetActive(false);
             _dialogueActive = false;
             dialogueText.SetText("No dialogues playing. If you see this, you have a bug.");
@@ -79,7 +87,6 @@ namespace Dialogues {
             _dialogueActive = true;
             _functionToCallback = finishAction;
             _currentStory = new Story(storyFile.text);
-            
             dialoguePanel.SetActive(true);
             dialogueStarted.Invoke();
             ContinueDialogue();
@@ -113,6 +120,7 @@ namespace Dialogues {
                 return;
             }
             UpdateDialogueBox();
+            
         }
 
         private IEnumerator DisplayLine(string line) {
@@ -147,6 +155,31 @@ namespace Dialogues {
                 StopCoroutine(displayLineCoroutine);
             }
             displayLineCoroutine = StartCoroutine(DisplayLine(_currentStory.Continue()));
+            HandleTags(_currentStory.currentTags);
+        }
+
+        private void HandleTags(List<string> currentTags) {
+            foreach (string tag in currentTags) {
+                string[] splittedTag = tag.Split(":");
+                if(splittedTag.Length!=2) CDebug.LogError("Tag cannot be appropriately parsed: " + tag);
+                else {
+                    string tagKey = splittedTag[0].Trim();
+                    string tagVal = splittedTag[1].Trim();
+                    switch (tagKey) {
+                        case SPEAKER_TAG:
+                            break;
+                        case PORTRAIT_TAG:
+                            break;
+                        case LAYOUT_TAG:
+                            layoutAnimator.Play(tagVal);
+                            break;
+                        default:
+                            CDebug.LogWarning("Tag came, but it's not handled: " + tag);
+                            break;
+                    }
+                }
+                
+            }
         }
     }
 }
