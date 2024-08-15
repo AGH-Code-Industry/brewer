@@ -27117,8 +27117,9 @@ MonoBehaviour:
   choicesPanel: {fileID: 51431707}
   dialogueText: {fileID: 804202257}
   choicePrefab: {fileID: 6240569192767600934, guid: 8fa6d23899bce934fadff9f316cdffda, type: 3}
-  _dialogueActive: 0
   layoutAnimator: {fileID: 1264171032}
+  portraitAnimator: {fileID: 1516345156}
+  _dialogueActive: 0
 --- !u!4 &1395857995
 Transform:
   m_ObjectHideFlags: 0
@@ -27134,6 +27135,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1516345152 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9186159632821676110, guid: 47cfd9a5a64947c409ba5408314e6379, type: 3}
+  m_PrefabInstance: {fileID: 921693761608075773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1516345156
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516345152}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48915d6aa29ec7f4f88a1702431e628f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1604237502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44510,6 +44537,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3329741091647341954, guid: 47cfd9a5a64947c409ba5408314e6379, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1264171032}
+    - targetCorrespondingSourceObject: {fileID: 9186159632821676110, guid: 47cfd9a5a64947c409ba5408314e6379, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1516345156}
   m_SourcePrefab: {fileID: 100100000, guid: 47cfd9a5a64947c409ba5408314e6379, type: 3}
 --- !u!1001 &8266989294541927192
 PrefabInstance:

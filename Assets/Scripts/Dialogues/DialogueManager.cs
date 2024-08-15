@@ -19,6 +19,8 @@ namespace Dialogues {
         [SerializeField] private GameObject choicesPanel;
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private GameObject choicePrefab;
+        [SerializeField] private Animator layoutAnimator;
+        [SerializeField] private Animator portraitAnimator;
 
         [NonSerialized] public UnityEvent dialogueStarted;
         [NonSerialized] public UnityEvent dialogueEnded;
@@ -35,7 +37,7 @@ namespace Dialogues {
         private bool canContinueToNextLine = false;
         private bool canSkipLine = false;
         private bool isRichText = false;
-        public Animator layoutAnimator;
+        
 
         private const string SPEAKER_TAG = "speaker";
         private const string PORTRAIT_TAG = "portrait";
@@ -169,6 +171,7 @@ namespace Dialogues {
                         case SPEAKER_TAG:
                             break;
                         case PORTRAIT_TAG:
+                            portraitAnimator.Play(tagVal);
                             break;
                         case LAYOUT_TAG:
                             layoutAnimator.Play(tagVal);
