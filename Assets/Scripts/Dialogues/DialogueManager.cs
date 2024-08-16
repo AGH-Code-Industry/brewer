@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using CoinPackage.Debugging;
 using Ink.Runtime;
 using InventoryBackend;
@@ -10,6 +11,7 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using Utils;
 using Utils.Singleton;
+using Object = System.Object;
 
 namespace Dialogues {
     public class DialogueManager : Singleton<DialogueManager> {
@@ -21,7 +23,10 @@ namespace Dialogues {
         [SerializeField] private GameObject choicePrefab;
         [SerializeField] private Animator layoutAnimator;
         [SerializeField] private Animator portraitAnimator;
-
+        [SerializeField] private TaskManager _taskManager;
+        [SerializeField] private DialogueVariables _dialogueVariables;
+        
+        
         [NonSerialized] public UnityEvent dialogueStarted;
         [NonSerialized] public UnityEvent dialogueEnded;
         
@@ -38,6 +43,8 @@ namespace Dialogues {
         private bool canSkipLine = false;
         private bool isRichText = false;
         
+        private ExternalFunctions _externalFunctions;
+        
 
         private const string SPEAKER_TAG = "speaker";
         private const string PORTRAIT_TAG = "portrait";
@@ -51,17 +58,10 @@ namespace Dialogues {
 
             _inventory = FindObjectOfType<Inventory>();
             _choicesProcessor = new ChoicesProcessor(choicesPanel, choicePrefab, _inventory);
-            
+            _externalFunctions = new ExternalFunctions();
             //exitButton.onClick.AddListener(() => EndDialogue());
         }
 
-        private void OnEnable() {
-            
-        }
-
-        private void OnDisable() {
-            
-        }
 
         private void SelectPressed() {
             if(canContinueToNextLine && _dialogueActive && !_hasAvailableChoices) ContinueDialogue();
@@ -89,10 +89,15 @@ namespace Dialogues {
             _dialogueActive = true;
             _functionToCallback = finishAction;
             _currentStory = new Story(storyFile.text);
+            _dialogueVariables.StartListening(_currentStory);
+            _externalFunctions.Bind(_currentStory, _taskManager);
+            
             dialoguePanel.SetActive(true);
             dialogueStarted.Invoke();
             ContinueDialogue();
             EventsManager.instance.playerEvents.DisablePlayerMovement();
+            portraitAnimator.Play("default");
+            layoutAnimator.Play("left");
             return true;
         }
         
@@ -103,6 +108,7 @@ namespace Dialogues {
             if (!_dialogueActive) {
                 return;
             }
+            _dialogueVariables.StopListening(_currentStory);
             _currentStory = null;
             _dialogueActive = false;
             dialoguePanel.SetActive(false);
@@ -183,6 +189,24 @@ namespace Dialogues {
                 }
                 
             }
+        }
+
+        public Ink.Runtime.Object GetVariableState(string variableName) {
+            Ink.Runtime.Object variableValue = null;
+            _dialogueVariables.variables.TryGetValue(variableName, out variableValue);
+            if (variableValue == null) {
+                CDebug.LogWarning("Ink variable found null: " + variableName);
+            }
+
+            return variableValue;
+        }
+        public void SetVariableState(string variableName, Ink.Runtime.Object variableValue) {
+            if (!_dialogueVariables.variables.ContainsKey(variableName)) {
+                CDebug.LogWarning("Cannot assign value to variable, because ink variable was found null: " + variableName);
+                return;
+            }
+            _dialogueVariables.variables.Remove(variableName);
+            _dialogueVariables.variables.Add(variableName, variableValue);
         }
     }
 }

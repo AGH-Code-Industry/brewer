@@ -56,6 +56,10 @@ namespace Dialogues {
                     CDebug.Log(choiceContext.GetsItem);
                     _inventory.InsertItem(choiceContext.GetItem, 1);
                 }
+                if (choiceContext.GetsTask) {
+                    CDebug.Log(choiceContext.GetsTask);
+                    EventsManager.instance.taskEvents.TaskStart(choiceContext.GetTask);
+                }
             });
             choiceButton.SetText(choice.text);
             if (choiceContext.RequiresItem) {

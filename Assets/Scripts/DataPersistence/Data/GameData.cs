@@ -11,5 +11,6 @@ namespace DataPersistence.Data {
         public OrderData orderData = new OrderData();
         public InventoryData inventoryData = new InventoryData();
         public TaskData taskData = new TaskData();
+        public string inkData = "";
     }
 }
