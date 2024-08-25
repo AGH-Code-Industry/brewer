@@ -23,6 +23,7 @@ namespace Dialogues {
         [SerializeField] private GameObject choicePrefab;
         [SerializeField] private Animator layoutAnimator;
         [SerializeField] private Animator portraitAnimator;
+        [SerializeField] private Animator initAnimator;
         [SerializeField] private TaskManager _taskManager;
         [SerializeField] private DialogueVariables _dialogueVariables;
         
@@ -98,24 +99,27 @@ namespace Dialogues {
             EventsManager.instance.playerEvents.DisablePlayerMovement();
             portraitAnimator.Play("default");
             layoutAnimator.Play("left");
+            initAnimator.SetBool("isDialogueOn", true);
             return true;
         }
         
         /// <summary>
         /// End the current dialogue. If there is no dialogue active, nothing will happen. Dialogue progress won't be saved.
         /// </summary>
-        public void EndDialogue() {
-            if (!_dialogueActive) {
-                return;
+        
+        public IEnumerator EndDialogue() {
+            if (_dialogueActive) {
+                initAnimator.SetBool("isDialogueOn", false);
+                yield return new WaitForSeconds(0.2f);
+                _dialogueVariables.StopListening(_currentStory);
+                _currentStory = null;
+                _dialogueActive = false;
+                dialoguePanel.SetActive(false);
+                dialogueEnded.Invoke();
+                _functionToCallback?.Invoke();
+                EventsManager.instance.playerEvents.EnablePlayerMovement();
+                EventsManager.instance.inputEvents.onSelectPressed -= SelectPressed;
             }
-            _dialogueVariables.StopListening(_currentStory);
-            _currentStory = null;
-            _dialogueActive = false;
-            dialoguePanel.SetActive(false);
-            dialogueEnded.Invoke();
-            _functionToCallback?.Invoke();
-            EventsManager.instance.playerEvents.EnablePlayerMovement();
-            EventsManager.instance.inputEvents.onSelectPressed -= SelectPressed;
         }
         
         /// <summary>
@@ -124,7 +128,7 @@ namespace Dialogues {
         /// </summary>
         public void ContinueDialogue() {
             if (!_currentStory.canContinue) {
-                EndDialogue();
+                StartCoroutine(EndDialogue());
                 return;
             }
             UpdateDialogueBox();
