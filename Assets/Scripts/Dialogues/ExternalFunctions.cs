@@ -15,9 +15,13 @@ public class ExternalFunctions
             string state = taskManager.GetTaskById(taskID).state.ToString();
             return state;
         });
+        story.BindExternalFunction("finishTask", (string taskID) => {
+            EventsManager.instance.taskEvents.TaskFinish(taskID);
+        });
     }
 
     public void Unbind(Story story) {
         story.UnbindExternalFunction("getTaskState");
+        story.UnbindExternalFunction("finishTask");
     }
 }
