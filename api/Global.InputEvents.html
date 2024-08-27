@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class ChoiceContext | Czasoport Documentation </title>
+      <title>Class InputEvents | Czasoport Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class ChoiceContext | Czasoport Documentation ">
+      <meta name="title" content="Class InputEvents | Czasoport Documentation ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/AGH-Code-Industry/brewer/new/master/apiSpec/new?filename=Dialogues_ChoiceProcessing_ChoiceContext.md&amp;value=---%0Auid%3A%20Dialogues.ChoiceProcessing.ChoiceContext%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/AGH-Code-Industry/brewer/new/master/apiSpec/new?filename=Global_InputEvents.md&amp;value=---%0Auid%3A%20Global.InputEvents%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,16 +84,16 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Dialogues.ChoiceProcessing.ChoiceContext">
+        <article data-uid="Global.InputEvents">
 
 
 
-  <h1 id="Dialogues_ChoiceProcessing_ChoiceContext" data-uid="Dialogues.ChoiceProcessing.ChoiceContext" class="text-break">
-Class ChoiceContext  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Global_InputEvents" data-uid="Global.InputEvents" class="text-break">
+Class InputEvents  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Events/InputEvents.cs/#L3"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Dialogues.html">Dialogues</a>.<a class="xref" href="Dialogues.ChoiceProcessing.html">ChoiceProcessing</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
   
   </div>
 
@@ -101,7 +101,7 @@ Class ChoiceContext  <a class="header-action link-secondary" title="View source"
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ChoiceContext</code></pre>
+    <pre><code class="lang-csharp hljs">public class InputEvents</code></pre>
   </div>
 
 
@@ -111,7 +111,7 @@ Class ChoiceContext  <a class="header-action link-secondary" title="View source"
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">ChoiceContext</span></div>
+      <div><span class="xref">InputEvents</span></div>
     </dd>
   </dl>
 
@@ -148,31 +148,87 @@ Class ChoiceContext  <a class="header-action link-secondary" title="View source"
 
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="Dialogues_ChoiceProcessing_ChoiceContext_GetItem_" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetItem*"></a>
+  <a id="Global_InputEvents_MovePressed_" data-uid="Global.InputEvents.MovePressed*"></a>
 
-  <h3 id="Dialogues_ChoiceProcessing_ChoiceContext_GetItem" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetItem">
-  GetItem
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Global_InputEvents_MovePressed" data-uid="Global.InputEvents.MovePressed">
+  MovePressed()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Events/InputEvents.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ItemDefinition GetItem { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public void MovePressed()</code></pre>
   </div>
 
 
 
 
 
-  <h4 class="section">Property Value</h4>
+
+
+
+
+
+
+
+
+  <a id="Global_InputEvents_SelectPressed_" data-uid="Global.InputEvents.SelectPressed*"></a>
+
+  <h3 id="Global_InputEvents_SelectPressed" data-uid="Global.InputEvents.SelectPressed">
+  SelectPressed()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Events/InputEvents.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SelectPressed()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="Global_InputEvents_onMovePressed" data-uid="Global.InputEvents.onMovePressed">
+  onMovePressed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Events/InputEvents.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action onMovePressed</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Items.ItemDefinition.html">ItemDefinition</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
     <dd></dd>
   </dl>
 
@@ -183,154 +239,28 @@ Class ChoiceContext  <a class="header-action link-secondary" title="View source"
 
 
 
-  <a id="Dialogues_ChoiceProcessing_ChoiceContext_GetTask_" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetTask*"></a>
-
-  <h3 id="Dialogues_ChoiceProcessing_ChoiceContext_GetTask" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetTask">
-  GetTask
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Global_InputEvents_onSelectPressed" data-uid="Global.InputEvents.onSelectPressed">
+  onSelectPressed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Events/InputEvents.cs/#L13"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetTask { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public event Action onSelectPressed</code></pre>
   </div>
 
 
 
 
 
-  <h4 class="section">Property Value</h4>
+
+  <h4 class="section">Event Type</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
     <dd></dd>
   </dl>
-
-
-
-
-
-
-
-
-  <a id="Dialogues_ChoiceProcessing_ChoiceContext_GetsItem_" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetsItem*"></a>
-
-  <h3 id="Dialogues_ChoiceProcessing_ChoiceContext_GetsItem" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetsItem">
-  GetsItem
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L22"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool GetsItem { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Dialogues_ChoiceProcessing_ChoiceContext_GetsTask_" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetsTask*"></a>
-
-  <h3 id="Dialogues_ChoiceProcessing_ChoiceContext_GetsTask" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetsTask">
-  GetsTask
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L37"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool GetsTask { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Dialogues_ChoiceProcessing_ChoiceContext_RequiredItem_" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.RequiredItem*"></a>
-
-  <h3 id="Dialogues_ChoiceProcessing_ChoiceContext_RequiredItem" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.RequiredItem">
-  RequiredItem
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L9"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ItemDefinition RequiredItem { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="Items.ItemDefinition.html">ItemDefinition</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="Dialogues_ChoiceProcessing_ChoiceContext_RequiresItem_" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.RequiresItem*"></a>
-
-  <h3 id="Dialogues_ChoiceProcessing_ChoiceContext_RequiresItem" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.RequiresItem">
-  RequiresItem
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L7"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool RequiresItem { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
 
 
 
@@ -342,7 +272,7 @@ Class ChoiceContext  <a class="header-action link-secondary" title="View source"
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Events/InputEvents.cs/#L3" class="edit-link">Edit this page</a>
         </div>
 
 

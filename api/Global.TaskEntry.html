@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class ChoiceContext | Czasoport Documentation </title>
+      <title>Class TaskEntry | Czasoport Documentation </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class ChoiceContext | Czasoport Documentation ">
+      <meta name="title" content="Class TaskEntry | Czasoport Documentation ">
       
       
       <link rel="icon" href="../favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/AGH-Code-Industry/brewer/new/master/apiSpec/new?filename=Dialogues_ChoiceProcessing_ChoiceContext.md&amp;value=---%0Auid%3A%20Dialogues.ChoiceProcessing.ChoiceContext%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/AGH-Code-Industry/brewer/new/master/apiSpec/new?filename=Global_TaskEntry.md&amp;value=---%0Auid%3A%20Global.TaskEntry%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,16 +84,16 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="Dialogues.ChoiceProcessing.ChoiceContext">
+        <article data-uid="Global.TaskEntry">
 
 
 
-  <h1 id="Dialogues_ChoiceProcessing_ChoiceContext" data-uid="Dialogues.ChoiceProcessing.ChoiceContext" class="text-break">
-Class ChoiceContext  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <h1 id="Global_TaskEntry" data-uid="Global.TaskEntry" class="text-break">
+Class TaskEntry  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/TaskSystem/TaskEntry.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="Dialogues.html">Dialogues</a>.<a class="xref" href="Dialogues.ChoiceProcessing.html">ChoiceProcessing</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Global.html">Global</a></dd></dl>
   
   </div>
 
@@ -101,7 +101,8 @@ Class ChoiceContext  <a class="header-action link-secondary" title="View source"
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ChoiceContext</code></pre>
+    <pre><code class="lang-csharp hljs">[Serializable]
+public class TaskEntry</code></pre>
   </div>
 
 
@@ -111,7 +112,7 @@ Class ChoiceContext  <a class="header-action link-secondary" title="View source"
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">ChoiceContext</span></div>
+      <div><span class="xref">TaskEntry</span></div>
     </dd>
   </dl>
 
@@ -148,31 +149,33 @@ Class ChoiceContext  <a class="header-action link-secondary" title="View source"
 
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="Dialogues_ChoiceProcessing_ChoiceContext_GetItem_" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetItem*"></a>
+  <a id="Global_TaskEntry__ctor_" data-uid="Global.TaskEntry.#ctor*"></a>
 
-  <h3 id="Dialogues_ChoiceProcessing_ChoiceContext_GetItem" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetItem">
-  GetItem
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <h3 id="Global_TaskEntry__ctor_System_String_TaskState_System_Int32_TaskStepState___" data-uid="Global.TaskEntry.#ctor(System.String,TaskState,System.Int32,TaskStepState[])">
+  TaskEntry(string, TaskState, int, TaskStepState[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/TaskSystem/TaskEntry.cs/#L14"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ItemDefinition GetItem { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TaskEntry(string id, TaskState state, int taskStepIdx, TaskStepState[] taskStepStates)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Items.ItemDefinition.html">ItemDefinition</a></dt>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>state</code> <a class="xref" href="Global.TaskState.html">TaskState</a></dt>
+    <dd></dd>
+    <dt><code>taskStepIdx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>taskStepStates</code> <a class="xref" href="TaskStepState.html">TaskStepState</a>[]</dt>
     <dd></dd>
   </dl>
 
@@ -183,25 +186,31 @@ Class ChoiceContext  <a class="header-action link-secondary" title="View source"
 
 
 
-  <a id="Dialogues_ChoiceProcessing_ChoiceContext_GetTask_" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetTask*"></a>
 
-  <h3 id="Dialogues_ChoiceProcessing_ChoiceContext_GetTask" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetTask">
-  GetTask
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L39"><i class="bi bi-code-slash"></i></a>
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="Global_TaskEntry_id" data-uid="Global.TaskEntry.id">
+  id
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/TaskSystem/TaskEntry.cs/#L9"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetTask { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string id</code></pre>
   </div>
 
 
 
 
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
@@ -214,27 +223,26 @@ Class ChoiceContext  <a class="header-action link-secondary" title="View source"
 
 
 
-  <a id="Dialogues_ChoiceProcessing_ChoiceContext_GetsItem_" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetsItem*"></a>
 
-  <h3 id="Dialogues_ChoiceProcessing_ChoiceContext_GetsItem" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetsItem">
-  GetsItem
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L22"><i class="bi bi-code-slash"></i></a>
+
+  <h3 id="Global_TaskEntry_state" data-uid="Global.TaskEntry.state">
+  state
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/TaskSystem/TaskEntry.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool GetsItem { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TaskState state</code></pre>
   </div>
 
 
 
 
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><a class="xref" href="Global.TaskState.html">TaskState</a></dt>
     <dd></dd>
   </dl>
 
@@ -245,27 +253,26 @@ Class ChoiceContext  <a class="header-action link-secondary" title="View source"
 
 
 
-  <a id="Dialogues_ChoiceProcessing_ChoiceContext_GetsTask_" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetsTask*"></a>
 
-  <h3 id="Dialogues_ChoiceProcessing_ChoiceContext_GetsTask" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.GetsTask">
-  GetsTask
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L37"><i class="bi bi-code-slash"></i></a>
+
+  <h3 id="Global_TaskEntry_taskStepIdx" data-uid="Global.TaskEntry.taskStepIdx">
+  taskStepIdx
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/TaskSystem/TaskEntry.cs/#L11"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool GetsTask { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int taskStepIdx</code></pre>
   </div>
 
 
 
 
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
   </dl>
 
@@ -276,60 +283,29 @@ Class ChoiceContext  <a class="header-action link-secondary" title="View source"
 
 
 
-  <a id="Dialogues_ChoiceProcessing_ChoiceContext_RequiredItem_" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.RequiredItem*"></a>
 
-  <h3 id="Dialogues_ChoiceProcessing_ChoiceContext_RequiredItem" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.RequiredItem">
-  RequiredItem
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L9"><i class="bi bi-code-slash"></i></a>
+
+  <h3 id="Global_TaskEntry_taskStepStates" data-uid="Global.TaskEntry.taskStepStates">
+  taskStepStates
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/TaskSystem/TaskEntry.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ItemDefinition RequiredItem { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TaskStepState[] taskStepStates</code></pre>
   </div>
 
 
 
 
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Field Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="Items.ItemDefinition.html">ItemDefinition</a></dt>
+    <dt><a class="xref" href="TaskStepState.html">TaskStepState</a>[]</dt>
     <dd></dd>
   </dl>
 
-
-
-
-
-
-
-
-  <a id="Dialogues_ChoiceProcessing_ChoiceContext_RequiresItem_" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.RequiresItem*"></a>
-
-  <h3 id="Dialogues_ChoiceProcessing_ChoiceContext_RequiresItem" data-uid="Dialogues.ChoiceProcessing.ChoiceContext.RequiresItem">
-  RequiresItem
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L7"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool RequiresItem { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -342,7 +318,7 @@ Class ChoiceContext  <a class="header-action link-secondary" title="View source"
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/ChoiceProcessing/ChoiceContext.cs/#L6" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/TaskSystem/TaskEntry.cs/#L7" class="edit-link">Edit this page</a>
         </div>
 
 

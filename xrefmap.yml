@@ -742,6 +742,19 @@ references:
   isSpec: "True"
   fullName: CustomInput.InputActions.ITownActions.OnRun
   nameWithType: InputActions.ITownActions.OnRun
+- uid: CustomInput.InputActions.ITownActions.OnSelect(InputAction.CallbackContext)
+  name: OnSelect(CallbackContext)
+  href: api/CustomInput.InputActions.ITownActions.html#CustomInput_InputActions_ITownActions_OnSelect_InputAction_CallbackContext_
+  commentId: M:CustomInput.InputActions.ITownActions.OnSelect(InputAction.CallbackContext)
+  fullName: CustomInput.InputActions.ITownActions.OnSelect(InputAction.CallbackContext)
+  nameWithType: InputActions.ITownActions.OnSelect(InputAction.CallbackContext)
+- uid: CustomInput.InputActions.ITownActions.OnSelect*
+  name: OnSelect
+  href: api/CustomInput.InputActions.ITownActions.html#CustomInput_InputActions_ITownActions_OnSelect_
+  commentId: Overload:CustomInput.InputActions.ITownActions.OnSelect
+  isSpec: "True"
+  fullName: CustomInput.InputActions.ITownActions.OnSelect
+  nameWithType: InputActions.ITownActions.OnSelect
 - uid: CustomInput.InputActions.PauseMenu
   name: PauseMenu
   href: api/CustomInput.InputActions.html#CustomInput_InputActions_PauseMenu
@@ -1193,6 +1206,19 @@ references:
   isSpec: "True"
   fullName: CustomInput.InputActions.TownActions.Run
   nameWithType: InputActions.TownActions.Run
+- uid: CustomInput.InputActions.TownActions.Select
+  name: Select
+  href: api/CustomInput.InputActions.TownActions.html#CustomInput_InputActions_TownActions_Select
+  commentId: P:CustomInput.InputActions.TownActions.Select
+  fullName: CustomInput.InputActions.TownActions.Select
+  nameWithType: InputActions.TownActions.Select
+- uid: CustomInput.InputActions.TownActions.Select*
+  name: Select
+  href: api/CustomInput.InputActions.TownActions.html#CustomInput_InputActions_TownActions_Select_
+  commentId: Overload:CustomInput.InputActions.TownActions.Select
+  isSpec: "True"
+  fullName: CustomInput.InputActions.TownActions.Select
+  nameWithType: InputActions.TownActions.Select
 - uid: CustomInput.InputActions.TownActions.SetCallbacks(CustomInput.InputActions.ITownActions)
   name: SetCallbacks(ITownActions)
   href: api/CustomInput.InputActions.TownActions.html#CustomInput_InputActions_TownActions_SetCallbacks_CustomInput_InputActions_ITownActions_
@@ -1339,6 +1365,12 @@ references:
   commentId: F:DataPersistence.Data.GameData.dormData
   fullName: DataPersistence.Data.GameData.dormData
   nameWithType: GameData.dormData
+- uid: DataPersistence.Data.GameData.inkData
+  name: inkData
+  href: api/DataPersistence.Data.GameData.html#DataPersistence_Data_GameData_inkData
+  commentId: F:DataPersistence.Data.GameData.inkData
+  fullName: DataPersistence.Data.GameData.inkData
+  nameWithType: GameData.inkData
 - uid: DataPersistence.Data.GameData.inventoryData
   name: inventoryData
   href: api/DataPersistence.Data.GameData.html#DataPersistence_Data_GameData_inventoryData
@@ -1357,6 +1389,12 @@ references:
   commentId: F:DataPersistence.Data.GameData.orderData
   fullName: DataPersistence.Data.GameData.orderData
   nameWithType: GameData.orderData
+- uid: DataPersistence.Data.GameData.taskData
+  name: taskData
+  href: api/DataPersistence.Data.GameData.html#DataPersistence_Data_GameData_taskData
+  commentId: F:DataPersistence.Data.GameData.taskData
+  fullName: DataPersistence.Data.GameData.taskData
+  nameWithType: GameData.taskData
 - uid: DataPersistence.Data.GameData.townData
   name: townData
   href: api/DataPersistence.Data.GameData.html#DataPersistence_Data_GameData_townData
@@ -1381,6 +1419,18 @@ references:
   commentId: T:DataPersistence.Data.OrderData
   fullName: DataPersistence.Data.OrderData
   nameWithType: OrderData
+- uid: DataPersistence.Data.TaskData
+  name: TaskData
+  href: api/DataPersistence.Data.TaskData.html
+  commentId: T:DataPersistence.Data.TaskData
+  fullName: DataPersistence.Data.TaskData
+  nameWithType: TaskData
+- uid: DataPersistence.Data.TaskData.tasks
+  name: tasks
+  href: api/DataPersistence.Data.TaskData.html#DataPersistence_Data_TaskData_tasks
+  commentId: F:DataPersistence.Data.TaskData.tasks
+  fullName: DataPersistence.Data.TaskData.tasks
+  nameWithType: TaskData.tasks
 - uid: DataPersistence.Data.TownData
   name: TownData
   href: api/DataPersistence.Data.TownData.html
@@ -1720,6 +1770,19 @@ references:
   isSpec: "True"
   fullName: Dialogues.ChoiceProcessing.ChoiceContext.GetItem
   nameWithType: ChoiceContext.GetItem
+- uid: Dialogues.ChoiceProcessing.ChoiceContext.GetTask
+  name: GetTask
+  href: api/Dialogues.ChoiceProcessing.ChoiceContext.html#Dialogues_ChoiceProcessing_ChoiceContext_GetTask
+  commentId: P:Dialogues.ChoiceProcessing.ChoiceContext.GetTask
+  fullName: Dialogues.ChoiceProcessing.ChoiceContext.GetTask
+  nameWithType: ChoiceContext.GetTask
+- uid: Dialogues.ChoiceProcessing.ChoiceContext.GetTask*
+  name: GetTask
+  href: api/Dialogues.ChoiceProcessing.ChoiceContext.html#Dialogues_ChoiceProcessing_ChoiceContext_GetTask_
+  commentId: Overload:Dialogues.ChoiceProcessing.ChoiceContext.GetTask
+  isSpec: "True"
+  fullName: Dialogues.ChoiceProcessing.ChoiceContext.GetTask
+  nameWithType: ChoiceContext.GetTask
 - uid: Dialogues.ChoiceProcessing.ChoiceContext.GetsItem
   name: GetsItem
   href: api/Dialogues.ChoiceProcessing.ChoiceContext.html#Dialogues_ChoiceProcessing_ChoiceContext_GetsItem
@@ -1733,19 +1796,19 @@ references:
   isSpec: "True"
   fullName: Dialogues.ChoiceProcessing.ChoiceContext.GetsItem
   nameWithType: ChoiceContext.GetsItem
-- uid: Dialogues.ChoiceProcessing.ChoiceContext.GetsQuest
-  name: GetsQuest
-  href: api/Dialogues.ChoiceProcessing.ChoiceContext.html#Dialogues_ChoiceProcessing_ChoiceContext_GetsQuest
-  commentId: P:Dialogues.ChoiceProcessing.ChoiceContext.GetsQuest
-  fullName: Dialogues.ChoiceProcessing.ChoiceContext.GetsQuest
-  nameWithType: ChoiceContext.GetsQuest
-- uid: Dialogues.ChoiceProcessing.ChoiceContext.GetsQuest*
-  name: GetsQuest
-  href: api/Dialogues.ChoiceProcessing.ChoiceContext.html#Dialogues_ChoiceProcessing_ChoiceContext_GetsQuest_
-  commentId: Overload:Dialogues.ChoiceProcessing.ChoiceContext.GetsQuest
+- uid: Dialogues.ChoiceProcessing.ChoiceContext.GetsTask
+  name: GetsTask
+  href: api/Dialogues.ChoiceProcessing.ChoiceContext.html#Dialogues_ChoiceProcessing_ChoiceContext_GetsTask
+  commentId: P:Dialogues.ChoiceProcessing.ChoiceContext.GetsTask
+  fullName: Dialogues.ChoiceProcessing.ChoiceContext.GetsTask
+  nameWithType: ChoiceContext.GetsTask
+- uid: Dialogues.ChoiceProcessing.ChoiceContext.GetsTask*
+  name: GetsTask
+  href: api/Dialogues.ChoiceProcessing.ChoiceContext.html#Dialogues_ChoiceProcessing_ChoiceContext_GetsTask_
+  commentId: Overload:Dialogues.ChoiceProcessing.ChoiceContext.GetsTask
   isSpec: "True"
-  fullName: Dialogues.ChoiceProcessing.ChoiceContext.GetsQuest
-  nameWithType: ChoiceContext.GetsQuest
+  fullName: Dialogues.ChoiceProcessing.ChoiceContext.GetsTask
+  nameWithType: ChoiceContext.GetsTask
 - uid: Dialogues.ChoiceProcessing.ChoiceContext.RequiredItem
   name: RequiredItem
   href: api/Dialogues.ChoiceProcessing.ChoiceContext.html#Dialogues_ChoiceProcessing_ChoiceContext_RequiredItem
@@ -1819,6 +1882,19 @@ references:
   fullName.vb: Dialogues.ChoicesProcessor.New
   nameWithType: ChoicesProcessor.ChoicesProcessor
   nameWithType.vb: ChoicesProcessor.New
+- uid: Dialogues.ChoicesProcessor.DestroyChoices
+  name: DestroyChoices()
+  href: api/Dialogues.ChoicesProcessor.html#Dialogues_ChoicesProcessor_DestroyChoices
+  commentId: M:Dialogues.ChoicesProcessor.DestroyChoices
+  fullName: Dialogues.ChoicesProcessor.DestroyChoices()
+  nameWithType: ChoicesProcessor.DestroyChoices()
+- uid: Dialogues.ChoicesProcessor.DestroyChoices*
+  name: DestroyChoices
+  href: api/Dialogues.ChoicesProcessor.html#Dialogues_ChoicesProcessor_DestroyChoices_
+  commentId: Overload:Dialogues.ChoicesProcessor.DestroyChoices
+  isSpec: "True"
+  fullName: Dialogues.ChoicesProcessor.DestroyChoices
+  nameWithType: ChoicesProcessor.DestroyChoices
 - uid: Dialogues.ChoicesProcessor.ProcessChoices(Ink.Runtime.Story)
   name: ProcessChoices(Story)
   href: api/Dialogues.ChoicesProcessor.html#Dialogues_ChoicesProcessor_ProcessChoices_Ink_Runtime_Story_
@@ -1877,6 +1953,38 @@ references:
   isSpec: "True"
   fullName: Dialogues.DialogueManager.EndDialogue
   nameWithType: DialogueManager.EndDialogue
+- uid: Dialogues.DialogueManager.GetVariableState(System.String)
+  name: GetVariableState(string)
+  href: api/Dialogues.DialogueManager.html#Dialogues_DialogueManager_GetVariableState_System_String_
+  commentId: M:Dialogues.DialogueManager.GetVariableState(System.String)
+  name.vb: GetVariableState(String)
+  fullName: Dialogues.DialogueManager.GetVariableState(string)
+  fullName.vb: Dialogues.DialogueManager.GetVariableState(String)
+  nameWithType: DialogueManager.GetVariableState(string)
+  nameWithType.vb: DialogueManager.GetVariableState(String)
+- uid: Dialogues.DialogueManager.GetVariableState*
+  name: GetVariableState
+  href: api/Dialogues.DialogueManager.html#Dialogues_DialogueManager_GetVariableState_
+  commentId: Overload:Dialogues.DialogueManager.GetVariableState
+  isSpec: "True"
+  fullName: Dialogues.DialogueManager.GetVariableState
+  nameWithType: DialogueManager.GetVariableState
+- uid: Dialogues.DialogueManager.SetVariableState(System.String,Ink.Runtime.Object)
+  name: SetVariableState(string, Object)
+  href: api/Dialogues.DialogueManager.html#Dialogues_DialogueManager_SetVariableState_System_String_Ink_Runtime_Object_
+  commentId: M:Dialogues.DialogueManager.SetVariableState(System.String,Ink.Runtime.Object)
+  name.vb: SetVariableState(String, Object)
+  fullName: Dialogues.DialogueManager.SetVariableState(string, Ink.Runtime.Object)
+  fullName.vb: Dialogues.DialogueManager.SetVariableState(String, Ink.Runtime.Object)
+  nameWithType: DialogueManager.SetVariableState(string, Object)
+  nameWithType.vb: DialogueManager.SetVariableState(String, Object)
+- uid: Dialogues.DialogueManager.SetVariableState*
+  name: SetVariableState
+  href: api/Dialogues.DialogueManager.html#Dialogues_DialogueManager_SetVariableState_
+  commentId: Overload:Dialogues.DialogueManager.SetVariableState
+  isSpec: "True"
+  fullName: Dialogues.DialogueManager.SetVariableState
+  nameWithType: DialogueManager.SetVariableState
 - uid: Dialogues.DialogueManager.StartDialogue(TextAsset,System.Action)
   name: StartDialogue(TextAsset, Action)
   href: api/Dialogues.DialogueManager.html#Dialogues_DialogueManager_StartDialogue_TextAsset_System_Action_
@@ -1890,6 +1998,12 @@ references:
   isSpec: "True"
   fullName: Dialogues.DialogueManager.StartDialogue
   nameWithType: DialogueManager.StartDialogue
+- uid: Dialogues.DialogueManager._dialogueActive
+  name: _dialogueActive
+  href: api/Dialogues.DialogueManager.html#Dialogues_DialogueManager__dialogueActive
+  commentId: F:Dialogues.DialogueManager._dialogueActive
+  fullName: Dialogues.DialogueManager._dialogueActive
+  nameWithType: DialogueManager._dialogueActive
 - uid: Dialogues.DialogueManager.dialogueEnded
   name: dialogueEnded
   href: api/Dialogues.DialogueManager.html#Dialogues_DialogueManager_dialogueEnded
@@ -2566,6 +2680,99 @@ references:
 - uid: Global
   name: ''
   href: api/Global.html
+- uid: Global.DialogueTrigger
+  name: DialogueTrigger
+  href: api/Global.DialogueTrigger.html
+  commentId: T:Global.DialogueTrigger
+  fullName: DialogueTrigger
+  nameWithType: DialogueTrigger
+- uid: Global.DialogueVariables
+  name: DialogueVariables
+  href: api/Global.DialogueVariables.html
+  commentId: T:Global.DialogueVariables
+  fullName: DialogueVariables
+  nameWithType: DialogueVariables
+- uid: Global.DialogueVariables.Awake
+  name: Awake()
+  href: api/Global.DialogueVariables.html#Global_DialogueVariables_Awake
+  commentId: M:Global.DialogueVariables.Awake
+  fullName: DialogueVariables.Awake()
+  nameWithType: DialogueVariables.Awake()
+- uid: Global.DialogueVariables.Awake*
+  name: Awake
+  href: api/Global.DialogueVariables.html#Global_DialogueVariables_Awake_
+  commentId: Overload:Global.DialogueVariables.Awake
+  isSpec: "True"
+  fullName: DialogueVariables.Awake
+  nameWithType: DialogueVariables.Awake
+- uid: Global.DialogueVariables.LoadPersistentData(DataPersistence.Data.GameData)
+  name: LoadPersistentData(GameData)
+  href: api/Global.DialogueVariables.html#Global_DialogueVariables_LoadPersistentData_DataPersistence_Data_GameData_
+  commentId: M:Global.DialogueVariables.LoadPersistentData(DataPersistence.Data.GameData)
+  fullName: DialogueVariables.LoadPersistentData(DataPersistence.Data.GameData)
+  nameWithType: DialogueVariables.LoadPersistentData(GameData)
+- uid: Global.DialogueVariables.LoadPersistentData*
+  name: LoadPersistentData
+  href: api/Global.DialogueVariables.html#Global_DialogueVariables_LoadPersistentData_
+  commentId: Overload:Global.DialogueVariables.LoadPersistentData
+  isSpec: "True"
+  fullName: DialogueVariables.LoadPersistentData
+  nameWithType: DialogueVariables.LoadPersistentData
+- uid: Global.DialogueVariables.SavePersistentData(DataPersistence.Data.GameData@)
+  name: SavePersistentData(ref GameData)
+  href: api/Global.DialogueVariables.html#Global_DialogueVariables_SavePersistentData_DataPersistence_Data_GameData__
+  commentId: M:Global.DialogueVariables.SavePersistentData(DataPersistence.Data.GameData@)
+  name.vb: SavePersistentData(GameData)
+  fullName: DialogueVariables.SavePersistentData(ref DataPersistence.Data.GameData)
+  fullName.vb: DialogueVariables.SavePersistentData(DataPersistence.Data.GameData)
+  nameWithType: DialogueVariables.SavePersistentData(ref GameData)
+  nameWithType.vb: DialogueVariables.SavePersistentData(GameData)
+- uid: Global.DialogueVariables.SavePersistentData*
+  name: SavePersistentData
+  href: api/Global.DialogueVariables.html#Global_DialogueVariables_SavePersistentData_
+  commentId: Overload:Global.DialogueVariables.SavePersistentData
+  isSpec: "True"
+  fullName: DialogueVariables.SavePersistentData
+  nameWithType: DialogueVariables.SavePersistentData
+- uid: Global.DialogueVariables.StartListening(Ink.Runtime.Story)
+  name: StartListening(Story)
+  href: api/Global.DialogueVariables.html#Global_DialogueVariables_StartListening_Ink_Runtime_Story_
+  commentId: M:Global.DialogueVariables.StartListening(Ink.Runtime.Story)
+  fullName: DialogueVariables.StartListening(Ink.Runtime.Story)
+  nameWithType: DialogueVariables.StartListening(Story)
+- uid: Global.DialogueVariables.StartListening*
+  name: StartListening
+  href: api/Global.DialogueVariables.html#Global_DialogueVariables_StartListening_
+  commentId: Overload:Global.DialogueVariables.StartListening
+  isSpec: "True"
+  fullName: DialogueVariables.StartListening
+  nameWithType: DialogueVariables.StartListening
+- uid: Global.DialogueVariables.StopListening(Ink.Runtime.Story)
+  name: StopListening(Story)
+  href: api/Global.DialogueVariables.html#Global_DialogueVariables_StopListening_Ink_Runtime_Story_
+  commentId: M:Global.DialogueVariables.StopListening(Ink.Runtime.Story)
+  fullName: DialogueVariables.StopListening(Ink.Runtime.Story)
+  nameWithType: DialogueVariables.StopListening(Story)
+- uid: Global.DialogueVariables.StopListening*
+  name: StopListening
+  href: api/Global.DialogueVariables.html#Global_DialogueVariables_StopListening_
+  commentId: Overload:Global.DialogueVariables.StopListening
+  isSpec: "True"
+  fullName: DialogueVariables.StopListening
+  nameWithType: DialogueVariables.StopListening
+- uid: Global.DialogueVariables.variables
+  name: variables
+  href: api/Global.DialogueVariables.html#Global_DialogueVariables_variables
+  commentId: P:Global.DialogueVariables.variables
+  fullName: DialogueVariables.variables
+  nameWithType: DialogueVariables.variables
+- uid: Global.DialogueVariables.variables*
+  name: variables
+  href: api/Global.DialogueVariables.html#Global_DialogueVariables_variables_
+  commentId: Overload:Global.DialogueVariables.variables
+  isSpec: "True"
+  fullName: DialogueVariables.variables
+  nameWithType: DialogueVariables.variables
 - uid: Global.DiaryHandler
   name: DiaryHandler
   href: api/Global.DiaryHandler.html
@@ -2716,12 +2923,265 @@ references:
   commentId: F:Global.DiaryHandler.rightPage
   fullName: DiaryHandler.rightPage
   nameWithType: DiaryHandler.rightPage
+- uid: Global.EventsManager
+  name: EventsManager
+  href: api/Global.EventsManager.html
+  commentId: T:Global.EventsManager
+  fullName: EventsManager
+  nameWithType: EventsManager
+- uid: Global.EventsManager.inputEvents
+  name: inputEvents
+  href: api/Global.EventsManager.html#Global_EventsManager_inputEvents
+  commentId: F:Global.EventsManager.inputEvents
+  fullName: EventsManager.inputEvents
+  nameWithType: EventsManager.inputEvents
+- uid: Global.EventsManager.instance
+  name: instance
+  href: api/Global.EventsManager.html#Global_EventsManager_instance
+  commentId: P:Global.EventsManager.instance
+  fullName: EventsManager.instance
+  nameWithType: EventsManager.instance
+- uid: Global.EventsManager.instance*
+  name: instance
+  href: api/Global.EventsManager.html#Global_EventsManager_instance_
+  commentId: Overload:Global.EventsManager.instance
+  isSpec: "True"
+  fullName: EventsManager.instance
+  nameWithType: EventsManager.instance
+- uid: Global.EventsManager.playerEvents
+  name: playerEvents
+  href: api/Global.EventsManager.html#Global_EventsManager_playerEvents
+  commentId: F:Global.EventsManager.playerEvents
+  fullName: EventsManager.playerEvents
+  nameWithType: EventsManager.playerEvents
+- uid: Global.EventsManager.taskEvents
+  name: taskEvents
+  href: api/Global.EventsManager.html#Global_EventsManager_taskEvents
+  commentId: F:Global.EventsManager.taskEvents
+  fullName: EventsManager.taskEvents
+  nameWithType: EventsManager.taskEvents
+- uid: Global.ExternalFunctions
+  name: ExternalFunctions
+  href: api/Global.ExternalFunctions.html
+  commentId: T:Global.ExternalFunctions
+  fullName: ExternalFunctions
+  nameWithType: ExternalFunctions
+- uid: Global.ExternalFunctions.Bind(Ink.Runtime.Story,TaskManager)
+  name: Bind(Story, TaskManager)
+  href: api/Global.ExternalFunctions.html#Global_ExternalFunctions_Bind_Ink_Runtime_Story_TaskManager_
+  commentId: M:Global.ExternalFunctions.Bind(Ink.Runtime.Story,TaskManager)
+  fullName: ExternalFunctions.Bind(Ink.Runtime.Story, TaskManager)
+  nameWithType: ExternalFunctions.Bind(Story, TaskManager)
+- uid: Global.ExternalFunctions.Bind*
+  name: Bind
+  href: api/Global.ExternalFunctions.html#Global_ExternalFunctions_Bind_
+  commentId: Overload:Global.ExternalFunctions.Bind
+  isSpec: "True"
+  fullName: ExternalFunctions.Bind
+  nameWithType: ExternalFunctions.Bind
+- uid: Global.ExternalFunctions.Unbind(Ink.Runtime.Story)
+  name: Unbind(Story)
+  href: api/Global.ExternalFunctions.html#Global_ExternalFunctions_Unbind_Ink_Runtime_Story_
+  commentId: M:Global.ExternalFunctions.Unbind(Ink.Runtime.Story)
+  fullName: ExternalFunctions.Unbind(Ink.Runtime.Story)
+  nameWithType: ExternalFunctions.Unbind(Story)
+- uid: Global.ExternalFunctions.Unbind*
+  name: Unbind
+  href: api/Global.ExternalFunctions.html#Global_ExternalFunctions_Unbind_
+  commentId: Overload:Global.ExternalFunctions.Unbind
+  isSpec: "True"
+  fullName: ExternalFunctions.Unbind
+  nameWithType: ExternalFunctions.Unbind
+- uid: Global.GoExploringStep
+  name: GoExploringStep
+  href: api/Global.GoExploringStep.html
+  commentId: T:Global.GoExploringStep
+  fullName: GoExploringStep
+  nameWithType: GoExploringStep
+- uid: Global.GoExploringStep.SetTaskStepState(System.String)
+  name: SetTaskStepState(string)
+  href: api/Global.GoExploringStep.html#Global_GoExploringStep_SetTaskStepState_System_String_
+  commentId: M:Global.GoExploringStep.SetTaskStepState(System.String)
+  name.vb: SetTaskStepState(String)
+  fullName: GoExploringStep.SetTaskStepState(string)
+  fullName.vb: GoExploringStep.SetTaskStepState(String)
+  nameWithType: GoExploringStep.SetTaskStepState(string)
+  nameWithType.vb: GoExploringStep.SetTaskStepState(String)
+- uid: Global.GoExploringStep.SetTaskStepState*
+  name: SetTaskStepState
+  href: api/Global.GoExploringStep.html#Global_GoExploringStep_SetTaskStepState_
+  commentId: Overload:Global.GoExploringStep.SetTaskStepState
+  isSpec: "True"
+  fullName: GoExploringStep.SetTaskStepState
+  nameWithType: GoExploringStep.SetTaskStepState
+- uid: Global.GoToDorm
+  name: GoToDorm
+  href: api/Global.GoToDorm.html
+  commentId: T:Global.GoToDorm
+  fullName: GoToDorm
+  nameWithType: GoToDorm
+- uid: Global.GoToDorm.SelectPressed
+  name: SelectPressed()
+  href: api/Global.GoToDorm.html#Global_GoToDorm_SelectPressed
+  commentId: M:Global.GoToDorm.SelectPressed
+  fullName: GoToDorm.SelectPressed()
+  nameWithType: GoToDorm.SelectPressed()
+- uid: Global.GoToDorm.SelectPressed*
+  name: SelectPressed
+  href: api/Global.GoToDorm.html#Global_GoToDorm_SelectPressed_
+  commentId: Overload:Global.GoToDorm.SelectPressed
+  isSpec: "True"
+  fullName: GoToDorm.SelectPressed
+  nameWithType: GoToDorm.SelectPressed
+- uid: Global.GoToTown
+  name: GoToTown
+  href: api/Global.GoToTown.html
+  commentId: T:Global.GoToTown
+  fullName: GoToTown
+  nameWithType: GoToTown
+- uid: Global.GoToTown.OnPress
+  name: OnPress()
+  href: api/Global.GoToTown.html#Global_GoToTown_OnPress
+  commentId: M:Global.GoToTown.OnPress
+  fullName: GoToTown.OnPress()
+  nameWithType: GoToTown.OnPress()
+- uid: Global.GoToTown.OnPress*
+  name: OnPress
+  href: api/Global.GoToTown.html#Global_GoToTown_OnPress_
+  commentId: Overload:Global.GoToTown.OnPress
+  isSpec: "True"
+  fullName: GoToTown.OnPress
+  nameWithType: GoToTown.OnPress
+- uid: Global.GoToTrashCanStep
+  name: GoToTrashCanStep
+  href: api/Global.GoToTrashCanStep.html
+  commentId: T:Global.GoToTrashCanStep
+  fullName: GoToTrashCanStep
+  nameWithType: GoToTrashCanStep
+- uid: Global.GoToTrashCanStep.SetTaskStepState(System.String)
+  name: SetTaskStepState(string)
+  href: api/Global.GoToTrashCanStep.html#Global_GoToTrashCanStep_SetTaskStepState_System_String_
+  commentId: M:Global.GoToTrashCanStep.SetTaskStepState(System.String)
+  name.vb: SetTaskStepState(String)
+  fullName: GoToTrashCanStep.SetTaskStepState(string)
+  fullName.vb: GoToTrashCanStep.SetTaskStepState(String)
+  nameWithType: GoToTrashCanStep.SetTaskStepState(string)
+  nameWithType.vb: GoToTrashCanStep.SetTaskStepState(String)
+- uid: Global.GoToTrashCanStep.SetTaskStepState*
+  name: SetTaskStepState
+  href: api/Global.GoToTrashCanStep.html#Global_GoToTrashCanStep_SetTaskStepState_
+  commentId: Overload:Global.GoToTrashCanStep.SetTaskStepState
+  isSpec: "True"
+  fullName: GoToTrashCanStep.SetTaskStepState
+  nameWithType: GoToTrashCanStep.SetTaskStepState
+- uid: Global.InputEvents
+  name: InputEvents
+  href: api/Global.InputEvents.html
+  commentId: T:Global.InputEvents
+  fullName: InputEvents
+  nameWithType: InputEvents
+- uid: Global.InputEvents.MovePressed
+  name: MovePressed()
+  href: api/Global.InputEvents.html#Global_InputEvents_MovePressed
+  commentId: M:Global.InputEvents.MovePressed
+  fullName: InputEvents.MovePressed()
+  nameWithType: InputEvents.MovePressed()
+- uid: Global.InputEvents.MovePressed*
+  name: MovePressed
+  href: api/Global.InputEvents.html#Global_InputEvents_MovePressed_
+  commentId: Overload:Global.InputEvents.MovePressed
+  isSpec: "True"
+  fullName: InputEvents.MovePressed
+  nameWithType: InputEvents.MovePressed
+- uid: Global.InputEvents.SelectPressed
+  name: SelectPressed()
+  href: api/Global.InputEvents.html#Global_InputEvents_SelectPressed
+  commentId: M:Global.InputEvents.SelectPressed
+  fullName: InputEvents.SelectPressed()
+  nameWithType: InputEvents.SelectPressed()
+- uid: Global.InputEvents.SelectPressed*
+  name: SelectPressed
+  href: api/Global.InputEvents.html#Global_InputEvents_SelectPressed_
+  commentId: Overload:Global.InputEvents.SelectPressed
+  isSpec: "True"
+  fullName: InputEvents.SelectPressed
+  nameWithType: InputEvents.SelectPressed
+- uid: Global.InputEvents.onMovePressed
+  name: onMovePressed
+  href: api/Global.InputEvents.html#Global_InputEvents_onMovePressed
+  commentId: E:Global.InputEvents.onMovePressed
+  fullName: InputEvents.onMovePressed
+  nameWithType: InputEvents.onMovePressed
+- uid: Global.InputEvents.onSelectPressed
+  name: onSelectPressed
+  href: api/Global.InputEvents.html#Global_InputEvents_onSelectPressed
+  commentId: E:Global.InputEvents.onSelectPressed
+  fullName: InputEvents.onSelectPressed
+  nameWithType: InputEvents.onSelectPressed
+- uid: Global.InputManager
+  name: InputManager
+  href: api/Global.InputManager.html
+  commentId: T:Global.InputManager
+  fullName: InputManager
+  nameWithType: InputManager
+- uid: Global.InputManager.MovePressed(InputAction.CallbackContext)
+  name: MovePressed(CallbackContext)
+  href: api/Global.InputManager.html#Global_InputManager_MovePressed_InputAction_CallbackContext_
+  commentId: M:Global.InputManager.MovePressed(InputAction.CallbackContext)
+  fullName: InputManager.MovePressed(InputAction.CallbackContext)
+  nameWithType: InputManager.MovePressed(InputAction.CallbackContext)
+- uid: Global.InputManager.MovePressed*
+  name: MovePressed
+  href: api/Global.InputManager.html#Global_InputManager_MovePressed_
+  commentId: Overload:Global.InputManager.MovePressed
+  isSpec: "True"
+  fullName: InputManager.MovePressed
+  nameWithType: InputManager.MovePressed
+- uid: Global.InputManager.SelectPressed(InputAction.CallbackContext)
+  name: SelectPressed(CallbackContext)
+  href: api/Global.InputManager.html#Global_InputManager_SelectPressed_InputAction_CallbackContext_
+  commentId: M:Global.InputManager.SelectPressed(InputAction.CallbackContext)
+  fullName: InputManager.SelectPressed(InputAction.CallbackContext)
+  nameWithType: InputManager.SelectPressed(InputAction.CallbackContext)
+- uid: Global.InputManager.SelectPressed*
+  name: SelectPressed
+  href: api/Global.InputManager.html#Global_InputManager_SelectPressed_
+  commentId: Overload:Global.InputManager.SelectPressed
+  isSpec: "True"
+  fullName: InputManager.SelectPressed
+  nameWithType: InputManager.SelectPressed
 - uid: Global.PhoneHandler
   name: PhoneHandler
   href: api/Global.PhoneHandler.html
   commentId: T:Global.PhoneHandler
   fullName: PhoneHandler
   nameWithType: PhoneHandler
+- uid: Global.PhoneHandler.OnAppsDown
+  name: OnAppsDown()
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnAppsDown
+  commentId: M:Global.PhoneHandler.OnAppsDown
+  fullName: PhoneHandler.OnAppsDown()
+  nameWithType: PhoneHandler.OnAppsDown()
+- uid: Global.PhoneHandler.OnAppsDown*
+  name: OnAppsDown
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnAppsDown_
+  commentId: Overload:Global.PhoneHandler.OnAppsDown
+  isSpec: "True"
+  fullName: PhoneHandler.OnAppsDown
+  nameWithType: PhoneHandler.OnAppsDown
+- uid: Global.PhoneHandler.OnAppsUp
+  name: OnAppsUp()
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnAppsUp
+  commentId: M:Global.PhoneHandler.OnAppsUp
+  fullName: PhoneHandler.OnAppsUp()
+  nameWithType: PhoneHandler.OnAppsUp()
+- uid: Global.PhoneHandler.OnAppsUp*
+  name: OnAppsUp
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnAppsUp_
+  commentId: Overload:Global.PhoneHandler.OnAppsUp
+  isSpec: "True"
+  fullName: PhoneHandler.OnAppsUp
+  nameWithType: PhoneHandler.OnAppsUp
 - uid: Global.PhoneHandler.OnButtonDown
   name: OnButtonDown()
   href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnButtonDown
@@ -2748,12 +3208,775 @@ references:
   isSpec: "True"
   fullName: PhoneHandler.OnButtonUp
   nameWithType: PhoneHandler.OnButtonUp
+- uid: Global.PhoneHandler.OnTasksDown
+  name: OnTasksDown()
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnTasksDown
+  commentId: M:Global.PhoneHandler.OnTasksDown
+  fullName: PhoneHandler.OnTasksDown()
+  nameWithType: PhoneHandler.OnTasksDown()
+- uid: Global.PhoneHandler.OnTasksDown*
+  name: OnTasksDown
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnTasksDown_
+  commentId: Overload:Global.PhoneHandler.OnTasksDown
+  isSpec: "True"
+  fullName: PhoneHandler.OnTasksDown
+  nameWithType: PhoneHandler.OnTasksDown
+- uid: Global.PhoneHandler.OnTasksUp
+  name: OnTasksUp()
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnTasksUp
+  commentId: M:Global.PhoneHandler.OnTasksUp
+  fullName: PhoneHandler.OnTasksUp()
+  nameWithType: PhoneHandler.OnTasksUp()
+- uid: Global.PhoneHandler.OnTasksUp*
+  name: OnTasksUp
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnTasksUp_
+  commentId: Overload:Global.PhoneHandler.OnTasksUp
+  isSpec: "True"
+  fullName: PhoneHandler.OnTasksUp
+  nameWithType: PhoneHandler.OnTasksUp
+- uid: Global.PhoneHandler.appsAnim
+  name: appsAnim
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_appsAnim
+  commentId: F:Global.PhoneHandler.appsAnim
+  fullName: PhoneHandler.appsAnim
+  nameWithType: PhoneHandler.appsAnim
+- uid: Global.PhoneHandler.bg
+  name: bg
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_bg
+  commentId: F:Global.PhoneHandler.bg
+  fullName: PhoneHandler.bg
+  nameWithType: PhoneHandler.bg
+- uid: Global.PhoneHandler.bgAnim
+  name: bgAnim
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_bgAnim
+  commentId: F:Global.PhoneHandler.bgAnim
+  fullName: PhoneHandler.bgAnim
+  nameWithType: PhoneHandler.bgAnim
 - uid: Global.PhoneHandler.phoneAnim
   name: phoneAnim
   href: api/Global.PhoneHandler.html#Global_PhoneHandler_phoneAnim
   commentId: F:Global.PhoneHandler.phoneAnim
   fullName: PhoneHandler.phoneAnim
   nameWithType: PhoneHandler.phoneAnim
+- uid: Global.PhoneHandler.tasksAnim
+  name: tasksAnim
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_tasksAnim
+  commentId: F:Global.PhoneHandler.tasksAnim
+  fullName: PhoneHandler.tasksAnim
+  nameWithType: PhoneHandler.tasksAnim
+- uid: Global.PlayerEvents
+  name: PlayerEvents
+  href: api/Global.PlayerEvents.html
+  commentId: T:Global.PlayerEvents
+  fullName: PlayerEvents
+  nameWithType: PlayerEvents
+- uid: Global.PlayerEvents.DisablePlayerMovement
+  name: DisablePlayerMovement()
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_DisablePlayerMovement
+  commentId: M:Global.PlayerEvents.DisablePlayerMovement
+  fullName: PlayerEvents.DisablePlayerMovement()
+  nameWithType: PlayerEvents.DisablePlayerMovement()
+- uid: Global.PlayerEvents.DisablePlayerMovement*
+  name: DisablePlayerMovement
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_DisablePlayerMovement_
+  commentId: Overload:Global.PlayerEvents.DisablePlayerMovement
+  isSpec: "True"
+  fullName: PlayerEvents.DisablePlayerMovement
+  nameWithType: PlayerEvents.DisablePlayerMovement
+- uid: Global.PlayerEvents.EnablePlayerMovement
+  name: EnablePlayerMovement()
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_EnablePlayerMovement
+  commentId: M:Global.PlayerEvents.EnablePlayerMovement
+  fullName: PlayerEvents.EnablePlayerMovement()
+  nameWithType: PlayerEvents.EnablePlayerMovement()
+- uid: Global.PlayerEvents.EnablePlayerMovement*
+  name: EnablePlayerMovement
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_EnablePlayerMovement_
+  commentId: Overload:Global.PlayerEvents.EnablePlayerMovement
+  isSpec: "True"
+  fullName: PlayerEvents.EnablePlayerMovement
+  nameWithType: PlayerEvents.EnablePlayerMovement
+- uid: Global.PlayerEvents.ExpAdd(System.Int32)
+  name: ExpAdd(int)
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_ExpAdd_System_Int32_
+  commentId: M:Global.PlayerEvents.ExpAdd(System.Int32)
+  name.vb: ExpAdd(Integer)
+  fullName: PlayerEvents.ExpAdd(int)
+  fullName.vb: PlayerEvents.ExpAdd(Integer)
+  nameWithType: PlayerEvents.ExpAdd(int)
+  nameWithType.vb: PlayerEvents.ExpAdd(Integer)
+- uid: Global.PlayerEvents.ExpAdd*
+  name: ExpAdd
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_ExpAdd_
+  commentId: Overload:Global.PlayerEvents.ExpAdd
+  isSpec: "True"
+  fullName: PlayerEvents.ExpAdd
+  nameWithType: PlayerEvents.ExpAdd
+- uid: Global.PlayerEvents.MoneyAdd(System.Int32)
+  name: MoneyAdd(int)
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_MoneyAdd_System_Int32_
+  commentId: M:Global.PlayerEvents.MoneyAdd(System.Int32)
+  name.vb: MoneyAdd(Integer)
+  fullName: PlayerEvents.MoneyAdd(int)
+  fullName.vb: PlayerEvents.MoneyAdd(Integer)
+  nameWithType: PlayerEvents.MoneyAdd(int)
+  nameWithType.vb: PlayerEvents.MoneyAdd(Integer)
+- uid: Global.PlayerEvents.MoneyAdd*
+  name: MoneyAdd
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_MoneyAdd_
+  commentId: Overload:Global.PlayerEvents.MoneyAdd
+  isSpec: "True"
+  fullName: PlayerEvents.MoneyAdd
+  nameWithType: PlayerEvents.MoneyAdd
+- uid: Global.PlayerEvents.MoneyChange(System.Int32)
+  name: MoneyChange(int)
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_MoneyChange_System_Int32_
+  commentId: M:Global.PlayerEvents.MoneyChange(System.Int32)
+  name.vb: MoneyChange(Integer)
+  fullName: PlayerEvents.MoneyChange(int)
+  fullName.vb: PlayerEvents.MoneyChange(Integer)
+  nameWithType: PlayerEvents.MoneyChange(int)
+  nameWithType.vb: PlayerEvents.MoneyChange(Integer)
+- uid: Global.PlayerEvents.MoneyChange*
+  name: MoneyChange
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_MoneyChange_
+  commentId: Overload:Global.PlayerEvents.MoneyChange
+  isSpec: "True"
+  fullName: PlayerEvents.MoneyChange
+  nameWithType: PlayerEvents.MoneyChange
+- uid: Global.PlayerEvents.PlayerExpChange(System.Int32)
+  name: PlayerExpChange(int)
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_PlayerExpChange_System_Int32_
+  commentId: M:Global.PlayerEvents.PlayerExpChange(System.Int32)
+  name.vb: PlayerExpChange(Integer)
+  fullName: PlayerEvents.PlayerExpChange(int)
+  fullName.vb: PlayerEvents.PlayerExpChange(Integer)
+  nameWithType: PlayerEvents.PlayerExpChange(int)
+  nameWithType.vb: PlayerEvents.PlayerExpChange(Integer)
+- uid: Global.PlayerEvents.PlayerExpChange*
+  name: PlayerExpChange
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_PlayerExpChange_
+  commentId: Overload:Global.PlayerEvents.PlayerExpChange
+  isSpec: "True"
+  fullName: PlayerEvents.PlayerExpChange
+  nameWithType: PlayerEvents.PlayerExpChange
+- uid: Global.PlayerEvents.PlayerLevelChange(System.Int32)
+  name: PlayerLevelChange(int)
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_PlayerLevelChange_System_Int32_
+  commentId: M:Global.PlayerEvents.PlayerLevelChange(System.Int32)
+  name.vb: PlayerLevelChange(Integer)
+  fullName: PlayerEvents.PlayerLevelChange(int)
+  fullName.vb: PlayerEvents.PlayerLevelChange(Integer)
+  nameWithType: PlayerEvents.PlayerLevelChange(int)
+  nameWithType.vb: PlayerEvents.PlayerLevelChange(Integer)
+- uid: Global.PlayerEvents.PlayerLevelChange*
+  name: PlayerLevelChange
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_PlayerLevelChange_
+  commentId: Overload:Global.PlayerEvents.PlayerLevelChange
+  isSpec: "True"
+  fullName: PlayerEvents.PlayerLevelChange
+  nameWithType: PlayerEvents.PlayerLevelChange
+- uid: Global.PlayerEvents.onDisablePlayerMovement
+  name: onDisablePlayerMovement
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_onDisablePlayerMovement
+  commentId: E:Global.PlayerEvents.onDisablePlayerMovement
+  fullName: PlayerEvents.onDisablePlayerMovement
+  nameWithType: PlayerEvents.onDisablePlayerMovement
+- uid: Global.PlayerEvents.onEnablePlayerMovement
+  name: onEnablePlayerMovement
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_onEnablePlayerMovement
+  commentId: E:Global.PlayerEvents.onEnablePlayerMovement
+  fullName: PlayerEvents.onEnablePlayerMovement
+  nameWithType: PlayerEvents.onEnablePlayerMovement
+- uid: Global.PlayerEvents.onExpAdd
+  name: onExpAdd
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_onExpAdd
+  commentId: E:Global.PlayerEvents.onExpAdd
+  fullName: PlayerEvents.onExpAdd
+  nameWithType: PlayerEvents.onExpAdd
+- uid: Global.PlayerEvents.onMoneyAdd
+  name: onMoneyAdd
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_onMoneyAdd
+  commentId: E:Global.PlayerEvents.onMoneyAdd
+  fullName: PlayerEvents.onMoneyAdd
+  nameWithType: PlayerEvents.onMoneyAdd
+- uid: Global.PlayerEvents.onMoneyChange
+  name: onMoneyChange
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_onMoneyChange
+  commentId: E:Global.PlayerEvents.onMoneyChange
+  fullName: PlayerEvents.onMoneyChange
+  nameWithType: PlayerEvents.onMoneyChange
+- uid: Global.PlayerEvents.onPlayerExpChange
+  name: onPlayerExpChange
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_onPlayerExpChange
+  commentId: E:Global.PlayerEvents.onPlayerExpChange
+  fullName: PlayerEvents.onPlayerExpChange
+  nameWithType: PlayerEvents.onPlayerExpChange
+- uid: Global.PlayerEvents.onPlayerLevelChange
+  name: onPlayerLevelChange
+  href: api/Global.PlayerEvents.html#Global_PlayerEvents_onPlayerLevelChange
+  commentId: E:Global.PlayerEvents.onPlayerLevelChange
+  fullName: PlayerEvents.onPlayerLevelChange
+  nameWithType: PlayerEvents.onPlayerLevelChange
+- uid: Global.PlayerManager
+  name: PlayerManager
+  href: api/Global.PlayerManager.html
+  commentId: T:Global.PlayerManager
+  fullName: PlayerManager
+  nameWithType: PlayerManager
+- uid: Global.Task
+  name: Task
+  href: api/Global.Task.html
+  commentId: T:Global.Task
+  fullName: Task
+  nameWithType: Task
+- uid: Global.Task.#ctor(TaskSystem.TaskDefinition)
+  name: Task(TaskDefinition)
+  href: api/Global.Task.html#Global_Task__ctor_TaskSystem_TaskDefinition_
+  commentId: M:Global.Task.#ctor(TaskSystem.TaskDefinition)
+  name.vb: New(TaskDefinition)
+  fullName: Task.Task(TaskSystem.TaskDefinition)
+  fullName.vb: Task.New(TaskSystem.TaskDefinition)
+  nameWithType: Task.Task(TaskDefinition)
+  nameWithType.vb: Task.New(TaskDefinition)
+- uid: Global.Task.#ctor(TaskSystem.TaskDefinition,TaskState,System.Int32,TaskStepState[])
+  name: Task(TaskDefinition, TaskState, int, TaskStepState[])
+  href: api/Global.Task.html#Global_Task__ctor_TaskSystem_TaskDefinition_TaskState_System_Int32_TaskStepState___
+  commentId: M:Global.Task.#ctor(TaskSystem.TaskDefinition,TaskState,System.Int32,TaskStepState[])
+  name.vb: New(TaskDefinition, TaskState, Integer, TaskStepState())
+  fullName: Task.Task(TaskSystem.TaskDefinition, TaskState, int, TaskStepState[])
+  fullName.vb: Task.New(TaskSystem.TaskDefinition, TaskState, Integer, TaskStepState())
+  nameWithType: Task.Task(TaskDefinition, TaskState, int, TaskStepState[])
+  nameWithType.vb: Task.New(TaskDefinition, TaskState, Integer, TaskStepState())
+- uid: Global.Task.#ctor*
+  name: Task
+  href: api/Global.Task.html#Global_Task__ctor_
+  commentId: Overload:Global.Task.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Task.Task
+  fullName.vb: Task.New
+  nameWithType: Task.Task
+  nameWithType.vb: Task.New
+- uid: Global.Task.GetFullStatus
+  name: GetFullStatus()
+  href: api/Global.Task.html#Global_Task_GetFullStatus
+  commentId: M:Global.Task.GetFullStatus
+  fullName: Task.GetFullStatus()
+  nameWithType: Task.GetFullStatus()
+- uid: Global.Task.GetFullStatus*
+  name: GetFullStatus
+  href: api/Global.Task.html#Global_Task_GetFullStatus_
+  commentId: Overload:Global.Task.GetFullStatus
+  isSpec: "True"
+  fullName: Task.GetFullStatus
+  nameWithType: Task.GetFullStatus
+- uid: Global.Task.GetTaskData
+  name: GetTaskData()
+  href: api/Global.Task.html#Global_Task_GetTaskData
+  commentId: M:Global.Task.GetTaskData
+  fullName: Task.GetTaskData()
+  nameWithType: Task.GetTaskData()
+- uid: Global.Task.GetTaskData*
+  name: GetTaskData
+  href: api/Global.Task.html#Global_Task_GetTaskData_
+  commentId: Overload:Global.Task.GetTaskData
+  isSpec: "True"
+  fullName: Task.GetTaskData
+  nameWithType: Task.GetTaskData
+- uid: Global.Task.InstantiateTaskStep(Transform)
+  name: InstantiateTaskStep(Transform)
+  href: api/Global.Task.html#Global_Task_InstantiateTaskStep_Transform_
+  commentId: M:Global.Task.InstantiateTaskStep(Transform)
+  fullName: Task.InstantiateTaskStep(Transform)
+  nameWithType: Task.InstantiateTaskStep(Transform)
+- uid: Global.Task.InstantiateTaskStep*
+  name: InstantiateTaskStep
+  href: api/Global.Task.html#Global_Task_InstantiateTaskStep_
+  commentId: Overload:Global.Task.InstantiateTaskStep
+  isSpec: "True"
+  fullName: Task.InstantiateTaskStep
+  nameWithType: Task.InstantiateTaskStep
+- uid: Global.Task.MoveToNextStep
+  name: MoveToNextStep()
+  href: api/Global.Task.html#Global_Task_MoveToNextStep
+  commentId: M:Global.Task.MoveToNextStep
+  fullName: Task.MoveToNextStep()
+  nameWithType: Task.MoveToNextStep()
+- uid: Global.Task.MoveToNextStep*
+  name: MoveToNextStep
+  href: api/Global.Task.html#Global_Task_MoveToNextStep_
+  commentId: Overload:Global.Task.MoveToNextStep
+  isSpec: "True"
+  fullName: Task.MoveToNextStep
+  nameWithType: Task.MoveToNextStep
+- uid: Global.Task.StepExist
+  name: StepExist()
+  href: api/Global.Task.html#Global_Task_StepExist
+  commentId: M:Global.Task.StepExist
+  fullName: Task.StepExist()
+  nameWithType: Task.StepExist()
+- uid: Global.Task.StepExist*
+  name: StepExist
+  href: api/Global.Task.html#Global_Task_StepExist_
+  commentId: Overload:Global.Task.StepExist
+  isSpec: "True"
+  fullName: Task.StepExist
+  nameWithType: Task.StepExist
+- uid: Global.Task.StoreTaskStepState(TaskStepState,System.Int32)
+  name: StoreTaskStepState(TaskStepState, int)
+  href: api/Global.Task.html#Global_Task_StoreTaskStepState_TaskStepState_System_Int32_
+  commentId: M:Global.Task.StoreTaskStepState(TaskStepState,System.Int32)
+  name.vb: StoreTaskStepState(TaskStepState, Integer)
+  fullName: Task.StoreTaskStepState(TaskStepState, int)
+  fullName.vb: Task.StoreTaskStepState(TaskStepState, Integer)
+  nameWithType: Task.StoreTaskStepState(TaskStepState, int)
+  nameWithType.vb: Task.StoreTaskStepState(TaskStepState, Integer)
+- uid: Global.Task.StoreTaskStepState*
+  name: StoreTaskStepState
+  href: api/Global.Task.html#Global_Task_StoreTaskStepState_
+  commentId: Overload:Global.Task.StoreTaskStepState
+  isSpec: "True"
+  fullName: Task.StoreTaskStepState
+  nameWithType: Task.StoreTaskStepState
+- uid: Global.Task.info
+  name: info
+  href: api/Global.Task.html#Global_Task_info
+  commentId: F:Global.Task.info
+  fullName: Task.info
+  nameWithType: Task.info
+- uid: Global.Task.state
+  name: state
+  href: api/Global.Task.html#Global_Task_state
+  commentId: F:Global.Task.state
+  fullName: Task.state
+  nameWithType: Task.state
+- uid: Global.TaskEntry
+  name: TaskEntry
+  href: api/Global.TaskEntry.html
+  commentId: T:Global.TaskEntry
+  fullName: TaskEntry
+  nameWithType: TaskEntry
+- uid: Global.TaskEntry.#ctor(System.String,TaskState,System.Int32,TaskStepState[])
+  name: TaskEntry(string, TaskState, int, TaskStepState[])
+  href: api/Global.TaskEntry.html#Global_TaskEntry__ctor_System_String_TaskState_System_Int32_TaskStepState___
+  commentId: M:Global.TaskEntry.#ctor(System.String,TaskState,System.Int32,TaskStepState[])
+  name.vb: New(String, TaskState, Integer, TaskStepState())
+  fullName: TaskEntry.TaskEntry(string, TaskState, int, TaskStepState[])
+  fullName.vb: TaskEntry.New(String, TaskState, Integer, TaskStepState())
+  nameWithType: TaskEntry.TaskEntry(string, TaskState, int, TaskStepState[])
+  nameWithType.vb: TaskEntry.New(String, TaskState, Integer, TaskStepState())
+- uid: Global.TaskEntry.#ctor*
+  name: TaskEntry
+  href: api/Global.TaskEntry.html#Global_TaskEntry__ctor_
+  commentId: Overload:Global.TaskEntry.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TaskEntry.TaskEntry
+  fullName.vb: TaskEntry.New
+  nameWithType: TaskEntry.TaskEntry
+  nameWithType.vb: TaskEntry.New
+- uid: Global.TaskEntry.id
+  name: id
+  href: api/Global.TaskEntry.html#Global_TaskEntry_id
+  commentId: F:Global.TaskEntry.id
+  fullName: TaskEntry.id
+  nameWithType: TaskEntry.id
+- uid: Global.TaskEntry.state
+  name: state
+  href: api/Global.TaskEntry.html#Global_TaskEntry_state
+  commentId: F:Global.TaskEntry.state
+  fullName: TaskEntry.state
+  nameWithType: TaskEntry.state
+- uid: Global.TaskEntry.taskStepIdx
+  name: taskStepIdx
+  href: api/Global.TaskEntry.html#Global_TaskEntry_taskStepIdx
+  commentId: F:Global.TaskEntry.taskStepIdx
+  fullName: TaskEntry.taskStepIdx
+  nameWithType: TaskEntry.taskStepIdx
+- uid: Global.TaskEntry.taskStepStates
+  name: taskStepStates
+  href: api/Global.TaskEntry.html#Global_TaskEntry_taskStepStates
+  commentId: F:Global.TaskEntry.taskStepStates
+  fullName: TaskEntry.taskStepStates
+  nameWithType: TaskEntry.taskStepStates
+- uid: Global.TaskEvents
+  name: TaskEvents
+  href: api/Global.TaskEvents.html
+  commentId: T:Global.TaskEvents
+  fullName: TaskEvents
+  nameWithType: TaskEvents
+- uid: Global.TaskEvents.TaskAdvance(System.String)
+  name: TaskAdvance(string)
+  href: api/Global.TaskEvents.html#Global_TaskEvents_TaskAdvance_System_String_
+  commentId: M:Global.TaskEvents.TaskAdvance(System.String)
+  name.vb: TaskAdvance(String)
+  fullName: TaskEvents.TaskAdvance(string)
+  fullName.vb: TaskEvents.TaskAdvance(String)
+  nameWithType: TaskEvents.TaskAdvance(string)
+  nameWithType.vb: TaskEvents.TaskAdvance(String)
+- uid: Global.TaskEvents.TaskAdvance*
+  name: TaskAdvance
+  href: api/Global.TaskEvents.html#Global_TaskEvents_TaskAdvance_
+  commentId: Overload:Global.TaskEvents.TaskAdvance
+  isSpec: "True"
+  fullName: TaskEvents.TaskAdvance
+  nameWithType: TaskEvents.TaskAdvance
+- uid: Global.TaskEvents.TaskFinish(System.String)
+  name: TaskFinish(string)
+  href: api/Global.TaskEvents.html#Global_TaskEvents_TaskFinish_System_String_
+  commentId: M:Global.TaskEvents.TaskFinish(System.String)
+  name.vb: TaskFinish(String)
+  fullName: TaskEvents.TaskFinish(string)
+  fullName.vb: TaskEvents.TaskFinish(String)
+  nameWithType: TaskEvents.TaskFinish(string)
+  nameWithType.vb: TaskEvents.TaskFinish(String)
+- uid: Global.TaskEvents.TaskFinish*
+  name: TaskFinish
+  href: api/Global.TaskEvents.html#Global_TaskEvents_TaskFinish_
+  commentId: Overload:Global.TaskEvents.TaskFinish
+  isSpec: "True"
+  fullName: TaskEvents.TaskFinish
+  nameWithType: TaskEvents.TaskFinish
+- uid: Global.TaskEvents.TaskStart(System.String)
+  name: TaskStart(string)
+  href: api/Global.TaskEvents.html#Global_TaskEvents_TaskStart_System_String_
+  commentId: M:Global.TaskEvents.TaskStart(System.String)
+  name.vb: TaskStart(String)
+  fullName: TaskEvents.TaskStart(string)
+  fullName.vb: TaskEvents.TaskStart(String)
+  nameWithType: TaskEvents.TaskStart(string)
+  nameWithType.vb: TaskEvents.TaskStart(String)
+- uid: Global.TaskEvents.TaskStart*
+  name: TaskStart
+  href: api/Global.TaskEvents.html#Global_TaskEvents_TaskStart_
+  commentId: Overload:Global.TaskEvents.TaskStart
+  isSpec: "True"
+  fullName: TaskEvents.TaskStart
+  nameWithType: TaskEvents.TaskStart
+- uid: Global.TaskEvents.TaskStateChange(Task)
+  name: TaskStateChange(Task)
+  href: api/Global.TaskEvents.html#Global_TaskEvents_TaskStateChange_Task_
+  commentId: M:Global.TaskEvents.TaskStateChange(Task)
+  fullName: TaskEvents.TaskStateChange(Task)
+  nameWithType: TaskEvents.TaskStateChange(Task)
+- uid: Global.TaskEvents.TaskStateChange*
+  name: TaskStateChange
+  href: api/Global.TaskEvents.html#Global_TaskEvents_TaskStateChange_
+  commentId: Overload:Global.TaskEvents.TaskStateChange
+  isSpec: "True"
+  fullName: TaskEvents.TaskStateChange
+  nameWithType: TaskEvents.TaskStateChange
+- uid: Global.TaskEvents.TaskStepStateChange(System.String,System.Int32,TaskStepState)
+  name: TaskStepStateChange(string, int, TaskStepState)
+  href: api/Global.TaskEvents.html#Global_TaskEvents_TaskStepStateChange_System_String_System_Int32_TaskStepState_
+  commentId: M:Global.TaskEvents.TaskStepStateChange(System.String,System.Int32,TaskStepState)
+  name.vb: TaskStepStateChange(String, Integer, TaskStepState)
+  fullName: TaskEvents.TaskStepStateChange(string, int, TaskStepState)
+  fullName.vb: TaskEvents.TaskStepStateChange(String, Integer, TaskStepState)
+  nameWithType: TaskEvents.TaskStepStateChange(string, int, TaskStepState)
+  nameWithType.vb: TaskEvents.TaskStepStateChange(String, Integer, TaskStepState)
+- uid: Global.TaskEvents.TaskStepStateChange*
+  name: TaskStepStateChange
+  href: api/Global.TaskEvents.html#Global_TaskEvents_TaskStepStateChange_
+  commentId: Overload:Global.TaskEvents.TaskStepStateChange
+  isSpec: "True"
+  fullName: TaskEvents.TaskStepStateChange
+  nameWithType: TaskEvents.TaskStepStateChange
+- uid: Global.TaskEvents.onTaskAdvance
+  name: onTaskAdvance
+  href: api/Global.TaskEvents.html#Global_TaskEvents_onTaskAdvance
+  commentId: E:Global.TaskEvents.onTaskAdvance
+  fullName: TaskEvents.onTaskAdvance
+  nameWithType: TaskEvents.onTaskAdvance
+- uid: Global.TaskEvents.onTaskFinish
+  name: onTaskFinish
+  href: api/Global.TaskEvents.html#Global_TaskEvents_onTaskFinish
+  commentId: E:Global.TaskEvents.onTaskFinish
+  fullName: TaskEvents.onTaskFinish
+  nameWithType: TaskEvents.onTaskFinish
+- uid: Global.TaskEvents.onTaskStart
+  name: onTaskStart
+  href: api/Global.TaskEvents.html#Global_TaskEvents_onTaskStart
+  commentId: E:Global.TaskEvents.onTaskStart
+  fullName: TaskEvents.onTaskStart
+  nameWithType: TaskEvents.onTaskStart
+- uid: Global.TaskEvents.onTaskStateChange
+  name: onTaskStateChange
+  href: api/Global.TaskEvents.html#Global_TaskEvents_onTaskStateChange
+  commentId: E:Global.TaskEvents.onTaskStateChange
+  fullName: TaskEvents.onTaskStateChange
+  nameWithType: TaskEvents.onTaskStateChange
+- uid: Global.TaskEvents.onTaskStepStateChange
+  name: onTaskStepStateChange
+  href: api/Global.TaskEvents.html#Global_TaskEvents_onTaskStepStateChange
+  commentId: E:Global.TaskEvents.onTaskStepStateChange
+  fullName: TaskEvents.onTaskStepStateChange
+  nameWithType: TaskEvents.onTaskStepStateChange
+- uid: Global.TaskManager
+  name: TaskManager
+  href: api/Global.TaskManager.html
+  commentId: T:Global.TaskManager
+  fullName: TaskManager
+  nameWithType: TaskManager
+- uid: Global.TaskManager.GetTaskById(System.String)
+  name: GetTaskById(string)
+  href: api/Global.TaskManager.html#Global_TaskManager_GetTaskById_System_String_
+  commentId: M:Global.TaskManager.GetTaskById(System.String)
+  name.vb: GetTaskById(String)
+  fullName: TaskManager.GetTaskById(string)
+  fullName.vb: TaskManager.GetTaskById(String)
+  nameWithType: TaskManager.GetTaskById(string)
+  nameWithType.vb: TaskManager.GetTaskById(String)
+- uid: Global.TaskManager.GetTaskById*
+  name: GetTaskById
+  href: api/Global.TaskManager.html#Global_TaskManager_GetTaskById_
+  commentId: Overload:Global.TaskManager.GetTaskById
+  isSpec: "True"
+  fullName: TaskManager.GetTaskById
+  nameWithType: TaskManager.GetTaskById
+- uid: Global.TaskManager.LoadPersistentData(DataPersistence.Data.GameData)
+  name: LoadPersistentData(GameData)
+  href: api/Global.TaskManager.html#Global_TaskManager_LoadPersistentData_DataPersistence_Data_GameData_
+  commentId: M:Global.TaskManager.LoadPersistentData(DataPersistence.Data.GameData)
+  fullName: TaskManager.LoadPersistentData(DataPersistence.Data.GameData)
+  nameWithType: TaskManager.LoadPersistentData(GameData)
+- uid: Global.TaskManager.LoadPersistentData*
+  name: LoadPersistentData
+  href: api/Global.TaskManager.html#Global_TaskManager_LoadPersistentData_
+  commentId: Overload:Global.TaskManager.LoadPersistentData
+  isSpec: "True"
+  fullName: TaskManager.LoadPersistentData
+  nameWithType: TaskManager.LoadPersistentData
+- uid: Global.TaskManager.SavePersistentData(DataPersistence.Data.GameData@)
+  name: SavePersistentData(ref GameData)
+  href: api/Global.TaskManager.html#Global_TaskManager_SavePersistentData_DataPersistence_Data_GameData__
+  commentId: M:Global.TaskManager.SavePersistentData(DataPersistence.Data.GameData@)
+  name.vb: SavePersistentData(GameData)
+  fullName: TaskManager.SavePersistentData(ref DataPersistence.Data.GameData)
+  fullName.vb: TaskManager.SavePersistentData(DataPersistence.Data.GameData)
+  nameWithType: TaskManager.SavePersistentData(ref GameData)
+  nameWithType.vb: TaskManager.SavePersistentData(GameData)
+- uid: Global.TaskManager.SavePersistentData*
+  name: SavePersistentData
+  href: api/Global.TaskManager.html#Global_TaskManager_SavePersistentData_
+  commentId: Overload:Global.TaskManager.SavePersistentData
+  isSpec: "True"
+  fullName: TaskManager.SavePersistentData
+  nameWithType: TaskManager.SavePersistentData
+- uid: Global.TaskPoint
+  name: TaskPoint
+  href: api/Global.TaskPoint.html
+  commentId: T:Global.TaskPoint
+  fullName: TaskPoint
+  nameWithType: TaskPoint
+- uid: Global.TaskState
+  name: TaskState
+  href: api/Global.TaskState.html
+  commentId: T:Global.TaskState
+  fullName: TaskState
+  nameWithType: TaskState
+- uid: Global.TaskState.CAN_FINISH
+  name: CAN_FINISH
+  href: api/Global.TaskState.html#Global_TaskState_CAN_FINISH
+  commentId: F:Global.TaskState.CAN_FINISH
+  fullName: TaskState.CAN_FINISH
+  nameWithType: TaskState.CAN_FINISH
+- uid: Global.TaskState.CAN_START
+  name: CAN_START
+  href: api/Global.TaskState.html#Global_TaskState_CAN_START
+  commentId: F:Global.TaskState.CAN_START
+  fullName: TaskState.CAN_START
+  nameWithType: TaskState.CAN_START
+- uid: Global.TaskState.FINISHED
+  name: FINISHED
+  href: api/Global.TaskState.html#Global_TaskState_FINISHED
+  commentId: F:Global.TaskState.FINISHED
+  fullName: TaskState.FINISHED
+  nameWithType: TaskState.FINISHED
+- uid: Global.TaskState.IN_PROGRESS
+  name: IN_PROGRESS
+  href: api/Global.TaskState.html#Global_TaskState_IN_PROGRESS
+  commentId: F:Global.TaskState.IN_PROGRESS
+  fullName: TaskState.IN_PROGRESS
+  nameWithType: TaskState.IN_PROGRESS
+- uid: Global.TaskState.REQUIREMENTS_NOT_MET
+  name: REQUIREMENTS_NOT_MET
+  href: api/Global.TaskState.html#Global_TaskState_REQUIREMENTS_NOT_MET
+  commentId: F:Global.TaskState.REQUIREMENTS_NOT_MET
+  fullName: TaskState.REQUIREMENTS_NOT_MET
+  nameWithType: TaskState.REQUIREMENTS_NOT_MET
+- uid: Global.TaskStep
+  name: TaskStep
+  href: api/Global.TaskStep.html
+  commentId: T:Global.TaskStep
+  fullName: TaskStep
+  nameWithType: TaskStep
+- uid: Global.TaskStep.ChangeState(System.String,System.String)
+  name: ChangeState(string, string)
+  href: api/Global.TaskStep.html#Global_TaskStep_ChangeState_System_String_System_String_
+  commentId: M:Global.TaskStep.ChangeState(System.String,System.String)
+  name.vb: ChangeState(String, String)
+  fullName: TaskStep.ChangeState(string, string)
+  fullName.vb: TaskStep.ChangeState(String, String)
+  nameWithType: TaskStep.ChangeState(string, string)
+  nameWithType.vb: TaskStep.ChangeState(String, String)
+- uid: Global.TaskStep.ChangeState*
+  name: ChangeState
+  href: api/Global.TaskStep.html#Global_TaskStep_ChangeState_
+  commentId: Overload:Global.TaskStep.ChangeState
+  isSpec: "True"
+  fullName: TaskStep.ChangeState
+  nameWithType: TaskStep.ChangeState
+- uid: Global.TaskStep.FinishTaskStep
+  name: FinishTaskStep()
+  href: api/Global.TaskStep.html#Global_TaskStep_FinishTaskStep
+  commentId: M:Global.TaskStep.FinishTaskStep
+  fullName: TaskStep.FinishTaskStep()
+  nameWithType: TaskStep.FinishTaskStep()
+- uid: Global.TaskStep.FinishTaskStep*
+  name: FinishTaskStep
+  href: api/Global.TaskStep.html#Global_TaskStep_FinishTaskStep_
+  commentId: Overload:Global.TaskStep.FinishTaskStep
+  isSpec: "True"
+  fullName: TaskStep.FinishTaskStep
+  nameWithType: TaskStep.FinishTaskStep
+- uid: Global.TaskStep.InitTaskStep(System.String,System.Int32,System.String)
+  name: InitTaskStep(string, int, string)
+  href: api/Global.TaskStep.html#Global_TaskStep_InitTaskStep_System_String_System_Int32_System_String_
+  commentId: M:Global.TaskStep.InitTaskStep(System.String,System.Int32,System.String)
+  name.vb: InitTaskStep(String, Integer, String)
+  fullName: TaskStep.InitTaskStep(string, int, string)
+  fullName.vb: TaskStep.InitTaskStep(String, Integer, String)
+  nameWithType: TaskStep.InitTaskStep(string, int, string)
+  nameWithType.vb: TaskStep.InitTaskStep(String, Integer, String)
+- uid: Global.TaskStep.InitTaskStep*
+  name: InitTaskStep
+  href: api/Global.TaskStep.html#Global_TaskStep_InitTaskStep_
+  commentId: Overload:Global.TaskStep.InitTaskStep
+  isSpec: "True"
+  fullName: TaskStep.InitTaskStep
+  nameWithType: TaskStep.InitTaskStep
+- uid: Global.TaskStep.SetTaskStepState(System.String)
+  name: SetTaskStepState(string)
+  href: api/Global.TaskStep.html#Global_TaskStep_SetTaskStepState_System_String_
+  commentId: M:Global.TaskStep.SetTaskStepState(System.String)
+  name.vb: SetTaskStepState(String)
+  fullName: TaskStep.SetTaskStepState(string)
+  fullName.vb: TaskStep.SetTaskStepState(String)
+  nameWithType: TaskStep.SetTaskStepState(string)
+  nameWithType.vb: TaskStep.SetTaskStepState(String)
+- uid: Global.TaskStep.SetTaskStepState*
+  name: SetTaskStepState
+  href: api/Global.TaskStep.html#Global_TaskStep_SetTaskStepState_
+  commentId: Overload:Global.TaskStep.SetTaskStepState
+  isSpec: "True"
+  fullName: TaskStep.SetTaskStepState
+  nameWithType: TaskStep.SetTaskStepState
+- uid: Global.TaskStepState
+  name: TaskStepState
+  href: api/Global.TaskStepState.html
+  commentId: T:Global.TaskStepState
+  fullName: TaskStepState
+  nameWithType: TaskStepState
+- uid: Global.TaskStepState.#ctor
+  name: TaskStepState()
+  href: api/Global.TaskStepState.html#Global_TaskStepState__ctor
+  commentId: M:Global.TaskStepState.#ctor
+  name.vb: New()
+  fullName: TaskStepState.TaskStepState()
+  fullName.vb: TaskStepState.New()
+  nameWithType: TaskStepState.TaskStepState()
+  nameWithType.vb: TaskStepState.New()
+- uid: Global.TaskStepState.#ctor(System.String,System.String)
+  name: TaskStepState(string, string)
+  href: api/Global.TaskStepState.html#Global_TaskStepState__ctor_System_String_System_String_
+  commentId: M:Global.TaskStepState.#ctor(System.String,System.String)
+  name.vb: New(String, String)
+  fullName: TaskStepState.TaskStepState(string, string)
+  fullName.vb: TaskStepState.New(String, String)
+  nameWithType: TaskStepState.TaskStepState(string, string)
+  nameWithType.vb: TaskStepState.New(String, String)
+- uid: Global.TaskStepState.#ctor*
+  name: TaskStepState
+  href: api/Global.TaskStepState.html#Global_TaskStepState__ctor_
+  commentId: Overload:Global.TaskStepState.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: TaskStepState.TaskStepState
+  fullName.vb: TaskStepState.New
+  nameWithType: TaskStepState.TaskStepState
+  nameWithType.vb: TaskStepState.New
+- uid: Global.TaskStepState.state
+  name: state
+  href: api/Global.TaskStepState.html#Global_TaskStepState_state
+  commentId: F:Global.TaskStepState.state
+  fullName: TaskStepState.state
+  nameWithType: TaskStepState.state
+- uid: Global.TaskStepState.status
+  name: status
+  href: api/Global.TaskStepState.html#Global_TaskStepState_status
+  commentId: F:Global.TaskStepState.status
+  fullName: TaskStepState.status
+  nameWithType: TaskStepState.status
+- uid: Global.TaskUI
+  name: TaskUI
+  href: api/Global.TaskUI.html
+  commentId: T:Global.TaskUI
+  fullName: TaskUI
+  nameWithType: TaskUI
+- uid: Global.TaskUI.SetTaskButton(System.String,System.String)
+  name: SetTaskButton(string, string)
+  href: api/Global.TaskUI.html#Global_TaskUI_SetTaskButton_System_String_System_String_
+  commentId: M:Global.TaskUI.SetTaskButton(System.String,System.String)
+  name.vb: SetTaskButton(String, String)
+  fullName: TaskUI.SetTaskButton(string, string)
+  fullName.vb: TaskUI.SetTaskButton(String, String)
+  nameWithType: TaskUI.SetTaskButton(string, string)
+  nameWithType.vb: TaskUI.SetTaskButton(String, String)
+- uid: Global.TaskUI.SetTaskButton*
+  name: SetTaskButton
+  href: api/Global.TaskUI.html#Global_TaskUI_SetTaskButton_
+  commentId: Overload:Global.TaskUI.SetTaskButton
+  isSpec: "True"
+  fullName: TaskUI.SetTaskButton
+  nameWithType: TaskUI.SetTaskButton
+- uid: Global.TaskUI._desc
+  name: _desc
+  href: api/Global.TaskUI.html#Global_TaskUI__desc
+  commentId: F:Global.TaskUI._desc
+  fullName: TaskUI._desc
+  nameWithType: TaskUI._desc
+- uid: Global.TaskUI._title
+  name: _title
+  href: api/Global.TaskUI.html#Global_TaskUI__title
+  commentId: F:Global.TaskUI._title
+  fullName: TaskUI._title
+  nameWithType: TaskUI._title
+- uid: Global.TaskUI.canvas
+  name: canvas
+  href: api/Global.TaskUI.html#Global_TaskUI_canvas
+  commentId: F:Global.TaskUI.canvas
+  fullName: TaskUI.canvas
+  nameWithType: TaskUI.canvas
+- uid: Global.TaskUI.desc
+  name: desc
+  href: api/Global.TaskUI.html#Global_TaskUI_desc
+  commentId: F:Global.TaskUI.desc
+  fullName: TaskUI.desc
+  nameWithType: TaskUI.desc
+- uid: Global.TaskUI.title
+  name: title
+  href: api/Global.TaskUI.html#Global_TaskUI_title
+  commentId: F:Global.TaskUI.title
+  fullName: TaskUI.title
+  nameWithType: TaskUI.title
+- uid: Global.TasksUI
+  name: TasksUI
+  href: api/Global.TasksUI.html
+  commentId: T:Global.TasksUI
+  fullName: TasksUI
+  nameWithType: TasksUI
 - uid: Global.UnityInkFileHandler
   name: UnityInkFileHandler
   href: api/Global.UnityInkFileHandler.html
@@ -23506,6 +24729,109 @@ references:
   commentId: F:Settings.TownSettingsDefinition.movementSpeed
   fullName: Settings.TownSettingsDefinition.movementSpeed
   nameWithType: TownSettingsDefinition.movementSpeed
+- uid: TaskSystem
+  name: TaskSystem
+  href: api/TaskSystem.html
+  commentId: N:TaskSystem
+  fullName: TaskSystem
+  nameWithType: TaskSystem
+- uid: TaskSystem.TaskDefinition
+  name: TaskDefinition
+  href: api/TaskSystem.TaskDefinition.html
+  commentId: T:TaskSystem.TaskDefinition
+  fullName: TaskSystem.TaskDefinition
+  nameWithType: TaskDefinition
+- uid: TaskSystem.TaskDefinition.autoFinish
+  name: autoFinish
+  href: api/TaskSystem.TaskDefinition.html#TaskSystem_TaskDefinition_autoFinish
+  commentId: F:TaskSystem.TaskDefinition.autoFinish
+  fullName: TaskSystem.TaskDefinition.autoFinish
+  nameWithType: TaskDefinition.autoFinish
+- uid: TaskSystem.TaskDefinition.displayName
+  name: displayName
+  href: api/TaskSystem.TaskDefinition.html#TaskSystem_TaskDefinition_displayName
+  commentId: F:TaskSystem.TaskDefinition.displayName
+  fullName: TaskSystem.TaskDefinition.displayName
+  nameWithType: TaskDefinition.displayName
+- uid: TaskSystem.TaskDefinition.expReward
+  name: expReward
+  href: api/TaskSystem.TaskDefinition.html#TaskSystem_TaskDefinition_expReward
+  commentId: F:TaskSystem.TaskDefinition.expReward
+  fullName: TaskSystem.TaskDefinition.expReward
+  nameWithType: TaskDefinition.expReward
+- uid: TaskSystem.TaskDefinition.id
+  name: id
+  href: api/TaskSystem.TaskDefinition.html#TaskSystem_TaskDefinition_id
+  commentId: P:TaskSystem.TaskDefinition.id
+  fullName: TaskSystem.TaskDefinition.id
+  nameWithType: TaskDefinition.id
+- uid: TaskSystem.TaskDefinition.id*
+  name: id
+  href: api/TaskSystem.TaskDefinition.html#TaskSystem_TaskDefinition_id_
+  commentId: Overload:TaskSystem.TaskDefinition.id
+  isSpec: "True"
+  fullName: TaskSystem.TaskDefinition.id
+  nameWithType: TaskDefinition.id
+- uid: TaskSystem.TaskDefinition.levelRequirement
+  name: levelRequirement
+  href: api/TaskSystem.TaskDefinition.html#TaskSystem_TaskDefinition_levelRequirement
+  commentId: F:TaskSystem.TaskDefinition.levelRequirement
+  fullName: TaskSystem.TaskDefinition.levelRequirement
+  nameWithType: TaskDefinition.levelRequirement
+- uid: TaskSystem.TaskDefinition.moneyReward
+  name: moneyReward
+  href: api/TaskSystem.TaskDefinition.html#TaskSystem_TaskDefinition_moneyReward
+  commentId: F:TaskSystem.TaskDefinition.moneyReward
+  fullName: TaskSystem.TaskDefinition.moneyReward
+  nameWithType: TaskDefinition.moneyReward
+- uid: TaskSystem.TaskDefinition.requiredTasks
+  name: requiredTasks
+  href: api/TaskSystem.TaskDefinition.html#TaskSystem_TaskDefinition_requiredTasks
+  commentId: F:TaskSystem.TaskDefinition.requiredTasks
+  fullName: TaskSystem.TaskDefinition.requiredTasks
+  nameWithType: TaskDefinition.requiredTasks
+- uid: TaskSystem.TaskDefinition.startNextTasks
+  name: startNextTasks
+  href: api/TaskSystem.TaskDefinition.html#TaskSystem_TaskDefinition_startNextTasks
+  commentId: F:TaskSystem.TaskDefinition.startNextTasks
+  fullName: TaskSystem.TaskDefinition.startNextTasks
+  nameWithType: TaskDefinition.startNextTasks
+- uid: TaskSystem.TaskDefinition.taskStepPrefabs
+  name: taskStepPrefabs
+  href: api/TaskSystem.TaskDefinition.html#TaskSystem_TaskDefinition_taskStepPrefabs
+  commentId: F:TaskSystem.TaskDefinition.taskStepPrefabs
+  fullName: TaskSystem.TaskDefinition.taskStepPrefabs
+  nameWithType: TaskDefinition.taskStepPrefabs
+- uid: TaskSystem.TaskDefinition.type
+  name: type
+  href: api/TaskSystem.TaskDefinition.html#TaskSystem_TaskDefinition_type
+  commentId: F:TaskSystem.TaskDefinition.type
+  fullName: TaskSystem.TaskDefinition.type
+  nameWithType: TaskDefinition.type
+- uid: TaskSystem.TaskType
+  name: TaskType
+  href: api/TaskSystem.TaskType.html
+  commentId: T:TaskSystem.TaskType
+  fullName: TaskSystem.TaskType
+  nameWithType: TaskType
+- uid: TaskSystem.TaskType.beertask
+  name: beertask
+  href: api/TaskSystem.TaskType.html#TaskSystem_TaskType_beertask
+  commentId: F:TaskSystem.TaskType.beertask
+  fullName: TaskSystem.TaskType.beertask
+  nameWithType: TaskType.beertask
+- uid: TaskSystem.TaskType.maintask
+  name: maintask
+  href: api/TaskSystem.TaskType.html#TaskSystem_TaskType_maintask
+  commentId: F:TaskSystem.TaskType.maintask
+  fullName: TaskSystem.TaskType.maintask
+  nameWithType: TaskType.maintask
+- uid: TaskSystem.TaskType.sidetask
+  name: sidetask
+  href: api/TaskSystem.TaskType.html#TaskSystem_TaskType_sidetask
+  commentId: F:TaskSystem.TaskType.sidetask
+  fullName: TaskSystem.TaskType.sidetask
+  nameWithType: TaskType.sidetask
 - uid: Town
   name: Town
   href: api/Town.html
@@ -23574,43 +24900,37 @@ references:
   commentId: T:Town.PlayerMovement
   fullName: Town.PlayerMovement
   nameWithType: PlayerMovement
-- uid: Town.Town
-  name: Town.Town
-  href: api/Town.Town.html
-  commentId: N:Town.Town
-  fullName: Town.Town
-  nameWithType: Town.Town
-- uid: Town.Town.TrashCan
+- uid: Town.TrashCan
   name: TrashCan
-  href: api/Town.Town.TrashCan.html
-  commentId: T:Town.Town.TrashCan
-  fullName: Town.Town.TrashCan
+  href: api/Town.TrashCan.html
+  commentId: T:Town.TrashCan
+  fullName: Town.TrashCan
   nameWithType: TrashCan
-- uid: Town.Town.TrashCan.EnteredInteractionRange
+- uid: Town.TrashCan.EnteredInteractionRange
   name: EnteredInteractionRange()
-  href: api/Town.Town.TrashCan.html#Town_Town_TrashCan_EnteredInteractionRange
-  commentId: M:Town.Town.TrashCan.EnteredInteractionRange
-  fullName: Town.Town.TrashCan.EnteredInteractionRange()
+  href: api/Town.TrashCan.html#Town_TrashCan_EnteredInteractionRange
+  commentId: M:Town.TrashCan.EnteredInteractionRange
+  fullName: Town.TrashCan.EnteredInteractionRange()
   nameWithType: TrashCan.EnteredInteractionRange()
-- uid: Town.Town.TrashCan.EnteredInteractionRange*
+- uid: Town.TrashCan.EnteredInteractionRange*
   name: EnteredInteractionRange
-  href: api/Town.Town.TrashCan.html#Town_Town_TrashCan_EnteredInteractionRange_
-  commentId: Overload:Town.Town.TrashCan.EnteredInteractionRange
+  href: api/Town.TrashCan.html#Town_TrashCan_EnteredInteractionRange_
+  commentId: Overload:Town.TrashCan.EnteredInteractionRange
   isSpec: "True"
-  fullName: Town.Town.TrashCan.EnteredInteractionRange
+  fullName: Town.TrashCan.EnteredInteractionRange
   nameWithType: TrashCan.EnteredInteractionRange
-- uid: Town.Town.TrashCan.LeftInteractionRange
+- uid: Town.TrashCan.LeftInteractionRange
   name: LeftInteractionRange()
-  href: api/Town.Town.TrashCan.html#Town_Town_TrashCan_LeftInteractionRange
-  commentId: M:Town.Town.TrashCan.LeftInteractionRange
-  fullName: Town.Town.TrashCan.LeftInteractionRange()
+  href: api/Town.TrashCan.html#Town_TrashCan_LeftInteractionRange
+  commentId: M:Town.TrashCan.LeftInteractionRange
+  fullName: Town.TrashCan.LeftInteractionRange()
   nameWithType: TrashCan.LeftInteractionRange()
-- uid: Town.Town.TrashCan.LeftInteractionRange*
+- uid: Town.TrashCan.LeftInteractionRange*
   name: LeftInteractionRange
-  href: api/Town.Town.TrashCan.html#Town_Town_TrashCan_LeftInteractionRange_
-  commentId: Overload:Town.Town.TrashCan.LeftInteractionRange
+  href: api/Town.TrashCan.html#Town_TrashCan_LeftInteractionRange_
+  commentId: Overload:Town.TrashCan.LeftInteractionRange
   isSpec: "True"
-  fullName: Town.Town.TrashCan.LeftInteractionRange
+  fullName: Town.TrashCan.LeftInteractionRange
   nameWithType: TrashCan.LeftInteractionRange
 - uid: Utils
   name: Utils

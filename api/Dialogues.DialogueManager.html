@@ -89,7 +89,7 @@
 
 
   <h1 id="Dialogues_DialogueManager" data-uid="Dialogues.DialogueManager" class="text-break">
-Class DialogueManager  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L13"><i class="bi bi-code-slash"></i></a>
+Class DialogueManager  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L17"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -136,9 +136,39 @@ Class DialogueManager  <a class="header-action link-secondary" title="View sourc
 
 
 
+  <h3 id="Dialogues_DialogueManager__dialogueActive" data-uid="Dialogues.DialogueManager._dialogueActive">
+  _dialogueActive
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool _dialogueActive</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <h3 id="Dialogues_DialogueManager_dialogueEnded" data-uid="Dialogues.DialogueManager.dialogueEnded">
   dialogueEnded
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -169,7 +199,7 @@ public UnityEvent dialogueEnded</code></pre>
 
   <h3 id="Dialogues_DialogueManager_dialogueStarted" data-uid="Dialogues.DialogueManager.dialogueStarted">
   dialogueStarted
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -205,7 +235,7 @@ public UnityEvent dialogueStarted</code></pre>
 
   <h3 id="Dialogues_DialogueManager_Awake" data-uid="Dialogues.DialogueManager.Awake">
   Awake()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -231,7 +261,7 @@ public UnityEvent dialogueStarted</code></pre>
 
   <h3 id="Dialogues_DialogueManager_ContinueDialogue" data-uid="Dialogues.DialogueManager.ContinueDialogue">
   ContinueDialogue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L129"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Main function in the dialogue process, manages choices parsing, tag parsing and canvas updating.
@@ -259,7 +289,7 @@ Will end the dialogue if there are no more lines to read.</p>
 
   <h3 id="Dialogues_DialogueManager_EndDialogue" data-uid="Dialogues.DialogueManager.EndDialogue">
   EndDialogue()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>End the current dialogue. If there is no dialogue active, nothing will happen. Dialogue progress won't be saved.</p>
@@ -267,9 +297,83 @@ Will end the dialogue if there are no more lines to read.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void EndDialogue()</code></pre>
+    <pre><code class="lang-csharp hljs">public IEnumerator EndDialogue()</code></pre>
   </div>
 
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dialogues_DialogueManager_GetVariableState_" data-uid="Dialogues.DialogueManager.GetVariableState*"></a>
+
+  <h3 id="Dialogues_DialogueManager_GetVariableState_System_String_" data-uid="Dialogues.DialogueManager.GetVariableState(System.String)">
+  GetVariableState(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Object GetVariableState(string variableName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Ink.Runtime.Object.html">Object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Dialogues_DialogueManager_SetVariableState_" data-uid="Dialogues.DialogueManager.SetVariableState*"></a>
+
+  <h3 id="Dialogues_DialogueManager_SetVariableState_System_String_Ink_Runtime_Object_" data-uid="Dialogues.DialogueManager.SetVariableState(System.String,Ink.Runtime.Object)">
+  SetVariableState(string, Object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVariableState(string variableName, Object variableValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>variableName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>variableValue</code> <a class="xref" href="Ink.Runtime.Object.html">Object</a></dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -286,7 +390,7 @@ Will end the dialogue if there are no more lines to read.</p>
 
   <h3 id="Dialogues_DialogueManager_StartDialogue_TextAsset_System_Action_" data-uid="Dialogues.DialogueManager.StartDialogue(TextAsset,System.Action)">
   StartDialogue(TextAsset, Action)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Start new dialogue from a file. File must be provided by other Behaviour.
@@ -328,7 +432,7 @@ Dialogue will only start if there is no other dialogue active.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L13" class="edit-link">Edit this page</a>
+          <a href="https://github.com/AGH-Code-Industry/brewer/blob/master/Assets/Scripts/Dialogues/DialogueManager.cs/#L17" class="edit-link">Edit this page</a>
         </div>
 
 
