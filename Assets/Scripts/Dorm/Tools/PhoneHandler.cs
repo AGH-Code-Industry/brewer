@@ -9,6 +9,7 @@ public class PhoneHandler : MonoBehaviour
     public Animator phoneAnim;
     public Animator appsAnim;
     public Animator tasksAnim;
+    public Animator ordersAnim;
     public Animator bgAnim;
     public Image bg;
     private Color color;
@@ -33,6 +34,16 @@ public class PhoneHandler : MonoBehaviour
     }
     public void OnTasksDown() {
         tasksAnim.SetBool("tasksOn", false);
+        bgAnim.SetBool("bgOn", false);
+    }
+    public void OnOrdersUp() {
+        ordersAnim.SetBool("ordersOn", true);
+        ColorUtility.TryParseHtmlString("#5A569E", out color);
+        bg.color = color;
+        bgAnim.SetBool("bgOn", true);
+    }
+    public void OnOrdersDown() {
+        ordersAnim.SetBool("ordersOn", false);
         bgAnim.SetBool("bgOn", false);
     }
 }
