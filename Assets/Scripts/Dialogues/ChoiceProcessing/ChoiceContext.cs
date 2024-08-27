@@ -1,5 +1,6 @@
 ﻿using Items;
 using JetBrains.Annotations;
+using TaskSystem;
 
 namespace Dialogues.ChoiceProcessing {
     public class ChoiceContext {
@@ -33,7 +34,19 @@ namespace Dialogues.ChoiceProcessing {
             }
         }
         
-        public bool GetsQuest { get; private set; }
-        // [CanBeNull] private QuestDefinition _getQuest;
+        public bool GetsTask { get; private set; }
+         [CanBeNull] private string _getTask;
+         public string GetTask {
+             get {
+                 if (!GetsTask) {
+                     return null;
+                 }
+                 return _getTask;
+             }
+             set {
+                 _getTask = value;
+                 GetsTask = true;
+             }
+         }
     }
 }

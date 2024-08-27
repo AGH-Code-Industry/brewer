@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using CoinPackage.Debugging;
 using Items;
+using TaskSystem;
 using UnityEngine;
 using Utils;
 
@@ -22,6 +23,10 @@ namespace Dialogues.ChoiceProcessing {
                     case "getsItem":
                         var getItem = LoadResource<ItemDefinition>("Items/" + value);
                         choiceContext.GetItem = getItem;
+                        break;
+                    case "getsTask":
+                        string getTask = value;
+                        choiceContext.GetTask = getTask;
                         break;
                     default:
                         throw new Exception($"Cannot process choice tag '{key}' with value '{value}'");
