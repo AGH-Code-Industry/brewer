@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using CoinPackage.Debugging;
+using Items;
 using TaskSystem;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -15,6 +16,7 @@ public class TaskPoint : MonoBehaviour {
     [Header("Config")] 
     [SerializeField] private bool startPoint = true;
     [SerializeField] private bool finishPoint = true;
+    [SerializeField] private OrderManager _orderManager;
     
     private bool playerIsNear = false;
     private string taskId;
@@ -36,9 +38,11 @@ public class TaskPoint : MonoBehaviour {
     private void SelectPressed() {
         
         if(!playerIsNear) return;
-        OrderEntry[] test = new OrderEntry[] { };
-        Order order = new Order("1", true, "zbych", "5 dni", test, 50, 50, 5, 5);
+        ItemDefinition item = _orderManager.GetItemByName("Dummy Beer");
+        List<OrderEntry> test = new List<OrderEntry> {new OrderEntry(item, 10)};
+        Order order = new Order("1", true, "Zbych", "5 dni", test, 50, 50, 5, 5);
         EventsManager.instance.orderEvents.OrderStart(order);
+        
         if (currTaskState == TaskState.CAN_START && startPoint) {
             EventsManager.instance.taskEvents.TaskStart(taskId);
         }

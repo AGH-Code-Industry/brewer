@@ -11,7 +11,7 @@ public class Order {
     public string clientName;
     public Sprite clientIcon;
     public string dueTo; //TODO change type and implement time
-    public OrderEntry[] orders;
+    public List<OrderEntry> orders;
     public bool isRandom;
     public int moneyReward;
     public int moneyFine;
@@ -19,11 +19,11 @@ public class Order {
     public int expFine;
 
 
-    public Order(string id, bool isRandom, string clientName, string dueTo, OrderEntry[] orders, int moneyReward, int moneyFine, int expReward, int expFine) {
+    public Order(string id, bool isRandom, string clientName, string dueTo, List<OrderEntry> orders, int moneyReward, int moneyFine, int expReward, int expFine) {
         this.id = id;
         this.isRandom = isRandom;
         this.clientName = clientName;
-        // this.clientIcon = TODO method to find icon by name
+        this.clientIcon = FindPortraitByName(clientName);
         this.dueTo = dueTo;
         this.orders = orders;
         this.moneyReward = moneyReward;
@@ -43,5 +43,14 @@ public class Order {
         this.moneyFine = orderInfo.moneyFine;
         this.expReward = orderInfo.expReward;
         this.expFine = orderInfo.expFine;
+    }
+
+    public Sprite FindPortraitByName(string name) {
+        Sprite[] allPortraits = Resources.LoadAll<Sprite>("Portraits");
+        Dictionary<string, Sprite> portraits = new Dictionary<string, Sprite>();
+            foreach (Sprite item in allPortraits) {
+            portraits.Add(item.name, item);
+        }
+        return portraits[name.ToLower() + "_neutral"];
     }
 }

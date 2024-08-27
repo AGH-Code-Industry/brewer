@@ -18,7 +18,7 @@ public class OrderUI : MonoBehaviour
     public Image portrait;
 
     public void SetOrderPanel(Order order) {
-        title.text = order.id;
+        title.text = "Zamówienie #" + order.id;
         client.text = "Od: " + order.clientName;
         portrait.sprite = order.clientIcon;
         string orderText = "";
@@ -30,11 +30,11 @@ public class OrderUI : MonoBehaviour
         string rewardText = "";
         if (order.moneyReward != 0) rewardText += order.moneyReward + "zł ";
         if (order.expReward != 0) rewardText += order.expReward + "EXP";
-        if (rewardText != "") reward.text = "Nagroda: " + rewardText;
+        if (rewardText != "") reward.text = "Nagroda: " + "<color=#2de327>" + rewardText + "</color>";
         string fineText = "";
         if (order.moneyFine != 0) fineText += order.moneyFine + "zł ";
         if (order.expFine != 0) fineText += order.expFine + "EXP";
-        if (fineText != "") fine.text = "Kara: " + fineText;
+        if (fineText != "") fine.text = "Kara: " + "<color=#fc0303>" + fineText + "</color>";
         
         
         // Canvas.ForceUpdateCanvases();

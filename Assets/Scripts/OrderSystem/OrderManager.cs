@@ -22,15 +22,17 @@ public class OrderManager : MonoBehaviour, IDataPersistence
     
     private Dictionary<string, Order> orderMap = new Dictionary<string, Order>();
     private Dictionary<string, ItemDefinition> itemsMap = new Dictionary<string, ItemDefinition>();
-    public int randomID;
+    
+    public int lastGlobalID = 0;
 
     private void Awake() {
         var allItems = Resources.LoadAll<ItemDefinition>(DevSet.I.appSettings.itemsResPath);
         Dictionary<string, ItemDefinition> items = new Dictionary<string, ItemDefinition>();
         foreach (ItemDefinition item in allItems) {
-            items.Add(item.name, item);
+            items.Add(item.itemName, item);
         }
         itemsMap = items;
+        
         LoadPersistentData(DataPersistenceManager.I.gameData);
     }
 
@@ -43,17 +45,17 @@ public class OrderManager : MonoBehaviour, IDataPersistence
         EventsManager.instance.orderEvents.onOrderFinish -= FinishOrder;
     }
     private void StartOrder(Order order) {
+        lastGlobalID++;
+        order.id = lastGlobalID.ToString();
         orderMap.Add(order.id, order);
         OrderPanel(order, "create");
-        CDebug.Log("Order start: " + order.id);
+        CDebug.Log("Order start: " + order.id + " " + order.orders.Count);
     }
     
     private void FinishOrder(string id, bool isPositive) {
         Order order = GetOrderById(id);
         orderMap.Remove(id);
         ClaimRewards(order, isPositive);
-
-        
         CDebug.Log("Order finish: " + id);
     }
     
@@ -96,7 +98,7 @@ public class OrderManager : MonoBehaviour, IDataPersistence
                 OrderPanel(newOrder, "create");
             }
         }
-        randomID = gameData.orderData.randomID;
+        lastGlobalID = gameData.orderData.randomID;
         CDebug.Log($"Loaded {orderMap.Count % Colorize.Cyan} from the save.");
     }
 
@@ -107,7 +109,7 @@ public class OrderManager : MonoBehaviour, IDataPersistence
         }
         CDebug.Log($"Saved {ordersToSave.Count % Colorize.Cyan} orders to the save.");
         gameData.orderData.orders = ordersToSave;
-        gameData.orderData.randomID = randomID;
+        gameData.orderData.randomID = lastGlobalID;
     }
     
     
@@ -118,19 +120,19 @@ public class OrderManager : MonoBehaviour, IDataPersistence
     }
 
     private OrderSave GetOrderInfo(Order order) {
-        OrderEntrySave[] orderItems = new OrderEntrySave[] { };
+        List<OrderEntrySave> orderItems = new List<OrderEntrySave> {};
         foreach (OrderEntry a in order.orders) {
-            orderItems.Append(new OrderEntrySave(a.item.name, a.quantity));
+            orderItems.Add(new OrderEntrySave(a.item.itemName, a.quantity));
         }
 
         return new OrderSave(order.id, order.isRandom, order.clientName, order.dueTo, orderItems, order.moneyReward,
             order.moneyFine, order.expReward, order.expFine);
     }
 
-    private OrderEntry[] GetOrders(OrderEntrySave[] ordersSave) {
-        OrderEntry[] orders = new OrderEntry[]{};
+    private List<OrderEntry> GetOrders(List<OrderEntrySave> ordersSave) {
+        List<OrderEntry> orders = new List<OrderEntry>{};
         foreach (OrderEntrySave a in ordersSave) {
-            orders.Append(new OrderEntry(GetItemByName(a.item), a.quantity));
+            orders.Add(new OrderEntry(GetItemByName(a.item), a.quantity));
         }
         return orders;
     }

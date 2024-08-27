@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Items;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,7 +21,7 @@ namespace TaskSystem {
         public int expFine;
 
         [Header("Order")] 
-        public OrderEntry[] orders;
+        public List<OrderEntry> orders;
         
     }
 }

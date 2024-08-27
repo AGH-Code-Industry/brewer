@@ -485,6 +485,7 @@ MonoBehaviour:
   taskInfoForPoint: {fileID: 11400000, guid: a199ff22954b3de4c8c9d866e7a793f0, type: 2}
   startPoint: 1
   finishPoint: 0
+  _orderManager: {fileID: 0}
 --- !u!4 &399918009
 Transform:
   m_ObjectHideFlags: 0
@@ -27523,7 +27524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   contentParent: {fileID: 1404359086}
   orderPanel: {fileID: 7694126485314901262, guid: 52c422abb35c0ec49bc32c16a92463ee, type: 3}
-  randomID: 0
+  lastGlobalID: 0
 --- !u!1 &1395857993
 GameObject:
   m_ObjectHideFlags: 0
@@ -27882,6 +27883,7 @@ MonoBehaviour:
   taskInfoForPoint: {fileID: 11400000, guid: 37baa155ff9b3db4d9d725fb07a5a6d4, type: 2}
   startPoint: 1
   finishPoint: 0
+  _orderManager: {fileID: 0}
 --- !u!58 &1826981555
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -44547,6 +44549,7 @@ MonoBehaviour:
   taskInfoForPoint: {fileID: 11400000, guid: 37baa155ff9b3db4d9d725fb07a5a6d4, type: 2}
   startPoint: 0
   finishPoint: 1
+  _orderManager: {fileID: 1368881830}
 --- !u!58 &1896712972
 CircleCollider2D:
   m_ObjectHideFlags: 0
