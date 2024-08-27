@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using CoinPackage.Debugging;
 using TaskSystem;
 using UnityEngine;
@@ -35,7 +36,9 @@ public class TaskPoint : MonoBehaviour {
     private void SelectPressed() {
         
         if(!playerIsNear) return;
-        
+        OrderEntry[] test = new OrderEntry[] { };
+        Order order = new Order("1", true, "zbych", "5 dni", test, 50, 50, 5, 5);
+        EventsManager.instance.orderEvents.OrderStart(order);
         if (currTaskState == TaskState.CAN_START && startPoint) {
             EventsManager.instance.taskEvents.TaskStart(taskId);
         }

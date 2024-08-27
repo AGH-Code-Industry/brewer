@@ -6,6 +6,7 @@ using Settings;
 using TaskSystem;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class TaskManager : MonoBehaviour, IDataPersistence {
     [Header("Content")]
@@ -33,7 +34,7 @@ public class TaskManager : MonoBehaviour, IDataPersistence {
         EventsManager.instance.playerEvents.onPlayerLevelChange -= PlayerLevelChange;
         EventsManager.instance.taskEvents.onTaskStepStateChange -= TaskStepStateChange;
     }
-
+    
     private void PlayerLevelChange(int lvl) {
         currPlayerLevel = lvl;
     }
@@ -86,6 +87,7 @@ public class TaskManager : MonoBehaviour, IDataPersistence {
     }
     private void StartTask(string id) {
         Task task = GetTaskById(id);
+        
         task.InstantiateTaskStep(this.transform);
         ChangeTaskState(task.info.id, TaskState.IN_PROGRESS);
         TaskButton(task, "create");

@@ -12,6 +12,7 @@ public class EventsManager : MonoBehaviour
     public TaskEvents taskEvents;
     public InputEvents inputEvents;
     public PlayerEvents playerEvents;
+    public OrderEvents orderEvents;
 
     private void Awake() {
         if (instance is not null) {
@@ -26,6 +27,7 @@ public class EventsManager : MonoBehaviour
         taskEvents = new TaskEvents();
         inputEvents = new InputEvents();
         playerEvents = new PlayerEvents();
+        orderEvents = new OrderEvents();
         
     }
 }
