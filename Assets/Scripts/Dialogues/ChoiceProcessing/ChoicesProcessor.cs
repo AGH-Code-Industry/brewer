@@ -16,10 +16,13 @@ namespace Dialogues {
             _inventory = inventory;
         }
 
-        public bool ProcessChoices(Story story) {
+        public void DestroyChoices() {
             foreach (Transform child in _choicesPanel.transform) {
                 UnityEngine.Object.Destroy(child.gameObject);
             }
+        }
+        public bool ProcessChoices(Story story) {
+            DestroyChoices();
 
             if(story.currentChoices.Count < 1) {
                 return false;
@@ -52,6 +55,10 @@ namespace Dialogues {
                 if (choiceContext.GetsItem) {
                     CDebug.Log(choiceContext.GetsItem);
                     _inventory.InsertItem(choiceContext.GetItem, 1);
+                }
+                if (choiceContext.GetsTask) {
+                    CDebug.Log(choiceContext.GetsTask);
+                    EventsManager.instance.taskEvents.TaskStart(choiceContext.GetTask);
                 }
             });
             choiceButton.SetText(choice.text);

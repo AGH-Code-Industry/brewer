@@ -340,7 +340,7 @@ namespace Ink.Runtime
                 newList.value.SetInitialOriginNames (oldList.value.originNames);
         }
 
-        public void SetGlobal(string variableName, Runtime.Object value)
+        public void SetGlobal(string variableName, Object value)
         {
             Runtime.Object oldValue = null;
             if( patch == null || !patch.TryGetGlobal(variableName, out oldValue) )
