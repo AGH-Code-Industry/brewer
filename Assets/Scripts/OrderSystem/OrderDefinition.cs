@@ -20,8 +20,8 @@ namespace TaskSystem {
         public int moneyFine;
         public int expFine;
 
-        [Header("Order")] 
-        public List<OrderEntry> orders;
+        [Header("Order")]
+        public List<OrderEntry> orders = new List<OrderEntry>();
         
     }
 }

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7316144c18651a43b2d85d78408fac3, type: 3}
+  m_Name: zbych1
+  m_EditorClassIdentifier: 
+  id: 
+  clientName: Zbych
+  clientIcon: {fileID: 21300000, guid: 386b984a0ab3442439c9aaa23f1707a2, type: 3}
+  dueTo: 8dni
+  moneyReward: 69
+  expReward: 100
+  moneyFine: 30
+  expFine: 100
+  orders:
+  - item: {fileID: 11400000, guid: d3640753728640d4b93004716cf0c71c, type: 2}
+    quantity: 5
+  - item: {fileID: 11400000, guid: d3640753728640d4b93004716cf0c71c, type: 2}
+    quantity: 10

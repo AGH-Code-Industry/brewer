@@ -40,7 +40,7 @@ public class TaskPoint : MonoBehaviour {
         if(!playerIsNear) return;
         ItemDefinition item = _orderManager.GetItemByName("Dummy Beer");
         List<OrderEntry> test = new List<OrderEntry> {new OrderEntry(item, 10)};
-        Order order = new Order("1", true, "Zbych", "5 dni", test, 50, 50, 5, 5);
+        Order order = new Order("1", "Zbych", "5 dni", test, 50, 50, 5, 5);
         EventsManager.instance.orderEvents.OrderStart(order);
         
         if (currTaskState == TaskState.CAN_START && startPoint) {

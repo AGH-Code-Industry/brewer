@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Items;
 using UnityEngine;
 
+[System.Serializable]
 public class OrderEntry {
     public ItemDefinition item;
     public int quantity;

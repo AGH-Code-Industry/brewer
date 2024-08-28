@@ -12,7 +12,6 @@ using Settings;
 using TaskSystem;
 using Unity.VisualScripting;
 using UnityEngine;
-
 public class OrderManager : MonoBehaviour, IDataPersistence
 {
     [Header("Content")]
@@ -20,7 +19,7 @@ public class OrderManager : MonoBehaviour, IDataPersistence
     [Header("Task Prefab")]
     [SerializeField] private GameObject orderPanel;
     
-    private Dictionary<string, Order> orderMap = new Dictionary<string, Order>();
+    public Dictionary<string, Order> orderMap = new Dictionary<string, Order>();
     private Dictionary<string, ItemDefinition> itemsMap = new Dictionary<string, ItemDefinition>();
     
     public int lastGlobalID = 0;
@@ -49,14 +48,15 @@ public class OrderManager : MonoBehaviour, IDataPersistence
         order.id = lastGlobalID.ToString();
         orderMap.Add(order.id, order);
         OrderPanel(order, "create");
-        CDebug.Log("Order start: " + order.id + " " + order.orders.Count);
+        CDebug.Log("Order start: #" + order.id);
     }
     
     private void FinishOrder(string id, bool isPositive) {
         Order order = GetOrderById(id);
         orderMap.Remove(id);
         ClaimRewards(order, isPositive);
-        CDebug.Log("Order finish: " + id);
+        OrderPanel(order, "delete");
+        CDebug.Log("Order finish: #" + id);
     }
     
     public Order GetOrderById(string id) {
@@ -91,7 +91,7 @@ public class OrderManager : MonoBehaviour, IDataPersistence
     public void LoadPersistentData(GameData gameData) {
         if (gameData.orderData.orders.Count != 0) {
             foreach (OrderSave order in gameData.orderData.orders) {
-                Order newOrder = new Order(order.id, order.isRandom, order.clientName, order.dueTo,
+                Order newOrder = new Order(order.id, order.clientName, order.dueTo,
                     GetOrders(order.orders), order.moneyReward,
                     order.moneyFine, order.expReward, order.expFine);
                 orderMap.Add(order.id, newOrder);

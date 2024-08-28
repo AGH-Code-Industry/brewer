@@ -19,9 +19,8 @@ public class Order {
     public int expFine;
 
 
-    public Order(string id, bool isRandom, string clientName, string dueTo, List<OrderEntry> orders, int moneyReward, int moneyFine, int expReward, int expFine) {
+    public Order(string id, string clientName, string dueTo, List<OrderEntry> orders, int moneyReward, int moneyFine, int expReward, int expFine) {
         this.id = id;
-        this.isRandom = isRandom;
         this.clientName = clientName;
         this.clientIcon = FindPortraitByName(clientName);
         this.dueTo = dueTo;
@@ -34,7 +33,6 @@ public class Order {
     
     public Order(OrderDefinition orderInfo) {
         this.id = orderInfo.id;
-        this.isRandom = false;
         this.clientName = orderInfo.clientName;
         this.clientIcon = orderInfo.clientIcon;
         this.dueTo = orderInfo.dueTo;
