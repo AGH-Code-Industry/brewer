@@ -322,6 +322,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.HelperStructures.OrderEntrySave.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.HelperStructures.OrderEntrySave.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/DataPersistence.HelperStructures.OrderSave.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/DataPersistence.HelperStructures.OrderSave.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/DataPersistence.HelperStructures.yml",
       "output": {
         ".html": {
@@ -716,6 +736,66 @@
       "output": {
         ".html": {
           "relative_path": "api/Global.InputManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.Order.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.Order.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.OrderEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.OrderEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.OrderEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.OrderEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.OrderManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.OrderManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.OrderStep.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.OrderStep.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Global.OrderUI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Global.OrderUI.html"
         }
       },
       "version": ""
@@ -2996,6 +3076,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Settings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TaskSystem.OrderDefinition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TaskSystem.OrderDefinition.html"
         }
       },
       "version": ""

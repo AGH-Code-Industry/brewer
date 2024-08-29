@@ -107,7 +107,7 @@
   "api/DataPersistence.Data.OrderData.html": {
     "href": "api/DataPersistence.Data.OrderData.html",
     "title": "Class OrderData | Czasoport Documentation",
-    "keywords": "Class OrderData Namespace DataPersistence.Data [Serializable] public class OrderData Inheritance object OrderData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString()"
+    "keywords": "Class OrderData Namespace DataPersistence.Data [Serializable] public class OrderData Inheritance object OrderData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields orders public List<OrderSave> orders Field Value List<OrderSave> randomID public int randomID Field Value int"
   },
   "api/DataPersistence.Data.TaskData.html": {
     "href": "api/DataPersistence.Data.TaskData.html",
@@ -149,10 +149,20 @@
     "title": "Class InventoryEntry | Czasoport Documentation",
     "keywords": "Class InventoryEntry Namespace DataPersistence.HelperStructures [Serializable] public class InventoryEntry Inheritance object InventoryEntry Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors InventoryEntry(string, ushort) public InventoryEntry(string assetName, ushort quantity) Parameters assetName string quantity ushort Fields assetName public string assetName Field Value string quantity public ushort quantity Field Value ushort"
   },
+  "api/DataPersistence.HelperStructures.OrderEntrySave.html": {
+    "href": "api/DataPersistence.HelperStructures.OrderEntrySave.html",
+    "title": "Class OrderEntrySave | Czasoport Documentation",
+    "keywords": "Class OrderEntrySave Namespace DataPersistence.HelperStructures [Serializable] public class OrderEntrySave Inheritance object OrderEntrySave Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors OrderEntrySave(string, int) public OrderEntrySave(string item, int quantity) Parameters item string quantity int Fields item public string item Field Value string quantity public int quantity Field Value int"
+  },
+  "api/DataPersistence.HelperStructures.OrderSave.html": {
+    "href": "api/DataPersistence.HelperStructures.OrderSave.html",
+    "title": "Class OrderSave | Czasoport Documentation",
+    "keywords": "Class OrderSave Namespace DataPersistence.HelperStructures [Serializable] public class OrderSave Inheritance object OrderSave Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors OrderSave(string, bool, string, string, List<OrderEntrySave>, int, int, int, int) public OrderSave(string id, bool isRandom, string clientName, string dueTo, List<OrderEntrySave> orders, int moneyReward, int moneyFine, int expReward, int expFine) Parameters id string isRandom bool clientName string dueTo string orders List<OrderEntrySave> moneyReward int moneyFine int expReward int expFine int Fields clientName public string clientName Field Value string dueTo public string dueTo Field Value string expFine public int expFine Field Value int expReward public int expReward Field Value int id public string id Field Value string isRandom public bool isRandom Field Value bool moneyFine public int moneyFine Field Value int moneyReward public int moneyReward Field Value int orders public List<OrderEntrySave> orders Field Value List<OrderEntrySave>"
+  },
   "api/DataPersistence.HelperStructures.html": {
     "href": "api/DataPersistence.HelperStructures.html",
     "title": "Namespace DataPersistence.HelperStructures | Czasoport Documentation",
-    "keywords": "Namespace DataPersistence.HelperStructures Classes DefaultInventoryEntries DefaultInventoryEntry InventoryEntry"
+    "keywords": "Namespace DataPersistence.HelperStructures Classes DefaultInventoryEntries DefaultInventoryEntry InventoryEntry OrderEntrySave OrderSave"
   },
   "api/DataPersistence.IDataPersistence.html": {
     "href": "api/DataPersistence.IDataPersistence.html",
@@ -312,12 +322,12 @@
   "api/Global.EventsManager.html": {
     "href": "api/Global.EventsManager.html",
     "title": "Class EventsManager | Czasoport Documentation",
-    "keywords": "Class EventsManager Namespace Global public class EventsManager : MonoBehaviour Inheritance object EventsManager Fields inputEvents public InputEvents inputEvents Field Value InputEvents playerEvents public PlayerEvents playerEvents Field Value PlayerEvents taskEvents public TaskEvents taskEvents Field Value TaskEvents Properties instance public static EventsManager instance { get; } Property Value EventsManager"
+    "keywords": "Class EventsManager Namespace Global public class EventsManager : MonoBehaviour Inheritance object EventsManager Fields inputEvents public InputEvents inputEvents Field Value InputEvents orderEvents public OrderEvents orderEvents Field Value OrderEvents orderManager public OrderManager orderManager Field Value OrderManager playerEvents public PlayerEvents playerEvents Field Value PlayerEvents taskEvents public TaskEvents taskEvents Field Value TaskEvents taskManager public TaskManager taskManager Field Value TaskManager Properties instance public static EventsManager instance { get; } Property Value EventsManager"
   },
   "api/Global.ExternalFunctions.html": {
     "href": "api/Global.ExternalFunctions.html",
     "title": "Class ExternalFunctions | Czasoport Documentation",
-    "keywords": "Class ExternalFunctions Namespace Global public class ExternalFunctions Inheritance object ExternalFunctions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Bind(Story, TaskManager) public void Bind(Story story, TaskManager taskManager) Parameters story Story taskManager TaskManager Unbind(Story) public void Unbind(Story story) Parameters story Story"
+    "keywords": "Class ExternalFunctions Namespace Global public class ExternalFunctions Inheritance object ExternalFunctions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Bind(Story) public void Bind(Story story) Parameters story Story Unbind(Story) public void Unbind(Story story) Parameters story Story"
   },
   "api/Global.GoExploringStep.html": {
     "href": "api/Global.GoExploringStep.html",
@@ -349,10 +359,40 @@
     "title": "Class InputManager | Czasoport Documentation",
     "keywords": "Class InputManager Namespace Global public class InputManager : MonoBehaviour Inheritance object InputManager Methods MovePressed(CallbackContext) public void MovePressed(InputAction.CallbackContext context) Parameters context CallbackContext SelectPressed(CallbackContext) public void SelectPressed(InputAction.CallbackContext context) Parameters context CallbackContext"
   },
+  "api/Global.Order.html": {
+    "href": "api/Global.Order.html",
+    "title": "Class Order | Czasoport Documentation",
+    "keywords": "Class Order Namespace Global public class Order Inheritance object Order Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors Order(string, string, string, List<OrderEntry>, int, int, int, int) public Order(string id, string clientName, string dueTo, List<OrderEntry> orders, int moneyReward, int moneyFine, int expReward, int expFine) Parameters id string clientName string dueTo string orders List<OrderEntry> moneyReward int moneyFine int expReward int expFine int Order(OrderDefinition) public Order(OrderDefinition orderInfo) Parameters orderInfo OrderDefinition Fields clientIcon public Sprite clientIcon Field Value Sprite clientName public string clientName Field Value string dueTo public string dueTo Field Value string expFine public int expFine Field Value int expReward public int expReward Field Value int id public string id Field Value string isRandom public bool isRandom Field Value bool moneyFine public int moneyFine Field Value int moneyReward public int moneyReward Field Value int orders public List<OrderEntry> orders Field Value List<OrderEntry> Methods FindPortraitByName(string) public Sprite FindPortraitByName(string name) Parameters name string Returns Sprite"
+  },
+  "api/Global.OrderEntry.html": {
+    "href": "api/Global.OrderEntry.html",
+    "title": "Class OrderEntry | Czasoport Documentation",
+    "keywords": "Class OrderEntry Namespace Global [Serializable] public class OrderEntry Inheritance object OrderEntry Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors OrderEntry(ItemDefinition, int) public OrderEntry(ItemDefinition item, int quantity) Parameters item ItemDefinition quantity int Fields item public ItemDefinition item Field Value ItemDefinition quantity public int quantity Field Value int"
+  },
+  "api/Global.OrderEvents.html": {
+    "href": "api/Global.OrderEvents.html",
+    "title": "Class OrderEvents | Czasoport Documentation",
+    "keywords": "Class OrderEvents Namespace Global public class OrderEvents Inheritance object OrderEvents Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods OrderFinish(string, bool) public void OrderFinish(string id, bool isPositive) Parameters id string isPositive bool OrderStart(Order) public void OrderStart(Order order) Parameters order Order Events onOrderFinish public event Action<string, bool> onOrderFinish Event Type Action<string, bool> onOrderStart public event Action<Order> onOrderStart Event Type Action<Order>"
+  },
+  "api/Global.OrderManager.html": {
+    "href": "api/Global.OrderManager.html",
+    "title": "Class OrderManager | Czasoport Documentation",
+    "keywords": "Class OrderManager Namespace Global public class OrderManager : MonoBehaviour, IDataPersistence Inheritance object OrderManager Implements IDataPersistence Fields lastGlobalID public int lastGlobalID Field Value int orderMap public Dictionary<string, Order> orderMap Field Value Dictionary<string, Order> Methods ClaimRewards(Order, bool) public void ClaimRewards(Order order, bool isPositive) Parameters order Order isPositive bool GetItemByName(string) public ItemDefinition GetItemByName(string name) Parameters name string Returns ItemDefinition GetOrderById(string) public Order GetOrderById(string id) Parameters id string Returns Order LoadPersistentData(GameData) public void LoadPersistentData(GameData gameData) Parameters gameData GameData SavePersistentData(ref GameData) public void SavePersistentData(ref GameData gameData) Parameters gameData GameData"
+  },
+  "api/Global.OrderStep.html": {
+    "href": "api/Global.OrderStep.html",
+    "title": "Class OrderStep | Czasoport Documentation",
+    "keywords": "Class OrderStep Namespace Global public class OrderStep : TaskStep Inheritance object TaskStep OrderStep Inherited Members TaskStep.InitTaskStep(string, int, string) TaskStep.FinishTaskStep() TaskStep.ChangeState(string, string) Methods SetTaskStepState(string) protected override void SetTaskStepState(string state) Parameters state string"
+  },
+  "api/Global.OrderUI.html": {
+    "href": "api/Global.OrderUI.html",
+    "title": "Class OrderUI | Czasoport Documentation",
+    "keywords": "Class OrderUI Namespace Global public class OrderUI : MonoBehaviour Inheritance object OrderUI Fields _desc public RectTransform _desc Field Value RectTransform _title public RectTransform _title Field Value RectTransform canvas public Canvas canvas Field Value Canvas client public TMP_Text client Field Value TMP_Text desc public TMP_Text desc Field Value TMP_Text dueTo public TMP_Text dueTo Field Value TMP_Text fine public TMP_Text fine Field Value TMP_Text portrait public Image portrait Field Value Image reward public TMP_Text reward Field Value TMP_Text title public TMP_Text title Field Value TMP_Text Methods SetOrderPanel(Order) public void SetOrderPanel(Order order) Parameters order Order"
+  },
   "api/Global.PhoneHandler.html": {
     "href": "api/Global.PhoneHandler.html",
     "title": "Class PhoneHandler | Czasoport Documentation",
-    "keywords": "Class PhoneHandler Namespace Global public class PhoneHandler : MonoBehaviour Inheritance object PhoneHandler Fields appsAnim public Animator appsAnim Field Value Animator bg public Image bg Field Value Image bgAnim public Animator bgAnim Field Value Animator phoneAnim public Animator phoneAnim Field Value Animator tasksAnim public Animator tasksAnim Field Value Animator Methods OnAppsDown() public void OnAppsDown() OnAppsUp() public void OnAppsUp() OnButtonDown() public void OnButtonDown() OnButtonUp() public void OnButtonUp() OnTasksDown() public void OnTasksDown() OnTasksUp() public void OnTasksUp()"
+    "keywords": "Class PhoneHandler Namespace Global public class PhoneHandler : MonoBehaviour Inheritance object PhoneHandler Fields appsAnim public Animator appsAnim Field Value Animator bg public Image bg Field Value Image bgAnim public Animator bgAnim Field Value Animator ordersAnim public Animator ordersAnim Field Value Animator phoneAnim public Animator phoneAnim Field Value Animator tasksAnim public Animator tasksAnim Field Value Animator Methods OnAppsDown() public void OnAppsDown() OnAppsUp() public void OnAppsUp() OnButtonDown() public void OnButtonDown() OnButtonUp() public void OnButtonUp() OnOrdersDown() public void OnOrdersDown() OnOrdersUp() public void OnOrdersUp() OnTasksDown() public void OnTasksDown() OnTasksUp() public void OnTasksUp()"
   },
   "api/Global.PlayerEvents.html": {
     "href": "api/Global.PlayerEvents.html",
@@ -397,7 +437,7 @@
   "api/Global.TaskStep.html": {
     "href": "api/Global.TaskStep.html",
     "title": "Class TaskStep | Czasoport Documentation",
-    "keywords": "Class TaskStep Namespace Global public abstract class TaskStep : MonoBehaviour Inheritance object TaskStep Derived GoExploringStep GoToTrashCanStep Methods ChangeState(string, string) protected void ChangeState(string newState, string newStatus) Parameters newState string newStatus string FinishTaskStep() protected void FinishTaskStep() InitTaskStep(string, int, string) public void InitTaskStep(string taskId, int stepIdx, string taskStepState) Parameters taskId string stepIdx int taskStepState string SetTaskStepState(string) protected abstract void SetTaskStepState(string state) Parameters state string"
+    "keywords": "Class TaskStep Namespace Global public abstract class TaskStep : MonoBehaviour Inheritance object TaskStep Derived GoExploringStep GoToTrashCanStep OrderStep Methods ChangeState(string, string) protected void ChangeState(string newState, string newStatus) Parameters newState string newStatus string FinishTaskStep() protected void FinishTaskStep() InitTaskStep(string, int, string) public void InitTaskStep(string taskId, int stepIdx, string taskStepState) Parameters taskId string stepIdx int taskStepState string SetTaskStepState(string) protected abstract void SetTaskStepState(string state) Parameters state string"
   },
   "api/Global.TaskStepState.html": {
     "href": "api/Global.TaskStepState.html",
@@ -422,7 +462,7 @@
   "api/Global.html": {
     "href": "api/Global.html",
     "title": "Namespace | Czasoport Documentation",
-    "keywords": "Namespace Classes DialogueTrigger DialogueVariables DiaryHandler EventsManager ExternalFunctions GoExploringStep GoToDorm GoToTown GoToTrashCanStep InputEvents InputManager PhoneHandler PlayerEvents PlayerManager Task TaskEntry TaskEvents TaskManager TaskPoint TaskStep TaskStepState TaskUI TasksUI UnityInkFileHandler Enums TaskState"
+    "keywords": "Namespace Classes DialogueTrigger DialogueVariables DiaryHandler EventsManager ExternalFunctions GoExploringStep GoToDorm GoToTown GoToTrashCanStep InputEvents InputManager Order OrderEntry OrderEvents OrderManager OrderStep OrderUI PhoneHandler PlayerEvents PlayerManager Task TaskEntry TaskEvents TaskManager TaskPoint TaskStep TaskStepState TaskUI TasksUI UnityInkFileHandler Enums TaskState"
   },
   "api/Ink.CharacterRange.html": {
     "href": "api/Ink.CharacterRange.html",
@@ -1489,6 +1529,11 @@
     "title": "Namespace Settings | Czasoport Documentation",
     "keywords": "Namespace Settings Classes AppSettingsDefinition DefaultSaveDataDefinition Default values for when the new game is created. DevSet DormSettingsDefinition TownSettingsDefinition"
   },
+  "api/TaskSystem.OrderDefinition.html": {
+    "href": "api/TaskSystem.OrderDefinition.html",
+    "title": "Class OrderDefinition | Czasoport Documentation",
+    "keywords": "Class OrderDefinition Namespace TaskSystem public class OrderDefinition : ScriptableObject Inheritance object OrderDefinition Fields clientIcon public Sprite clientIcon Field Value Sprite clientName public string clientName Field Value string dueTo public string dueTo Field Value string expFine public int expFine Field Value int expReward public int expReward Field Value int id public string id Field Value string moneyFine public int moneyFine Field Value int moneyReward public int moneyReward Field Value int orders public List<OrderEntry> orders Field Value List<OrderEntry>"
+  },
   "api/TaskSystem.TaskDefinition.html": {
     "href": "api/TaskSystem.TaskDefinition.html",
     "title": "Class TaskDefinition | Czasoport Documentation",
@@ -1502,7 +1547,7 @@
   "api/TaskSystem.html": {
     "href": "api/TaskSystem.html",
     "title": "Namespace TaskSystem | Czasoport Documentation",
-    "keywords": "Namespace TaskSystem Classes TaskDefinition Enums TaskType"
+    "keywords": "Namespace TaskSystem Classes OrderDefinition TaskDefinition Enums TaskType"
   },
   "api/Town.CameraFollowPlayerComponent.html": {
     "href": "api/Town.CameraFollowPlayerComponent.html",

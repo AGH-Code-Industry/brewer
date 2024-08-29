@@ -1419,6 +1419,18 @@ references:
   commentId: T:DataPersistence.Data.OrderData
   fullName: DataPersistence.Data.OrderData
   nameWithType: OrderData
+- uid: DataPersistence.Data.OrderData.orders
+  name: orders
+  href: api/DataPersistence.Data.OrderData.html#DataPersistence_Data_OrderData_orders
+  commentId: F:DataPersistence.Data.OrderData.orders
+  fullName: DataPersistence.Data.OrderData.orders
+  nameWithType: OrderData.orders
+- uid: DataPersistence.Data.OrderData.randomID
+  name: randomID
+  href: api/DataPersistence.Data.OrderData.html#DataPersistence_Data_OrderData_randomID
+  commentId: F:DataPersistence.Data.OrderData.randomID
+  fullName: DataPersistence.Data.OrderData.randomID
+  nameWithType: OrderData.randomID
 - uid: DataPersistence.Data.TaskData
   name: TaskData
   href: api/DataPersistence.Data.TaskData.html
@@ -1650,6 +1662,122 @@ references:
   commentId: F:DataPersistence.HelperStructures.InventoryEntry.quantity
   fullName: DataPersistence.HelperStructures.InventoryEntry.quantity
   nameWithType: InventoryEntry.quantity
+- uid: DataPersistence.HelperStructures.OrderEntrySave
+  name: OrderEntrySave
+  href: api/DataPersistence.HelperStructures.OrderEntrySave.html
+  commentId: T:DataPersistence.HelperStructures.OrderEntrySave
+  fullName: DataPersistence.HelperStructures.OrderEntrySave
+  nameWithType: OrderEntrySave
+- uid: DataPersistence.HelperStructures.OrderEntrySave.#ctor(System.String,System.Int32)
+  name: OrderEntrySave(string, int)
+  href: api/DataPersistence.HelperStructures.OrderEntrySave.html#DataPersistence_HelperStructures_OrderEntrySave__ctor_System_String_System_Int32_
+  commentId: M:DataPersistence.HelperStructures.OrderEntrySave.#ctor(System.String,System.Int32)
+  name.vb: New(String, Integer)
+  fullName: DataPersistence.HelperStructures.OrderEntrySave.OrderEntrySave(string, int)
+  fullName.vb: DataPersistence.HelperStructures.OrderEntrySave.New(String, Integer)
+  nameWithType: OrderEntrySave.OrderEntrySave(string, int)
+  nameWithType.vb: OrderEntrySave.New(String, Integer)
+- uid: DataPersistence.HelperStructures.OrderEntrySave.#ctor*
+  name: OrderEntrySave
+  href: api/DataPersistence.HelperStructures.OrderEntrySave.html#DataPersistence_HelperStructures_OrderEntrySave__ctor_
+  commentId: Overload:DataPersistence.HelperStructures.OrderEntrySave.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DataPersistence.HelperStructures.OrderEntrySave.OrderEntrySave
+  fullName.vb: DataPersistence.HelperStructures.OrderEntrySave.New
+  nameWithType: OrderEntrySave.OrderEntrySave
+  nameWithType.vb: OrderEntrySave.New
+- uid: DataPersistence.HelperStructures.OrderEntrySave.item
+  name: item
+  href: api/DataPersistence.HelperStructures.OrderEntrySave.html#DataPersistence_HelperStructures_OrderEntrySave_item
+  commentId: F:DataPersistence.HelperStructures.OrderEntrySave.item
+  fullName: DataPersistence.HelperStructures.OrderEntrySave.item
+  nameWithType: OrderEntrySave.item
+- uid: DataPersistence.HelperStructures.OrderEntrySave.quantity
+  name: quantity
+  href: api/DataPersistence.HelperStructures.OrderEntrySave.html#DataPersistence_HelperStructures_OrderEntrySave_quantity
+  commentId: F:DataPersistence.HelperStructures.OrderEntrySave.quantity
+  fullName: DataPersistence.HelperStructures.OrderEntrySave.quantity
+  nameWithType: OrderEntrySave.quantity
+- uid: DataPersistence.HelperStructures.OrderSave
+  name: OrderSave
+  href: api/DataPersistence.HelperStructures.OrderSave.html
+  commentId: T:DataPersistence.HelperStructures.OrderSave
+  fullName: DataPersistence.HelperStructures.OrderSave
+  nameWithType: OrderSave
+- uid: DataPersistence.HelperStructures.OrderSave.#ctor(System.String,System.Boolean,System.String,System.String,System.Collections.Generic.List{DataPersistence.HelperStructures.OrderEntrySave},System.Int32,System.Int32,System.Int32,System.Int32)
+  name: OrderSave(string, bool, string, string, List<OrderEntrySave>, int, int, int, int)
+  href: api/DataPersistence.HelperStructures.OrderSave.html#DataPersistence_HelperStructures_OrderSave__ctor_System_String_System_Boolean_System_String_System_String_System_Collections_Generic_List_DataPersistence_HelperStructures_OrderEntrySave__System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:DataPersistence.HelperStructures.OrderSave.#ctor(System.String,System.Boolean,System.String,System.String,System.Collections.Generic.List{DataPersistence.HelperStructures.OrderEntrySave},System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: New(String, Boolean, String, String, List(Of OrderEntrySave), Integer, Integer, Integer, Integer)
+  fullName: DataPersistence.HelperStructures.OrderSave.OrderSave(string, bool, string, string, System.Collections.Generic.List<DataPersistence.HelperStructures.OrderEntrySave>, int, int, int, int)
+  fullName.vb: DataPersistence.HelperStructures.OrderSave.New(String, Boolean, String, String, System.Collections.Generic.List(Of DataPersistence.HelperStructures.OrderEntrySave), Integer, Integer, Integer, Integer)
+  nameWithType: OrderSave.OrderSave(string, bool, string, string, List<OrderEntrySave>, int, int, int, int)
+  nameWithType.vb: OrderSave.New(String, Boolean, String, String, List(Of OrderEntrySave), Integer, Integer, Integer, Integer)
+- uid: DataPersistence.HelperStructures.OrderSave.#ctor*
+  name: OrderSave
+  href: api/DataPersistence.HelperStructures.OrderSave.html#DataPersistence_HelperStructures_OrderSave__ctor_
+  commentId: Overload:DataPersistence.HelperStructures.OrderSave.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: DataPersistence.HelperStructures.OrderSave.OrderSave
+  fullName.vb: DataPersistence.HelperStructures.OrderSave.New
+  nameWithType: OrderSave.OrderSave
+  nameWithType.vb: OrderSave.New
+- uid: DataPersistence.HelperStructures.OrderSave.clientName
+  name: clientName
+  href: api/DataPersistence.HelperStructures.OrderSave.html#DataPersistence_HelperStructures_OrderSave_clientName
+  commentId: F:DataPersistence.HelperStructures.OrderSave.clientName
+  fullName: DataPersistence.HelperStructures.OrderSave.clientName
+  nameWithType: OrderSave.clientName
+- uid: DataPersistence.HelperStructures.OrderSave.dueTo
+  name: dueTo
+  href: api/DataPersistence.HelperStructures.OrderSave.html#DataPersistence_HelperStructures_OrderSave_dueTo
+  commentId: F:DataPersistence.HelperStructures.OrderSave.dueTo
+  fullName: DataPersistence.HelperStructures.OrderSave.dueTo
+  nameWithType: OrderSave.dueTo
+- uid: DataPersistence.HelperStructures.OrderSave.expFine
+  name: expFine
+  href: api/DataPersistence.HelperStructures.OrderSave.html#DataPersistence_HelperStructures_OrderSave_expFine
+  commentId: F:DataPersistence.HelperStructures.OrderSave.expFine
+  fullName: DataPersistence.HelperStructures.OrderSave.expFine
+  nameWithType: OrderSave.expFine
+- uid: DataPersistence.HelperStructures.OrderSave.expReward
+  name: expReward
+  href: api/DataPersistence.HelperStructures.OrderSave.html#DataPersistence_HelperStructures_OrderSave_expReward
+  commentId: F:DataPersistence.HelperStructures.OrderSave.expReward
+  fullName: DataPersistence.HelperStructures.OrderSave.expReward
+  nameWithType: OrderSave.expReward
+- uid: DataPersistence.HelperStructures.OrderSave.id
+  name: id
+  href: api/DataPersistence.HelperStructures.OrderSave.html#DataPersistence_HelperStructures_OrderSave_id
+  commentId: F:DataPersistence.HelperStructures.OrderSave.id
+  fullName: DataPersistence.HelperStructures.OrderSave.id
+  nameWithType: OrderSave.id
+- uid: DataPersistence.HelperStructures.OrderSave.isRandom
+  name: isRandom
+  href: api/DataPersistence.HelperStructures.OrderSave.html#DataPersistence_HelperStructures_OrderSave_isRandom
+  commentId: F:DataPersistence.HelperStructures.OrderSave.isRandom
+  fullName: DataPersistence.HelperStructures.OrderSave.isRandom
+  nameWithType: OrderSave.isRandom
+- uid: DataPersistence.HelperStructures.OrderSave.moneyFine
+  name: moneyFine
+  href: api/DataPersistence.HelperStructures.OrderSave.html#DataPersistence_HelperStructures_OrderSave_moneyFine
+  commentId: F:DataPersistence.HelperStructures.OrderSave.moneyFine
+  fullName: DataPersistence.HelperStructures.OrderSave.moneyFine
+  nameWithType: OrderSave.moneyFine
+- uid: DataPersistence.HelperStructures.OrderSave.moneyReward
+  name: moneyReward
+  href: api/DataPersistence.HelperStructures.OrderSave.html#DataPersistence_HelperStructures_OrderSave_moneyReward
+  commentId: F:DataPersistence.HelperStructures.OrderSave.moneyReward
+  fullName: DataPersistence.HelperStructures.OrderSave.moneyReward
+  nameWithType: OrderSave.moneyReward
+- uid: DataPersistence.HelperStructures.OrderSave.orders
+  name: orders
+  href: api/DataPersistence.HelperStructures.OrderSave.html#DataPersistence_HelperStructures_OrderSave_orders
+  commentId: F:DataPersistence.HelperStructures.OrderSave.orders
+  fullName: DataPersistence.HelperStructures.OrderSave.orders
+  nameWithType: OrderSave.orders
 - uid: DataPersistence.IDataPersistence
   name: IDataPersistence
   href: api/DataPersistence.IDataPersistence.html
@@ -2948,6 +3076,18 @@ references:
   isSpec: "True"
   fullName: EventsManager.instance
   nameWithType: EventsManager.instance
+- uid: Global.EventsManager.orderEvents
+  name: orderEvents
+  href: api/Global.EventsManager.html#Global_EventsManager_orderEvents
+  commentId: F:Global.EventsManager.orderEvents
+  fullName: EventsManager.orderEvents
+  nameWithType: EventsManager.orderEvents
+- uid: Global.EventsManager.orderManager
+  name: orderManager
+  href: api/Global.EventsManager.html#Global_EventsManager_orderManager
+  commentId: F:Global.EventsManager.orderManager
+  fullName: EventsManager.orderManager
+  nameWithType: EventsManager.orderManager
 - uid: Global.EventsManager.playerEvents
   name: playerEvents
   href: api/Global.EventsManager.html#Global_EventsManager_playerEvents
@@ -2960,18 +3100,24 @@ references:
   commentId: F:Global.EventsManager.taskEvents
   fullName: EventsManager.taskEvents
   nameWithType: EventsManager.taskEvents
+- uid: Global.EventsManager.taskManager
+  name: taskManager
+  href: api/Global.EventsManager.html#Global_EventsManager_taskManager
+  commentId: F:Global.EventsManager.taskManager
+  fullName: EventsManager.taskManager
+  nameWithType: EventsManager.taskManager
 - uid: Global.ExternalFunctions
   name: ExternalFunctions
   href: api/Global.ExternalFunctions.html
   commentId: T:Global.ExternalFunctions
   fullName: ExternalFunctions
   nameWithType: ExternalFunctions
-- uid: Global.ExternalFunctions.Bind(Ink.Runtime.Story,TaskManager)
-  name: Bind(Story, TaskManager)
-  href: api/Global.ExternalFunctions.html#Global_ExternalFunctions_Bind_Ink_Runtime_Story_TaskManager_
-  commentId: M:Global.ExternalFunctions.Bind(Ink.Runtime.Story,TaskManager)
-  fullName: ExternalFunctions.Bind(Ink.Runtime.Story, TaskManager)
-  nameWithType: ExternalFunctions.Bind(Story, TaskManager)
+- uid: Global.ExternalFunctions.Bind(Ink.Runtime.Story)
+  name: Bind(Story)
+  href: api/Global.ExternalFunctions.html#Global_ExternalFunctions_Bind_Ink_Runtime_Story_
+  commentId: M:Global.ExternalFunctions.Bind(Ink.Runtime.Story)
+  fullName: ExternalFunctions.Bind(Ink.Runtime.Story)
+  nameWithType: ExternalFunctions.Bind(Story)
 - uid: Global.ExternalFunctions.Bind*
   name: Bind
   href: api/Global.ExternalFunctions.html#Global_ExternalFunctions_Bind_
@@ -3150,6 +3296,396 @@ references:
   isSpec: "True"
   fullName: InputManager.SelectPressed
   nameWithType: InputManager.SelectPressed
+- uid: Global.Order
+  name: Order
+  href: api/Global.Order.html
+  commentId: T:Global.Order
+  fullName: Order
+  nameWithType: Order
+- uid: Global.Order.#ctor(System.String,System.String,System.String,System.Collections.Generic.List{OrderEntry},System.Int32,System.Int32,System.Int32,System.Int32)
+  name: Order(string, string, string, List<OrderEntry>, int, int, int, int)
+  href: api/Global.Order.html#Global_Order__ctor_System_String_System_String_System_String_System_Collections_Generic_List_OrderEntry__System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Global.Order.#ctor(System.String,System.String,System.String,System.Collections.Generic.List{OrderEntry},System.Int32,System.Int32,System.Int32,System.Int32)
+  name.vb: New(String, String, String, List(Of OrderEntry), Integer, Integer, Integer, Integer)
+  fullName: Order.Order(string, string, string, System.Collections.Generic.List<OrderEntry>, int, int, int, int)
+  fullName.vb: Order.New(String, String, String, System.Collections.Generic.List(Of OrderEntry), Integer, Integer, Integer, Integer)
+  nameWithType: Order.Order(string, string, string, List<OrderEntry>, int, int, int, int)
+  nameWithType.vb: Order.New(String, String, String, List(Of OrderEntry), Integer, Integer, Integer, Integer)
+- uid: Global.Order.#ctor(TaskSystem.OrderDefinition)
+  name: Order(OrderDefinition)
+  href: api/Global.Order.html#Global_Order__ctor_TaskSystem_OrderDefinition_
+  commentId: M:Global.Order.#ctor(TaskSystem.OrderDefinition)
+  name.vb: New(OrderDefinition)
+  fullName: Order.Order(TaskSystem.OrderDefinition)
+  fullName.vb: Order.New(TaskSystem.OrderDefinition)
+  nameWithType: Order.Order(OrderDefinition)
+  nameWithType.vb: Order.New(OrderDefinition)
+- uid: Global.Order.#ctor*
+  name: Order
+  href: api/Global.Order.html#Global_Order__ctor_
+  commentId: Overload:Global.Order.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Order.Order
+  fullName.vb: Order.New
+  nameWithType: Order.Order
+  nameWithType.vb: Order.New
+- uid: Global.Order.FindPortraitByName(System.String)
+  name: FindPortraitByName(string)
+  href: api/Global.Order.html#Global_Order_FindPortraitByName_System_String_
+  commentId: M:Global.Order.FindPortraitByName(System.String)
+  name.vb: FindPortraitByName(String)
+  fullName: Order.FindPortraitByName(string)
+  fullName.vb: Order.FindPortraitByName(String)
+  nameWithType: Order.FindPortraitByName(string)
+  nameWithType.vb: Order.FindPortraitByName(String)
+- uid: Global.Order.FindPortraitByName*
+  name: FindPortraitByName
+  href: api/Global.Order.html#Global_Order_FindPortraitByName_
+  commentId: Overload:Global.Order.FindPortraitByName
+  isSpec: "True"
+  fullName: Order.FindPortraitByName
+  nameWithType: Order.FindPortraitByName
+- uid: Global.Order.clientIcon
+  name: clientIcon
+  href: api/Global.Order.html#Global_Order_clientIcon
+  commentId: F:Global.Order.clientIcon
+  fullName: Order.clientIcon
+  nameWithType: Order.clientIcon
+- uid: Global.Order.clientName
+  name: clientName
+  href: api/Global.Order.html#Global_Order_clientName
+  commentId: F:Global.Order.clientName
+  fullName: Order.clientName
+  nameWithType: Order.clientName
+- uid: Global.Order.dueTo
+  name: dueTo
+  href: api/Global.Order.html#Global_Order_dueTo
+  commentId: F:Global.Order.dueTo
+  fullName: Order.dueTo
+  nameWithType: Order.dueTo
+- uid: Global.Order.expFine
+  name: expFine
+  href: api/Global.Order.html#Global_Order_expFine
+  commentId: F:Global.Order.expFine
+  fullName: Order.expFine
+  nameWithType: Order.expFine
+- uid: Global.Order.expReward
+  name: expReward
+  href: api/Global.Order.html#Global_Order_expReward
+  commentId: F:Global.Order.expReward
+  fullName: Order.expReward
+  nameWithType: Order.expReward
+- uid: Global.Order.id
+  name: id
+  href: api/Global.Order.html#Global_Order_id
+  commentId: F:Global.Order.id
+  fullName: Order.id
+  nameWithType: Order.id
+- uid: Global.Order.isRandom
+  name: isRandom
+  href: api/Global.Order.html#Global_Order_isRandom
+  commentId: F:Global.Order.isRandom
+  fullName: Order.isRandom
+  nameWithType: Order.isRandom
+- uid: Global.Order.moneyFine
+  name: moneyFine
+  href: api/Global.Order.html#Global_Order_moneyFine
+  commentId: F:Global.Order.moneyFine
+  fullName: Order.moneyFine
+  nameWithType: Order.moneyFine
+- uid: Global.Order.moneyReward
+  name: moneyReward
+  href: api/Global.Order.html#Global_Order_moneyReward
+  commentId: F:Global.Order.moneyReward
+  fullName: Order.moneyReward
+  nameWithType: Order.moneyReward
+- uid: Global.Order.orders
+  name: orders
+  href: api/Global.Order.html#Global_Order_orders
+  commentId: F:Global.Order.orders
+  fullName: Order.orders
+  nameWithType: Order.orders
+- uid: Global.OrderEntry
+  name: OrderEntry
+  href: api/Global.OrderEntry.html
+  commentId: T:Global.OrderEntry
+  fullName: OrderEntry
+  nameWithType: OrderEntry
+- uid: Global.OrderEntry.#ctor(Items.ItemDefinition,System.Int32)
+  name: OrderEntry(ItemDefinition, int)
+  href: api/Global.OrderEntry.html#Global_OrderEntry__ctor_Items_ItemDefinition_System_Int32_
+  commentId: M:Global.OrderEntry.#ctor(Items.ItemDefinition,System.Int32)
+  name.vb: New(ItemDefinition, Integer)
+  fullName: OrderEntry.OrderEntry(Items.ItemDefinition, int)
+  fullName.vb: OrderEntry.New(Items.ItemDefinition, Integer)
+  nameWithType: OrderEntry.OrderEntry(ItemDefinition, int)
+  nameWithType.vb: OrderEntry.New(ItemDefinition, Integer)
+- uid: Global.OrderEntry.#ctor*
+  name: OrderEntry
+  href: api/Global.OrderEntry.html#Global_OrderEntry__ctor_
+  commentId: Overload:Global.OrderEntry.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: OrderEntry.OrderEntry
+  fullName.vb: OrderEntry.New
+  nameWithType: OrderEntry.OrderEntry
+  nameWithType.vb: OrderEntry.New
+- uid: Global.OrderEntry.item
+  name: item
+  href: api/Global.OrderEntry.html#Global_OrderEntry_item
+  commentId: F:Global.OrderEntry.item
+  fullName: OrderEntry.item
+  nameWithType: OrderEntry.item
+- uid: Global.OrderEntry.quantity
+  name: quantity
+  href: api/Global.OrderEntry.html#Global_OrderEntry_quantity
+  commentId: F:Global.OrderEntry.quantity
+  fullName: OrderEntry.quantity
+  nameWithType: OrderEntry.quantity
+- uid: Global.OrderEvents
+  name: OrderEvents
+  href: api/Global.OrderEvents.html
+  commentId: T:Global.OrderEvents
+  fullName: OrderEvents
+  nameWithType: OrderEvents
+- uid: Global.OrderEvents.OrderFinish(System.String,System.Boolean)
+  name: OrderFinish(string, bool)
+  href: api/Global.OrderEvents.html#Global_OrderEvents_OrderFinish_System_String_System_Boolean_
+  commentId: M:Global.OrderEvents.OrderFinish(System.String,System.Boolean)
+  name.vb: OrderFinish(String, Boolean)
+  fullName: OrderEvents.OrderFinish(string, bool)
+  fullName.vb: OrderEvents.OrderFinish(String, Boolean)
+  nameWithType: OrderEvents.OrderFinish(string, bool)
+  nameWithType.vb: OrderEvents.OrderFinish(String, Boolean)
+- uid: Global.OrderEvents.OrderFinish*
+  name: OrderFinish
+  href: api/Global.OrderEvents.html#Global_OrderEvents_OrderFinish_
+  commentId: Overload:Global.OrderEvents.OrderFinish
+  isSpec: "True"
+  fullName: OrderEvents.OrderFinish
+  nameWithType: OrderEvents.OrderFinish
+- uid: Global.OrderEvents.OrderStart(Order)
+  name: OrderStart(Order)
+  href: api/Global.OrderEvents.html#Global_OrderEvents_OrderStart_Order_
+  commentId: M:Global.OrderEvents.OrderStart(Order)
+  fullName: OrderEvents.OrderStart(Order)
+  nameWithType: OrderEvents.OrderStart(Order)
+- uid: Global.OrderEvents.OrderStart*
+  name: OrderStart
+  href: api/Global.OrderEvents.html#Global_OrderEvents_OrderStart_
+  commentId: Overload:Global.OrderEvents.OrderStart
+  isSpec: "True"
+  fullName: OrderEvents.OrderStart
+  nameWithType: OrderEvents.OrderStart
+- uid: Global.OrderEvents.onOrderFinish
+  name: onOrderFinish
+  href: api/Global.OrderEvents.html#Global_OrderEvents_onOrderFinish
+  commentId: E:Global.OrderEvents.onOrderFinish
+  fullName: OrderEvents.onOrderFinish
+  nameWithType: OrderEvents.onOrderFinish
+- uid: Global.OrderEvents.onOrderStart
+  name: onOrderStart
+  href: api/Global.OrderEvents.html#Global_OrderEvents_onOrderStart
+  commentId: E:Global.OrderEvents.onOrderStart
+  fullName: OrderEvents.onOrderStart
+  nameWithType: OrderEvents.onOrderStart
+- uid: Global.OrderManager
+  name: OrderManager
+  href: api/Global.OrderManager.html
+  commentId: T:Global.OrderManager
+  fullName: OrderManager
+  nameWithType: OrderManager
+- uid: Global.OrderManager.ClaimRewards(Order,System.Boolean)
+  name: ClaimRewards(Order, bool)
+  href: api/Global.OrderManager.html#Global_OrderManager_ClaimRewards_Order_System_Boolean_
+  commentId: M:Global.OrderManager.ClaimRewards(Order,System.Boolean)
+  name.vb: ClaimRewards(Order, Boolean)
+  fullName: OrderManager.ClaimRewards(Order, bool)
+  fullName.vb: OrderManager.ClaimRewards(Order, Boolean)
+  nameWithType: OrderManager.ClaimRewards(Order, bool)
+  nameWithType.vb: OrderManager.ClaimRewards(Order, Boolean)
+- uid: Global.OrderManager.ClaimRewards*
+  name: ClaimRewards
+  href: api/Global.OrderManager.html#Global_OrderManager_ClaimRewards_
+  commentId: Overload:Global.OrderManager.ClaimRewards
+  isSpec: "True"
+  fullName: OrderManager.ClaimRewards
+  nameWithType: OrderManager.ClaimRewards
+- uid: Global.OrderManager.GetItemByName(System.String)
+  name: GetItemByName(string)
+  href: api/Global.OrderManager.html#Global_OrderManager_GetItemByName_System_String_
+  commentId: M:Global.OrderManager.GetItemByName(System.String)
+  name.vb: GetItemByName(String)
+  fullName: OrderManager.GetItemByName(string)
+  fullName.vb: OrderManager.GetItemByName(String)
+  nameWithType: OrderManager.GetItemByName(string)
+  nameWithType.vb: OrderManager.GetItemByName(String)
+- uid: Global.OrderManager.GetItemByName*
+  name: GetItemByName
+  href: api/Global.OrderManager.html#Global_OrderManager_GetItemByName_
+  commentId: Overload:Global.OrderManager.GetItemByName
+  isSpec: "True"
+  fullName: OrderManager.GetItemByName
+  nameWithType: OrderManager.GetItemByName
+- uid: Global.OrderManager.GetOrderById(System.String)
+  name: GetOrderById(string)
+  href: api/Global.OrderManager.html#Global_OrderManager_GetOrderById_System_String_
+  commentId: M:Global.OrderManager.GetOrderById(System.String)
+  name.vb: GetOrderById(String)
+  fullName: OrderManager.GetOrderById(string)
+  fullName.vb: OrderManager.GetOrderById(String)
+  nameWithType: OrderManager.GetOrderById(string)
+  nameWithType.vb: OrderManager.GetOrderById(String)
+- uid: Global.OrderManager.GetOrderById*
+  name: GetOrderById
+  href: api/Global.OrderManager.html#Global_OrderManager_GetOrderById_
+  commentId: Overload:Global.OrderManager.GetOrderById
+  isSpec: "True"
+  fullName: OrderManager.GetOrderById
+  nameWithType: OrderManager.GetOrderById
+- uid: Global.OrderManager.LoadPersistentData(DataPersistence.Data.GameData)
+  name: LoadPersistentData(GameData)
+  href: api/Global.OrderManager.html#Global_OrderManager_LoadPersistentData_DataPersistence_Data_GameData_
+  commentId: M:Global.OrderManager.LoadPersistentData(DataPersistence.Data.GameData)
+  fullName: OrderManager.LoadPersistentData(DataPersistence.Data.GameData)
+  nameWithType: OrderManager.LoadPersistentData(GameData)
+- uid: Global.OrderManager.LoadPersistentData*
+  name: LoadPersistentData
+  href: api/Global.OrderManager.html#Global_OrderManager_LoadPersistentData_
+  commentId: Overload:Global.OrderManager.LoadPersistentData
+  isSpec: "True"
+  fullName: OrderManager.LoadPersistentData
+  nameWithType: OrderManager.LoadPersistentData
+- uid: Global.OrderManager.SavePersistentData(DataPersistence.Data.GameData@)
+  name: SavePersistentData(ref GameData)
+  href: api/Global.OrderManager.html#Global_OrderManager_SavePersistentData_DataPersistence_Data_GameData__
+  commentId: M:Global.OrderManager.SavePersistentData(DataPersistence.Data.GameData@)
+  name.vb: SavePersistentData(GameData)
+  fullName: OrderManager.SavePersistentData(ref DataPersistence.Data.GameData)
+  fullName.vb: OrderManager.SavePersistentData(DataPersistence.Data.GameData)
+  nameWithType: OrderManager.SavePersistentData(ref GameData)
+  nameWithType.vb: OrderManager.SavePersistentData(GameData)
+- uid: Global.OrderManager.SavePersistentData*
+  name: SavePersistentData
+  href: api/Global.OrderManager.html#Global_OrderManager_SavePersistentData_
+  commentId: Overload:Global.OrderManager.SavePersistentData
+  isSpec: "True"
+  fullName: OrderManager.SavePersistentData
+  nameWithType: OrderManager.SavePersistentData
+- uid: Global.OrderManager.lastGlobalID
+  name: lastGlobalID
+  href: api/Global.OrderManager.html#Global_OrderManager_lastGlobalID
+  commentId: F:Global.OrderManager.lastGlobalID
+  fullName: OrderManager.lastGlobalID
+  nameWithType: OrderManager.lastGlobalID
+- uid: Global.OrderManager.orderMap
+  name: orderMap
+  href: api/Global.OrderManager.html#Global_OrderManager_orderMap
+  commentId: F:Global.OrderManager.orderMap
+  fullName: OrderManager.orderMap
+  nameWithType: OrderManager.orderMap
+- uid: Global.OrderStep
+  name: OrderStep
+  href: api/Global.OrderStep.html
+  commentId: T:Global.OrderStep
+  fullName: OrderStep
+  nameWithType: OrderStep
+- uid: Global.OrderStep.SetTaskStepState(System.String)
+  name: SetTaskStepState(string)
+  href: api/Global.OrderStep.html#Global_OrderStep_SetTaskStepState_System_String_
+  commentId: M:Global.OrderStep.SetTaskStepState(System.String)
+  name.vb: SetTaskStepState(String)
+  fullName: OrderStep.SetTaskStepState(string)
+  fullName.vb: OrderStep.SetTaskStepState(String)
+  nameWithType: OrderStep.SetTaskStepState(string)
+  nameWithType.vb: OrderStep.SetTaskStepState(String)
+- uid: Global.OrderStep.SetTaskStepState*
+  name: SetTaskStepState
+  href: api/Global.OrderStep.html#Global_OrderStep_SetTaskStepState_
+  commentId: Overload:Global.OrderStep.SetTaskStepState
+  isSpec: "True"
+  fullName: OrderStep.SetTaskStepState
+  nameWithType: OrderStep.SetTaskStepState
+- uid: Global.OrderUI
+  name: OrderUI
+  href: api/Global.OrderUI.html
+  commentId: T:Global.OrderUI
+  fullName: OrderUI
+  nameWithType: OrderUI
+- uid: Global.OrderUI.SetOrderPanel(Order)
+  name: SetOrderPanel(Order)
+  href: api/Global.OrderUI.html#Global_OrderUI_SetOrderPanel_Order_
+  commentId: M:Global.OrderUI.SetOrderPanel(Order)
+  fullName: OrderUI.SetOrderPanel(Order)
+  nameWithType: OrderUI.SetOrderPanel(Order)
+- uid: Global.OrderUI.SetOrderPanel*
+  name: SetOrderPanel
+  href: api/Global.OrderUI.html#Global_OrderUI_SetOrderPanel_
+  commentId: Overload:Global.OrderUI.SetOrderPanel
+  isSpec: "True"
+  fullName: OrderUI.SetOrderPanel
+  nameWithType: OrderUI.SetOrderPanel
+- uid: Global.OrderUI._desc
+  name: _desc
+  href: api/Global.OrderUI.html#Global_OrderUI__desc
+  commentId: F:Global.OrderUI._desc
+  fullName: OrderUI._desc
+  nameWithType: OrderUI._desc
+- uid: Global.OrderUI._title
+  name: _title
+  href: api/Global.OrderUI.html#Global_OrderUI__title
+  commentId: F:Global.OrderUI._title
+  fullName: OrderUI._title
+  nameWithType: OrderUI._title
+- uid: Global.OrderUI.canvas
+  name: canvas
+  href: api/Global.OrderUI.html#Global_OrderUI_canvas
+  commentId: F:Global.OrderUI.canvas
+  fullName: OrderUI.canvas
+  nameWithType: OrderUI.canvas
+- uid: Global.OrderUI.client
+  name: client
+  href: api/Global.OrderUI.html#Global_OrderUI_client
+  commentId: F:Global.OrderUI.client
+  fullName: OrderUI.client
+  nameWithType: OrderUI.client
+- uid: Global.OrderUI.desc
+  name: desc
+  href: api/Global.OrderUI.html#Global_OrderUI_desc
+  commentId: F:Global.OrderUI.desc
+  fullName: OrderUI.desc
+  nameWithType: OrderUI.desc
+- uid: Global.OrderUI.dueTo
+  name: dueTo
+  href: api/Global.OrderUI.html#Global_OrderUI_dueTo
+  commentId: F:Global.OrderUI.dueTo
+  fullName: OrderUI.dueTo
+  nameWithType: OrderUI.dueTo
+- uid: Global.OrderUI.fine
+  name: fine
+  href: api/Global.OrderUI.html#Global_OrderUI_fine
+  commentId: F:Global.OrderUI.fine
+  fullName: OrderUI.fine
+  nameWithType: OrderUI.fine
+- uid: Global.OrderUI.portrait
+  name: portrait
+  href: api/Global.OrderUI.html#Global_OrderUI_portrait
+  commentId: F:Global.OrderUI.portrait
+  fullName: OrderUI.portrait
+  nameWithType: OrderUI.portrait
+- uid: Global.OrderUI.reward
+  name: reward
+  href: api/Global.OrderUI.html#Global_OrderUI_reward
+  commentId: F:Global.OrderUI.reward
+  fullName: OrderUI.reward
+  nameWithType: OrderUI.reward
+- uid: Global.OrderUI.title
+  name: title
+  href: api/Global.OrderUI.html#Global_OrderUI_title
+  commentId: F:Global.OrderUI.title
+  fullName: OrderUI.title
+  nameWithType: OrderUI.title
 - uid: Global.PhoneHandler
   name: PhoneHandler
   href: api/Global.PhoneHandler.html
@@ -3208,6 +3744,32 @@ references:
   isSpec: "True"
   fullName: PhoneHandler.OnButtonUp
   nameWithType: PhoneHandler.OnButtonUp
+- uid: Global.PhoneHandler.OnOrdersDown
+  name: OnOrdersDown()
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnOrdersDown
+  commentId: M:Global.PhoneHandler.OnOrdersDown
+  fullName: PhoneHandler.OnOrdersDown()
+  nameWithType: PhoneHandler.OnOrdersDown()
+- uid: Global.PhoneHandler.OnOrdersDown*
+  name: OnOrdersDown
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnOrdersDown_
+  commentId: Overload:Global.PhoneHandler.OnOrdersDown
+  isSpec: "True"
+  fullName: PhoneHandler.OnOrdersDown
+  nameWithType: PhoneHandler.OnOrdersDown
+- uid: Global.PhoneHandler.OnOrdersUp
+  name: OnOrdersUp()
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnOrdersUp
+  commentId: M:Global.PhoneHandler.OnOrdersUp
+  fullName: PhoneHandler.OnOrdersUp()
+  nameWithType: PhoneHandler.OnOrdersUp()
+- uid: Global.PhoneHandler.OnOrdersUp*
+  name: OnOrdersUp
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnOrdersUp_
+  commentId: Overload:Global.PhoneHandler.OnOrdersUp
+  isSpec: "True"
+  fullName: PhoneHandler.OnOrdersUp
+  nameWithType: PhoneHandler.OnOrdersUp
 - uid: Global.PhoneHandler.OnTasksDown
   name: OnTasksDown()
   href: api/Global.PhoneHandler.html#Global_PhoneHandler_OnTasksDown
@@ -3252,6 +3814,12 @@ references:
   commentId: F:Global.PhoneHandler.bgAnim
   fullName: PhoneHandler.bgAnim
   nameWithType: PhoneHandler.bgAnim
+- uid: Global.PhoneHandler.ordersAnim
+  name: ordersAnim
+  href: api/Global.PhoneHandler.html#Global_PhoneHandler_ordersAnim
+  commentId: F:Global.PhoneHandler.ordersAnim
+  fullName: PhoneHandler.ordersAnim
+  nameWithType: PhoneHandler.ordersAnim
 - uid: Global.PhoneHandler.phoneAnim
   name: phoneAnim
   href: api/Global.PhoneHandler.html#Global_PhoneHandler_phoneAnim
@@ -24735,6 +25303,66 @@ references:
   commentId: N:TaskSystem
   fullName: TaskSystem
   nameWithType: TaskSystem
+- uid: TaskSystem.OrderDefinition
+  name: OrderDefinition
+  href: api/TaskSystem.OrderDefinition.html
+  commentId: T:TaskSystem.OrderDefinition
+  fullName: TaskSystem.OrderDefinition
+  nameWithType: OrderDefinition
+- uid: TaskSystem.OrderDefinition.clientIcon
+  name: clientIcon
+  href: api/TaskSystem.OrderDefinition.html#TaskSystem_OrderDefinition_clientIcon
+  commentId: F:TaskSystem.OrderDefinition.clientIcon
+  fullName: TaskSystem.OrderDefinition.clientIcon
+  nameWithType: OrderDefinition.clientIcon
+- uid: TaskSystem.OrderDefinition.clientName
+  name: clientName
+  href: api/TaskSystem.OrderDefinition.html#TaskSystem_OrderDefinition_clientName
+  commentId: F:TaskSystem.OrderDefinition.clientName
+  fullName: TaskSystem.OrderDefinition.clientName
+  nameWithType: OrderDefinition.clientName
+- uid: TaskSystem.OrderDefinition.dueTo
+  name: dueTo
+  href: api/TaskSystem.OrderDefinition.html#TaskSystem_OrderDefinition_dueTo
+  commentId: F:TaskSystem.OrderDefinition.dueTo
+  fullName: TaskSystem.OrderDefinition.dueTo
+  nameWithType: OrderDefinition.dueTo
+- uid: TaskSystem.OrderDefinition.expFine
+  name: expFine
+  href: api/TaskSystem.OrderDefinition.html#TaskSystem_OrderDefinition_expFine
+  commentId: F:TaskSystem.OrderDefinition.expFine
+  fullName: TaskSystem.OrderDefinition.expFine
+  nameWithType: OrderDefinition.expFine
+- uid: TaskSystem.OrderDefinition.expReward
+  name: expReward
+  href: api/TaskSystem.OrderDefinition.html#TaskSystem_OrderDefinition_expReward
+  commentId: F:TaskSystem.OrderDefinition.expReward
+  fullName: TaskSystem.OrderDefinition.expReward
+  nameWithType: OrderDefinition.expReward
+- uid: TaskSystem.OrderDefinition.id
+  name: id
+  href: api/TaskSystem.OrderDefinition.html#TaskSystem_OrderDefinition_id
+  commentId: F:TaskSystem.OrderDefinition.id
+  fullName: TaskSystem.OrderDefinition.id
+  nameWithType: OrderDefinition.id
+- uid: TaskSystem.OrderDefinition.moneyFine
+  name: moneyFine
+  href: api/TaskSystem.OrderDefinition.html#TaskSystem_OrderDefinition_moneyFine
+  commentId: F:TaskSystem.OrderDefinition.moneyFine
+  fullName: TaskSystem.OrderDefinition.moneyFine
+  nameWithType: OrderDefinition.moneyFine
+- uid: TaskSystem.OrderDefinition.moneyReward
+  name: moneyReward
+  href: api/TaskSystem.OrderDefinition.html#TaskSystem_OrderDefinition_moneyReward
+  commentId: F:TaskSystem.OrderDefinition.moneyReward
+  fullName: TaskSystem.OrderDefinition.moneyReward
+  nameWithType: OrderDefinition.moneyReward
+- uid: TaskSystem.OrderDefinition.orders
+  name: orders
+  href: api/TaskSystem.OrderDefinition.html#TaskSystem_OrderDefinition_orders
+  commentId: F:TaskSystem.OrderDefinition.orders
+  fullName: TaskSystem.OrderDefinition.orders
+  nameWithType: OrderDefinition.orders
 - uid: TaskSystem.TaskDefinition
   name: TaskDefinition
   href: api/TaskSystem.TaskDefinition.html
