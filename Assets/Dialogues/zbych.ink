@@ -9,6 +9,7 @@ INCLUDE globals.ink
 }
 
 === start ===
+~startOrderFromScratch("0","Zbych","3 dni", "Dummy Beer:1/Dummy Beer:10", 100, 100, 100, 100)
 Siema! Masz może dla mnie jakąś misję? #speaker:Maciek #portrait:maciek_neutral #layout:left
 Witaj. Akurat tak się składa, że mam. #speaker:Zbych #portrait:zbych_neutral #layout:right
 Chcę, abyś odwiedził Akademik, Sklep i Parking
@@ -18,7 +19,9 @@ A może jednak na prawo?
 Kurwa...
 Zresztą, wisi mi to... Sprawdzisz to sam!
 Czy przyjmujesz moją misję?
- * [Nie] Nie, sory... #speaker:Maciek #portrait:maciek_neutral #layout:left
+ * [Nie]
+    ~finishOrder("Zbych")
+    Nie, sory... #speaker:Maciek #portrait:maciek_neutral #layout:left
     To <color=\#fc0303>s p i e r d a l a j!</color>#speaker:Zbych #portrait:zbych_neutral #layout:right
     -> END
  * [Tak #getsTask: GoExploring] Tak, lecimy z tematem!#speaker:Maciek #portrait:maciek_neutral #layout:left 

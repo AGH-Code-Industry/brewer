@@ -91,7 +91,7 @@ namespace Dialogues {
             _functionToCallback = finishAction;
             _currentStory = new Story(storyFile.text);
             _dialogueVariables.StartListening(_currentStory);
-            _externalFunctions.Bind(_currentStory, _taskManager);
+            _externalFunctions.Bind(_currentStory);
             
             dialoguePanel.SetActive(true);
             dialogueStarted.Invoke();
